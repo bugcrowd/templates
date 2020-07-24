@@ -18,7 +18,7 @@ Example:
 1. Browse to account page
 1. Modify ID token to add single quote
 1. View error which states 'SQL Syntax Error'
-
+  
 -->
 
 
