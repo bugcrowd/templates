@@ -6,5 +6,13 @@ Script `generate-directories.py` grabs the current latest version of the VRT str
 
 Script follows standard entry names and keeps underscores / case as provided by VRT `id` field.
 
+---
+
+## Template Structure
+
+
+
+
+
 
 
