@@ -1,0 +1,22 @@
+name: Markdown Linter
+
+on:
+    push:
+        branches: [$default-branch]
+    pull_request:
+        branches: [$default-branch]
+
+jobs:
+  lint-changelog:
+    name: Lint changelog file
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out code
+      uses: actions/checkout@v2
+
+    - name: Lint Markdown files
+      uses: avto-dev/markdown-lint@v1
+      with:
+        rules: '/lint/rules/changelog.js'
+        config: '/lint/config/changelog.yml'
+        args: './CHANGELOG.md'
