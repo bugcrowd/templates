@@ -7,8 +7,8 @@ on:
         branches: [$default-branch]
 
 jobs:
-  build:
-    name: Lint changelog file
+  mdlinter:
+    name: Lint markdown file
     runs-on: ubuntu-latest
     steps:
     - name: Check out code
