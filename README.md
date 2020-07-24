@@ -12,9 +12,4 @@ Script follows standard entry names and keeps underscores / case as provided by 
 
 ## Template Structure
 
-
-
-
-
-
-
+None added to this file as yet.
