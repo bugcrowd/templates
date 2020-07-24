@@ -1,12 +1,12 @@
+
 # Overview
+
 <!---
 SQL Injection Vulnerability Report
-
-
-
 -->
 
 # Walkthrough & PoC
+
 <!---
 Provide a step-by-step walkthrough on how to access the vulnerable injection point, and how to exploit the vulnerability.
 Adding a dot-pointed walkthrough with relevant screenshots will speed triage time and result in faster rewards!
@@ -23,6 +23,7 @@ Example:
 
 
 # Vulnerability Evidence
+
 <!---
 Your submission must include evidence of the vulnerability.
 
@@ -34,6 +35,7 @@ You may present your evidence as output from a tool such as SQLMap, unless the p
 -->
 
 # Demonstrated Impact
+
 <!---
 For SQL Injection, demonstrating access to data other than the database version or database tables is NOT permitted without explicit permission from the program.
 DO NOT ACCESS PII
