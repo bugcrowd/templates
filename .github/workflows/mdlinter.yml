@@ -7,7 +7,7 @@ on:
         branches: [$default-branch]
 
 jobs:
-  lint-changelog:
+  build:
     name: Lint changelog file
     runs-on: ubuntu-latest
     steps:
