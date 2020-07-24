@@ -4,9 +4,9 @@
 <!---
 SQL Injection Vulnerability Report
 
-
-Details: https://owasp.org/www-community/attacks/SQL_Injection
-
+Resources:
+ - https://owasp.org/www-community/attacks/SQL_Injection
+ - https://owasp.org/www-community/attacks/Blind_SQL_Injection
 -->
 
 ## Walkthrough & PoC
@@ -22,6 +22,7 @@ Example:
 1. Browse to account page
 1. Modify ID token to add single quote
 1. View error which states 'SQL Syntax Error'
+1. Replace ID value with `1' waitfor delay '00:10:00'` 
 -->
 
 ## Vulnerability Evidence
