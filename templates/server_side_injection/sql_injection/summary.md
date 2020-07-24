@@ -1,11 +1,15 @@
 
-# Overview
+## Overview
 
 <!---
 SQL Injection Vulnerability Report
+
+
+Details: https://owasp.org/www-community/attacks/SQL_Injection
+
 -->
 
-# Walkthrough & PoC
+## Walkthrough & PoC
 
 <!---
 Provide a step-by-step walkthrough on how to access the vulnerable injection point, and how to exploit the vulnerability.
@@ -20,7 +24,7 @@ Example:
 1. View error which states 'SQL Syntax Error'
 -->
 
-# Vulnerability Evidence
+## Vulnerability Evidence
 
 <!---
 Your submission must include evidence of the vulnerability.
@@ -32,7 +36,7 @@ DO NOT ACCESS PII
 You may present your evidence as output from a tool such as SQLMap, unless the program forbids the use of these tools.
 -->
 
-# Demonstrated Impact
+## Demonstrated Impact
 
 <!---
 For SQL Injection, demonstrating access to data other than the database version or database tables is NOT permitted without explicit permission from the program.
