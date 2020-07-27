@@ -1,11 +1,12 @@
-**Please replace all commented sections below**
 ## Overview
+
+**Please replace text in each section below**
 
 SQL Injection Vulnerability Report
 
 Resources:
- - https://owasp.org/www-community/attacks/SQL_Injection
- - https://owasp.org/www-community/attacks/Blind_SQL_Injection
+- <https://owasp.org/www-community/attacks/SQL_Injection>
+- <https://owasp.org/www-community/attacks/Blind_SQL_Injection>
 
 ## Walkthrough & PoC
 
@@ -28,6 +29,7 @@ For an SQL Injection vulnerability, please include specific NON-PII information 
 You may present your evidence as output from a tool such as SQLMap, unless the program forbids the use of these tools, and it may be in the format of terminal output, screenshots, or video..
 
 **DO NOT ACCESS PII**
+
 
 ## Demonstrated Impact
 
