@@ -5,6 +5,7 @@
 SQL Injection Vulnerability Report
 
 Resources:
+
 - <https://owasp.org/www-community/attacks/SQL_Injection>
 - <https://owasp.org/www-community/attacks/Blind_SQL_Injection>
 
@@ -14,6 +15,7 @@ Provide a step-by-step walkthrough on how to access the vulnerable injection poi
 Adding a dot-pointed walkthrough with relevant screenshots will speed triage time and result in faster rewards!
 
 Example:
+
 1. Login to in-scope asset at <www.inscope.com/login>
 1. Browse to account page
 1. Modify ID token to add single quote
