@@ -6,7 +6,7 @@
 
 ## References
 
-- https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Authentication_Cheat_Sheet.md#transmit-passwords-only-over-tls-or-other-strong-transport
+- [https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Authentication_Cheat_Sheet.md#transmit-passwords-only-over-tls-or-other-strong-transport](https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Authentication_Cheat_Sheet.md#transmit-passwords-only-over-tls-or-other-strong-transport)
 
 
 ## Remediation Advice

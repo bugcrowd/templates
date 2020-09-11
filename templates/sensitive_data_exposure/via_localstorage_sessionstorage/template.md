@@ -6,7 +6,7 @@
 
 ## References
 
-- http://michael-coates.blogspot.com/2010/07/html5-local-storage-and-xss.html
+- [http://michael-coates.blogspot.com/2010/07/html5-local-storage-and-xss.html](http://michael-coates.blogspot.com/2010/07/html5-local-storage-and-xss.html)
 
 
 ## Remediation Advice

@@ -6,8 +6,8 @@
 
 ## References
 
-- https://www.owasp.org/index.php/OWASP_Secure_Headers_Project#hpkp
-- https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Public-Key-Pins
+- [https://www.owasp.org/index.php/OWASP_Secure_Headers_Project#hpkp](https://www.owasp.org/index.php/OWASP_Secure_Headers_Project#hpkp)
+- [https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Public-Key-Pins](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Public-Key-Pins)
 
 
 ## Remediation Advice

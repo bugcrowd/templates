@@ -6,8 +6,8 @@
 
 ## References
 
-- https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Cryptographic_Storage_Cheat_Sheet.md
-- https://crackstation.net/hashing-security.htm
+- [https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Cryptographic_Storage_Cheat_Sheet.md](https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Cryptographic_Storage_Cheat_Sheet.md)
+- [https://crackstation.net/hashing-security.htm](https://crackstation.net/hashing-security.htm)
 
 
 ## Remediation Advice

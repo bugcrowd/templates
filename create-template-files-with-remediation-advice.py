@@ -29,7 +29,7 @@ def printReport(vrtItem):
     remediationAdvice = ""
     if referencesExists(vrtItem):
         for r in vrtItem["references"]:
-            referencesString = referencesString + "\n- " + r
+            referencesString = referencesString + "\n- [" + r + "](" + r + ")"
 
     header = "## Description\n\n\n## Reproduction Steps\n\n\n"
     if remediationAdviceExists(vrtItem):

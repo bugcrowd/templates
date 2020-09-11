@@ -6,11 +6,11 @@
 
 ## References
 
-- https://www.owasp.org/index.php/Top_10-2017_A2-Broken_Authentication
-- https://www.owasp.org/index.php/Broken_Authentication_and_Session_Management
-- https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Authentication_Cheat_Sheet.md
-- http://projects.webappsec.org/Insufficient-Authentication
-- https://www.cvedetails.com/vulnerability-list/opgpriv-1/gain-privilege.html
+- [https://www.owasp.org/index.php/Top_10-2017_A2-Broken_Authentication](https://www.owasp.org/index.php/Top_10-2017_A2-Broken_Authentication)
+- [https://www.owasp.org/index.php/Broken_Authentication_and_Session_Management](https://www.owasp.org/index.php/Broken_Authentication_and_Session_Management)
+- [https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Authentication_Cheat_Sheet.md](https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Authentication_Cheat_Sheet.md)
+- [http://projects.webappsec.org/Insufficient-Authentication](http://projects.webappsec.org/Insufficient-Authentication)
+- [https://www.cvedetails.com/vulnerability-list/opgpriv-1/gain-privilege.html](https://www.cvedetails.com/vulnerability-list/opgpriv-1/gain-privilege.html)
 
 
 ## Remediation Advice

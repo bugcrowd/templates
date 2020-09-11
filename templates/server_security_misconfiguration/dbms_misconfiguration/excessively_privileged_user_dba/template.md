@@ -6,7 +6,7 @@
 
 ## References
 
-- https://www.owasp.org/index.php/Least_privilege
+- [https://www.owasp.org/index.php/Least_privilege](https://www.owasp.org/index.php/Least_privilege)
 
 
 ## Remediation Advice

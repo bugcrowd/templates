@@ -6,12 +6,12 @@
 
 ## References
 
-- https://lightningsecurity.io/blog/race-conditions/
-- https://blog.securitycompass.com/moving-beyond-the-owasp-top-10-part-1-race-conditions-912dccbb7c14
-- https://medium.com/in-the-weeds/fixing-a-race-condition-c8b475fbb994
-- https://blog.arkency.com/2015/09/testing-race-conditions/
-- http://www.javacreed.com/what-is-race-condition-and-how-to-prevent-it/
-- https://blog.golang.org/race-detector
+- [https://lightningsecurity.io/blog/race-conditions/](https://lightningsecurity.io/blog/race-conditions/)
+- [https://blog.securitycompass.com/moving-beyond-the-owasp-top-10-part-1-race-conditions-912dccbb7c14](https://blog.securitycompass.com/moving-beyond-the-owasp-top-10-part-1-race-conditions-912dccbb7c14)
+- [https://medium.com/in-the-weeds/fixing-a-race-condition-c8b475fbb994](https://medium.com/in-the-weeds/fixing-a-race-condition-c8b475fbb994)
+- [https://blog.arkency.com/2015/09/testing-race-conditions/](https://blog.arkency.com/2015/09/testing-race-conditions/)
+- [http://www.javacreed.com/what-is-race-condition-and-how-to-prevent-it/](http://www.javacreed.com/what-is-race-condition-and-how-to-prevent-it/)
+- [https://blog.golang.org/race-detector](https://blog.golang.org/race-detector)
 
 
 ## Remediation Advice

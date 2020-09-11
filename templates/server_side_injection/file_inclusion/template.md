@@ -6,9 +6,9 @@
 
 ## References
 
-- http://resources.infosecinstitute.com/file-inclusion-attacks/
-- https://en.wikipedia.org/wiki/File_inclusion_vulnerability
-- https://www.cvedetails.com/vulnerability-list/opfileinc-1/file-inclusion.html
+- [http://resources.infosecinstitute.com/file-inclusion-attacks/](http://resources.infosecinstitute.com/file-inclusion-attacks/)
+- [https://en.wikipedia.org/wiki/File_inclusion_vulnerability](https://en.wikipedia.org/wiki/File_inclusion_vulnerability)
+- [https://www.cvedetails.com/vulnerability-list/opfileinc-1/file-inclusion.html](https://www.cvedetails.com/vulnerability-list/opfileinc-1/file-inclusion.html)
 
 
 ## Remediation Advice

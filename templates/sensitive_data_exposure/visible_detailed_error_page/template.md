@@ -6,7 +6,7 @@
 
 ## References
 
-- https://www.owasp.org/index.php/Improper_Error_Handling
+- [https://www.owasp.org/index.php/Improper_Error_Handling](https://www.owasp.org/index.php/Improper_Error_Handling)
 
 
 ## Remediation Advice

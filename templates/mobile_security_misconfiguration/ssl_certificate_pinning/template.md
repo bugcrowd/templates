@@ -6,9 +6,9 @@
 
 ## References
 
-- https://www.owasp.org/index.php/Certificate_and_Public_Key_Pinning
-- https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Pinning_Cheat_Sheet.md
-- https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Transport_Layer_Protection_Cheat_Sheet.md
+- [https://www.owasp.org/index.php/Certificate_and_Public_Key_Pinning](https://www.owasp.org/index.php/Certificate_and_Public_Key_Pinning)
+- [https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Pinning_Cheat_Sheet.md](https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Pinning_Cheat_Sheet.md)
+- [https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Transport_Layer_Protection_Cheat_Sheet.md](https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Transport_Layer_Protection_Cheat_Sheet.md)
 
 
 ## Remediation Advice

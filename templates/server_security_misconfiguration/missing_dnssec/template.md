@@ -6,7 +6,7 @@
 
 ## References
 
-- https://www.icann.org/resources/pages/dnssec-qaa-2014-01-29-en
+- [https://www.icann.org/resources/pages/dnssec-qaa-2014-01-29-en](https://www.icann.org/resources/pages/dnssec-qaa-2014-01-29-en)
 
 
 ## Remediation Advice

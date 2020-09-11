@@ -6,8 +6,8 @@
 
 ## References
 
-- https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/HTML5_Security_Cheat_Sheet.md#cross-origin-resource-sharing
-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
+- [https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/HTML5_Security_Cheat_Sheet.md#cross-origin-resource-sharing](https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/HTML5_Security_Cheat_Sheet.md#cross-origin-resource-sharing)
+- [https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
 
 
 ## Remediation Advice

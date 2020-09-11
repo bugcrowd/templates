@@ -6,8 +6,8 @@
 
 ## References
 
-- https://www.owasp.org/index.php/OWASP_Secure_Headers_Project#hsts
-- https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security
+- [https://www.owasp.org/index.php/OWASP_Secure_Headers_Project#hsts](https://www.owasp.org/index.php/OWASP_Secure_Headers_Project#hsts)
+- [https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security)
 
 
 ## Remediation Advice

@@ -6,7 +6,7 @@
 
 ## References
 
-- http://projects.webappsec.org/w/page/13246917/Content%20Spoofing
+- [http://projects.webappsec.org/w/page/13246917/Content%20Spoofing](http://projects.webappsec.org/w/page/13246917/Content%20Spoofing)
 
 
 ## Remediation Advice

@@ -6,7 +6,7 @@
 
 ## References
 
-- https://technet.microsoft.com/en-us/library/cc755017(v=ws.10).aspx
+- [https://technet.microsoft.com/en-us/library/cc755017(v=ws.10).aspx](https://technet.microsoft.com/en-us/library/cc755017(v=ws.10).aspx)
 
 
 ## Remediation Advice

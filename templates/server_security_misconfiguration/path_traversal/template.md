@@ -6,9 +6,9 @@
 
 ## References
 
-- https://www.owasp.org/index.php/Path_Traversal
-- https://www.owasp.org/index.php/File_System#Path_traversal
-- http://projects.webappsec.org/w/page/13246952/Path%20Traversal
+- [https://www.owasp.org/index.php/Path_Traversal](https://www.owasp.org/index.php/Path_Traversal)
+- [https://www.owasp.org/index.php/File_System#Path_traversal](https://www.owasp.org/index.php/File_System#Path_traversal)
+- [http://projects.webappsec.org/w/page/13246952/Path%20Traversal](http://projects.webappsec.org/w/page/13246952/Path%20Traversal)
 
 
 ## Remediation Advice

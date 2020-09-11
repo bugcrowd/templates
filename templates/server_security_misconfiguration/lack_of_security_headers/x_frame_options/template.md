@@ -6,8 +6,8 @@
 
 ## References
 
-- https://www.owasp.org/index.php/OWASP_Secure_Headers_Project#xfo_bp
-- https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options
+- [https://www.owasp.org/index.php/OWASP_Secure_Headers_Project#xfo_bp](https://www.owasp.org/index.php/OWASP_Secure_Headers_Project#xfo_bp)
+- [https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options)
 
 
 ## Remediation Advice

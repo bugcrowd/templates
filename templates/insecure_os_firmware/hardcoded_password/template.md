@@ -6,8 +6,8 @@
 
 ## References
 
-- https://www.owasp.org/index.php/Password_Management:_Hardcoded_Password
-- https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Password_Storage_Cheat_Sheet.md
+- [https://www.owasp.org/index.php/Password_Management:_Hardcoded_Password](https://www.owasp.org/index.php/Password_Management:_Hardcoded_Password)
+- [https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Password_Storage_Cheat_Sheet.md](https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Password_Storage_Cheat_Sheet.md)
 
 
 ## Remediation Advice

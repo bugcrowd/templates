@@ -6,8 +6,8 @@
 
 ## References
 
-- https://www.owasp.org/index.php/Mobile_Top_10_2016-M1-Improper_Platform_Usage
-- https://developer.apple.com/library/content/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/Inter-AppCommunication/Inter-AppCommunication.html
+- [https://www.owasp.org/index.php/Mobile_Top_10_2016-M1-Improper_Platform_Usage](https://www.owasp.org/index.php/Mobile_Top_10_2016-M1-Improper_Platform_Usage)
+- [https://developer.apple.com/library/content/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/Inter-AppCommunication/Inter-AppCommunication.html](https://developer.apple.com/library/content/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/Inter-AppCommunication/Inter-AppCommunication.html)
 
 
 ## Remediation Advice

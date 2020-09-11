@@ -6,7 +6,7 @@
 
 ## References
 
-- https://msdn.microsoft.com/en-us/library/dd565647(v=vs.85).aspx
+- [https://msdn.microsoft.com/en-us/library/dd565647(v=vs.85).aspx](https://msdn.microsoft.com/en-us/library/dd565647(v=vs.85).aspx)
 
 
 ## Remediation Advice

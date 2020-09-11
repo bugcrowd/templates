@@ -6,9 +6,9 @@
 
 ## References
 
-- https://www.owasp.org/index.php/Top_10_2013-A10-Unvalidated_Redirects_and_Forwards
-- https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Unvalidated_Redirects_and_Forwards_Cheat_Sheet.md
-- http://projects.webappsec.org/w/page/13246981/URL%20Redirector%20Abuse
+- [https://www.owasp.org/index.php/Top_10_2013-A10-Unvalidated_Redirects_and_Forwards](https://www.owasp.org/index.php/Top_10_2013-A10-Unvalidated_Redirects_and_Forwards)
+- [https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Unvalidated_Redirects_and_Forwards_Cheat_Sheet.md](https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Unvalidated_Redirects_and_Forwards_Cheat_Sheet.md)
+- [http://projects.webappsec.org/w/page/13246981/URL%20Redirector%20Abuse](http://projects.webappsec.org/w/page/13246981/URL%20Redirector%20Abuse)
 
 
 ## Remediation Advice

@@ -6,7 +6,7 @@
 
 ## References
 
-- https://blog.devknox.io/tapjacking-android-prevent/
+- [https://blog.devknox.io/tapjacking-android-prevent/](https://blog.devknox.io/tapjacking-android-prevent/)
 
 
 ## Remediation Advice

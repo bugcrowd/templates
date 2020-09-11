@@ -6,11 +6,11 @@
 
 ## References
 
-- https://www.owasp.org/index.php/Application_Denial_of_Service
-- https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Denial_of_Service_Cheat_Sheet.md
-- http://projects.webappsec.org/Denial-of-Service
-- https://www.cvedetails.com/vulnerability-list/opdos-1/denial-of-service.html
-- https://www.owasp.org/images/d/da/OWASP_IL_7_Application_DOS.pdf
+- [https://www.owasp.org/index.php/Application_Denial_of_Service](https://www.owasp.org/index.php/Application_Denial_of_Service)
+- [https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Denial_of_Service_Cheat_Sheet.md](https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Denial_of_Service_Cheat_Sheet.md)
+- [http://projects.webappsec.org/Denial-of-Service](http://projects.webappsec.org/Denial-of-Service)
+- [https://www.cvedetails.com/vulnerability-list/opdos-1/denial-of-service.html](https://www.cvedetails.com/vulnerability-list/opdos-1/denial-of-service.html)
+- [https://www.owasp.org/images/d/da/OWASP_IL_7_Application_DOS.pdf](https://www.owasp.org/images/d/da/OWASP_IL_7_Application_DOS.pdf)
 
 
 ## Remediation Advice

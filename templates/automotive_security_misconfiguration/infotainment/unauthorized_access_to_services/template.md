@@ -6,7 +6,7 @@
 
 ## References
 
-- https://www.troyhunt.com/controlling-vehicle-features-of-nissan/
+- [https://www.troyhunt.com/controlling-vehicle-features-of-nissan/](https://www.troyhunt.com/controlling-vehicle-features-of-nissan/)
 
 
 ## Remediation Advice

@@ -6,8 +6,8 @@
 
 ## References
 
-- https://www.owasp.org/index.php/OWASP_Secure_Headers_Project#xcto
-- https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Content-Type-Options
+- [https://www.owasp.org/index.php/OWASP_Secure_Headers_Project#xcto](https://www.owasp.org/index.php/OWASP_Secure_Headers_Project#xcto)
+- [https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Content-Type-Options](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Content-Type-Options)
 
 
 ## Remediation Advice

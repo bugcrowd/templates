@@ -6,7 +6,7 @@
 
 ## References
 
-- https://cheapsslsecurity.com/blog/google-chrome-ssl-certificate-errors-troubleshoot-guide/
+- [https://cheapsslsecurity.com/blog/google-chrome-ssl-certificate-errors-troubleshoot-guide/](https://cheapsslsecurity.com/blog/google-chrome-ssl-certificate-errors-troubleshoot-guide/)
 
 
 ## Remediation Advice

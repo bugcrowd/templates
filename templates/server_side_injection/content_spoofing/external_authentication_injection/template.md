@@ -6,7 +6,7 @@
 
 ## References
 
-- https://www.exploit-db.com/papers/12898/
+- [https://www.exploit-db.com/papers/12898/](https://www.exploit-db.com/papers/12898/)
 
 
 ## Remediation Advice

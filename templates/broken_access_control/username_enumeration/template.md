@@ -6,9 +6,9 @@
 
 ## References
 
-- https://www.owasp.org/index.php/Top_10_2013-A7-Missing_Function_Level_Access_Control
-- https://www.owasp.org/index.php/Top_10-2017_A3-Sensitive_Data_Exposure
-- http://projects.webappsec.org/w/page/13246936/Information%20Leakage
+- [https://www.owasp.org/index.php/Top_10_2013-A7-Missing_Function_Level_Access_Control](https://www.owasp.org/index.php/Top_10_2013-A7-Missing_Function_Level_Access_Control)
+- [https://www.owasp.org/index.php/Top_10-2017_A3-Sensitive_Data_Exposure](https://www.owasp.org/index.php/Top_10-2017_A3-Sensitive_Data_Exposure)
+- [http://projects.webappsec.org/w/page/13246936/Information%20Leakage](http://projects.webappsec.org/w/page/13246936/Information%20Leakage)
 
 
 ## Remediation Advice

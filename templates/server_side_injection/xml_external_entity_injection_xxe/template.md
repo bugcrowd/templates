@@ -6,10 +6,10 @@
 
 ## References
 
-- https://www.owasp.org/index.php/XML_External_Entity_(XXE)_Processing
-- https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/XML_External_Entity_Prevention_Cheat_Sheet.md
-- http://projects.webappsec.org/XML-External-Entities
-- https://www.gracefulsecurity.com/xml-external-entity-injection-xxe-vulnerabilities/
+- [https://www.owasp.org/index.php/XML_External_Entity_(XXE)_Processing](https://www.owasp.org/index.php/XML_External_Entity_(XXE)_Processing)
+- [https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/XML_External_Entity_Prevention_Cheat_Sheet.md](https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/XML_External_Entity_Prevention_Cheat_Sheet.md)
+- [http://projects.webappsec.org/XML-External-Entities](http://projects.webappsec.org/XML-External-Entities)
+- [https://www.gracefulsecurity.com/xml-external-entity-injection-xxe-vulnerabilities/](https://www.gracefulsecurity.com/xml-external-entity-injection-xxe-vulnerabilities/)
 
 
 ## Remediation Advice

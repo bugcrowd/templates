@@ -6,9 +6,9 @@
 
 ## References
 
-- https://www.owasp.org/index.php/Testing_for_default_credentials_(OTG-AUTHN-002)
-- https://www.owasp.org/index.php/Configuration#Default_passwords
-- https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Authentication_Cheat_Sheet.md
+- [https://www.owasp.org/index.php/Testing_for_default_credentials_(OTG-AUTHN-002)](https://www.owasp.org/index.php/Testing_for_default_credentials_(OTG-AUTHN-002))
+- [https://www.owasp.org/index.php/Configuration#Default_passwords](https://www.owasp.org/index.php/Configuration#Default_passwords)
+- [https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Authentication_Cheat_Sheet.md](https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Authentication_Cheat_Sheet.md)
 
 
 ## Remediation Advice

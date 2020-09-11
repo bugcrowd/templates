@@ -6,10 +6,10 @@
 
 ## References
 
-- https://www.owasp.org/index.php/Top_10_2013-A8-Cross-Site_Request_Forgery_(CSRF)
-- https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.md
-- http://projects.webappsec.org/w/page/13246919/Cross%20Site%20Request%20Forgery
-- https://www.cvedetails.com/vulnerability-list/opcsrf-1/csrf.html
+- [https://www.owasp.org/index.php/Top_10_2013-A8-Cross-Site_Request_Forgery_(CSRF)](https://www.owasp.org/index.php/Top_10_2013-A8-Cross-Site_Request_Forgery_(CSRF))
+- [https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.md](https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.md)
+- [http://projects.webappsec.org/w/page/13246919/Cross%20Site%20Request%20Forgery](http://projects.webappsec.org/w/page/13246919/Cross%20Site%20Request%20Forgery)
+- [https://www.cvedetails.com/vulnerability-list/opcsrf-1/csrf.html](https://www.cvedetails.com/vulnerability-list/opcsrf-1/csrf.html)
 
 
 ## Remediation Advice

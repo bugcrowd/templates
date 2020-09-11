@@ -6,10 +6,10 @@
 
 ## References
 
-- https://www.owasp.org/index.php/Top_10-2017_A3-Sensitive_Data_Exposure
-- http://projects.webappsec.org/Information-Leakage
-- https://blog.detectify.com/2016/07/01/owasp-top-10-sensitive-data-exposure-6/
-- https://www.cvedetails.com/vulnerability-list/opginf-1/gain-information.html
+- [https://www.owasp.org/index.php/Top_10-2017_A3-Sensitive_Data_Exposure](https://www.owasp.org/index.php/Top_10-2017_A3-Sensitive_Data_Exposure)
+- [http://projects.webappsec.org/Information-Leakage](http://projects.webappsec.org/Information-Leakage)
+- [https://blog.detectify.com/2016/07/01/owasp-top-10-sensitive-data-exposure-6/](https://blog.detectify.com/2016/07/01/owasp-top-10-sensitive-data-exposure-6/)
+- [https://www.cvedetails.com/vulnerability-list/opginf-1/gain-information.html](https://www.cvedetails.com/vulnerability-list/opginf-1/gain-information.html)
 
 
 ## Remediation Advice

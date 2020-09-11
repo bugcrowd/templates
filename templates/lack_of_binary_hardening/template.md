@@ -6,8 +6,8 @@
 
 ## References
 
-- https://wiki.debian.org/Hardening
-- https://www.owasp.org/index.php/Mobile_Top_10_2014-M10
+- [https://wiki.debian.org/Hardening](https://wiki.debian.org/Hardening)
+- [https://www.owasp.org/index.php/Mobile_Top_10_2014-M10](https://www.owasp.org/index.php/Mobile_Top_10_2014-M10)
 
 
 ## Remediation Advice

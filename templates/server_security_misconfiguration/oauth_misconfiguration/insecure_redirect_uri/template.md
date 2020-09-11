@@ -6,7 +6,7 @@
 
 ## References
 
-- https://www.oauth.com/oauth2-servers/redirect-uris/
+- [https://www.oauth.com/oauth2-servers/redirect-uris/](https://www.oauth.com/oauth2-servers/redirect-uris/)
 
 
 ## Remediation Advice

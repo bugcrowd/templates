@@ -6,7 +6,7 @@
 
 ## References
 
-- https://www.owasp.org/index.php/Mobile_Top_10_2016-M1-Improper_Platform_Usage
+- [https://www.owasp.org/index.php/Mobile_Top_10_2016-M1-Improper_Platform_Usage](https://www.owasp.org/index.php/Mobile_Top_10_2016-M1-Improper_Platform_Usage)
 
 
 ## Remediation Advice

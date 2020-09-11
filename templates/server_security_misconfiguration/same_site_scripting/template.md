@@ -6,7 +6,7 @@
 
 ## References
 
-- http://seclists.org/bugtraq/2008/Jan/270
+- [http://seclists.org/bugtraq/2008/Jan/270](http://seclists.org/bugtraq/2008/Jan/270)
 
 
 ## Remediation Advice

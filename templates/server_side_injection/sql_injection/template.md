@@ -6,10 +6,10 @@
 
 ## References
 
-- https://www.owasp.org/index.php/SQL_Injection
-- https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.md
-- http://projects.webappsec.org/SQL-Injection
-- https://www.cvedetails.com/vulnerability-list/opsqli-1/sql-injection.html
+- [https://www.owasp.org/index.php/SQL_Injection](https://www.owasp.org/index.php/SQL_Injection)
+- [https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.md](https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.md)
+- [http://projects.webappsec.org/SQL-Injection](http://projects.webappsec.org/SQL-Injection)
+- [https://www.cvedetails.com/vulnerability-list/opsqli-1/sql-injection.html](https://www.cvedetails.com/vulnerability-list/opsqli-1/sql-injection.html)
 
 
 ## Remediation Advice

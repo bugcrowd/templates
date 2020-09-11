@@ -6,8 +6,8 @@
 
 ## References
 
-- https://www.owasp.org/index.php/OWASP_Secure_Headers_Project#xxxsp_bp
-- https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-XSS-Protection
+- [https://www.owasp.org/index.php/OWASP_Secure_Headers_Project#xxxsp_bp](https://www.owasp.org/index.php/OWASP_Secure_Headers_Project#xxxsp_bp)
+- [https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-XSS-Protection](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-XSS-Protection)
 
 
 ## Remediation Advice

@@ -6,7 +6,7 @@
 
 ## References
 
-- http://projects.webappsec.org/w/page/13246960/Session%20Fixation
+- [http://projects.webappsec.org/w/page/13246960/Session%20Fixation](http://projects.webappsec.org/w/page/13246960/Session%20Fixation)
 
 
 ## Remediation Advice

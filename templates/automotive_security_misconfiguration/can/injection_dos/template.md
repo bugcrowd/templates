@@ -6,8 +6,8 @@
 
 ## References
 
-- https://ics-cert.us-cert.gov/alerts/ICS-ALERT-17-209-01
-- http://www.autoconnectedcar.com/2017/08/connect-car-can-bus-cant-handle-dos-hacksattacks-researchers-report-can-standard-can-be-changed/
+- [https://ics-cert.us-cert.gov/alerts/ICS-ALERT-17-209-01](https://ics-cert.us-cert.gov/alerts/ICS-ALERT-17-209-01)
+- [http://www.autoconnectedcar.com/2017/08/connect-car-can-bus-cant-handle-dos-hacksattacks-researchers-report-can-standard-can-be-changed/](http://www.autoconnectedcar.com/2017/08/connect-car-can-bus-cant-handle-dos-hacksattacks-researchers-report-can-standard-can-be-changed/)
 
 
 ## Remediation Advice

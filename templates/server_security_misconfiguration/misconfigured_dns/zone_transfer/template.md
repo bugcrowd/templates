@@ -6,8 +6,8 @@
 
 ## References
 
-- https://www.sans.org/reading-room/whitepapers/dns/securing-dns-zone-transfer-868
-- https://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-1999-0532
+- [https://www.sans.org/reading-room/whitepapers/dns/securing-dns-zone-transfer-868](https://www.sans.org/reading-room/whitepapers/dns/securing-dns-zone-transfer-868)
+- [https://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-1999-0532](https://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-1999-0532)
 
 
 ## Remediation Advice

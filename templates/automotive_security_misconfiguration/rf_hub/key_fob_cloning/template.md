@@ -6,8 +6,8 @@
 
 ## References
 
-- https://electronics.howstuffworks.com/gadgets/automotive/unlock-car-door-remote1.htm
-- https://www.wired.com/story/hackers-steal-tesla-model-s-seconds-key-fob/
+- [https://electronics.howstuffworks.com/gadgets/automotive/unlock-car-door-remote1.htm](https://electronics.howstuffworks.com/gadgets/automotive/unlock-car-door-remote1.htm)
+- [https://www.wired.com/story/hackers-steal-tesla-model-s-seconds-key-fob/](https://www.wired.com/story/hackers-steal-tesla-model-s-seconds-key-fob/)
 
 
 ## Remediation Advice

@@ -6,7 +6,7 @@
 
 ## References
 
-- https://www.owasp.org/index.php/Top_10_2010-A9-Insufficient_Transport_Layer_Protection
+- [https://www.owasp.org/index.php/Top_10_2010-A9-Insufficient_Transport_Layer_Protection](https://www.owasp.org/index.php/Top_10_2010-A9-Insufficient_Transport_Layer_Protection)
 
 
 ## Remediation Advice

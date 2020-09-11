@@ -6,8 +6,8 @@
 
 ## References
 
-- http://www.openspf.org/SPF_Record_Syntax
-- http://www.openspf.org/FAQ/Common_mistakes#include
+- [http://www.openspf.org/SPF_Record_Syntax](http://www.openspf.org/SPF_Record_Syntax)
+- [http://www.openspf.org/FAQ/Common_mistakes#include](http://www.openspf.org/FAQ/Common_mistakes#include)
 
 
 ## Remediation Advice

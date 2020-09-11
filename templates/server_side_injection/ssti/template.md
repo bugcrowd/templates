@@ -6,7 +6,7 @@
 
 ## References
 
-- https://portswigger.net/kb/issues/00101080_server-side-template-injection
+- [https://portswigger.net/kb/issues/00101080_server-side-template-injection](https://portswigger.net/kb/issues/00101080_server-side-template-injection)
 
 
 ## Remediation Advice

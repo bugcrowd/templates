@@ -6,7 +6,7 @@
 
 ## References
 
-- https://dl.packetstormsecurity.net/papers/general/righttoleften-override.pdf
+- [https://dl.packetstormsecurity.net/papers/general/righttoleften-override.pdf](https://dl.packetstormsecurity.net/papers/general/righttoleften-override.pdf)
 
 
 ## Remediation Advice

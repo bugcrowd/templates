@@ -6,7 +6,7 @@
 
 ## References
 
-- https://www.acunetix.com/blog/articles/automated-detection-of-host-header-attacks/
+- [https://www.acunetix.com/blog/articles/automated-detection-of-host-header-attacks/](https://www.acunetix.com/blog/articles/automated-detection-of-host-header-attacks/)
 
 
 ## Remediation Advice

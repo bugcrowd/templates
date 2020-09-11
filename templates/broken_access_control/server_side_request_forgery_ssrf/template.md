@@ -6,11 +6,11 @@
 
 ## References
 
-- https://www.owasp.org/index.php/Top_10_2013-A7-Missing_Function_Level_Access_Control
-- http://projects.webappsec.org/w/page/13246913/Abuse%20of%20Functionality
-- http://resources.infosecinstitute.com/the-ssrf-vulnerability/
-- https://www.bishopfox.com/blog/2015/04/vulnerable-by-design-understanding-server-side-request-forgery/
-- http://niiconsulting.com/checkmate/2015/04/server-side-request-forgery-ssrf/
+- [https://www.owasp.org/index.php/Top_10_2013-A7-Missing_Function_Level_Access_Control](https://www.owasp.org/index.php/Top_10_2013-A7-Missing_Function_Level_Access_Control)
+- [http://projects.webappsec.org/w/page/13246913/Abuse%20of%20Functionality](http://projects.webappsec.org/w/page/13246913/Abuse%20of%20Functionality)
+- [http://resources.infosecinstitute.com/the-ssrf-vulnerability/](http://resources.infosecinstitute.com/the-ssrf-vulnerability/)
+- [https://www.bishopfox.com/blog/2015/04/vulnerable-by-design-understanding-server-side-request-forgery/](https://www.bishopfox.com/blog/2015/04/vulnerable-by-design-understanding-server-side-request-forgery/)
+- [http://niiconsulting.com/checkmate/2015/04/server-side-request-forgery-ssrf/](http://niiconsulting.com/checkmate/2015/04/server-side-request-forgery-ssrf/)
 
 
 ## Remediation Advice

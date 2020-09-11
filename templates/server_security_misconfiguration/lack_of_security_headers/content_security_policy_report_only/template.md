@@ -6,8 +6,8 @@
 
 ## References
 
-- https://www.owasp.org/index.php/OWASP_Secure_Headers_Project#csp
-- https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy-Report-Only
+- [https://www.owasp.org/index.php/OWASP_Secure_Headers_Project#csp](https://www.owasp.org/index.php/OWASP_Secure_Headers_Project#csp)
+- [https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy-Report-Only](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy-Report-Only)
 
 
 ## Remediation Advice

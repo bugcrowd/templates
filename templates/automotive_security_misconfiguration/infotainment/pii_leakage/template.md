@@ -6,7 +6,7 @@
 
 ## References
 
-- https://www.prnewswire.com/news-releases/carsblues-vehicle-hack-exploits-vehicle-infotainment-systems-allowing-access-to-call-logs-text-messages-and-more-300751244.html
+- [https://www.prnewswire.com/news-releases/carsblues-vehicle-hack-exploits-vehicle-infotainment-systems-allowing-access-to-call-logs-text-messages-and-more-300751244.html](https://www.prnewswire.com/news-releases/carsblues-vehicle-hack-exploits-vehicle-infotainment-systems-allowing-access-to-call-logs-text-messages-and-more-300751244.html)
 
 
 ## Remediation Advice

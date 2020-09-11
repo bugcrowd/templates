@@ -6,11 +6,11 @@
 
 ## References
 
-- https://www.owasp.org/index.php/Top_10-2017_A7-Cross-Site_Scripting_(XSS)
-- https://www.owasp.org/index.php/Cross-site_Scripting_(XSS)
-- https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.md
-- http://projects.webappsec.org/Cross-Site+Scripting
-- https://www.cvedetails.com/vulnerability-list/opxss-1/xss.html
+- [https://www.owasp.org/index.php/Top_10-2017_A7-Cross-Site_Scripting_(XSS)](https://www.owasp.org/index.php/Top_10-2017_A7-Cross-Site_Scripting_(XSS))
+- [https://www.owasp.org/index.php/Cross-site_Scripting_(XSS)](https://www.owasp.org/index.php/Cross-site_Scripting_(XSS))
+- [https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.md](https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.md)
+- [http://projects.webappsec.org/Cross-Site+Scripting](http://projects.webappsec.org/Cross-Site+Scripting)
+- [https://www.cvedetails.com/vulnerability-list/opxss-1/xss.html](https://www.cvedetails.com/vulnerability-list/opxss-1/xss.html)
 
 
 ## Remediation Advice

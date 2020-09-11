@@ -6,9 +6,9 @@
 
 ## References
 
-- https://www.icann.org/news/announcement-2005-02-23-en
-- http://www.securityfocus.com/bid/12461
-- https://www.cvedetails.com/cve/CVE-2005-0238/
+- [https://www.icann.org/news/announcement-2005-02-23-en](https://www.icann.org/news/announcement-2005-02-23-en)
+- [http://www.securityfocus.com/bid/12461](http://www.securityfocus.com/bid/12461)
+- [https://www.cvedetails.com/cve/CVE-2005-0238/](https://www.cvedetails.com/cve/CVE-2005-0238/)
 
 
 ## Remediation Advice

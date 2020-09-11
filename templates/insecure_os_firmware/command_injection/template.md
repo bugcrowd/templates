@@ -6,11 +6,11 @@
 
 ## References
 
-- https://www.owasp.org/index.php/Top_10-2017_A1-Injection
-- https://www.owasp.org/index.php/Command_Injection
-- http://projects.webappsec.org/OS-Commanding
-- https://www.owasp.org/index.php/Injection_Prevention_Cheat_Sheet
-- https://www.cvedetails.com/vulnerability-list/opec-1/execute-code.html
+- [https://www.owasp.org/index.php/Top_10-2017_A1-Injection](https://www.owasp.org/index.php/Top_10-2017_A1-Injection)
+- [https://www.owasp.org/index.php/Command_Injection](https://www.owasp.org/index.php/Command_Injection)
+- [http://projects.webappsec.org/OS-Commanding](http://projects.webappsec.org/OS-Commanding)
+- [https://www.owasp.org/index.php/Injection_Prevention_Cheat_Sheet](https://www.owasp.org/index.php/Injection_Prevention_Cheat_Sheet)
+- [https://www.cvedetails.com/vulnerability-list/opec-1/execute-code.html](https://www.cvedetails.com/vulnerability-list/opec-1/execute-code.html)
 
 
 ## Remediation Advice

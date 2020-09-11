@@ -6,7 +6,7 @@
 
 ## References
 
-- https://portswigger.net/blog/practical-web-cache-poisoning
+- [https://portswigger.net/blog/practical-web-cache-poisoning](https://portswigger.net/blog/practical-web-cache-poisoning)
 
 
 ## Remediation Advice

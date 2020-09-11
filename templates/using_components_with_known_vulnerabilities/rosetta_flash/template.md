@@ -6,8 +6,8 @@
 
 ## References
 
-- https://blog.avira.com/understanding-rosetta-flash-vulnerability/
-- https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-4671
+- [https://blog.avira.com/understanding-rosetta-flash-vulnerability/](https://blog.avira.com/understanding-rosetta-flash-vulnerability/)
+- [https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-4671](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-4671)
 
 
 ## Remediation Advice

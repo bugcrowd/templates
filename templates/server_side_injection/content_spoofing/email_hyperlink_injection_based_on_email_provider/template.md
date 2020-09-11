@@ -6,7 +6,7 @@
 
 ## References
 
-- https://www.owasp.org/index.php/Input_Validation_Cheat_Sheet
+- [https://www.owasp.org/index.php/Input_Validation_Cheat_Sheet](https://www.owasp.org/index.php/Input_Validation_Cheat_Sheet)
 
 
 ## Remediation Advice

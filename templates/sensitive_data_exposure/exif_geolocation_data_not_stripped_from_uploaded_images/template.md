@@ -6,7 +6,7 @@
 
 ## References
 
-- http://resources.infosecinstitute.com/metadata-and-information-security/
+- [http://resources.infosecinstitute.com/metadata-and-information-security/](http://resources.infosecinstitute.com/metadata-and-information-security/)
 
 
 ## Remediation Advice

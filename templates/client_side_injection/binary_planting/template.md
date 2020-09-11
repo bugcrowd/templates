@@ -6,7 +6,7 @@
 
 ## References
 
-- http://www.binaryplanting.com/guidelinesDevelopers.htm
+- [http://www.binaryplanting.com/guidelinesDevelopers.htm](http://www.binaryplanting.com/guidelinesDevelopers.htm)
 
 
 ## Remediation Advice

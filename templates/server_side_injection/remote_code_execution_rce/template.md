@@ -6,8 +6,8 @@
 
 ## References
 
-- https://www.owasp.org/index.php/Command_Injection
-- https://www.cvedetails.com/vulnerability-list/opec-1/execute-code.html
+- [https://www.owasp.org/index.php/Command_Injection](https://www.owasp.org/index.php/Command_Injection)
+- [https://www.cvedetails.com/vulnerability-list/opec-1/execute-code.html](https://www.cvedetails.com/vulnerability-list/opec-1/execute-code.html)
 
 
 ## Remediation Advice

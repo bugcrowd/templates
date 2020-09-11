@@ -6,7 +6,7 @@
 
 ## References
 
-- http://www.thespanner.co.uk/2011/05/30/json-hijacking/
+- [http://www.thespanner.co.uk/2011/05/30/json-hijacking/](http://www.thespanner.co.uk/2011/05/30/json-hijacking/)
 
 
 ## Remediation Advice

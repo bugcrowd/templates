@@ -6,8 +6,8 @@
 
 ## References
 
-- https://www.owasp.org/index.php/Privacy_Violation
-- https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/User_Privacy_Protection_Cheat_Sheet.md
+- [https://www.owasp.org/index.php/Privacy_Violation](https://www.owasp.org/index.php/Privacy_Violation)
+- [https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/User_Privacy_Protection_Cheat_Sheet.md](https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/User_Privacy_Protection_Cheat_Sheet.md)
 
 
 ## Remediation Advice

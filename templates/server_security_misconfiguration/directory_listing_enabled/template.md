@@ -6,7 +6,7 @@
 
 ## References
 
-- http://projects.webappsec.org/w/page/13246922/Directory%20Indexing
+- [http://projects.webappsec.org/w/page/13246922/Directory%20Indexing](http://projects.webappsec.org/w/page/13246922/Directory%20Indexing)
 
 
 ## Remediation Advice

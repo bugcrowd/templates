@@ -6,7 +6,7 @@
 
 ## References
 
-- https://tools.ietf.org/html/rfc6749#section-4.2
+- [https://tools.ietf.org/html/rfc6749#section-4.2](https://tools.ietf.org/html/rfc6749#section-4.2)
 
 
 ## Remediation Advice

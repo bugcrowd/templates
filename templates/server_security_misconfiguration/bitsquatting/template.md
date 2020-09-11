@@ -6,7 +6,7 @@
 
 ## References
 
-- http://dinaburg.org/bitsquatting.html
+- [http://dinaburg.org/bitsquatting.html](http://dinaburg.org/bitsquatting.html)
 
 
 ## Remediation Advice

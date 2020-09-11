@@ -6,7 +6,7 @@
 
 ## References
 
-- https://www.networkworld.com/article/2284289/data-leak-prevention-and-encryption--tools-that-can-work-together.html
+- [https://www.networkworld.com/article/2284289/data-leak-prevention-and-encryption--tools-that-can-work-together.html](https://www.networkworld.com/article/2284289/data-leak-prevention-and-encryption--tools-that-can-work-together.html)
 
 
 ## Remediation Advice
