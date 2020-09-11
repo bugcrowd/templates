@@ -1,12 +1,12 @@
-# Description
+## Description
 
 
-# Reproduction Steps
+## Reproduction Steps
 
 
-# References
+## References
 
 
-# Remediation Advice
+## Remediation Advice
 
 Set the `Secure` and `HTTPOnly` cookie flags for the session token.

@@ -1,13 +1,13 @@
-# Description
+## Description
 
 
-# Reproduction Steps
+## Reproduction Steps
 
 
-# References
+## References
 
 
-# Remediation Advice
+## Remediation Advice
 
 Ensure that copy/paste functionality is disabled on sensitive content like credit card numbers, social security numbers etc. as other apps on the same device can access data stored in clipboard.
 The example below disables clipboard for the `textField` TextView in Android:

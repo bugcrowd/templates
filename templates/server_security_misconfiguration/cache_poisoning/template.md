@@ -1,15 +1,15 @@
-# Description
+## Description
 
 
-# Reproduction Steps
+## Reproduction Steps
 
 
-# References
+## References
 
 - https://portswigger.net/blog/practical-web-cache-poisoning
 
 
-# Remediation Advice
+## Remediation Advice
 
 The most robust defense against cache poisoning is to disable caching. This is plainly unrealistic advice for some, but it's likely that some websites that start using a service like Cloudflare for DDoS protection or easy SSL end up vulnerable to cache poisoning simply because caching is enabled by default.
 

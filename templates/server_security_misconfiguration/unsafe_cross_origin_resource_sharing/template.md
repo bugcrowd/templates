@@ -1,16 +1,16 @@
-# Description
+## Description
 
 
-# Reproduction Steps
+## Reproduction Steps
 
 
-# References
+## References
 
 - https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/HTML5_Security_Cheat_Sheet.md#cross-origin-resource-sharing
 - https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
 
 
-# Remediation Advice
+## Remediation Advice
 
 1. **Origin & Access-Control-Allow-Origin:** The Origin header is always sent by the browser in a `CORS` request and indicates the origin of the request. The Origin header can not be changed from JavaScript however relying on this header for Access Control checks is not a good idea as it may be spoofed outside the browser, so you still need to check that application-level protocols are used to protect sensitive data.
 2. **Access-Control-Allow-Origin** is a response header used by a server to indicate which domains are allowed to read the response. Based on the `CORS W3 Specification` it is up to the client to determine and enforce the restriction of whether the client has access to the response data based on this header.

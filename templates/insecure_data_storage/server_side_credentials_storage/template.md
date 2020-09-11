@@ -1,13 +1,13 @@
-# Description
+## Description
 
 
-# Reproduction Steps
+## Reproduction Steps
 
 
-# References
+## References
 
 
-# Remediation Advice
+## Remediation Advice
 
 1. Never try to create your own cryptographic functions.
 2. Always use well-known, strong, and secure cryptographic API functions.

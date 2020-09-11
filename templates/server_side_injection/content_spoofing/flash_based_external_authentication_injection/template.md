@@ -1,13 +1,13 @@
-# Description
+## Description
 
 
-# Reproduction Steps
+## Reproduction Steps
 
 
-# References
+## References
 
 
-# Remediation Advice
+## Remediation Advice
 
 Even if unsafe HTML tags like `<script>` or `<iframe>` are filtered out from user input, it is possible to inject `HTTP 401` authentication prompt into Flash content. In order to prevent this type of injection consider the following solutions:
 

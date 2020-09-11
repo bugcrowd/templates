@@ -1,17 +1,17 @@
-# Description
+## Description
 
 
-# Reproduction Steps
+## Reproduction Steps
 
 
-# References
+## References
 
 - https://www.owasp.org/index.php/Path_Traversal
 - https://www.owasp.org/index.php/File_System#Path_traversal
 - http://projects.webappsec.org/w/page/13246952/Path%20Traversal
 
 
-# Remediation Advice
+## Remediation Advice
 
 1. Prefer working without user input when using file system calls
 2. Use indexes rather than actual portions of file names when templating or using language files (i.e. value 5 from the user submission = Czechoslovakian, rather than expecting the user to return “Czechoslovakian”)

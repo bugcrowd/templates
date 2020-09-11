@@ -1,15 +1,15 @@
-# Description
+## Description
 
 
-# Reproduction Steps
+## Reproduction Steps
 
 
-# References
+## References
 
 - http://www.azarask.in/blog/post/a-new-type-of-phishing-attack/
 
 
-# Remediation Advice
+## Remediation Advice
 
 There are a handful of solutions, however they might not be supported by all browsers:
 

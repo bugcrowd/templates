@@ -1,14 +1,14 @@
-# Description
+## Description
 
 
-# Reproduction Steps
+## Reproduction Steps
 
 
-# References
+## References
 
 - https://www.owasp.org/index.php/Top_10-2017_A1-Injection
 
 
-# Remediation Advice
+## Remediation Advice
 
 Preventing injection requires keeping untrusted data separate from commands and queries.

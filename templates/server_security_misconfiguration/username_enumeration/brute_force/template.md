@@ -1,15 +1,15 @@
-# Description
+## Description
 
 
-# Reproduction Steps
+## Reproduction Steps
 
 
-# References
+## References
 
 - https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Authentication_Cheat_Sheet.md#authentication-and-error-messages
 
 
-# Remediation Advice
+## Remediation Advice
 
 Login: When an authentication request fails, ensure that all responses are identical, regardless of whether it was the username or the password that caused the authentication to fail. The HTTP response needs to be the same as well. There should not be a single byte or bit difference.
 

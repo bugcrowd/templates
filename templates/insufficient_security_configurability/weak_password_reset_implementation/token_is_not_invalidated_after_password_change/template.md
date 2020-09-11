@@ -1,12 +1,12 @@
-# Description
+## Description
 
 
-# Reproduction Steps
+## Reproduction Steps
 
 
-# References
+## References
 
 
-# Remediation Advice
+## Remediation Advice
 
 All existing password reset tokens should be invalidated once the password has been successfully changed.

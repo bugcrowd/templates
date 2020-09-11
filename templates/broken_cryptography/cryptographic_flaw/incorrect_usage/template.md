@@ -1,16 +1,16 @@
-# Description
+## Description
 
 
-# Reproduction Steps
+## Reproduction Steps
 
 
-# References
+## References
 
 - https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Cryptographic_Storage_Cheat_Sheet.md
 - https://crackstation.net/hashing-security.htm
 
 
-# Remediation Advice
+## Remediation Advice
 
 1. Never try to create your own cryptographic functions.
 2. Always use known, strong, and secure cryptographic API functions.

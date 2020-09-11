@@ -1,12 +1,12 @@
-# Description
+## Description
 
 
-# Reproduction Steps
+## Reproduction Steps
 
 
-# References
+## References
 
 
-# Remediation Advice
+## Remediation Advice
 
 When the user successfully authenticates, any unused password reset token should be invalidated.

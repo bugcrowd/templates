@@ -25,19 +25,20 @@ def childrenExists(vrtItem):
 
 def printReport(vrtItem):
     template = ""
-    referencesString = "# References\n"
+    referencesString = "## References\n"
     remediationAdvice = ""
     if referencesExists(vrtItem):
         for r in vrtItem["references"]:
             referencesString = referencesString + "\n- " + r
 
-    header = "# Description\n\n\n# Reproduction Steps\n\n\n"
+    header = "## Description\n\n\n## Reproduction Steps\n\n\n"
     if remediationAdviceExists(vrtItem):
-        remediationAdvice = "\n\n# Remediation Advice\n\n" + vrtItem["remediation_advice"] 
+        remediationAdvice = "\n\n## Remediation Advice\n\n" + vrtItem["remediation_advice"] 
     if referencesExists(vrtItem):
         referencesString = referencesString + "\n"
 
     template = template + header + referencesString + remediationAdvice
+    template = template + "\n"
     return template
 
 

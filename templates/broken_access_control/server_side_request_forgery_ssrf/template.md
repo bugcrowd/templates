@@ -1,10 +1,10 @@
-# Description
+## Description
 
 
-# Reproduction Steps
+## Reproduction Steps
 
 
-# References
+## References
 
 - https://www.owasp.org/index.php/Top_10_2013-A7-Missing_Function_Level_Access_Control
 - http://projects.webappsec.org/w/page/13246913/Abuse%20of%20Functionality
@@ -13,7 +13,7 @@
 - http://niiconsulting.com/checkmate/2015/04/server-side-request-forgery-ssrf/
 
 
-# Remediation Advice
+## Remediation Advice
 
 1. **Error handling and messages:** Display generic error messages to the client in case something goes wrong. If content type validation fails, display generic errors to the client like _“Invalid Data retrieved”_. Also ensure that the message is the same when the request fails on the backend and if invalid data is received. This will prevent the application from being abused as distinct error messages will be absent for closed and open ports. Under no circumstance should the raw response received from the remote server be displayed to the client.
 2. **Response Handling:** Validating responses received from remote resources on the server side is the most basic mitigation that can be readily implemented. If a web application expects specific content type on the server, programmatically ensure that the data received satisfies checks imposed on the server before displaying or processing the data for the client.

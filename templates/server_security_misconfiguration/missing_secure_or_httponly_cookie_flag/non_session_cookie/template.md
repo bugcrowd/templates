@@ -1,12 +1,12 @@
-# Description
+## Description
 
 
-# Reproduction Steps
+## Reproduction Steps
 
 
-# References
+## References
 
 
-# Remediation Advice
+## Remediation Advice
 
 Consider setting the `Secure` and `HTTPOnly` cookie flags for sensitive cookies.

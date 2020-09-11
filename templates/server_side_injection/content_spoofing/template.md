@@ -1,15 +1,15 @@
-# Description
+## Description
 
 
-# Reproduction Steps
+## Reproduction Steps
 
 
-# References
+## References
 
 - http://projects.webappsec.org/w/page/13246917/Content%20Spoofing
 
 
-# Remediation Advice
+## Remediation Advice
 
 1. Always treat all user input as untrusted data.
 2. Always input or output encode all data coming into or out of the application.

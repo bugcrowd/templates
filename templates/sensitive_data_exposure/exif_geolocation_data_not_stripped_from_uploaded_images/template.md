@@ -1,14 +1,14 @@
-# Description
+## Description
 
 
-# Reproduction Steps
+## Reproduction Steps
 
 
-# References
+## References
 
 - http://resources.infosecinstitute.com/metadata-and-information-security/
 
 
-# Remediation Advice
+## Remediation Advice
 
 Remove all sensitive data from `EXIF` geolocation data from images after being uploaded to the server to prevent sensitive data exposure.

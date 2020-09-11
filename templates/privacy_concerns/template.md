@@ -1,16 +1,16 @@
-# Description
+## Description
 
 
-# Reproduction Steps
+## Reproduction Steps
 
 
-# References
+## References
 
 - https://www.owasp.org/index.php/Privacy_Violation
 - https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/User_Privacy_Protection_Cheat_Sheet.md
 
 
-# Remediation Advice
+## Remediation Advice
 
 1. Avoid storing unnecessary data where possible.
 2. Purge all known unnecessary data when identified on the device or application.

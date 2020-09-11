@@ -1,14 +1,14 @@
-# Description
+## Description
 
 
-# Reproduction Steps
+## Reproduction Steps
 
 
-# References
+## References
 
 - https://www.owasp.org/index.php/Least_privilege
 
 
-# Remediation Advice
+## Remediation Advice
 
 Ensure that the current DBMS session user has the least amount of privilege necessary.

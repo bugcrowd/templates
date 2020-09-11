@@ -1,15 +1,15 @@
-# Description
+## Description
 
 
-# Reproduction Steps
+## Reproduction Steps
 
 
-# References
+## References
 
 - https://www.exploit-db.com/papers/12898/
 
 
-# Remediation Advice
+## Remediation Advice
 
 Even if unsafe HTML tags like `<script>` or `<iframe>` are filtered out from user input, it is possible to inject `HTTP 401` authentication prompt into a HTML page via tags like `<img>`. In order to prevent this type of injection consider the following solutions:
 

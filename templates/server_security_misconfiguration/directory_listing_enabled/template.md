@@ -1,15 +1,15 @@
-# Description
+## Description
 
 
-# Reproduction Steps
+## Reproduction Steps
 
 
-# References
+## References
 
 - http://projects.webappsec.org/w/page/13246922/Directory%20Indexing
 
 
-# Remediation Advice
+## Remediation Advice
 
 Restrict directory listings being displayed from the server configuration.  
 

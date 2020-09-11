@@ -1,10 +1,10 @@
-# Description
+## Description
 
 
-# Reproduction Steps
+## Reproduction Steps
 
 
-# References
+## References
 
 - https://www.owasp.org/index.php/XML_External_Entity_(XXE)_Processing
 - https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/XML_External_Entity_Prevention_Cheat_Sheet.md
@@ -12,7 +12,7 @@
 - https://www.gracefulsecurity.com/xml-external-entity-injection-xxe-vulnerabilities/
 
 
-# Remediation Advice
+## Remediation Advice
 
 Because user supplied XML input comes from an "untrusted source" it is very difficult to properly validate the XML document in a manner to prevent against this type of attack. 
 

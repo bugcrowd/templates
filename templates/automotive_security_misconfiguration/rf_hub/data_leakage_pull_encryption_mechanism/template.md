@@ -1,14 +1,14 @@
-# Description
+## Description
 
 
-# Reproduction Steps
+## Reproduction Steps
 
 
-# References
+## References
 
 - https://www.networkworld.com/article/2284289/data-leak-prevention-and-encryption--tools-that-can-work-together.html
 
 
-# Remediation Advice
+## Remediation Advice
 
 Inspect outgoing traffic from the RF Hub and make sure encryption mechanism cannot be extracted.

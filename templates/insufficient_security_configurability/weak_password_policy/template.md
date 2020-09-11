@@ -1,15 +1,15 @@
-# Description
+## Description
 
 
-# Reproduction Steps
+## Reproduction Steps
 
 
-# References
+## References
 
 - https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Authentication_Cheat_Sheet.md#implement-proper-password-strength-controls
 
 
-# Remediation Advice
+## Remediation Advice
 
 1. Allow all characters to be used for passwords to avoid shortening the key space for brute-force guessing.
 2. Do not impose character restrictions such as "must have at least X number of specific character type" in the password. This will shorten the key space for brute-force guessing.

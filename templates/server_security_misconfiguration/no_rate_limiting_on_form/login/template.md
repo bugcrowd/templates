@@ -1,13 +1,13 @@
-# Description
+## Description
 
 
-# Reproduction Steps
+## Reproduction Steps
 
 
-# References
+## References
 
 
-# Remediation Advice
+## Remediation Advice
 
 1. Use a `CAPTCHA` to limit login attempts.
 2. Use a rate limit per IP address to throttle the amount of login requests that can be made in a certain amount of time.

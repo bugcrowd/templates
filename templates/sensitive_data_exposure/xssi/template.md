@@ -1,15 +1,15 @@
-# Description
+## Description
 
 
-# Reproduction Steps
+## Reproduction Steps
 
 
-# References
+## References
 
 - https://www.scip.ch/en/?labs.20160414
 
 
-# Remediation Advice
+## Remediation Advice
 
 1. Avoid placing sensitive content inside JavaScript files, and also not in `JSONP`.
 2. Consider using a CSRF token.

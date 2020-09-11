@@ -1,17 +1,17 @@
-# Description
+## Description
 
 
-# Reproduction Steps
+## Reproduction Steps
 
 
-# References
+## References
 
 - https://www.owasp.org/index.php/Top_10_2013-A10-Unvalidated_Redirects_and_Forwards
 - https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Unvalidated_Redirects_and_Forwards_Cheat_Sheet.md
 - http://projects.webappsec.org/w/page/13246981/URL%20Redirector%20Abuse
 
 
-# Remediation Advice
+## Remediation Advice
 
 1. Avoid using redirects or forwards and only use them in specific use cases.
 2. Use input validation to check the origin of the URL in the parameter being passed. If the URL is not the same origin as the current domain, do not redirect off-domain.

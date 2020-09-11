@@ -1,10 +1,10 @@
-# Description
+## Description
 
 
-# Reproduction Steps
+## Reproduction Steps
 
 
-# References
+## References
 
 - https://www.owasp.org/index.php/SQL_Injection
 - https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.md
@@ -12,7 +12,7 @@
 - https://www.cvedetails.com/vulnerability-list/opsqli-1/sql-injection.html
 
 
-# Remediation Advice
+## Remediation Advice
 
 Ensure that proper server-side input validation is performed on all sources of user input. Various protections should be implemented using the following in order of effectiveness:
 

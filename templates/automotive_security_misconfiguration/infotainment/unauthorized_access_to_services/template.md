@@ -1,14 +1,14 @@
-# Description
+## Description
 
 
-# Reproduction Steps
+## Reproduction Steps
 
 
-# References
+## References
 
 - https://www.troyhunt.com/controlling-vehicle-features-of-nissan/
 
 
-# Remediation Advice
+## Remediation Advice
 
 Filter services that allow you to control the vehicle or infotainment system from being accessed by unauthorized users. Apply authentication mechanisms to certain endpoints.

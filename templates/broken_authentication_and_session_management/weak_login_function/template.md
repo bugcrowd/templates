@@ -1,15 +1,15 @@
-# Description
+## Description
 
 
-# Reproduction Steps
+## Reproduction Steps
 
 
-# References
+## References
 
 - https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Authentication_Cheat_Sheet.md#transmit-passwords-only-over-tls-or-other-strong-transport
 
 
-# Remediation Advice
+## Remediation Advice
 
 Login forms should always be served over `HTTPS`, as well as all credentials should be transmitted over an encrypted channel at all times.
 

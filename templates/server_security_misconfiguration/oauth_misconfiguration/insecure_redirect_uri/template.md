@@ -1,15 +1,15 @@
-# Description
+## Description
 
 
-# Reproduction Steps
+## Reproduction Steps
 
 
-# References
+## References
 
 - https://www.oauth.com/oauth2-servers/redirect-uris/
 
 
-# Remediation Advice
+## Remediation Advice
 
 When the application starts the OAuth flow, it will direct the user to your service’s authorization endpoint. The request will have several parameters in the URL, including a redirect URL.
 

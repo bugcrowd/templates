@@ -1,10 +1,10 @@
-# Description
+## Description
 
 
-# Reproduction Steps
+## Reproduction Steps
 
 
-# References
+## References
 
 - https://www.owasp.org/index.php/Top_10-2017_A3-Sensitive_Data_Exposure
 - http://projects.webappsec.org/Information-Leakage
@@ -12,7 +12,7 @@
 - https://www.cvedetails.com/vulnerability-list/opginf-1/gain-information.html
 
 
-# Remediation Advice
+## Remediation Advice
 
 Do the following, at a minimum, and consult the references:
 

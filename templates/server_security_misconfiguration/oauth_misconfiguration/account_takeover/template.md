@@ -1,14 +1,14 @@
-# Description
+## Description
 
 
-# Reproduction Steps
+## Reproduction Steps
 
 
-# References
+## References
 
 - https://tools.ietf.org/html/rfc6819
 
 
-# Remediation Advice
+## Remediation Advice
 
 Ensure correct implementation of OAuth protocol in order to protect client secrets and tokens, and provide secure access controls.

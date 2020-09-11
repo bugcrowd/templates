@@ -1,10 +1,10 @@
-# Description
+## Description
 
 
-# Reproduction Steps
+## Reproduction Steps
 
 
-# References
+## References
 
 - https://www.owasp.org/index.php/Top_10-2017_A7-Cross-Site_Scripting_(XSS)
 - https://www.owasp.org/index.php/Cross-site_Scripting_(XSS)
@@ -13,7 +13,7 @@
 - https://www.cvedetails.com/vulnerability-list/opxss-1/xss.html
 
 
-# Remediation Advice
+## Remediation Advice
 
 1. Always treat all user input as untrusted data.
 2. Never insert untrusted data except in allowed locations.

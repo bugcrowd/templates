@@ -1,17 +1,17 @@
-# Description
+## Description
 
 
-# Reproduction Steps
+## Reproduction Steps
 
 
-# References
+## References
 
 - https://www.owasp.org/index.php/Testing_for_default_credentials_(OTG-AUTHN-002)
 - https://www.owasp.org/index.php/Configuration#Default_passwords
 - https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Authentication_Cheat_Sheet.md
 
 
-# Remediation Advice
+## Remediation Advice
 
 1. If possible consider disabling external access.
 2. Never use default credentials as it is trivial for an attacker to gain access by providing known or easy to guess credentials.

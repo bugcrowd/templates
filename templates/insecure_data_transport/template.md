@@ -1,15 +1,15 @@
-# Description
+## Description
 
 
-# Reproduction Steps
+## Reproduction Steps
 
 
-# References
+## References
 
 - https://www.owasp.org/index.php/Top_10_2010-A9-Insufficient_Transport_Layer_Protection
 
 
-# Remediation Advice
+## Remediation Advice
 
 1. Require `TLS` for all sensitive pages. Non-`TLS` requests to these pages should be redirected to the `TLS` page.
 2. Set the `Secure` flag on all sensitive cookies.

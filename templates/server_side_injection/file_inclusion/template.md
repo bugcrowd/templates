@@ -1,17 +1,17 @@
-# Description
+## Description
 
 
-# Reproduction Steps
+## Reproduction Steps
 
 
-# References
+## References
 
 - http://resources.infosecinstitute.com/file-inclusion-attacks/
 - https://en.wikipedia.org/wiki/File_inclusion_vulnerability
 - https://www.cvedetails.com/vulnerability-list/opfileinc-1/file-inclusion.html
 
 
-# Remediation Advice
+## Remediation Advice
 
 1. Don't allow user input in file paths. If hard-coding is not an option, select input from a limited list via an index variable.
 2. If dynamic path concatenation is a must have. Only accept required characters. Allow `a-z 0-9` and do not allow `..` or `/` or `%00` (null byte) or any unexpected characters.
