@@ -13,3 +13,4 @@
 ## Remediation Advice
 
 To ensure security throughout the life cycle of an application, it is a good practice to harden binaries with memory protections, and significantly increase the cost of reverse engineering and code modification.
+

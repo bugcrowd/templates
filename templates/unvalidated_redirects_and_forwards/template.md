@@ -17,3 +17,4 @@
 2. Use input validation to check the origin of the URL in the parameter being passed. If the URL is not the same origin as the current domain, do not redirect off-domain.
 3. If the redirection is part of intended functionality, alert the user that they are going off-domain and let them make the decision to go off-domain. Present the redirection URL to the user to make it clear they are going off-domain.
 4. Whitelist valid domains that users should be allowed to be redirected to.
+

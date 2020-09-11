@@ -12,3 +12,4 @@
 ## Remediation Advice
 
 Ensure that the setting filterTouchesWhenObscured is set to true, or that the method onFilterTouchEventForSecurity() is implemented in your app.
+

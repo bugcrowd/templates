@@ -16,3 +16,4 @@
 ## Remediation Advice
 
 There are techniques to avoid some DoS attacks at the code level such as: Performing thorough input validations, avoiding highly CPU consuming operations, and operations which must wait for completion of large tasks to proceed, splitting operations to chunks, setting timeout timers for unreasonable time, trying to create as few bottlenecks as possible.
+

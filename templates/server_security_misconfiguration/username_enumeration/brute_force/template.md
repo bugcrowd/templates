@@ -16,3 +16,4 @@ Login: When an authentication request fails, ensure that all responses are ident
 Reset Password: There can not be a discrepancy in the form responses when using the reset a password functionality. The same message should be sent, back to the user, regardless of whether the username or email exists as an account or not.
 
 Registration: As a best practice to prevent usernames from being enumerated when creating an account, the username should be an email address. When an attempt is made to create a new user account, the same message can be displayed regardless of whether the email address exists in the system or not. For example: "A confirmation has been sent to the email provided."
+

@@ -12,3 +12,4 @@
 ## Remediation Advice
 
 As a best practice, do not resolve targets or hostnames to 127.0.0.1 or similar addresses.
+

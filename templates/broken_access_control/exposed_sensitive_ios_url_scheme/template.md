@@ -13,3 +13,4 @@
 ## Remediation Advice
 
 Apple does not enforce the unique naming for App schemes, making it possible for a malicious app to use the same URL Scheme as a legitimate app, effectively hijacking the URL Scheme. As a result, it is important to keep the URL Scheme from being exposed.
+

@@ -13,3 +13,4 @@
 ## Remediation Advice
 
 As a best practice, consider using the `Content-Security-Policy` header as it will help prevent Cross Site Scripting as well as other types of injection attacks. However, be aware that Content Security Policy has a significant impact on how the browser renders pages, so careful tuning is required.
+

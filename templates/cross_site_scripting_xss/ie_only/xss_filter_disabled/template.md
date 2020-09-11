@@ -12,3 +12,4 @@
 ## Remediation Advice
 
 As a best practice do not disable the XSS filter by utilizing `X-XSS-Protection: 0` header.
+

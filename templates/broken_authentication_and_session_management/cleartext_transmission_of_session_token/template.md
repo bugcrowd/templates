@@ -13,3 +13,4 @@
 ## Remediation Advice
 
 Ensure that session tokens are transmitted over protected channels at all times. If the secure cookie flag is not an option ensure that the application does not support unencrypted communication.
+

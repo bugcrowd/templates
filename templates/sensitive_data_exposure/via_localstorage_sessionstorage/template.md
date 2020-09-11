@@ -12,3 +12,4 @@
 ## Remediation Advice
 
 Do not store anything sensitive in localStorage and any critical data in sessionStorage. Stick with properly secured cookies utilizing HTTPOnly and Secure flags
+

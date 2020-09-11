@@ -13,3 +13,4 @@
 ## Remediation Advice
 
 Since Flash files cannot start with comments, ensuring that `callback` parameters begin with a comment, such as: `/* */` is a sufficient protection.
+

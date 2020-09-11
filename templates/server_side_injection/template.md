@@ -12,3 +12,4 @@
 ## Remediation Advice
 
 Preventing injection requires keeping untrusted data separate from commands and queries.
+

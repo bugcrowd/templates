@@ -13,3 +13,4 @@
 ## Remediation Advice
 
 Consider encrypting data for storage, using the strongest encryption algorithms such as AES with a minimum of a 256-bit key size.
+

@@ -16,3 +16,4 @@
 2. Purge all known unnecessary data when identified on the device or application.
 3. Purge all known unnecessary data in known cached locations.
 4. Purge all known unnecessary data on known backup locations.
+

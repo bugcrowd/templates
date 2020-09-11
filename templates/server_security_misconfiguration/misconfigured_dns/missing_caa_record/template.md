@@ -12,3 +12,4 @@
 ## Remediation Advice
 
 As the domain name holder you can modify the DNS zone file to specify one or more Certification Authorities (CAs) authorized to issue certificates for that domain.
+

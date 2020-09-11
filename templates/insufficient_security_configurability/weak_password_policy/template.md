@@ -18,3 +18,4 @@
 4. Do not advertise the maximum password length as this will shorten the key space for brute-force guessing.
 5. Disallow previous passwords from being used.
 6. Disallow the password being the same as the email or username.
+

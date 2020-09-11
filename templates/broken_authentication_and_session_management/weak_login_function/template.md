@@ -14,3 +14,4 @@
 Login forms should always be served over `HTTPS`, as well as all credentials should be transmitted over an encrypted channel at all times.
 
 Always provide secure protocols for authentication connections as well as consider disabling any insecure protocols that are available.
+

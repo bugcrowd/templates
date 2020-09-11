@@ -12,3 +12,4 @@
 ## Remediation Advice
 
 Inspect outgoing traffic from the RF Hub and make sure encryption mechanism cannot be extracted.
+

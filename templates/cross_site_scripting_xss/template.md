@@ -26,3 +26,4 @@
 9. As a best practice, consider implementing `Content Security Policy` to protect against XSS and other injection type attacks.
 10. As a best practice, consider using an auto-escaping templating system.
 11. As a best practice, consider using the `X-XSS-Protection` response header.
+

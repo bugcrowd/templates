@@ -14,3 +14,4 @@
 ## Remediation Advice
 
 Filter arbitrary commands and apply input validation to any media devices to prevent executing from the infotainment system.
+

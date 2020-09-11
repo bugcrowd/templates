@@ -16,3 +16,4 @@
 3. Configure your `TLS` provider to only support strong (e.g., `FIPS 140-2` compliant) algorithms.
 4. Ensure your certificate is valid, not expired, not revoked, and matches all domains used by the site.
 5. Backend and other connections should also use `TLS` or other encryption technologies.
+

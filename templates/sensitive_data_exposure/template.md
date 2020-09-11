@@ -25,3 +25,4 @@ Do the following, at a minimum, and consult the references:
 7. Disable caching for response that contain sensitive data.
 8. Store passwords using strong adaptive and salted hashing functions with a work factor (delay factor), such as `Argon2`, `scrypt`, `bcrypt` or `PBKDF2`.
 9. Verify independently the effectiveness of configuration and settings.
+

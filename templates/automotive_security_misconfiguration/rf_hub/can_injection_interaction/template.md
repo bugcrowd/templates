@@ -12,3 +12,4 @@
 ## Remediation Advice
 
 Implement a secure gateway that prevents CAN Injection from the RF Hub.
+

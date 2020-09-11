@@ -38,7 +38,7 @@ def printReport(vrtItem):
         referencesString = referencesString + "\n"
 
     template = template + header + referencesString + remediationAdvice
-    template = template + "\n"
+    template = template + "\n\n"
     return template
 
 

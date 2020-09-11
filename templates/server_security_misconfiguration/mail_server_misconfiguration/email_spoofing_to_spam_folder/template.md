@@ -14,3 +14,4 @@
 ## Remediation Advice
 
 In order to fully prevent email spoofing create a DMARC record with “p=reject” policy. Please note that if your DMARC policy is not set up properly it will result in email delivery issues.
+

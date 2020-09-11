@@ -14,3 +14,4 @@
 ## Remediation Advice
 
 Filter malicious payloads or string attacks. Apply rate limiting on the app level side.
+

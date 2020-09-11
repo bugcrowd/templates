@@ -18,3 +18,4 @@ Even if unsafe HTML tags like `<script>` or `<iframe>` are filtered out from use
 3. Always whitelist allowed characters and seldom use blacklisting of characters unless in certain use cases.
 4. Always use a well known and security encoding API for input and output encoding such as the `OWASP ESAPI`.
 5. Never try to write input and output encoders unless absolutely necessary. Chances are that someone has already written a good one.
+

@@ -16,3 +16,4 @@
 3. Sensitive scripts should only respond to POST requests.
 4. Append some non-executable prefix to the response body.
 5. Usage of the response header `X-Content-Type-Options: nosniff` and usage of the correct `Content-Type` is also helpful in reducing the chance of XSSI.
+

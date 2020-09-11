@@ -12,3 +12,4 @@
 ## Remediation Advice
 
 Properly invalidate the session on the client and server-side when the user logs out of their session.
+

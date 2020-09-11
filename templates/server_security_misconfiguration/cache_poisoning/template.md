@@ -20,3 +20,4 @@ Likewise, avoiding taking input from headers and cookies is an effective way to 
 Once you've identified unkeyed inputs in your application, the ideal solution is to outright disable them. Failing that, you could strip the inputs at the cache layer, or add them to the cache key. Some caches let you use the Vary header to key unkeyed inputs, and others let you define custom cache keys but may restrict this feature to 'enterprise' customers.
 
 Finally, regardless of whether your application has a cache, some of your clients may have a cache at their end and as such client-side vulnerabilities like XSS in HTTP headers should never be ignored.
+

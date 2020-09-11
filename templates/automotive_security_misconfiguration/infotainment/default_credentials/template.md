@@ -13,3 +13,4 @@
 ## Remediation Advice
 
 Do not ship infotainment systems with any configured accounts or with default and common usernames and passwords. Do not hard code any backdoor accounts or special access mechanisms.
+

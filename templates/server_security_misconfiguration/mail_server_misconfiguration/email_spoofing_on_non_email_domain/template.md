@@ -14,3 +14,4 @@
 ## Remediation Advice
 
 Consider adding email spoofing protections for all your domains as attackers may resort to spoofing those, regardless of whether emails originate from them or not. Victims can still be fooled by seeing your domain.
+

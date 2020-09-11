@@ -13,3 +13,4 @@
 ## Remediation Advice
 
 As a best practice, consider using the X-Frame-Options header as it will help mitigate against potential Clickjacking or other UI redressing attacks.
+

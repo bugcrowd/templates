@@ -13,3 +13,4 @@
 ## Remediation Advice
 
 As a best practice, consider using the `Strict-Transport-Security` header as it will help ensure protection against TLS protocol downgrade attacks and cookie hijacking. The header also ensures that browsers are only serving requests using a secure HTTPS connection.
+

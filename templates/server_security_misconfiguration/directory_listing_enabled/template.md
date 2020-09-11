@@ -19,3 +19,4 @@ Example for Apache:
 2. Add the following line:
 Options -Indexes
 3. If it is the last line, make sure you have a new line after it.
+

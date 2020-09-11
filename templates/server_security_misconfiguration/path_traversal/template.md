@@ -19,3 +19,4 @@
 4. Validate the user’s input by only accepting known good – do not sanitize the data
 5. Use `chroot`ed jails and code access policies to restrict where the files can be obtained or saved to
 6. If forced to use user input for file operations, normalize the input before using in file I/O APIs, such as the [Java SE URI normalize() method](http://docs.oracle.com/javase/7/docs/api/java/net/URI.html#normalize).
+

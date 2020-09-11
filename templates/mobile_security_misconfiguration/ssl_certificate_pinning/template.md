@@ -14,3 +14,4 @@
 ## Remediation Advice
 
 Establish a HTTP Public Key Pinning (HPKP) policy that is communicated to the client application and/or support HPKP in the client application if applicable.
+

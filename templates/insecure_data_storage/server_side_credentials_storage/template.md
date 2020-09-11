@@ -19,3 +19,4 @@
 8. Only use cryptographically safe hashing functions such as `SHA-256` and above.
 9. Never use unsafe encryption functions that have working proofs of concept that prove that they are broken.
 10. Only use cryptographically safe encryption functions that have a very high work factor to discourage attackers from trying to break the encryption, such as `bcrypt`, `scrypt`, and `PBKDF2`.
+

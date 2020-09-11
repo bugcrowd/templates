@@ -12,3 +12,4 @@
 ## Remediation Advice
 
 Do not store PII such as call logs, text messages, and contact lists or names as plaintext in the infotainment system.
+

@@ -12,3 +12,4 @@
 ## Remediation Advice
 
 Always regenerate the session token after the users properly authenticate.
+

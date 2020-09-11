@@ -12,3 +12,4 @@
 ## Remediation Advice
 
 Ensure that the current DBMS session user has the least amount of privilege necessary.
+

@@ -12,3 +12,4 @@
 ## Remediation Advice
 
 Properly invalidate all user sessions server-side when the user resets their password and at a minimum, invalidate all non-current user sessions sever-side when the user changes their password.
+

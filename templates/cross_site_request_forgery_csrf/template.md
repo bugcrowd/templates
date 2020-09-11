@@ -20,3 +20,4 @@
 4. Consider using the `Encrypted Token` pattern.
 5. Consider protecting REST services by using the `X-Requested-With: XMLHttpRequest` header in all requests.
 6. Consider using re-authentication in cases where the request is particularly sensitive. This is the most effective CSRF prevention technique, however it does disturb the entire user experience.
+

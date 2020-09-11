@@ -13,3 +13,4 @@
 ## Remediation Advice
 
 To protect all elements of a page from sniffers and man-in-the-middle attacks, ensure that all content such as scripts, images, iframes, etc, are sourced over HTTPS rather than HTTP.
+

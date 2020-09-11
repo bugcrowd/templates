@@ -13,3 +13,4 @@
 ## Remediation Advice
 
 Obfuscate the code and find creative ways to break disassemblers and debuggers.
+

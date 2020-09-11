@@ -12,3 +12,4 @@
 ## Remediation Advice
 
 As a best practice, consider utilizing the Domain Name System Security Extensions, as this will help the DNS protocol to be less susceptible to certain attacks.
+

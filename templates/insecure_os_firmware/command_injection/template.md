@@ -19,3 +19,4 @@
 2. Perform proper input validation when taking user input into a shell execution command.
 3. Use a safe API when accepting user input into the application.
 4. Escape special characters in the case where a safe API is not available.
+

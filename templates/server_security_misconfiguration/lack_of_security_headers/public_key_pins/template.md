@@ -13,3 +13,4 @@
 ## Remediation Advice
 
 As a best practice, consider using the `Public-Key-Pins` header as it will help prevent website impersonation by mis-issued or otherwise fraudulent certificates. It is important to note that if this header is used incorrectly, it may prevent users from accessing a resource for an extended period of time.
+

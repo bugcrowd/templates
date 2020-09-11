@@ -14,3 +14,4 @@
 ## Remediation Advice
 
 Apply proper input validation and check for `CRLF` characters and `null byte` characters whenever user supplied input is used in HTTP response headers.
+

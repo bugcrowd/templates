@@ -14,3 +14,4 @@
 ## Remediation Advice
 
 Create a DMARC policy to prevent email spoofing. Please note that if your DMARC policy is not set up properly it may result in email delivery issues.
+

@@ -14,3 +14,4 @@
 ## Remediation Advice
 
 Ensure that the application does not reveal existing user names and any data associated with them, whether it's a consequence of misconfiguration or a design decision.
+

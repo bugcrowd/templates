@@ -12,3 +12,4 @@
 ## Remediation Advice
 
 As the TRACE method can be utilized to bypass certain protections, consider disabling the HTTP method TRACE.
+

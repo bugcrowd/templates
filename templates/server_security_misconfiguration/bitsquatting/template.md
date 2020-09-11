@@ -12,3 +12,4 @@
 ## Remediation Advice
 
 As a best practice, consider registering any potential bitsquatting domain names.
+

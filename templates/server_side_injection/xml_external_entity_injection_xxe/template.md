@@ -19,3 +19,4 @@ Because user supplied XML input comes from an "untrusted source" it is very diff
 Instead, the XML processor should be configured to use only locally defined `Document Type Definition (DTD)` and disallow any inline DTD that is specified within user supplied XML documents. 
 
 Due to the fact that there are numerous XML parsing engines available for different programming languages, each has its own mechanism for disabling inline DTD to prevent XXE. You may need to search your XML parser's documentation for how to `disable inline DTD` specifically.
+

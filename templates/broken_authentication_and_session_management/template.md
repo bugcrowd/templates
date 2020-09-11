@@ -18,3 +18,4 @@
 1. **API:** Use security focused APIs to check for proper security controls.
 2. **Session Management:** Use proper session management checks to disallow unauthenticated users accessing protected and sensitive resources.
 3. **Access Control:** Use proper access control checks to disallow unprivileged users from accessing protected and sensitive resources.
+

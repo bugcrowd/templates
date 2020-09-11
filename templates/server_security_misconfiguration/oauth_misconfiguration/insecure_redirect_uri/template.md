@@ -18,3 +18,4 @@ At this point, the authorization server must validate the redirect URL to ensure
 The service should look for an exact match of the URL, and avoid matching on only part of the specific URL. (The client can use the state parameter if it needs to customize each request.) Simple string matching is sufficient since the redirect URL can’t be customized per request. All the server needs to do is check that the redirect URL in the request matches one of the redirect URLs the developer entered when registering their application.
 
 If the redirect URL is not one of the registered redirect URLs, then the server must immediately show an error indicating such, and not redirect the user. This avoids having your authorization server be used as an open redirector.
+

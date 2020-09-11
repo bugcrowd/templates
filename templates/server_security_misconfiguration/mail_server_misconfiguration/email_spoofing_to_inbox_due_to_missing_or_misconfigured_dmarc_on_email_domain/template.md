@@ -14,3 +14,4 @@
 ## Remediation Advice
 
 SPF is not a sufficient email spoofing protection in case of some of the largest email providers. Emails spoofed for domains having properly configured hard fail SPF records may still be delivered to the recipient's inbox. In order to fully prevent email spoofing create a DMARC record with “p=reject” policy. Please note that if your DMARC policy is not set up properly it may result in email delivery issues.
+

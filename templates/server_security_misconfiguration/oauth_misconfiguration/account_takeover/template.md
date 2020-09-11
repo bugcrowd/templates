@@ -12,3 +12,4 @@
 ## Remediation Advice
 
 Ensure correct implementation of OAuth protocol in order to protect client secrets and tokens, and provide secure access controls.
+

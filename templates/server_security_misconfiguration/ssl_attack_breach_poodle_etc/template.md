@@ -14,3 +14,4 @@
 ## Remediation Advice
 
 Disable SSL and use updated version of TLS that is not susceptible to the latest variation of the TLS attack.
+

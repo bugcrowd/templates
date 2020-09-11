@@ -12,3 +12,4 @@
 ## Remediation Advice
 
 Consider using OAuth Implicit Grant to avoid hardcoding the OAuth secret key within the application.
+
