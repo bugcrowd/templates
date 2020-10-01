@@ -1,3 +1,0 @@
-## Recommendations
-
-Recommendations go here.
