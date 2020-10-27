@@ -50,7 +50,7 @@ Once the PR is accepted, you're free to delete the branch
 
 Below is an example template. All sections should be updated to include correct information.
 
-```
+```markdown
 
 # Overview
 <!--
