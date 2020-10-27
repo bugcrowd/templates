@@ -40,6 +40,10 @@ Select that button, then fill out some details about what changed for the projec
 
 At that point, you're done! We'll review the PR and merge or reject as appropriate.
 
+Once the PR is accepted, you're free to delete the branch
+
+`git branch -d <branch-name>`
+
 ---
 
 ## Template Structure
