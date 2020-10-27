@@ -10,7 +10,7 @@ Script follows standard entry names and keeps underscores / case as provided by 
 
 ---
 
-## Working with this repo.
+## Working with this repo
 
 This repo has 'Protected Master' enabled; which means that only project admins can commit to the master branch, via Pull Requests. All updates need to come via pull request to ensure integrity.
 
