@@ -10,6 +10,38 @@ Script follows standard entry names and keeps underscores / case as provided by 
 
 ---
 
+## Working with this repo
+
+This repo has 'Protected Master' enabled; which means that only project admins can commit to the master branch, via Pull Requests. All updates need to come via pull request to ensure integrity.
+
+The following is written assuming SSH access is correctly configured.
+
+First, check out the master branch:
+
+`git clone git@github.com:bugcrowd/templates.git ## n.b. using SSH aliases can make this much simpler`
+
+Once you have master on your system, you will need to create a branch for the work you are about to perform:
+
+`git checkout -b <branch-name>` 
+
+Example branch names could be `XXE-templates` `XSS-templates`, something that denotes what the parcel of work is. These should be kept small, preferrably a group of templates and not much more. Commit and push often!
+
+`git commit -am "Comments about what you changed go here"` saves your changes in the *local* git repo. *Always* leave a descriptive commit message.
+
+When you have completed your templates, you can push them to the repo. These will still be their own branch, but when you push the linter will run and validate the markdown against a set of rules. If you followed the example template and didn't deviate much, the templates should pass.
+
+`git push --set-upstream origin <branch-name>` This will create the branch on the origin server (github) and push your changes. This only needs to be done once for the branch, and subsequent pushes for the branch can be performed with `git push`.
+
+Once the linter has run successfully, you can then create a Pull Request (PR)
+
+Select the branch in the GitHub interface. You should see a 'Pull request' button above the code.
+
+Select that button, then fill out some details about what changed for the project admins to review, then click 'Create pull request'.
+
+At that point, you're done! We'll review the PR and merge or reject as appropriate.
+
+---
+
 ## Template Structure
 
 Below is an example template. All sections should be updated to include correct information.
