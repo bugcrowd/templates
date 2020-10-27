@@ -30,7 +30,7 @@ Example branch names could be `XXE-templates` `XSS-templates`, something that de
 
 When you have completed your templates, you can push them to the repo. These will still be their own branch, but when you push the linter will run and validate the markdown against a set of rules. If you followed the example template and didn't deviate much, the templates should pass.
 
-`git push --set-upstream origin <branch-name>` This will create the branch on the origin server (github) and push your changes.
+`git push --set-upstream origin <branch-name>` This will create the branch on the origin server (github) and push your changes. This only needs to be done once for the branch, and subsequent pushes for the branch can be performed with `git push`.
 
 Once the linter has run successfully, you can then create a Pull Request (PR)
 
