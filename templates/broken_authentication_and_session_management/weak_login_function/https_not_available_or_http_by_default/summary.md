@@ -6,7 +6,7 @@ HTTPS not Avalible or HTTP by default on Login Page Vulnerability Report
 
 Resources:
 
-- <https://owasp.org/www-project-top-ten/2017/A2_2017-Broken_Authentication>
+- <https://owasp.org/www-project-top-ten/2017/A3_2017-Sensitive_Data_Exposure>
 -->
 
 ## Walkthrough & PoC
@@ -16,12 +16,16 @@ Adding a dot-pointed walkthrough with relevant screenshots will speed triage tim
 
 Example:
 
-1. Attempt to sign in to the website at <www.inscope.com/login>
-2. Go to your local storage in your browser and take a copy of the session token
-3. Click on the logout button 
-4. Browse to the sensitive page or action <www.inscope.com/accountSettings>
-5. Complete the change 
-6. Sign in again on a different browser and see the change on <www.inscope.com/accountSettings>
+1. Browse to the URL <www.inscope.com/login>
+2. Attempt to sign into the website using the login button
+3. Observe the page running on HTTP as default
+
+1. Run the following command on a machine with cURL installed
+```bash
+curl -I www.inscope.com/login
+```
+2. Observe the repsonse showing a 200 OK on the HTTP response
+
  -->
 
 ## Vulnerability Evidence
@@ -29,12 +33,12 @@ Example:
 <!-- 
 Your submission MUST include evidence of the vulnerability and not be theoretical in nature.
 
-This can include a video showing the action taking place after signing out, or pictures showing the logout process not removing a token from the cache and performing a sensitive action.
+This can include a cURL response from the website showing that HTTP is default or HTTPS is not avalible.
  -->
 
 ## Demonstrated Impact
 <!--
 Demonstrating increased impact results in higher rewards! 
 
-Failure to invalidate a session after a logout can allow an attacker, who has access to that local machine, full account access, and perform any action that the user can.
+Credentials transmitted over HTTP are transmitted in Plaintext, allowing any attacker to intercept these requests, and obtain the login credentials for that user. 
 -->
