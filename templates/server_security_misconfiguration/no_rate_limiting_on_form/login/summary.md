@@ -2,43 +2,37 @@
 <!--
 **Please replace text in each section below**
 
-HTTPS not Available or HTTP by default on Login Page Vulnerability Report
+No rate limiting on login form - Vulnerability Report
 
 Resources:
 
-- <https://owasp.org/www-project-top-ten/2017/A3_2017-Sensitive_Data_Exposure>
+- <https://www.owasp.org/index.php?title=OWASP_Periodic_Table_of_Vulnerabilities_-_Brute_Force_(Generic)_/_Insufficient_Anti-automation&setlang=en>
+- <http://projects.webappsec.org/w/page/13246938/Insufficient%20Anti-automation>
 -->
 
 ## Walkthrough & PoC
-
-<!-- Provide a step-by-step walkthrough on how to access the vulnerable injection point, and how to exploit the vulnerability.
+<!--
+Provide a step-by-step walkthrough on how to access the vulnerable injection point, and how to exploit the vulnerability.
 Adding a dot-pointed walkthrough with relevant screenshots will speed triage time and result in faster rewards!
 
 Example:
 
-1. Browse to the URL <www.inscope.com/login>
-1. Attempt to sign into the website using the login button
-1. Observe the page running on HTTP as default
-
-1. Run the following command on a machine with cURL installed
-```bash
-curl -I www.inscope.com/login
-```
-1. Observe the repsonse showing a 200 OK on the HTTP response
-
- -->
+1. Browse to the website <www.inscope.com/form>
+1. Fill out the login form and add in our target email address and any password
+1. Turn on our intercept proxy for the browser and submit the form
+1. Send the request to intruder from the intercept proxy
+1. Submit the request 100 times with a new password each time
+2. Sign in on the account directly after
+-->
 
 ## Vulnerability Evidence
-
-<!-- 
+<!--
 Your submission MUST include evidence of the vulnerability and not be theoretical in nature.
 
-This can include a cURL response from the website showing that HTTP is default or HTTPS is not avalible.
- -->
+This can be a video showing the intruder not being limited after 100 requests, and the account being logged in afterwards.
+-->
 
 ## Demonstrated Impact
 <!--
-Demonstrating increased impact results in higher rewards! 
-
-Credentials transmitted over HTTP are transmitted in Plaintext, allowing any attacker to intercept these requests, and obtain the login credentials for that user. 
--->
+This will enable an attacker to bruteforce any login for the website, and allow an attacker to attempt Credential Stuffing. 
+--> 
