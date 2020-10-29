@@ -2,12 +2,12 @@
 <!--
 **Please replace text in each section below**
 
-SQL Injection Vulnerability Report
+No Rate Limiting on form triggerng emails - Vulnerability Report
 
 Resources:
 
-- <https://owasp.org/www-community/attacks/SQL_Injection>
-- <https://owasp.org/www-community/attacks/Blind_SQL_Injection>
+- <https://www.owasp.org/index.php?title=OWASP_Periodic_Table_of_Vulnerabilities_-_Brute_Force_(Generic)_/_Insufficient_Anti-automation&setlang=en>
+- <http://projects.webappsec.org/w/page/13246938/Insufficient%20Anti-automation>
 -->
 
 ## Walkthrough & PoC
@@ -17,26 +17,22 @@ Adding a dot-pointed walkthrough with relevant screenshots will speed triage tim
 
 Example:
 
-1. Login to in-scope asset at <www.inscope.com/login>
-1. Browse to account page
-1. Modify ID token to add single quote
-1. View error which states 'SQL Syntax Error'
-1. Replace ID value with `1' waitfor delay '00:00:10'; `
+1. Browse to the website <www.inscope.com/form>
+2. Fill out the form and add in our target email address
+3. Turn on our intercept proxy for the browser and submit the form
+4. Send the request to intruder from the intercept proxy
+5. Submit the request 100 times and wait 5 minutes
+6. Check our target email, you will see our 100 emails from this form
 -->
 
 ## Vulnerability Evidence
 <!--
 Your submission MUST include evidence of the vulnerability and not be theoretical in nature.
 
-For an SQL Injection vulnerability, please include specific NON-PII information discovered in the database, such as Database Version, a listing of database tables, or an injected 'sleep' payload.
-
-You may present your evidence as output from a tool such as SQLMap, unless the program forbids the use of these tools, and it may be in the format of terminal output, screenshots, or video..
-
-**DO NOT ACCESS PII**
+You must attach the request you are sending to trigger these emails, and the email you recieve to the target email address
 -->
 
 ## Demonstrated Impact
 <!--
-Demonstrating access to data other than the database version or database tables is NOT permitted without explicit permission from the program.
-**DO NOT ACCESS PII**
+This can enable an attacker to use this form to send spam to a target email address, cause service interuptions for the email provider, and could put the email domain on a spam list.
 --> 
