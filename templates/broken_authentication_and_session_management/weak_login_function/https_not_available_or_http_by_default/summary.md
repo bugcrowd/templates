@@ -2,7 +2,7 @@
 <!--
 **Please replace text in each section below**
 
-HTTPS not Avalible or HTTP by default on Login Page Vulnerability Report
+HTTPS not Available or HTTP by default on Login Page Vulnerability Report
 
 Resources:
 
@@ -17,14 +17,14 @@ Adding a dot-pointed walkthrough with relevant screenshots will speed triage tim
 Example:
 
 1. Browse to the URL <www.inscope.com/login>
-2. Attempt to sign into the website using the login button
-3. Observe the page running on HTTP as default
+1. Attempt to sign into the website using the login button
+1. Observe the page running on HTTP as default
 
 1. Run the following command on a machine with cURL installed
 ```bash
 curl -I www.inscope.com/login
 ```
-2. Observe the repsonse showing a 200 OK on the HTTP response
+1. Observe the repsonse showing a 200 OK on the HTTP response
 
  -->
 
