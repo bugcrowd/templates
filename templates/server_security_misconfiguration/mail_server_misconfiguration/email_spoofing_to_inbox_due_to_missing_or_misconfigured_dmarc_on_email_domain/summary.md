@@ -2,7 +2,7 @@
 <!--
 **Please replace text in each section below**
 
-SQL Injection Vulnerability Report
+Email Spoofing on inbox due to missing or misconfigured DMARC on email domain Report
 
 Resources:
 
