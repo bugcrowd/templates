@@ -22,7 +22,7 @@ Example:
 1. Turn on our intercept proxy for the browser and submit the form
 1. Send the request to intruder from the intercept proxy
 1. Submit the request 100 times with a new password each time
-2. Sign in on the account directly after
+1. Sign in on the account directly after
 -->
 
 ## Vulnerability Evidence

@@ -18,13 +18,13 @@ Adding a dot-pointed walkthrough with relevant screenshots will speed triage tim
 Example:
 
 1. Browse to the website <www.inscope.com/register>
-2. Fill out the form and add in our username, password, and email address
-3. Turn on our intercept proxy for the browser and submit the form
-4. Send the request to intruder from the intercept proxy
-5. Modify the payload to be a numbered list between 1-100
-6. Set our payload position for the end of our email address and username
-7. Submit the request 100 times and wait 5 minutes
-8. Use our password on our username+100, and you will see we're signed in.
+1. Fill out the form and add in our username, password, and email address
+1. Turn on our intercept proxy for the browser and submit the form
+1. Send the request to intruder from the intercept proxy
+1. Modify the payload to be a numbered list between 1-100
+1. Set our payload position for the end of our email address and username
+1. Submit the request 100 times and wait 5 minutes
+1. Use our password on our username+100, and you will see we're signed in.
 -->
 
 ## Vulnerability Evidence

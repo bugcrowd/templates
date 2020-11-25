@@ -22,7 +22,7 @@ Example:
 1. Turn on our intercept proxy for the browser and submit the form
 1. Send the request to intruder from the intercept proxy
 1. Submit the request 100 times and wait 5 minutes
-2. Check our target mobile, you will see our 100 SMS Messages being recieved to our target mobile number
+1. Check our target mobile, you will see our 100 SMS Messages being recieved to our target mobile number
 -->
 
 ## Vulnerability Evidence
