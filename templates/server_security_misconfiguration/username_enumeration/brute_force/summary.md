@@ -2,7 +2,7 @@
 <!--
 **Please replace text in each section below**
 
-Username Enumeration via Bruteforce Method
+Username Enumeration via Bruteforce Method Vulnerability Report
 
 Resources:
 
