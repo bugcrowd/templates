@@ -52,16 +52,12 @@ Below is an example template. All sections should be updated to include correct 
 
 ```markdown
 
-# Overview
+## Overview
 <!--
-**Please replace text in each section below**
+Provide a 1-2 sentence description - see http://cveproject.github.io/docs/content/key-details-phrasing.pdf for tips
 
-SQL Injection Vulnerability Report
-
-Resources:
-
-- <https://owasp.org/www-community/attacks/SQL_Injection>
-- <https://owasp.org/www-community/attacks/Blind_SQL_Injection>
+This format is a good guide:
+[VULNTYPE] in [COMPONENT] in [APPLICATION] allows [ATTACKER] to [IMPACT] via [VECTOR] 
 -->
 
 ## Walkthrough & PoC
@@ -84,7 +80,7 @@ Your submission MUST include evidence of the vulnerability and not be theoretica
 
 For an SQL Injection vulnerability, please include specific NON-PII information discovered in the database, such as Database Version, a listing of database tables, or an injected 'sleep' payload.
 
-You may present your evidence as output from a tool such as SQLMap, unless the program forbids the use of these tools, and it may be in the format of terminal output, screenshots, or video..
+You may present your evidence as output from a tool such as SQLMap, unless the program forbids the use of these tools, and it may be in the format of terminal output, screenshots, or video.
 
 **DO NOT ACCESS PII**
 -->
@@ -97,3 +93,93 @@ Demonstrating access to data other than the database version or database tables 
 
 ```
 
+## Style Guide
+
+### Voice
+
+Where possible, use passive voice. For example:
+
+Correct:
+
+> An SQL injection vulnerability was discovered in the web application.
+
+Incorrect:
+
+> I discovered an SQL injection vulnerability in the web application.
+
+Incorrect:
+
+> Bugcrowd discovered an SQL injection vulnerability in the web application.
+
+Incorrect:
+
+> We discovered an SQL injection in the web application.
+
+## Concision
+
+### Eliminate Redundancy
+
+Incorrect:
+
+> Throughout the course of the engagement, a critical severity SQL injection was discovered in the web application (www.example.com) which could be used by an attacker to exfiltrate personally identifiable information from the backend database.
+
+Correct:
+
+> An SQL injection was discovered in www.example.com allowing an attacker to exfiltrate personally identifiable information.
+
+### Split Up Long Sentences
+
+Incorrect:
+
+> An SQL injection was discovered in www.example.com allowing an attacker to exfiltrate personally identifiable information including email addresses which would be considered a GDPR violation and poses a considerable business risk.
+
+Correct:
+> An SQL injection was discovered in www.example.com allowing an attacker to exfiltrate personally identifiable information. The retrievable data includes passwords, email addresses and full names. This poses a GDPR violation and considerable business risk.
+
+## Acronyms
+
+When using an acronym, always spell out the full version first with the acronym in brackets. Once it has been spelled out in full, subsequent uses can just use the acronym.
+
+For example:
+
+> Cross-Site Scripting (XSS) is a client-side attack which allows an attacker to execute JavaScript in a victim's browser. XSS occurs when user input is reflected back to the browser without encoding.
+
+> Cross-Site Request Forgery (CSRF) was discovered in https://example.com/. This CSRF allows you to update the victim user's address without their knowledge.
+
+## Spelling and capitalisation of common words
+
+Correct: Bugcrowd
+Incorrect: BugCrowd, bugcrowd, Bug Crowd, Bug crowd and bug crowd.
+
+Correct: pentest (or Pentest if grammatically required)
+Incorrect: pen test, PenTest, Pen Test
+
+## A vs. An
+
+"An" should be used when the next word starts with a consonant _sound_. Otherwise, "A" should be used.
+
+Correct:
+- An apple
+- An SQL injection
+- An XSS
+- An easy life
+- A pineapple
+- A vulnerability
+
+Incorrect:
+- An server
+- A SQL injection
+
+## Emotive language
+
+Language used should always be unemotive and impartial.
+
+Correct: Seven critical vulnerabilities were discovered.
+Incorrect: Seven concerning vulnerabilities were discovered.
+Incorrect: The overall security posture was very poor.
+
+## Researcher / Hacker / Attacker
+
+- Use the word "researcher" when referring to a person who presents submissions to Bugcrowd.
+- Use the word "attacker" when walking through an attack scenario, for example: "an attacker is able to exfiltrate customer data and perform arbitrary SQL queries".
+- Never use the word "hacker".
