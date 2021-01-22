@@ -144,7 +144,7 @@ For example:
 
 > Cross-Site Scripting (XSS) is a client-side attack which allows an attacker to execute JavaScript in a victim's browser. XSS occurs when user input is reflected back to the browser without encoding.
 
-> Cross-Site Request Forgery (CSRF) was discovered in https://example.com/. This CSRF allows you to update the victim user's address without their knowledge.
+> Cross-Site Request Forgery (CSRF) was discovered in example.com. This CSRF allows you to update the victim user's address without their knowledge.
 
 ## Spelling and capitalisation of common words
 
@@ -159,6 +159,7 @@ Incorrect: pen test, PenTest, Pen Test
 "An" should be used when the next word starts with a consonant _sound_. Otherwise, "A" should be used.
 
 Correct:
+
 - An apple
 - An SQL injection
 - An XSS
@@ -167,6 +168,7 @@ Correct:
 - A vulnerability
 
 Incorrect:
+
 - An server
 - A SQL injection
 
