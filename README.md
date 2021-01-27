@@ -89,6 +89,8 @@ You may present your evidence as output from a tool such as SQLMap, unless the p
 <!--
 Demonstrating access to data other than the database version or database tables is NOT permitted without explicit permission from the program.
 **DO NOT ACCESS PII**
+
+A malicious attacker could ...
 --> 
 
 ```
@@ -176,12 +178,12 @@ Incorrect:
 
 Language used should always be unemotive and impartial.
 
-Correct: Seven critical vulnerabilities were discovered.
-Incorrect: Seven concerning vulnerabilities were discovered.
-Incorrect: The overall security posture was very poor.
+- Correct: Seven critical vulnerabilities were discovered.
+- Incorrect: Seven concerning vulnerabilities were discovered.
+- Incorrect: The overall security posture was very poor.
 
 ## Researcher / Hacker / Attacker
 
 - Use the word "researcher" when referring to a person who presents submissions to Bugcrowd.
-- Use the word "attacker" when walking through an attack scenario, for example: "an attacker is able to exfiltrate customer data and perform arbitrary SQL queries".
+- Use the words "malicious attacker" when walking through an attack scenario, for example: "a malicious attacker is able to exfiltrate customer data and perform arbitrary SQL queries".
 - Never use the word "hacker".
