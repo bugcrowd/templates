@@ -196,3 +196,5 @@ Language used should always be unemotive and impartial.
 - `{{url}}`: Placeholder for a URL (for example, `https://bugcrowd.com/vulnerability-rating-taxonomy`)
 - `{{version}}`: The specific version number of software tested (for example, 13.3.7)
 - `{{program}}`: The program name (for example, Bugcrowd)
+- `{{screenshot}}`: Photo or video evidence displaying an execued proof of concept.
+- `{{action}}`: The action that a malicious attacker could perform if they exploit it (for example, exfiltrate session tokens, take full control of administrative account, dump PII, etc.)
