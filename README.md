@@ -187,3 +187,12 @@ Language used should always be unemotive and impartial.
 - Use the word "researcher" when referring to a person who presents submissions to Bugcrowd.
 - Use the words "malicious attacker" when walking through an attack scenario, for example: "a malicious attacker is able to exfiltrate customer data and perform arbitrary SQL queries".
 - Never use the word "hacker".
+
+## Placeholders
+
+- `{{target}}`: name of the target of the hack (listed on the program page, for example *.bugcrowd.com)
+- `{{application}}`: specific application within the asset (for example, 
+- `{{type}}`: testing type (web testing, mobile testing, hardware testing, etc.)
+- `{{url}}`: placeholder for a URL
+- `{{version}}`: a specific version number
+- `{{program}}`: the program name
