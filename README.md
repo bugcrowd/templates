@@ -127,16 +127,16 @@ Incorrect:
 
 Correct:
 
-> An SQL injection was discovered in www.example.com allowing an attacker to exfiltrate personally identifiable information.
+> An SQL injection was discovered in www.example.com allowing a malicious attacker to exfiltrate personally identifiable information.
 
 ### Split Up Long Sentences
 
 Incorrect:
 
-> An SQL injection was discovered in www.example.com allowing an attacker to exfiltrate personally identifiable information including email addresses which would be considered a GDPR violation and poses a considerable business risk.
+> An SQL injection was discovered in www.example.com allowing a malicious attacker to exfiltrate personally identifiable information including email addresses which would be considered a GDPR violation and poses a considerable business risk.
 
 Correct:
-> An SQL injection was discovered in www.example.com allowing an attacker to exfiltrate personally identifiable information. The retrievable data includes passwords, email addresses and full names. This poses a GDPR violation and considerable business risk.
+> An SQL injection was discovered in www.example.com allowing a malicious attacker to exfiltrate personally identifiable information. The retrievable data includes passwords, email addresses and full names. This poses a GDPR violation and considerable business risk.
 
 ## Acronyms
 
@@ -144,7 +144,7 @@ When using an acronym, always spell out the full version first with the acronym 
 
 For example:
 
-> Cross-Site Scripting (XSS) is a client-side attack which allows an attacker to execute JavaScript in a victim's browser. XSS occurs when user input is reflected back to the browser without encoding.
+> Cross-Site Scripting (XSS) is a client-side attack which allows a malicious attacker to execute JavaScript in a victim's browser. XSS occurs when user input is reflected back to the browser without encoding.
 
 > Cross-Site Request Forgery (CSRF) was discovered in example.com. This CSRF allows you to update the victim user's address without their knowledge.
 
@@ -190,9 +190,9 @@ Language used should always be unemotive and impartial.
 
 ## Placeholders
 
-- `{{target}}`: name of the target of the hack (listed on the program page, for example *.bugcrowd.com)
-- `{{application}}`: specific application within the asset (for example, 
-- `{{type}}`: testing type (web testing, mobile testing, hardware testing, etc.)
-- `{{url}}`: placeholder for a URL
-- `{{version}}`: a specific version number
-- `{{program}}`: the program name
+- `{{target}}`: Name of the in scope target listed on the program page (for example, `*.bugcrowd.com`)
+- `{{application}}`: A specific application within the asset (for example, Acme Inc. Employee Portal)
+- `{{type}}`: Type of testing performed listed next to the target on the program page (for example website testing, API testing, mobile application testing, hardware testing, etc.)
+- `{{url}}`: Placeholder for a URL (for example, `https://bugcrowd.com/vulnerability-rating-taxonomy`)
+- `{{version}}`: The specific version number of software tested (for example, 13.3.7)
+- `{{program}}`: The program name (for example, Bugcrowd)
