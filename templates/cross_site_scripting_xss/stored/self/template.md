@@ -27,7 +27,7 @@ Adding a dot-pointed walkthrough with relevant screenshots will speed triage tim
 <!--
 Your submission MUST include evidence of the vulnerability and not be theoretical in nature.
 
-For a stored XSS vulnerability, please include a HTML payload that can be executed to easily demonstrate and reproduce the issue. 
+For a stored XSS vulnerability, please include a simple URL or HTML payload that can be executed to easily demonstrate and reproduce the issue. 
 -->
 
 Below is a screenshot demonstrating the injected JavaScript executing at {{url}}.
