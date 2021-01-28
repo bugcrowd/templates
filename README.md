@@ -144,9 +144,9 @@ Attempt to escalate the XSS to perform additional actions (such as an account ta
 
 A malicious attacker could abuse this XSS further to {{action}} by using the following JavaScript payload.
 
-```javascript
+`` ``` ``javascript
 {{payload}}
-```
+`` ``` ``
 
 Here is a screenshot of the full exploit taking place:
 
