@@ -198,3 +198,5 @@ Language used should always be unemotive and impartial.
 - `{{program}}`: The program name (for example, Bugcrowd)
 - `{{screenshot}}`: Photo or video evidence displaying an execued proof of concept.
 - `{{action}}`: The action that a malicious attacker could perform if they exploit it (for example, exfiltrate session tokens, take full control of administrative account, dump PII, etc.)
+- `{{parameter}}`: A variable that transmits data from the client to the server which can have different types of data stored within them. The handling is determined by the server-side code.
+(for example `id=1337`)
