@@ -253,9 +253,11 @@ Language used should always be unemotive and impartial.
 - Don't use the word "victim".
 - A good alternative is to refer to that person's role.
 
-Incorrect: The vulnerability can be used to exploit the victim.
-Correct: The vulnerability can be used to exploit the user.
-Correct: The vulnerability can be used to exploit administrative users.
+Examples:
+
+- Incorrect: The vulnerability can be used to exploit the victim.
+- Correct: The vulnerability can be used to exploit the user.
+- Correct: The vulnerability can be used to exploit administrative users.
 
 ## Placeholders
 
