@@ -9,7 +9,7 @@ This format is a good guide:
 [VULNTYPE] in [COMPONENT] in [APPLICATION] allows [ATTACKER] to [IMPACT] via [VECTOR] 
 -->
 
-Slef Reflected XSS in {{application}} of {{target}} allows malicious attacker to {{action}} due to the existence of {{parameter}} in {{url}} as the same
+Self Reflected XSS in {{application}} of {{target}} allows malicious attacker to {{action}} due to the existence of {{parameter}} in {{url}} as the same
 
 ## Walkthrough & PoC
 

@@ -1,4 +1,4 @@
-# Stored XSS (Self)
+# Stored XSS (Non-Privileged User to Anyone)
 
 ## Overview
 
@@ -9,7 +9,7 @@ This format is a good guide:
 [VULNTYPE] in [COMPONENT] in [APPLICATION] allows [ATTACKER] to [IMPACT] via [VECTOR] 
 -->
 
-Self-stored XSS in {{application}} of {{target}} allows malicious attacker to {{action}} by adding or modifying JavaScript permanently to their own account.
+Stored XSS in {{application}} of {{target}} allows a malicious attacker to escalate a non-privileged user account to anyone by {{action}}
 
 ## Walkthrough & PoC
 
@@ -22,13 +22,14 @@ Adding a dot-pointed walkthrough with relevant screenshots will speed triage tim
 1. Navigate to {{url}}
 1. Insert {{payload}} in the appropriate area
 1. Execute the JavaScript payload was executed
+1. Access they vulnerable request and escalate privileges 
 
 ## Vulnerability Evidence
 
 <!--
 Your submission MUST include evidence of the vulnerability and not be theoretical in nature.
 
-For a stored XSS vulnerability, please include a simple URL or HTML payload that can be executed to easily demonstrate and reproduce the issue. 
+For a reflected XSS vulnerability, please include a simple URL or HTML payload that can be executed to easily demonstrate and reproduce the issue. 
 -->
 
 Below is a screenshot demonstrating the injected JavaScript executing at {{url}}.
@@ -41,7 +42,7 @@ Below is a screenshot demonstrating the injected JavaScript executing at {{url}}
 Attempt to escalate the XSS to perform additional actions (such as an account takeover or CSRF bypass to perform a sensitive action). If this is possible, provide a full proof-of-concept here.
 --> 
 
-A malicious attacker could abuse this self-stored XSS further to {{action}} by using the following JavaScript payload.
+A malicious attacker could abuse this XSS further to {{action}} by using the following JavaScript payload.
 
 ```
 {{payload}}
