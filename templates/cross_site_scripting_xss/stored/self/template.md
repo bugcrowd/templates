@@ -21,7 +21,7 @@ Adding a dot-pointed walkthrough with relevant screenshots will speed triage tim
 1. Log in to {{application}} at {{url}}
 1. Navigate to {{url}}
 1. Insert {{payload}} in the appropriate area
-1. Execute the JavaScript payload was executed
+1. Observe the JavaScript payload was executed
 
 ## Vulnerability Evidence
 

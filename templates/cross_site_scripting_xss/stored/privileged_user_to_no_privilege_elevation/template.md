@@ -1,4 +1,4 @@
-# Stored XSS (Privileged User to Privilege Elevation)
+# Stored XSS (Privileged User to No Privilege Elevation)
 
 ## Overview
 
@@ -9,7 +9,7 @@ This format is a good guide:
 [VULNTYPE] in [COMPONENT] in [APPLICATION] allows [ATTACKER] to [IMPACT] via [VECTOR] 
 -->
 
-Stored XSS in {{application}} of {{target}} allows a malicious attacker to escalate a non-privileged user account to anyone by {{action}}
+Stored XSS in {{application}} of {{target}} allows a malicious attacker to remove privileges from a privileged user account by {{action}}
 
 ## Walkthrough & PoC
 
@@ -22,17 +22,17 @@ Adding a dot-pointed walkthrough with relevant screenshots will speed triage tim
 1. Navigate to {{url}}
 1. Insert {{payload}} in the appropriate area
 1. Observe the JavaScript payload was executed
-1. Verify the payload is stored and accessible to another privileged account
+1. Verify the payload is stored and accessible to anyone
 
 ## Vulnerability Evidence
 
 <!--
 Your submission MUST include evidence of the vulnerability and not be theoretical in nature.
 
-For a reflected XSS vulnerability, please include a simple URL or HTML payload that can be executed to easily demonstrate and reproduce the issue. 
+For a stored XSS vulnerability, please include a simple URL or HTML payload that can be executed to easily demonstrate and reproduce the issue. 
 -->
 
-The screenshot below demonstrates the injected JavaScript executing at {{url}}.
+Below is a screenshot demonstrating the injected JavaScript executing at {{url}}.
 
 {{screenshot}}
 
@@ -48,6 +48,6 @@ A malicious attacker could abuse this XSS further to {{action}} by using the fol
 {{payload}}
 ```
 
-You can find a screenshot of the full exploit taking place below:
+Here is a screenshot of the full exploit taking place:
 
 {{screenshot}}

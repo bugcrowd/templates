@@ -21,15 +21,16 @@ Adding a dot-pointed walkthrough with relevant screenshots will speed triage tim
 1. Log in to {{application}} at {{url}}
 1. Navigate to {{url}}
 1. Insert {{payload}} in the appropriate area
-1. Execute the JavaScript payload was executed
+1. Observe the JavaScript payload was executed
 1. Access they vulnerable request and escalate privileges to any user account
+2. Verify the payload is stored and accessible to anyone
 
 ## Vulnerability Evidence
 
 <!--
 Your submission MUST include evidence of the vulnerability and not be theoretical in nature.
 
-For a reflected XSS vulnerability, please include a simple URL or HTML payload that can be executed to easily demonstrate and reproduce the issue. 
+For a stored XSS vulnerability, please include a simple URL or HTML payload that can be executed to easily demonstrate and reproduce the issue. 
 -->
 
 Below is a screenshot demonstrating the injected JavaScript executing at {{url}}.
