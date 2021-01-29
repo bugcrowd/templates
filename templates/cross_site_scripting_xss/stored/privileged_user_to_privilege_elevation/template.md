@@ -1,4 +1,4 @@
-# Stored XSS (Non-Privileged User to Anyone)
+# Stored XSS (Privileged User to Privilege Elevation)
 
 ## Overview
 
@@ -22,7 +22,7 @@ Adding a dot-pointed walkthrough with relevant screenshots will speed triage tim
 1. Navigate to {{url}}
 1. Insert {{payload}} in the appropriate area
 1. Execute the JavaScript payload was executed
-1. Access they vulnerable request and escalate privileges to any user account
+1. Access they vulnerable request and escalate privileges to a privileged user
 
 ## Vulnerability Evidence
 
@@ -32,7 +32,7 @@ Your submission MUST include evidence of the vulnerability and not be theoretica
 For a reflected XSS vulnerability, please include a simple URL or HTML payload that can be executed to easily demonstrate and reproduce the issue. 
 -->
 
-Below is a screenshot demonstrating the injected JavaScript executing at {{url}}.
+The screenshot below demonstrates the injected JavaScript executing at {{url}}.
 
 {{screenshot}}
 
@@ -48,6 +48,6 @@ A malicious attacker could abuse this XSS further to {{action}} by using the fol
 {{payload}}
 ```
 
-Here is a screenshot of the full exploit taking place:
+You can find a screenshot of the full exploit taking place below:
 
 {{screenshot}}
