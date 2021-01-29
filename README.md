@@ -132,7 +132,7 @@ Your submission MUST include evidence of the vulnerability and not be theoretica
 For a reflected XSS vulnerability, please include a simple URL or HTML payload that can be executed to easily demonstrate and reproduce the issue. 
 -->
 
-Below is a screenshot demonstrating the injected JavaScript executing at {{url}}.
+The screenshot below demonstrates the injected JavaScript executing at {{url}}.
 
 {{screenshot}}
 
@@ -149,7 +149,7 @@ A malicious attacker could abuse this XSS further to {{action}} by using the fol
 {{payload}}
 ```
 
-Here is a screenshot of the full exploit taking place:
+You can find a screenshot of the full exploit taking place below:
 
 {{screenshot}}
 
