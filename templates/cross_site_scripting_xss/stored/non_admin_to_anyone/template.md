@@ -23,7 +23,7 @@ Adding a dot-pointed walkthrough with relevant screenshots will speed triage tim
 1. Insert {{payload}} in the appropriate area
 1. Observe the JavaScript payload was executed
 1. Access they vulnerable request and escalate privileges to any user account
-2. Verify the payload is stored and accessible to anyone
+1. Verify the payload is stored and accessible to anyone
 
 ## Vulnerability Evidence
 
