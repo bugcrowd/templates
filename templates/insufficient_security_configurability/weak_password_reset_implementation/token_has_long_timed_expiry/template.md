@@ -1,3 +1,4 @@
+# Weak Password Reset Implementation (Token Has Long Timed Expiry)
 ## Overview
 <!--
 Provide a 1-2 sentence description - see http://cveproject.github.io/docs/content/key-details-phrasing.pdf for tips

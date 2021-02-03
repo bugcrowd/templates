@@ -1,3 +1,4 @@
+# Weak Password Reset Implementation (Token is Not Invalidated After Use)
 ## Overview
 <!--
 Provide a 1-2 sentence description - see http://cveproject.github.io/docs/content/key-details-phrasing.pdf for tips
@@ -22,6 +23,7 @@ Example:
 1. View error which states 'SQL Syntax Error'
 1. Replace ID value with `1' waitfor delay '00:00:10'; `
 -->
+
 1. Navigate to {{url}} and initiate a password reset
 1. Utilize the password reset token received to reset the password
 1. Observe that the password reset token received earlier is still valid after being used

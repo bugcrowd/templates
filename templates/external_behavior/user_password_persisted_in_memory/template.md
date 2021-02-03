@@ -1,3 +1,4 @@
+# User Password Persisted in Memory
 ## Overview
 <!--
 Provide a 1-2 sentence description - see http://cveproject.github.io/docs/content/key-details-phrasing.pdf for tips
@@ -22,6 +23,7 @@ Example:
 1. View error which states 'SQL Syntax Error'
 1. Replace ID value with `1' waitfor delay '00:00:10'; `
 -->
+
 1. Utilize some software that allows computer memory to be accessed in a human-readable format
 1. Log in to {{application}}
 1. Navigate to {{url}} and perform {{action}}

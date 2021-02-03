@@ -1,3 +1,4 @@
+# Weak Password Policy
 ## Overview
 <!--
 Provide a 1-2 sentence description - see http://cveproject.github.io/docs/content/key-details-phrasing.pdf for tips
@@ -22,6 +23,7 @@ Example:
 1. View error which states 'SQL Syntax Error'
 1. Replace ID value with `1' waitfor delay '00:00:10'; `
 -->
+
 1. Navigate to {{url}} in {{application}}
 1. Observe that {{application}} allows the use of weak passwords
 
@@ -41,4 +43,4 @@ You can observe the weak password policy of {{application}} below:
 Envision how the weak password policy could be used by a malicious attacker (such as rapid brute forcing passwords of users). If a malicious action is possible, provide a full proof-of-concept here.
 -->
 
-A weak password policy allows a malicious attacker to more easily brute force the passwords used within {{application}}, enabling a malicious attacker to easily take over accounts with weak passwords set. 
+A weak password policy allows a malicious attacker to more easily brute force the passwords used within {{application}}, enabling a malicious attacker to easily take over accounts with weak passwords set.
