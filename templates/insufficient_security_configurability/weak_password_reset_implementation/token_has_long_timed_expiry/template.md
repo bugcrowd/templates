@@ -23,6 +23,7 @@ Example:
 1. View error which states 'SQL Syntax Error'
 1. Replace ID value with `1' waitfor delay '00:00:10'; `
 -->
+
 1. Log in to {{application}}
 1. Navigate to {{url}} and initiate a password reset
 1. Observe in a HTTP proxy or over time that the password reset token has a long timed expiry
