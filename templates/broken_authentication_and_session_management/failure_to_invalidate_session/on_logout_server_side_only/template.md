@@ -5,11 +5,9 @@ Provide a 1-2 sentence description - see http://cveproject.github.io/docs/conten
 
 This format is a good guide:
 [VULNTYPE] in [COMPONENT] in [APPLICATION] allows [ATTACKER] to [IMPACT] via [VECTOR] 
-
-Resources:
-
-- <https://owasp.org/www-project-top-ten/2017/A2_2017-Broken_Authentication>
 -->
+
+Failure to invalidate session on logout in {{application}} on the server-side allows a malicious attacker to {{action}}
 
 ## Walkthrough & PoC
 

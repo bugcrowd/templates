@@ -1,4 +1,4 @@
-# XSS (Referrer)
+# XSS - Referrer
 
 ## Overview
 

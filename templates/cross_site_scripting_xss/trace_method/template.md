@@ -20,8 +20,8 @@ Adding a dot-pointed walkthrough with relevant screenshots will speed triage tim
 
 1. Log in to {{application}} at {{url}}
 1. Send a cURL request to {{url}} using the TRACE header
-2. Observe the cookie header sent with the request is shown in the response
-3. Observe that the response containing reflected elements of the HTTP request
+1. Observe the cookie header sent with the request is shown in the response
+1. Observe that the response containing reflected elements of the HTTP request
 
 ## Vulnerability Evidence
 
