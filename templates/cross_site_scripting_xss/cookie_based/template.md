@@ -18,10 +18,9 @@ Provide a step-by-step walkthrough on how to access the vulnerable injection poi
 Adding a dot-pointed walkthrough with relevant screenshots will speed triage time and result in faster rewards!
 -->
 
-1. Log in to {{application}} at {{url}}
 1. Navigate to {{url}}
-1. Inject cookie parameter in the URL GET parameter
-1. Observe that the JavaScript payload was executed 
+1. Update the local storage on your browser to contain the cookie {{parameter}}
+1. Refresh the page and observe the XSS being triggered
 
 ## Vulnerability Evidence
 

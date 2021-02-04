@@ -15,12 +15,10 @@ Failure to invalidate session on logout in {{application}} on the server-side al
 Adding a dot-pointed walkthrough with relevant screenshots will speed triage time and result in faster rewards!
 -->
 
-1. Attempt to log in to {{application}} at {{url}}
-1. Navigate your local storage in your browser and take a copy of the session token
-1. Click on the logout button 
-1. Browse to the sensitive page or action {{url}}/{{parameter}}
-1. Complete the change 
-1. Sign in again on a different browser and see the change on {{url}}/{{parameter}}
+1. Log in to {{application}} at {{url}}
+1. In an HTTP proxy, capture any authenticated GET or POST request to repeat the request
+1. Log out of {{application}} at {{url}}
+1. Resend the captured request from step 2 and observe that the session token was not invalidated on logout
 
 ## Vulnerability Evidence
 <!--

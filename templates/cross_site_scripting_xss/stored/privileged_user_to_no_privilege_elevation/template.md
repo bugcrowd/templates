@@ -9,7 +9,7 @@ This format is a good guide:
 [VULNTYPE] in [COMPONENT] in [APPLICATION] allows [ATTACKER] to [IMPACT] via [VECTOR] 
 -->
 
-Stored XSS in {{application}} of {{target}} allows a malicious attacker to remove privileges from a privileged user account by {{action}}
+Stored XSS in {{application}} at {{url}} allows a malicious actor to {{action}}
 
 ## Walkthrough & PoC
 

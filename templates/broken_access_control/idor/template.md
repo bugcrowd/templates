@@ -21,7 +21,7 @@ Adding a dot-pointed walkthrough with relevant screenshots will speed triage tim
 -->
 
 1. Log in to {{application}} at {{url}}
-1. Navigate to {{url}} with the following parameter {{parameter}}
+1. Send a request to {{url}} with the following parameter {{parameter}}
 1. Modify the {{parameter}} to a different value
 1. Observe PII is displayed.
 

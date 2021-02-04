@@ -18,12 +18,13 @@ Provide a step-by-step walkthrough on how to access the vulnerable injection poi
 Adding a dot-pointed walkthrough with relevant screenshots will speed triage time and result in faster rewards!
 -->
 
-1. Log in to {{application}} at {{url}}
-1. Navigate to {{url}}
-1. Insert {{payload}} in the appropriate area
-1. Observe the JavaScript payload was executed
-1. Access they vulnerable request and escalate privileges to any user account
-1. Verify the payload is stored and accessible to anyone
+1. Log into {{application}} at {{url}} with the non-privileged account
+1. Navigate to {{url}} and insert a JavaScript payload at {{parameter}}
+1. Observe the JavaScript payload being executed
+1. Log out of the non-privileged account
+1. Log into a privileged account and navigate to {{url}} which contains the payload
+1. Log out of the privileged account and log into the non-privileged account
+1. Observe the non-privileged account has gained escalated privileges
 
 ## Vulnerability Evidence
 

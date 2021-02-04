@@ -20,9 +20,9 @@ Adding a dot-pointed walkthrough with relevant screenshots will speed triage tim
 
 1. Log in to {{application}} at {{url}} if required
 1. Upload a flash file (.swf)
-3. Navigate to the {{url}} with {{parameter}} at the end of it
-4. Append a JavaScript Payload to the end of the parameter.
-5. Observe that the JavaScript payload was executed
+1. Navigate to the {{url}} with {{parameter}} at the end of it
+1. Append a JavaScript payload to the end of the parameter
+1. Observe that the JavaScript payload was executed
 
 ## Vulnerability Evidence
 

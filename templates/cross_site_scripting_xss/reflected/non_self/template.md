@@ -18,9 +18,10 @@ Provide a step-by-step walkthrough on how to access the vulnerable injection poi
 Adding a dot-pointed walkthrough with relevant screenshots will speed triage time and result in faster rewards!
 -->
 
-1. Log in to {{application}} at {{url}}
+1. Enable a HTTP interception proxy
 1. Navigate to {{url}}
-1. Observe that the JavaScript payload was executed
+1. Modify the request to contain the JavaScript payload {{parameter}}
+1. Forward the request and observe the JavaScript payload being executed
 
 ## Vulnerability Evidence
 

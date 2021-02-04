@@ -9,7 +9,7 @@ This format is a good guide:
 [VULNTYPE] in [COMPONENT] in [APPLICATION] allows [ATTACKER] to [IMPACT] via [VECTOR] 
 -->
 
-2FA in {{application}} of {{target}} allows malicious attacker to be bypassed by {{action}}
+A Second Factor Authentication (2FA) bypass in {{application}} at {{url}} allows a malicious attacker to {{action}}
 
 ## Walkthrough & PoC
 
@@ -18,11 +18,11 @@ Provide a step-by-step walkthrough on how to access the vulnerable injection poi
 Adding a dot-pointed walkthrough with relevant screenshots will speed triage time and result in faster rewards!
 -->
 
-1. Log in to {{application}} at {{url}}
-1. Observe the URL once logged in.
-1. Log out of {{application}} at {{url}}
-1. Log in with a second set of credentials.
-1. When prompted for the verification code navigate to the post-login page 
+1. Navigate to {{url}}
+1. Attempt to sign in to {{application}}
+1. Intercept the 2FA request using an HTTP proxy
+1. Modify the body of the request at {{parameter}}
+1. Forward the request and observe you are logged into {{application}}
 
 ## Vulnerability Evidence
 

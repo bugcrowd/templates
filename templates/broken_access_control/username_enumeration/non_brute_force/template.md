@@ -10,7 +10,7 @@ This format is a good guide:
  
 -->
 
-Username enumeration in {{application}} of {{target}} allows a malicious attacker to enumerate usernames via the login page.
+Username enumeration on {{target}} allows a malicious attacker to enumerate usernames.
 
 ## Walkthrough & PoC
 
@@ -20,16 +20,14 @@ Adding a dot-pointed walkthrough with relevant screenshots will speed triage tim
 -->
 
 1. Navigate to {{url}}
-1. Log in to {{application}} at {{url}}
-1. Identify a function which allows user
-1. Check if it is posible to enumerate user information.
+1. Observe usernames/emails are visible on the page {{url}}
 
 ## Vulnerability Evidence
 
 <!--
 Your submission MUST include evidence of the vulnerability and not be theoretical in nature.
 
-For a user enumeration vulnerability, please include a simple URL or HTML payload that can be executed to easily demonstrate and reproduce the issue. 
+For a user enumeration vulnerability, please include a simple URL or HTTP payload that can be executed to easily demonstrate and reproduce the issue. 
 -->
 
 Below is a screenshot demonstrating the {{parameter} executing at {{url}}.

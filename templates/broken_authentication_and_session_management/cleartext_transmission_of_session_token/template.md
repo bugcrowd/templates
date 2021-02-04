@@ -9,7 +9,7 @@ This format is a good guide:
 [VULNTYPE] in [COMPONENT] in [APPLICATION] allows [ATTACKER] to [IMPACT] via [VECTOR] 
 -->
 
-Cleartext transmission of session token over unencrypted channels in {{application}} of {{target}} allows malicious attacker to {{action}}
+Cleartext transmission of the session token over an unencrypted channel at {{url}} allows a malicious attacker to intercept this session token via a Person in the Middle (PitM) attack
 
 ## Walkthrough & PoC
 
