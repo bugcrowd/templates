@@ -271,5 +271,7 @@ Examples:
 - `{{action}}`: The action that a malicious attacker could perform if they exploit it (for example, exfiltrate session tokens, take full control of administrative account, dump PII, etc.)
 - `{{parameter}}`: A variable that transmits data from the client to the server which can have different types of data stored within them. The handling is determined by the server-side code. (for example `id=1337`)
 - `{{hardware}}`: A specific piece of hardware used to exploit an IoT or Automotive asset 
+- `{{software}}`: A specific software used to exploit an asset (for example burp, nessus, nikto, etc.)
+- `{{payload}}`: A command or payload that is executed on an asset 
 
 
