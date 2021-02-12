@@ -274,4 +274,3 @@ Examples:
 - `{{software}}`: A specific software used to exploit an asset (for example burp, nessus, nikto, etc.)
 - `{{payload}}`: A command or payload that is executed on an asset 
 
-
