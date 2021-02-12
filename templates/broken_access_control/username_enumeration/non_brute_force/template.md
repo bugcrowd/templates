@@ -49,3 +49,4 @@ A malicious attacker could abuse this username enumeration further to {{action}}
 The screenshot below demonstrates the objects accessed:
 
 {{screenshot}}
+

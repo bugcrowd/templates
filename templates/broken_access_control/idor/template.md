@@ -52,3 +52,4 @@ A malicious attacker could abuse this IDOR further to {{action}} by using the fo
 The screenshot below demonstrates the objects accessed:
 
 {{screenshot}}
+

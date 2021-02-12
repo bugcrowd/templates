@@ -52,3 +52,4 @@ A malicious attacker could abuse this XSS further to {{action}} by using the fol
 You can find a screenshot of the full exploit taking place below:
 
 {{screenshot}}
+

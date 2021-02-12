@@ -19,9 +19,9 @@ Adding a dot-pointed walkthrough with relevant screenshots will speed triage tim
 -->
 
 1. Log in to {{application}} at {{url}}
-2. Intercept {{url}} through an intercepting proxy
+1. Intercept {{url}} through an intercepting proxy
 1. Append a JavaScript payload to the end of the Referrer header
-3. Forward the request and observe that the JavaScript payload was executed
+1. Forward the request and observe that the JavaScript payload was executed
 
 ## Vulnerability Evidence
 
@@ -51,3 +51,4 @@ A malicious attacker could abuse this XSS further to {{action}} by using the fol
 You can find a screenshot of the full exploit taking place below:
 
 {{screenshot}}
+
