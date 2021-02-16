@@ -1,4 +1,4 @@
-# Lack of verification email
+# Allows disposable email addresses
 ## Overview
 <!--
 Provide a 1-2 sentence description - see http://cveproject.github.io/docs/content/key-details-phrasing.pdf for tips
@@ -8,7 +8,7 @@ This format is a good guide:
 
 
 -->
-Verification of contact method not required when modifying {{parameter}} in {{application}} of {{target}}, allowing a malicious attacker to {{action}}
+Use of disposable email addresses is allowed in {{application}} of {{target}}, allowing a malicious attacker to {{action}}
 
 ## Walkthrough & PoC
 <!--
@@ -25,24 +25,23 @@ Example:
 -->
 
 1. Login to {{application}}
-1. Navigate to {{url}}
-1. Modify some contact method of the account, such as the phone number of email address
-1. Observe that no verification email is sent to the new contact method before it is associated with the account
+1. Navigate to the registration page at {{url}}
+1. Register an account using a disposable email service, and observe that the account is created
 
 
 ## Vulnerability Evidence
 <!--
 Your submission MUST include evidence of the vulnerability and not be theoretical in nature.
 
-For a lack of verification email, please include a screenshot of some contact method variable being changed with no verification sent to confirm ownership.
+For the use of disposable email addresses, please include a screenshot of an account that was created with a disposable email address.
 -->
 
-You can observe the lack of verification email in {{application}} below:
+You can observe that {{application}} allows the use of disposable email addresses below:
 
 {{screenshot}}
 ## Demonstrated Impact
 <!--
-Envision how the lack of verification email could be used by a malicious attacker (such as internal user impersonation). If a malicious action is possible, provide a full proof-of-concept here.
+Envision how the use of disposable email addresses could be used in some impactful way. If a malicious action is possible, provide a full proof-of-concept here.
 -->
 
-A lack of verification for an updated contact method allows a malicious attacker to associate any arbitrary email address or phone number with an account without verification. This could allow them to perform spam, phishing, or impersonation attacks.
+Allowing the use of disposable email addresses in {{application}} would allow a malicious attacker to create an exponential amount of accounts on the platform. These accounts could then be used to perform {{action}}.
