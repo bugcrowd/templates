@@ -9,7 +9,7 @@ This format is a good guide:
 [VULNTYPE] in [COMPONENT] in [APPLICATION] allows [ATTACKER] to [IMPACT] via [VECTOR] 
 -->
 
-Server-Side Request Forgery (SSRF) in {{application}} allows attacker to perform arbitrary internal requests
+Server-Side Request Forgery (SSRF) in {{application}} allows attacker to perform sensitive internal requests
 
 ## Walkthrough & PoC
 
