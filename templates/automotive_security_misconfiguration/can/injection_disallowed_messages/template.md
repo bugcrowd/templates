@@ -1,4 +1,4 @@
-# Unauthorized Access To Services
+# CAN Injection Disallowed Messages
 
 ## Overview
 
@@ -9,7 +9,7 @@ This format is a good guide:
 [VULNTYPE] in [COMPONENT] in [APPLICATION] allows [ATTACKER] to [IMPACT] via [VECTOR] 
 -->
 
-Unauthorized access to services in {{target}} can derive from wireless protocols, in-vehicle applications, and physical inputs to communicate with the In-Vehicle Infotainment (IVI) unit.
+The {{application}} allows malicious attacker to connect to the CAN Bus and send messages that are otherwise not allowed on the system.
 
 ## Walkthrough & PoC
 
@@ -18,9 +18,11 @@ Provide a step-by-step walkthrough on how to access the vulnerable injection poi
 Adding a dot-pointed walkthrough with relevant screenshots will speed triage time and result in faster rewards!
 -->
 
-1. Scan the {{target}} and find that {{application}} is exposed
+1. The CAN input on {{target}} is found using {{hardware}}
 
-1. Access application by {{action}}
+1. Connect to {{target}} by using {{application}} with {{hardware}}
+
+1. Inject disallowed payload: {{payload}} and {{action}} on {{target}} and see that {{action}} will occur
 
 ## Vulnerability Evidence
 
@@ -30,7 +32,7 @@ Your submission MUST include evidence of the vulnerability and not be theoretica
 For an infotainment vulnerability, please include detailed instructions that can be followed to easily demonstrate and reproduce the issue. 
 -->
 
-The following image(s) demonstrates that the {{application}} on {{target}} is exposed to a malicious attacker.
+The image(s) below demonstrates the process by which the attacker finds where the CAN communication occurs, how an attacker connects to the {{target}}, and the injection of the payload(s).
 
 {{screenshot}}
 
@@ -40,5 +42,4 @@ The following image(s) demonstrates that the {{application}} on {{target}} is ex
 Attempt to completely stop the vehicle for functioning if the infotainment system controls mechanical aspect of the vehicle. If this is possible, provide a full proof-of-concept here.
 --> 
 
-A malicious attacker can leverage the unauthorized service(s) to escalate privileges on IVI unit and compromise internal and external communications.
-
+A malicious attacker could send CAN payloads to exploit the {{target}} causing it to {{action}}.

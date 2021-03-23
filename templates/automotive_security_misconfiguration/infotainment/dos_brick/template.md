@@ -30,7 +30,7 @@ Your submission MUST include evidence of the vulnerability and not be theoretica
 For an infotainment vulnerability, please include detailed instructions that can be followed to easily demonstrate and reproduce the issue. 
 -->
 
-The image below demonstrates the Denial of Service (DoS) from injected format strings on the target infotainment system.
+The image(s) below demonstrates the Denial of Service (DoS) from injected format strings on the target infotainment system.
 
 {{screenshot}}
 

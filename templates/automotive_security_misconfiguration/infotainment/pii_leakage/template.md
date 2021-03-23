@@ -31,7 +31,7 @@ Your submission MUST include evidence of the vulnerability and not be theoretica
 For an infotainment vulnerability, please include detailed instructions that can be followed to easily demonstrate and reproduce the issue. If data was found using Open Source Intelligence (OSINT), please provide steps to where and how it was found.
 -->
 
-The following shows the type of data that persists on the IVI unit.
+The image(s) shows how and where to find the PII on the vulnerable system.
 
 {{screenshot}}
 
