@@ -9,7 +9,7 @@ This format is a good guide:
 [VULNTYPE] in [COMPONENT] in [APPLICATION] allows [ATTACKER] to [IMPACT] via [VECTOR] 
 -->
 
-Source code can be dumped in {{target}} allowing an attacker to read, release, and exploit code that should otherwise be hidden from users.
+Source code can be dumped in {{target}} allowing an attacker to read, release, and exploit code that should otherwise be hidden from users on the In-Vehicle Infotainment (IVI) unit.
 
 ## Walkthrough & PoC
 

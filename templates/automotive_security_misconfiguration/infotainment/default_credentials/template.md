@@ -10,7 +10,7 @@ This format is a good guide:
 [VULNTYPE] in [COMPONENT] in [APPLICATION] allows [ATTACKER] to [IMPACT] via [VECTOR] 
 -->
 
-Default credentials in {{application}} allows malicious attacker to {{action}} via {{vector}} 
+Default credentials in {{application}} allows malicious attacker to {{action}} via {{vector}} on the In-Vehicle Infotainment (IVI) unit. 
 
 ## Walkthrough & PoC
 

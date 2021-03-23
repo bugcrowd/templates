@@ -9,7 +9,7 @@ This format is a good guide:
 [VULNTYPE] in [COMPONENT] in [APPLICATION] allows [ATTACKER] to [IMPACT] via [VECTOR] 
 -->
 
-Format string attack in {{application}} of {{target}} allows malicious attacker to {{action}} <!--DoS the system-->
+Format string attack in {{application}} of {{target}} allows malicious attacker to {{action}} on the In-Vehicle Infotainment (IVI) unit. <!--DoS the system-->
 
 ## Walkthrough & PoC
 

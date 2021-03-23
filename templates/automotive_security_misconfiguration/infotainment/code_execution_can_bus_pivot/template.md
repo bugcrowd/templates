@@ -9,7 +9,7 @@ This format is a good guide:
 [VULNTYPE] in [COMPONENT] in [APPLICATION] allows [ATTACKER] to [IMPACT] via [VECTOR] 
 -->
 
-The {{application}} allows malicious attacker to pivot into the CAN Bus via {{action}} 
+The {{application}} allows malicious attacker to pivot into the CAN Bus via {{action}} with the In-Vehicle Infotainment (IVI) unit.
 
 ## Walkthrough & PoC
 
@@ -18,11 +18,11 @@ Provide a step-by-step walkthrough on how to access the vulnerable injection poi
 Adding a dot-pointed walkthrough with relevant screenshots will speed triage time and result in faster rewards!
 -->
 
-1. The {{application}} uses this feature to {{action}}, it is exploited by {{action}}
+1. The {{application}} uses this feature to {{action}}, exploited by {{action}}
 
 1. Pivot into the CAN bus using this vulnerability by {{action}}
 
-1. Inject CAN bus payload {{payload}} using {{hardware}}
+1. Inject CAN bus payload {{payload}} using {{hardware}} and/or {{application}}
 
 ## Vulnerability Evidence
 
@@ -42,4 +42,4 @@ The image below demonstrates the CAN Bus pivot and the payload sent to the syste
 Attempt to completely stop the vehicle for functioning if the infotainment system controls mechanical aspect of the vehicle. If this is possible, provide a full proof-of-concept here.
 --> 
 
-A malicious attacker could exploit {{application}} on the system to flood the CAN Bus with malicious messages causing the system to {{action}}
+A malicious attacker could exploit {{application}} on the system to flood the CAN Bus Arbitration IDs with malicious messages causing the system to {{action}}
