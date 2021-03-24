@@ -273,4 +273,5 @@ Examples:
 - `{{hardware}}`: A specific piece of hardware used to exploit an IoT or Automotive asset 
 - `{{software}}`: A specific software used to exploit an asset (for example burp, nessus, nikto, etc.)
 - `{{payload}}`: A command or payload that is executed on an asset 
+- `{{value}}`: A specific metric value (seconds, milliseconds, frequencies, etc.)
 

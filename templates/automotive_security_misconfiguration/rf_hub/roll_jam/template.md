@@ -1,4 +1,4 @@
-# Infotainment Code Execution CAN Bus Pivot
+# Radio Frequency Roll Jam
 
 ## Overview
 
@@ -43,3 +43,4 @@ Attempt to completely stop the vehicle for functioning if the infotainment syste
 --> 
 
 A malicious attacker could exploit {{application}} on the system to flood the CAN Bus Arbitration IDs with malicious messages causing the system to {{action}}
+

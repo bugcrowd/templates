@@ -1,4 +1,4 @@
-# Infotainment Code Execution CAN Bus Pivot
+# PII Leakage
 
 ## Overview
 
@@ -9,7 +9,7 @@ This format is a good guide:
 [VULNTYPE] in [COMPONENT] in [APPLICATION] allows [ATTACKER] to [IMPACT] via [VECTOR] 
 -->
 
-The {{application}} allows malicious attacker to pivot into the CAN Bus via {{action}} with the In-Vehicle Infotainment (IVI) unit.
+Personally Identifiable Information (PII) in {{target}} allows for a malicious attacker to collect data via logs and user configurations within the underlying In-Vehicle Infotainment (IVI) interface.
 
 ## Walkthrough & PoC
 
@@ -18,21 +18,20 @@ Provide a step-by-step walkthrough on how to access the vulnerable injection poi
 Adding a dot-pointed walkthrough with relevant screenshots will speed triage time and result in faster rewards!
 -->
 
-1. The {{application}} uses this feature to {{action}}, exploited by {{action}}
+1. Power on {{target}} by {{action}}
 
-1. Pivot into the CAN bus using this vulnerability by {{action}}
+1. Use {{application}} and notice that the data is stored/transmitted by {{application}} in an insecure manner
 
-1. Inject CAN bus payload {{payload}} using {{hardware}} and/or {{application}}
 
 ## Vulnerability Evidence
 
 <!--
 Your submission MUST include evidence of the vulnerability and not be theoretical in nature.
 
-For an infotainment vulnerability, please include detailed instructions that can be followed to easily demonstrate and reproduce the issue. 
+For an infotainment vulnerability, please include detailed instructions that can be followed to easily demonstrate and reproduce the issue. If data was found using Open Source Intelligence (OSINT), please provide steps to where and how it was found.
 -->
 
-The image(s) below demonstrates the CAN Bus pivot and the payload sent to the system.
+The image(s) shows how and where to find the PII on the vulnerable system.
 
 {{screenshot}}
 
@@ -42,4 +41,4 @@ The image(s) below demonstrates the CAN Bus pivot and the payload sent to the sy
 Attempt to completely stop the vehicle for functioning if the infotainment system controls mechanical aspect of the vehicle. If this is possible, provide a full proof-of-concept here.
 --> 
 
-A malicious attacker could exploit {{application}} on the system to flood the CAN Bus Arbitration IDs with malicious messages causing the system to {{action}}
+Malicious attackers can collect PII data on used vehicles of the same make and model using this vulnerability.

@@ -1,4 +1,4 @@
-# Infotainment Code Execution CAN Bus Pivot
+# Source Code Dump
 
 ## Overview
 
@@ -9,7 +9,7 @@ This format is a good guide:
 [VULNTYPE] in [COMPONENT] in [APPLICATION] allows [ATTACKER] to [IMPACT] via [VECTOR] 
 -->
 
-The {{application}} allows malicious attacker to pivot into the CAN Bus via {{action}} with the In-Vehicle Infotainment (IVI) unit.
+Source code can be dumped in {{target}} allowing an attacker to read, release, and exploit code that should otherwise be hidden from users on the In-Vehicle Infotainment (IVI) unit.
 
 ## Walkthrough & PoC
 
@@ -18,11 +18,12 @@ Provide a step-by-step walkthrough on how to access the vulnerable injection poi
 Adding a dot-pointed walkthrough with relevant screenshots will speed triage time and result in faster rewards!
 -->
 
-1. The {{application}} uses this feature to {{action}}, exploited by {{action}}
+1. Acquire a bin or firmware file for {{target}}
 
-1. Pivot into the CAN bus using this vulnerability by {{action}}
+1. Unzip the firmware using {{software}}
 
-1. Inject CAN bus payload {{payload}} using {{hardware}} and/or {{application}}
+1. Unsquare file system using {{software}}
+
 
 ## Vulnerability Evidence
 
@@ -32,7 +33,7 @@ Your submission MUST include evidence of the vulnerability and not be theoretica
 For an infotainment vulnerability, please include detailed instructions that can be followed to easily demonstrate and reproduce the issue. 
 -->
 
-The image(s) below demonstrates the CAN Bus pivot and the payload sent to the system.
+The following image(s) shows the extracted firmware folder and snippets of exposed source code.
 
 {{screenshot}}
 
@@ -42,4 +43,4 @@ The image(s) below demonstrates the CAN Bus pivot and the payload sent to the sy
 Attempt to completely stop the vehicle for functioning if the infotainment system controls mechanical aspect of the vehicle. If this is possible, provide a full proof-of-concept here.
 --> 
 
-A malicious attacker could exploit {{application}} on the system to flood the CAN Bus Arbitration IDs with malicious messages causing the system to {{action}}
+Malicious attackers can dump firmware code online allowing others to view, share, or exploit proprietary code.

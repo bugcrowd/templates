@@ -10,7 +10,7 @@ This format is a good guide:
 [VULNTYPE] in [COMPONENT] in [APPLICATION] allows [ATTACKER] to [IMPACT] via [VECTOR] 
 -->
 
-Default credentials in {{application}} allows malicious attacker to {{action}} via {{vector}} 
+Default credentials in {{application}} allows malicious attacker to {{action}} via {{vector}} on the In-Vehicle Infotainment (IVI) unit. 
 
 ## Walkthrough & PoC
 
@@ -33,7 +33,7 @@ Your submission MUST include evidence of the vulnerability and not be theoretica
 For an infotainment vulnerability, please include detailed instructions that can be followed to easily demonstrate and reproduce the issue. 
 -->
 
-The image below demonstrates the default password successfully authenticating the malicious attacker into the infotainment system.
+The image(s) below demonstrates the default password successfully authenticating the malicious attacker into the infotainment system.
 
 {{screenshot}}
 

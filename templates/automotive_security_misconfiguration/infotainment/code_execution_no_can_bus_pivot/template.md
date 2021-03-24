@@ -9,7 +9,7 @@ This format is a good guide:
 [VULNTYPE] in [COMPONENT] in [APPLICATION] allows [ATTACKER] to [IMPACT] via [VECTOR] 
 -->
 
-The {{application}} allows malicious attacker execute code on the system by {{action}}
+The {{application}} allows malicious attacker execute code on the system by {{action}} on the In-Vehicle Infotainment (IVI) unit.
 
 ## Walkthrough & PoC
 
@@ -22,7 +22,7 @@ Adding a dot-pointed walkthrough with relevant screenshots will speed triage tim
 
 1. The {{application}} exposes {{target}} on the system
 
-1. Send {{payload}} to exposed asset
+1. Send {{payload}} to the exposed asset
 
 ## Vulnerability Evidence
 
@@ -32,7 +32,7 @@ Your submission MUST include evidence of the vulnerability and not be theoretica
 For an infotainment vulnerability, please include detailed instructions that can be followed to easily demonstrate and reproduce the issue. 
 -->
 
-The image below demonstrates the exposed asset shows successful code execution.
+The image(s) below demonstrates code execution on the {{target}}.
 
 {{screenshot}}
 
