@@ -9,7 +9,7 @@ This format is a good guide:
 [VULNTYPE] in [COMPONENT] in [APPLICATION] allows [ATTACKER] to [IMPACT] via [VECTOR] 
 -->
 
-Sensitive data was exposed on {{target}} by {{action}}
+Sensitive data was exposed on {{target}} by {{action}}.
 
 ## Walkthrough & PoC
 
