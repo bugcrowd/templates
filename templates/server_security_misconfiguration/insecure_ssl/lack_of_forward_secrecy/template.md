@@ -37,7 +37,7 @@ The image(s) below demonstrates the use of a cipher suite with lack of forward s
 Provide a full Proof of Concept here.
 --> 
 
-A malicious attacker can leverage this information to break the chain of trust between a client and a server, forward secrecy uses temporary keys for the exchange of information between two parties. If a server's private key is compromised the session will still be secure as it uses ephemeral keys for the exchange. If forward secrecy is not used, these security guarantees will rely solely on a public and private key interaction. A malicious attacker will only require a private key to decrypt the data in transit.
+A malicious attacker can leverage this information to break the chain of trust between a client and a server, forward secrecy uses temporary keys for the exchange of information between two parties. If a server's private key is compromised the session is still secure as it uses ephemeral keys for the exchange. If forward secrecy is not used, these security guarantees will rely solely on a public and private key interaction. A malicious attacker will only require a private key to decrypt the data in transit.
 
 
 
