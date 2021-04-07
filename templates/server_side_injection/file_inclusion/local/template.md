@@ -44,4 +44,4 @@ Local File Inclusion vulnerabilities allow an attacker to read any files on the 
 
 **DO NOT ACCESS PII**
 -->
-The LFI allows a malicious attacker to read any files on the machine hosting the vulnerable service, this can include secrets such as passwords, certificate information, and Personally Identifiable Information (PII). 
+As LFI has been proven - it allows a malicious attacker to read any files on the machine hosting the vulnerable service, this can include secrets such as passwords, certificate information, and Personally Identifiable Information (PII). 
