@@ -1,4 +1,4 @@
-# Lack of X-Content-Security-Policy Header
+# Lack of X-Frame-Options Header 
 
 ## Overview
 
@@ -9,9 +9,9 @@ This format is a good guide:
 [VULNTYPE] in [COMPONENT] in [APPLICATION] allows [ATTACKER] to [IMPACT] via [VECTOR] 
 -->
 
-The HTTP Strict-Transport-Security header (HSTS) instructs a website to enforse the use of HTTPS.
+The X-Frame-Options is a permissive header that prevents a browser from rendering an frame, iframe, embed, or object tag.
 
-A lack of an HSTS header allows a malicious attacker to Man-in-The-Middle (MiTM) an HTTP connection.
+A lack of a X-Frame-Options in {{target}} allows a malicious attacker to execute click-jacking attacks.
 
 ## Walkthrough & PoC
 
@@ -21,11 +21,11 @@ Provide a step-by-step walkthrough on how to access the vulnerable injection poi
 Adding a dot-pointed walkthrough with relevant screenshots will speed triage time and result in faster rewards!
 -->
 
-1. Navigate to endpoint: {{value}}
+1. Navigate to the endpoint with missing X-Frame-Options: {{value}}
 
-1. Intecept request in a Web Proxy
+1. Intecept the request and send it to a Web Proxy
 
-1. Notice that no HSTS header is used
+1. Replay the request and notice that no X-Frame-Options is implemented
 
 
 ## Vulnerability Evidence
@@ -34,7 +34,7 @@ Adding a dot-pointed walkthrough with relevant screenshots will speed triage tim
 Your submission MUST include evidence of the vulnerability and not be theoretical in nature.
 -->
 
-The image(s) below demonstrates a lack of HSTS headers:
+The image(s) below demonstrates the missing header:
 
 {{screenshot}}
 
@@ -44,5 +44,9 @@ The image(s) below demonstrates a lack of HSTS headers:
 Provide a full Proof of Concept here.
 --> 
 
-A lack of HSTS headers allows for a MiTM attack to redirect users to a malicious site.
+An attacker can leverage a missing X-Frame-Options render an frame, iframe, embed, and objects to bypass Same Origin Policy or exploit a click-jacking attack.
+
+Below is a screenshot of a full exploit:
+
+{{screenshot}}
 
