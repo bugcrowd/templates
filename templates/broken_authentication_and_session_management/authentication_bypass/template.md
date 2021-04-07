@@ -19,12 +19,13 @@ Adding a dot-pointed walkthrough with relevant screenshots will speed triage tim
 -->
 
 Example:
+
 1. Browse to {{url}}/Login and login as a user that is part of the 'cargo' permissions group.
 2. With an Http proxy enabled, click the dropdown at the top left of the page and click 'Freight Control Panel'
 3. You will be prompted to enter a key-phrase. Enter 0000001 and hit Submit while your proxy has Intercept enabled.
 4. Multiple requests will be made. Forward them until you see a POST with parameters that includes {{parameter}}
-4. Modify the parameter to "{{payload}}" and turn off interception
-5. You should be presented with a panel that includes live depots and allows for redirection and dispatch of shipping.
+5. Modify the parameter to "{{payload}}" and turn off interception
+6. You should be presented with a panel that includes live depots and allows for redirection and dispatch of shipping.
 
 ## Vulnerability Evidence
 <!--
