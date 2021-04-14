@@ -9,7 +9,7 @@ Resources:
 - <https://owasp.org/www-community/vulnerabilities/PHP_File_Inclusion>
 - <https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/07-Input_Validation_Testing/11.1-Testing_for_Local_File_Inclusion>
 -->
-SSI injection (Server-side Include) is a server-side exploit that lets a malicious attacker send code into an application to be executed later, locally, by the web server. This can leads to remote code execution (RCE) which allows a malicious attacker to execute arbitrary commands and leads to complete compromise of the server's data and functionality.
+Server Side Injection is a server-side exploit that lets a malicious attacker send code into an application to be executed later, locally, by the web server. This can leads to remote code execution (RCE) which allows a malicious attacker to execute arbitrary commands and leads to complete compromise of the server's data and functionality.
 
 RCE was found in {{application}} at {{url}} at {{parameter}} through the use of {{payload}}. This allows complete compromise of {{application}} and its data.
 
