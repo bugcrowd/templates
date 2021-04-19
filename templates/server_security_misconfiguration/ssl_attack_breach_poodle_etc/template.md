@@ -1,4 +1,6 @@
-# Overview
+# SSL Attack BREACH and POODLE 
+
+## Overview
 <!--
 **Please replace text in each section below**
 
@@ -9,6 +11,8 @@ Resources:
 - <https://owasp.org/www-community/attacks/Path_Traversal>
 - <https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/05-Authorization_Testing/01-Testing_Directory_Traversal_File_Include>
 -->
+
+Browser Reconnaissance & Exfiltration via Adaptive Compression of Hypertext (BREACH) and Padding Oracle On Downgraded Legacy Encryption (POODLE) are vulnerabilities in SSL and TLS that allows a malicious attacker to injection plaintext into a victim's request or force an SSL downgrade to decrypt encrypted data over thousands of requests.
 
 ## Walkthrough & PoC
 <!--
@@ -23,6 +27,12 @@ Example:
 
 -->
 
+1. Use {{program}} on the {{target}}
+
+1. Notice the following value in the output:
+
+{{screenshot}}
+
 ## Vulnerability Evidence
 <!--
 Your submission MUST include evidence of the vulnerability and not be theoretical in nature.
@@ -30,7 +40,14 @@ Your submission MUST include evidence of the vulnerability and not be theoretica
 Attaching a screenshot of the webpage with the URL bar in view will be sufficient for this report.
 -->
 
+The following image(s) shows the full exploit:
+
+{{screenshot}}
+
 ## Demonstrated Impact
 <!--
 This path traversal vulnerability allows an attack to gain acces to a folder called `securedata` in a directory it was not intended to access.
 -->
+
+An malicious attacker can decrypt data in transit using these vulnerabilities.
+
