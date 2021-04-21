@@ -8,7 +8,7 @@ This format is a good guide:
 
 Improper error handling can introduce a variety of security problems for a web site such when detailed internal error messages such as stack traces, database dumps, and error codes are displayed to a malicious attacker. These error pages display implementation information which should not be publicly available. 
 
-A full path disclosure was found at {{url}} in {{application}}. This allows a malicious attacker to view file paths and other implementation data. 
+A full path disclosure was found at {{url}} in {{application}}. This allows a malicious attacker to view file paths.
 
 ## Walkthrough & PoC
 <!--
