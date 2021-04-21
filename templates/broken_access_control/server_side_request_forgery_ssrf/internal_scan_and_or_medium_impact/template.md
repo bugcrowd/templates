@@ -8,8 +8,9 @@ Provide a 1-2 sentence description - see http://cveproject.github.io/docs/conten
 This format is a good guide:
 [VULNTYPE] in [COMPONENT] in [APPLICATION] allows [ATTACKER] to [IMPACT] via [VECTOR] 
 -->
+Server-side request forgery (SSRF) is a web security vulnerability that allows a malicious attacker to induce the server-side application to make HTTP requests to an arbitrary domain of the attacker's choosing. Such domains may include internal cloud server meta-data which consists of sensitive configuration information, internal HTTP database interfaces allowing database access, or using `file://` URI to read sensitive files.
 
-Server-Side Request Forgery (SSRF) in {{application}} allows attacker to perform arbitrary internal requests to perform internal network scanning
+A SSRF in {{application}} was found via the {{parameter}} at {{url}} which allows a malicious attacker to perform arbitrary internal requests to perform internal network scanning.
 
 ## Walkthrough & PoC
 
