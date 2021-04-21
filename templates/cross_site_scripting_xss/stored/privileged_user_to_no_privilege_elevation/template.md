@@ -8,8 +8,9 @@ Provide a 1-2 sentence description - see http://cveproject.github.io/docs/conten
 This format is a good guide:
 [VULNTYPE] in [COMPONENT] in [APPLICATION] allows [ATTACKER] to [IMPACT] via [VECTOR] 
 -->
+Cross-Site Scripting (XSS) attacks are a type of injection, in which malicious scripts are injected into trusted websites. XSS vulnerabilities allow a malicious attacker to pretend to be the user, and to carry out any actions that the user is able to perform, to access any of the user's data. The malicious attacker might be able to gain full control over all of the application's functionality and data depending on the users level of permissions.
 
-Stored XSS in {{application}} at {{url}} allows a malicious actor to {{action}}
+Stored XSS in {{application}} at {{url}} allows a malicious actor to {{action}}.
 
 ## Walkthrough & PoC
 
