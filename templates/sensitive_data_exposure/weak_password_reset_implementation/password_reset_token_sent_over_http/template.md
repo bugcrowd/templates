@@ -50,3 +50,4 @@ A malicious attacker could ...
 A malicious attacker could intercept this token as it is being transmitted over HTTP and not HTTPS and use it to reset the users password and lock them out of their account, as is being demonstrated in the below screenshot:
 
 {{screenshot}}
+
