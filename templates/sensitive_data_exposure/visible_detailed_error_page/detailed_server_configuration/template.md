@@ -6,9 +6,9 @@ This format is a good guide:
 [VULNTYPE] in [COMPONENT] in [APPLICATION] allows [ATTACKER] to [IMPACT] via [VECTOR] 
 -->
 
-Improper error handling can introduce a variety of security problems for a web site such when detailed internal error messages such as stack traces, database dumps, and error codes are displayed to a malicious attacker. Detailed server configuration pages display physical paths, environment variables, and the full {{software}} configuration settings.
+Improper error handling can introduce a variety of security problems for a web site such when detailed internal error messages such as stack traces, database dumps, and error codes are displayed to a malicious attacker.
 
-Detailed server configuration was found at {{url}} in {{application}}. This allows a malicious attacker to view which version of {{software}} is running as well as implementation data. 
+Detailed server configuration was found at {{url}} in {{application}}. This allows a malicious attacker to view which version of {{software}} is running, physical paths, environment variables, and the full {{software}} configuration settings.
 
 ## Walkthrough & PoC
 <!--
