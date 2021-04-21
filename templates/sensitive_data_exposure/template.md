@@ -1,31 +1,29 @@
-# Sensitive data exposure
-## Overview
+# Overview
 <!--
-Provide a 1-2 sentence description - see http://cveproject.github.io/docs/content/key-details-phrasing.pdf for tips
+**Please replace text in each section below**
 
-This format is a good guide:
-[VULNTYPE] in [COMPONENT] in [APPLICATION] allows [ATTACKER] to [IMPACT] via [VECTOR]
+Sensitive Data Exposure Report
 
+Resources:
 
+- <https://owasp.org/www-project-top-ten/2017/A3_2017-Sensitive_Data_Exposure>
 -->
-Sensitive data is exposed on {{application}} of {{target}}, allowing a malicious attacker to {{action}}
+Sensitive data is information that should be behind an authorisation barrier. When this data is exposed it can place critical senstive data at risk. This can occur due to a variety of scenarios such as: not encrypting data, SSL not being used for authenticated pages, or passwords being storted using unsalted hashes. Examples of such data include, but are not limited to: personally identifiable information (PII), Social Security numbers, medical data, banking information, and login credentials. 
+This could lead to financial loss, identity theft, and reputational damage of {{program}} and their users.
+
+Sensitive data relating to {{program}} was found at {{url}} which was accessed through {{action}}. This allows a malicious attacker to exfiltrate senstive data such as listed above, and/or perform {{action}}.
 
 ## Walkthrough & PoC
 <!--
 Provide a step-by-step walkthrough on how to access the vulnerable injection point, and how to exploit the vulnerability.
 Adding a dot-pointed walkthrough with relevant screenshots will speed triage time and result in faster rewards!
+-->
 
 Example:
 
-1. Login to in-scope asset at <www.inscope.com/login>
-1. Browse to account page
-1. Modify ID token to add single quote
-1. View error which states 'SQL Syntax Error'
-1. Replace ID value with `1' waitfor delay '00:00:10'; `
--->
-
-1. Using an HTTP proxy or web browser, submit {{payload}} to {{url}}, observing the sensitive data
-
+1. Browse to the URL `{{url}}/data/`
+2. You will see the data being leaked from the server, this contains PII for all users in the platform
+3. Clicking on any user will show their email address, real name, and postal address
 
 ## Vulnerability Evidence
 <!--
@@ -35,12 +33,18 @@ For sensitive data exposure, try to take a screenshot of the data that is being 
 **DO NOT ACCESS PII**
 -->
 
-You can observe the exposed sensitive data below:
+The screenshots/video below displays the sensitive data at {{url}}.
 
 {{screenshot}}
+
 ## Demonstrated Impact
 <!--
 Describe the impact of the sensitive data being exposed, do your best to describe what the impact for this data may be to the company. 
--->
 
-A malicious attacker could abuse exposed sensitive data to perform {{action}}.
+**DO NOT ACCESS PII**
+-->
+This data could be used by a malicious attacker in a variety of ways, such as:
+
+1. Selling databases
+2. Using credentials to take over user accounts
+3. {{action}}
