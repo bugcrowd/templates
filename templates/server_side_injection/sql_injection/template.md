@@ -10,8 +10,9 @@ Resources:
 - <https://owasp.org/www-community/attacks/SQL_Injection>
 - <https://owasp.org/www-community/attacks/Blind_SQL_Injection>
 -->
+SQL queries may be exploited in a variety of ways including exfiltration of database data, exfiltration of files, subtle data tampering, and resource exhaustion. A common escalation is to abuse the SQL functionality to upgrade to full remote command execution.
 
-A SQL Injection (SQLi) at {{target}} at {{url}} through {{parameter}} using {{payload}}. This allows a malicious attacker to exfiltrate sensitive customer data and perform arbitrary SQL queries.
+A SQL Injection (SQLi) at {{target}} at {{url}} through {{parameter}} using {{payload}}. This allows a malicious attacker to {{action}} and perform arbitrary SQL queries.
 
 ## Walkthrough & PoC
 <!--
@@ -23,7 +24,7 @@ Adding a dot-pointed walkthrough with relevant screenshots will speed triage tim
 2. Browse to account page
 3. Modify ID token to add single quote
 4. View error which states 'SQL Syntax Error'
-5. Replace ID value with `1' waitfor delay '00:00:10'; `
+5. Replace ID value with {{payload}}
 
 ## Vulnerability Evidence
 <!--
@@ -46,7 +47,7 @@ Demonstrating access to data other than the database version or database tables 
 **DO NOT ACCESS PII**
 --> 
 
-A malicious attacker could theoretically abuse this SQLi further to {{action}} by using the following SQL query:
+A malicious attacker could theoretically abuse this specific SQLi further to {{action}} by using the following SQL query:
 
 ```sql
 {{payload}}
