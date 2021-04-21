@@ -1,4 +1,4 @@
-# Lack of X-Content-Security-Policy Header
+# No Rate Limiting on Change Password Form
 
 ## Overview
 
@@ -9,9 +9,9 @@ This format is a good guide:
 [VULNTYPE] in [COMPONENT] in [APPLICATION] allows [ATTACKER] to [IMPACT] via [VECTOR] 
 -->
 
-The HTTP Strict-Transport-Security header (HSTS) instructs a website to enforse the use of HTTPS.
+Rate Limiting is a measure used by applications to prevent spam attacks or brute forcing.
 
-A lack of an HSTS header allows a malicious attacker to Man-in-The-Middle (MiTM) an HTTP connection.
+A lack of a Rate Limiting in {{target}} allows a malicious attacker to brute force passwords.
 
 ## Walkthrough & PoC
 
@@ -21,12 +21,14 @@ Provide a step-by-step walkthrough on how to access the vulnerable injection poi
 Adding a dot-pointed walkthrough with relevant screenshots will speed triage time and result in faster rewards!
 -->
 
-1. Navigate to endpoint: {{value}}
+1. Navigate to the following URL:
 
-1. Intecept request in a Web Proxy
+{{value}}
 
-1. Notice that no HSTS header is used
+1. Fill in the form to change the password and intercept in a Web Proxy
 
+
+1. Use {{program}} (Up to 10 requests) to launch a spam attack 
 
 ## Vulnerability Evidence
 
@@ -34,7 +36,7 @@ Adding a dot-pointed walkthrough with relevant screenshots will speed triage tim
 Your submission MUST include evidence of the vulnerability and not be theoretical in nature.
 -->
 
-The image(s) below demonstrates a lack of HSTS headers:
+The image(s) below demonstrates the lack of rate limiting on the change password functionality:
 
 {{screenshot}}
 
@@ -44,5 +46,4 @@ The image(s) below demonstrates a lack of HSTS headers:
 Provide a full Proof of Concept here.
 --> 
 
-A lack of HSTS headers allows for a MiTM attack to redirect users to a malicious site.
-
+A malicious attacker can leverage this functionality to possibly slow the network and guess passwords without a limit for accounts.

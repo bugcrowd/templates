@@ -1,4 +1,4 @@
-# Lack of Content Security Policy Header 
+# Lack of X-Webkit-CSP Header 
 
 ## Overview
 
@@ -8,9 +8,11 @@ Provide a 1-2 sentence description - see http://cveproject.github.io/docs/conten
 This format is a good guide:
 [VULNTYPE] in [COMPONENT] in [APPLICATION] allows [ATTACKER] to [IMPACT] via [VECTOR] 
 -->
-The HTTP Content-Security-Policy (CSP) response header is a header that allows admins permissively control the types of resources allowed to load for a page. 
+
+The X-Webkit-Content-Security-Policy response header is a header that allows admins permissively control the types of resources allowed to load for a page. 
 
 A lack of a CSP header in {{target}} allows a malicious attacker to {{action}}
+
 ## Walkthrough & PoC
 
 <!--
@@ -48,7 +50,7 @@ The image(s) below demonstrates the missing CSP:
 Provide a full Proof of Concept here.
 --> 
 
-An attacker can leverage a missing CSP to bypass security controls of an application to execute a code within a victims browser.
+An attacker can leverage a missing CSP to bypass security controls of an application to execute a code within a victim's browser.
 
 Below is a screenshot of a full exploit: 
 

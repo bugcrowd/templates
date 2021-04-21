@@ -1,5 +1,12 @@
-# Overview
+# Email Spoofing on Spam Folder
+
+## Overview
+
 <!--
+Provide a 1-2 sentence description - see http://cveproject.github.io/docs/content/key-details-phrasing.pdf for tips
+
+This format is a good guide:
+[VULNTYPE] in [COMPONENT] in [APPLICATION] allows [ATTACKER] to [IMPACT] via [VECTOR] 
 **Please replace text in each section below**
 
 Email Spoofing on Non-Email Domain Report
@@ -10,6 +17,10 @@ Resources:
 - <https://dmarc.org/2016/03/best-practices-for-email-senders/>
 - <https://www.ftc.gov/system/files/documents/reports/businesses-can-help-stop-phishing-protect-their-brands-using-email-authentication-ftc-staff/email_authentication_staff_perspective.pdf>
 -->
+
+Email spoofing is an attack that modifies email headers to send emails on behalf of a domain. It's commonly used in phishing and spam campaigns to appear a legitimate source.
+
+A spoofed header in {{target}} allows a malicious attacker to use a trusted domain for phishing attacks.
 
 ## Walkthrough & PoC
 <!--
@@ -44,12 +55,28 @@ dig TXT
 
 -->
 
+1. Using the following {{command}} to verify the target is a domain without an MX record:
+
+{{value}}
+
+1. Use dig or nslookup to request details for DMARC on the {{target}}
+
+1. Send a test email using {{application}}
+
+
+
 ## Vulnerability Evidence
 <!--
 This requires a spoofed email being sent from the non-email domain, you can attach the entire email content, including headers to the submission. 
 -->
 
+The following image(s) shows the successful email spoof:
+
+{{screenshot}}
+
 ## Demonstrated Impact
 <!--
 Please demonstrate what the impact of having email spoofing on a domain not utilises for email would have on the target
 --> 
+
+An attacker can use the domain as part of a phishing or spam campaign which can damage the brand of {{target}}.

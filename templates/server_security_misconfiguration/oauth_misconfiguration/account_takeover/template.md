@@ -1,4 +1,4 @@
-# Lack of X-Content-Security-Policy Header
+# Account Takeover
 
 ## Overview
 
@@ -9,9 +9,9 @@ This format is a good guide:
 [VULNTYPE] in [COMPONENT] in [APPLICATION] allows [ATTACKER] to [IMPACT] via [VECTOR] 
 -->
 
-The HTTP Strict-Transport-Security header (HSTS) instructs a website to enforse the use of HTTPS.
+OAuth is an authorization framework used to identify and authenticate users for an application. 
 
-A lack of an HSTS header allows a malicious attacker to Man-in-The-Middle (MiTM) an HTTP connection.
+An account takeover in {{target}} allows a malicious attacker to leverage the OAuth schema to takeover accounts.
 
 ## Walkthrough & PoC
 
@@ -19,13 +19,21 @@ A lack of an HSTS header allows a malicious attacker to Man-in-The-Middle (MiTM)
 Provide a step-by-step walkthrough on how to access the vulnerable injection point, and how to exploit the vulnerability.
 
 Adding a dot-pointed walkthrough with relevant screenshots will speed triage time and result in faster rewards!
+
+These steps are relative to how the schema was implemented to the application. Will leave the rest of the template for the user.
 -->
 
-1. Navigate to endpoint: {{value}}
+1. Navigate to the following URL:
 
-1. Intecept request in a Web Proxy
+{{value}}
 
-1. Notice that no HSTS header is used
+1. Login to the application using:
+
+{{value}}
+
+1. Intercept the following request in a Web Proxy:
+
+{{value}}
 
 
 ## Vulnerability Evidence
@@ -34,7 +42,7 @@ Adding a dot-pointed walkthrough with relevant screenshots will speed triage tim
 Your submission MUST include evidence of the vulnerability and not be theoretical in nature.
 -->
 
-The image(s) below demonstrates a lack of HSTS headers:
+The image(s) below demonstrates a successful account takeover:
 
 {{screenshot}}
 
@@ -44,5 +52,5 @@ The image(s) below demonstrates a lack of HSTS headers:
 Provide a full Proof of Concept here.
 --> 
 
-A lack of HSTS headers allows for a MiTM attack to redirect users to a malicious site.
 
+This can enable an attacker to takeover multiple accounts in the application. 

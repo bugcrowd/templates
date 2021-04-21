@@ -1,4 +1,4 @@
-# Missing or Misconfigured SPF and DKIM
+# Email Spoofing to Spam Folder
 
 ## Overview
 
@@ -18,8 +18,9 @@ Resources:
 - <https://www.ftc.gov/system/files/documents/reports/businesses-can-help-stop-phishing-protect-their-brands-using-email-authentication-ftc-staff/email_authentication_staff_perspective.pdf>
 -->
 
-A Sender Policy Framework (SPF) and DomainKeys Identified Mail (DKIM) are security controls used by email domains to prevent spoofing. A missing of misconfigured SPF or DKIM on a domain enables an attacker to spoof the name of a domain and send emails on it's behalf.
+Email spoofing is an attack that modifies email headers to send emails on behalf of a domain. It's commonly used in phishing and spam campaigns to appear a legitimate source.
 
+A spoofed header in {{target}} allows a malicious attacker to use a trusted domain for phishing attacks.
 
 ## Walkthrough & PoC
 <!--
@@ -54,11 +55,11 @@ dig TXT
 
 -->
 
-1. Using the following {{command}} to request details on the SPF and DKIM on the domain:
+1. Using the following {{command}} to verify the target is a domain without an MX record:
 
 {{value}}
 
-1. Use dig or nslookup to request details for SPF/DKIM on the {{target}}
+1. Use dig or nslookup to request details for DMARC on the {{target}}
 
 1. Send a test email using {{application}}
 
@@ -69,7 +70,7 @@ dig TXT
 This requires a spoofed email being sent from the non-email domain, you can attach the entire email content, including headers to the submission. 
 -->
 
-The following image(s) shows the missing configuration and email spoof:
+The following image(s) shows the missing configuration and email sent to spam:
 
 {{screenshot}}
 

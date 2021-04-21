@@ -1,4 +1,6 @@
-# No rate limiting on form: email triggering form
+# No Rate Limiting on Email Triggering Form
+
+## Overview
 
 <!--
 Provide a 1-2 sentence description - see http://cveproject.github.io/docs/content/key-details-phrasing.pdf for tips

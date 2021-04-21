@@ -1,4 +1,4 @@
-# Lack of X-Content-Security-Policy Header
+# Missing Secure or HTTPOnly on Session Cookie
 
 ## Overview
 
@@ -9,9 +9,9 @@ This format is a good guide:
 [VULNTYPE] in [COMPONENT] in [APPLICATION] allows [ATTACKER] to [IMPACT] via [VECTOR] 
 -->
 
-The HTTP Strict-Transport-Security header (HSTS) instructs a website to enforse the use of HTTPS.
+A Secure and HTTPOnly flag on cookies ensures that cookies are sent to a server in a secure and encrypted manner.
 
-A lack of an HSTS header allows a malicious attacker to Man-in-The-Middle (MiTM) an HTTP connection.
+A lack of a Secure or HTTPOnly flag in {{target}} allows a malicious attacker to access cookies via Man-in-The-Middle or XSS attacks.
 
 ## Walkthrough & PoC
 
@@ -21,12 +21,13 @@ Provide a step-by-step walkthrough on how to access the vulnerable injection poi
 Adding a dot-pointed walkthrough with relevant screenshots will speed triage time and result in faster rewards!
 -->
 
-1. Navigate to endpoint: {{value}}
+1. Authenticate to {{target}} using:
 
-1. Intecept request in a Web Proxy
+{{value}}
 
-1. Notice that no HSTS header is used
+1. Use Web Proxy to intercept the Set-Cookie response:
 
+{{screenshot}}
 
 ## Vulnerability Evidence
 
@@ -34,7 +35,7 @@ Adding a dot-pointed walkthrough with relevant screenshots will speed triage tim
 Your submission MUST include evidence of the vulnerability and not be theoretical in nature.
 -->
 
-The image(s) below demonstrates a lack of HSTS headers:
+The image(s) below demonstrates the missing flags:
 
 {{screenshot}}
 
@@ -44,5 +45,9 @@ The image(s) below demonstrates a lack of HSTS headers:
 Provide a full Proof of Concept here.
 --> 
 
-A lack of HSTS headers allows for a MiTM attack to redirect users to a malicious site.
+An attacker can leverage a missing HTTPOnly or Secure flags to launch a MiTM or XSS attack to steal a user's session or extract information about the session.
+
+Below is a screenshot of a full exploit: 
+
+{{screenshot}}
 
