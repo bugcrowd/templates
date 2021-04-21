@@ -16,10 +16,10 @@ A full path disclosure was found at {{url}} in {{application}}. This allows a ma
 <!--
 Provide a step-by-step walkthrough on how to access the vulnerable injection point, and how to exploit the vulnerability.
 Adding a dot-pointed walkthrough with relevant screenshots will speed triage time and result in faster rewards!
-
 -->
 
 Example:
+
 1. Visit {{url}}
 1. Perform {{action}}
 1. View full path disclosure
