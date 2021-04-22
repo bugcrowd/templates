@@ -1,4 +1,4 @@
-# Email Spoofing Due to Missing or Misconfigured DMARC 
+# Email Spoofing Due to Missing or Misconfigured DMARC
 
 ## Overview
 <!--
@@ -26,7 +26,7 @@ Example:
 1. Using the dig command, you can request the details on DMARC on the domain `www.inscope.com`
 
 ```bash
-dig TXT 
+dig TXT
 ```
 
 1. You can observe in the response, there is no answer section for DMARC on the domain
@@ -73,8 +73,8 @@ _DMARC.inscope.com.	300	IN	TXT	"v=DMARC1; p=none; rua=mailto:admin@inscope.com"
 
 -->
 
-1. Using the dig command, you can request the details on DMARC on the domain {{target}}: 
-   
+1. Using the dig command, you can request the details on DMARC on the domain {{target}}:
+
 {{command}}
 
 1. You can observe in the response, there is no answer section for DMARC on the domain
@@ -88,7 +88,7 @@ _DMARC.inscope.com.	300	IN	TXT	"v=DMARC1; p=none; rua=mailto:admin@inscope.com"
 
 ## Vulnerability Evidence
 <!--
-This requires a spoofed email being sent from the non-email domain, you can attach the entire email content, including headers to the submission. 
+This requires a spoofed email being sent from the non-email domain, you can attach the entire email content, including headers to the submission.
 -->
 
 The followimg image(s) are screenshot of the missing DMARC or missing answer:
@@ -99,6 +99,6 @@ The followimg image(s) are screenshot of the missing DMARC or missing answer:
 ## Demonstrated Impact
 <!--
 Email Spoofing on this domain allows an attacker to use existing email addresses for social engineering using the confidence of the organisations domain name, this will also put the organisations domain address on spam lists, which can put legimate company emails in the spam folder.
---> 
+-->
 
 Email Spoofing on this domain allows an attacker to use existing email addresses for social engineering using the confidence of the organisations domain name, this will also put the organisations domain address on spam lists, which can put legimate company emails in the spam folder.
