@@ -1,4 +1,6 @@
-# Overview
+# Local File Inclusion
+
+## Overview
 <!--
 **Please replace text in each section below**
 
@@ -9,6 +11,9 @@ Resources:
 - <https://owasp.org/www-community/vulnerabilities/PHP_File_Inclusion>
 - <https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/07-Input_Validation_Testing/11.1-Testing_for_Local_File_Inclusion>
 -->
+Local File Inclusion (LFI) is a vulnerability that takes advantage of modular code patterns to include server sided files for certain types of functionality used within the application. 
+
+A malicious attacker can use LFI to parse system files and execute functions the application is not programmed to do.
 
 ## Walkthrough & PoC
 <!--
@@ -22,6 +27,12 @@ Example:
 
 -->
 
+1. Navigate to the following endpoint: {{value}}
+
+1. {{action}} and intercept the request in a Web Proxy
+
+1. Insert the following payload to {{parameter}}: {{value}}
+
 ## Vulnerability Evidence
 <!--
 Your submission MUST include evidence of the vulnerability and not be theoretical in nature.
@@ -30,9 +41,16 @@ For a Local File Inclusion vulnerability, you may take output from files that do
 **DO NOT ACCESS PII**
 -->
 
+The following image(s) shows the full exploit:
+
+{{screenshot}}
+
 ## Demonstrated Impact
 <!--
 Local File Inclusion vulnerabilities allow an attacker to read any files on the machine hosting the vulnerable service, this can include secrets such as passwords, certificate information, and Personally Identifiable Information (PII).
 
 **DO NOT ACCESS PII**
 -->
+
+Local File Inclusion vulnerabilities allow an attacker to read any files on the machine hosting the vulnerable service, this can include secrets such as passwords, certificate information, and Personally Identifiable Information (PII).
+

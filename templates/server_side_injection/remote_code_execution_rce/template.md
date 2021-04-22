@@ -1,4 +1,6 @@
-# Overview
+# Remote Code Execution (RCE)
+
+## Overview
 <!--
 **Please replace text in each section below**
 
@@ -9,6 +11,9 @@ Resources:
 - <https://owasp.org/www-community/vulnerabilities/PHP_File_Inclusion>
 - <https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/07-Input_Validation_Testing/11.1-Testing_for_Local_File_Inclusion>
 -->
+Remote Code Execution (RCE) is a vulnerability that allows commands to be executed on the underlying system by crafting a certain request within the application.
+
+An RCE allows a malicious attacker to take control of a system using the privileges of the exploited process.
 
 ## Walkthrough & PoC
 <!--
@@ -19,6 +24,12 @@ Example:
 
 1. Using a Machine with access to cURL, run the command `curl www.inscope.com/cmd?=ping%20192.168.1.1;cat%20/etc/hostname`
 1. In the terminal, you will see the output of the ping command, then the hostname of the server hosting this website
+-->
+
+1. Using a Machine with access to cURL, run the command {{command}}
+
+1. Notice {{value}} in the output of the cURL
+
 -->
 
 ## Vulnerability Evidence
@@ -35,3 +46,5 @@ Using the Remote Code Execution vulnerability, you are able to remotely execute 
 
 **DO NOT ACCESS PII**
 -->
+
+Using the Remote Code Execution vulnerability, you are able to remotely execute code on this server, enabling an attacker to extract passwords, reconfigure running services, move laterally into attached networks, and potentially take over the server.

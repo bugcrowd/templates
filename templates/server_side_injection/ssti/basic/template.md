@@ -1,5 +1,6 @@
+# Basic Server Side Template Injection
 
-# Overview
+## Overview
 <!--
 **Please replace text in each section below**
 
@@ -10,6 +11,10 @@ Resources:
 - <https://owasp.org/www-community/attacks/SQL_Injection>
 - <https://owasp.org/www-community/attacks/Blind_SQL_Injection>
 -->
+
+Server Side Template Injection (SSTI) is a vulnerability within application templating engines to execute code.
+
+A malicious attacker can use SSTI to execute code on the underlything system by manipulating values within the embedded template.
 
 ## Walkthrough & PoC
 <!--
@@ -25,6 +30,14 @@ Example:
 1. Replace ID value with `1' waitfor delay '00:00:10'; `
 -->
 
+1. Navigate to endpoint: {{value}}
+
+1. {{action}} on form and intercept request in a Web Proxy
+
+1. Replay or forward the request to see the error: {{value}}
+
+1. Replace {{parameter}} value with {{value}} to {{action}}
+
 ## Vulnerability Evidence
 <!--
 Your submission MUST include evidence of the vulnerability and not be theoretical in nature.
@@ -36,9 +49,15 @@ You may present your evidence as output from a tool such as SQLMap, unless the p
 **DO NOT ACCESS PII**
 -->
 
+The following image(s) show the full exploit:
+
+{{screenshot}}
+
 ## Demonstrated Impact
 <!--
 Demonstrating access to data other than the database version or database tables is NOT permitted without explicit permission from the program.
 **DO NOT ACCESS PII**
 --> 
+
+Server Side Template Injection allows for code execution within the underlying system allowing a malicious attacker to run permissioned commands under the exploited process or exploit Cross-Site Scripting to run code within the user's browser.
 

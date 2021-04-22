@@ -1,4 +1,6 @@
-# Overview
+# Header-Based Open Redirect
+
+## Overview
 <!--
 **Please replace text in each section below**
 
@@ -9,6 +11,10 @@ Resources:
 - <https://cwe.mitre.org/data/definitions/601.html>
 
 -->
+
+Open Redirects are vulnerabilities is when an application accepts malicious input that causes an application to redirect to another URL under their control.
+
+A malicious attacker can use open redirects to force users to navigate to another website.
 
 ## Walkthrough & PoC
 <!--
@@ -30,6 +36,14 @@ http://<inscopeDomain>.org/compensation/emp/query.php?url=https://bugcrowd.com/
 5. Submit this in a new browser window and you should be redirected to the bugcrowd website.
 -->
 
+1. Navigate to endpoint: {{value}}
+
+1. {{action}} and intercept the following request in a Web Proxy:
+
+{{screenshot}}
+
+1. Change header {{value}} to {{value}}
+
 ## Vulnerability Evidence
 <!--
 Your submission MUST include evidence of the vulnerability and not be theoretical in nature.
@@ -39,7 +53,13 @@ For a GET open redirect vulnerability, please provide instructions on how to nav
 Posting the entire Http request and response is not required.
 -->
 
+The following image(s) show the full exploit:
+
+{{screenshot}}
+
 ## Demonstrated Impact
 <!--
 Do NOT redirect to an unapproved third party website. Successfully redirecting to https://bugcrowd.com/ is sufficient.
 -->
+
+Using open redirects a malicious attacker can send users to phishing websites to extract login credentials or coerce the user to send a financial transaction.

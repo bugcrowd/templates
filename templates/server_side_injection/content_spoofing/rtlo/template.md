@@ -1,4 +1,4 @@
-# WAF Bypass With Direct Server Access
+# Right to Left Override
 
 ## Overview
 <!--
@@ -12,9 +12,9 @@ Resources:
 - <http://projects.webappsec.org/w/page/13246938/Insufficient%20Anti-automation>
 -->
 
-A Web Application Firewall (WAF) protects applications from attacks such as Cross-Site Scripting (XSS), SQL injection, and malicious strings using pattern matching and traffic analysis.
+Right to Left Override (RLO) Character is a unicode character denounced as U+202E in systems that can understand unicode, whenever an RLO character is renders, all unicode text afterwards will be reversed.
 
-Some applications will completely rely on WAFs as their primary defense. A bypass can allow an attacker to gain full access to an application via a specifically crafted payload. 
+An RLO attack in {{target}} allows a malicious attacker to spoof content in a way where it can potentially social engineer users to do something.
 
 ## Walkthrough & PoC
 <!--
@@ -28,12 +28,11 @@ Example:
 1. You will see from the HTTP title that this the IP Address for <https://secure.inscope.com> 
 -->
 
-1. Browse to the URL endpoint: {{value}}
+1. Navigate to endpoint: {{value}}
 
-1. Access the applciation by sending the following payload on endpoint {{value}}:
+1. {{action}} and intercept request in a Web Proxy
 
-{{value}}
-
+1. Append/add an RLO unicode character to {{parameter}}
 
 ## Vulnerability Evidence
 <!--
@@ -51,4 +50,4 @@ The following image(s) show the full exploit:
 A WAF Bypass allows an attacker to bypass existing Web Application Firewall protections, leaving the web service open to attacks against the web service.
 --> 
 
-Using this bypass, a malicious attacker can {{value}}. Impact will vary depending on the type of application accessed.
+A successful exploit of an RLO character can trick users to downloading or clicking on files they otherwise would not. These files can include malware or an executable that requires user interaction to successfully infect systems.

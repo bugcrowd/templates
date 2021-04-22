@@ -1,4 +1,4 @@
-# WAF Bypass With Direct Server Access
+# Email Hyperlink Injection Based on Email Provider
 
 ## Overview
 <!--
@@ -12,9 +12,9 @@ Resources:
 - <http://projects.webappsec.org/w/page/13246938/Insufficient%20Anti-automation>
 -->
 
-A Web Application Firewall (WAF) protects applications from attacks such as Cross-Site Scripting (XSS), SQL injection, and malicious strings using pattern matching and traffic analysis.
+Content spoofing is a common attack where malicious attackers can insert plaintext or HTML that can be rendered on a client to social engineer users to do something.
 
-Some applications will completely rely on WAFs as their primary defense. A bypass can allow an attacker to gain full access to an application via a specifically crafted payload. 
+Content spoofing in {{target}} allows a malicious attacker to {{action}}
 
 ## Walkthrough & PoC
 <!--
@@ -28,12 +28,13 @@ Example:
 1. You will see from the HTTP title that this the IP Address for <https://secure.inscope.com> 
 -->
 
-1. Browse to the URL endpoint: {{value}}
+1. Navigate to endpoint: {{value}}
 
-1. Access the applciation by sending the following payload on endpoint {{value}}:
+1. {{action}} to add a hyperlink to a malicious website
 
-{{value}}
+1. Change {{parameter}} to {{value}} and forward or replay request in {{software}}
 
+1. Check email to see rendered hyperlink
 
 ## Vulnerability Evidence
 <!--
@@ -51,4 +52,4 @@ The following image(s) show the full exploit:
 A WAF Bypass allows an attacker to bypass existing Web Application Firewall protections, leaving the web service open to attacks against the web service.
 --> 
 
-Using this bypass, a malicious attacker can {{value}}. Impact will vary depending on the type of application accessed.
+A successful hyperlink injection can allow a malicious attacker to social engineer users to navigate to another website and have them enter something like their user credentials.
