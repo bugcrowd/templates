@@ -32,6 +32,7 @@ dig TXT
 1. You can observe in the response, there is no answer section for DMARC on the domain
 
 ```text
+
  <<>> DiG 9.10.6 <<>> TXT _DMARC.inscope.com
 ;; global options: +cmd
 ;; Got answer:
