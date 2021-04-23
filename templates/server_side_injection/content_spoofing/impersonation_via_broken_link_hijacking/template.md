@@ -1,4 +1,4 @@
-# WAF Bypass With Direct Server Access
+# Impersonation via Broken Link Hijacking
 
 ## Overview
 <!--
@@ -12,9 +12,9 @@ Resources:
 - <http://projects.webappsec.org/w/page/13246938/Insufficient%20Anti-automation>
 -->
 
-A Web Application Firewall (WAF) protects applications from attacks such as Cross-Site Scripting (XSS), SQL injection, and malicious strings using pattern matching and traffic analysis.
+Content spoofing via Broken Link Hijacking is when a malicious attacker can register a link on behalf of the original owner due to a change in the original link.
 
-Some applications will completely rely on WAFs as their primary defense. A bypass can allow an attacker to gain full access to an application via a specifically crafted payload. 
+Broken Link Hijacking in {{target}} allows a malicious attacker to impersonate a credible target or domain to social engineer the user to doing something.
 
 ## Walkthrough & PoC
 <!--
@@ -28,12 +28,11 @@ Example:
 1. You will see from the HTTP title that this the IP Address for <https://secure.inscope.com> 
 -->
 
-1. Browse to the URL endpoint: {{value}}
+1. Navigate to endpoint: {{value}}
 
-1. Access the applciation by sending the following payload on endpoint {{value}}:
+1. Click on {{value}} 
 
-{{value}}
-
+1. Notice that the link is redirected to an impersonate domain owned by the attacker
 
 ## Vulnerability Evidence
 <!--
@@ -51,4 +50,5 @@ The following image(s) show the full exploit:
 A WAF Bypass allows an attacker to bypass existing Web Application Firewall protections, leaving the web service open to attacks against the web service.
 --> 
 
-Using this bypass, a malicious attacker can {{value}}. Impact will vary depending on the type of application accessed.
+A successful broken link hijack can allow a malicious attacker to impersonate a credible source to social engineer victims to disclosing data such as usernames, passwords or other sources of sensitive information.
+

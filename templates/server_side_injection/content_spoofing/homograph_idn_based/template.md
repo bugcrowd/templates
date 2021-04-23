@@ -1,4 +1,4 @@
-# WAF Bypass With Direct Server Access
+# Internationalized Domain Name Homograph Attack
 
 ## Overview
 <!--
@@ -12,9 +12,9 @@ Resources:
 - <http://projects.webappsec.org/w/page/13246938/Insufficient%20Anti-automation>
 -->
 
-A Web Application Firewall (WAF) protects applications from attacks such as Cross-Site Scripting (XSS), SQL injection, and malicious strings using pattern matching and traffic analysis.
+Internationalized Domain Name (IDN) Homograph Attack is an type of typosquatting attack that spoofs the name of a known domain by using homoglyph characters that mimic the actual letter.
 
-Some applications will completely rely on WAFs as their primary defense. A bypass can allow an attacker to gain full access to an application via a specifically crafted payload. 
+IDN Homograph attack in {{target}} allows a malicious attacker to {{action}} via replacing {{value}} with {{value}}
 
 ## Walkthrough & PoC
 <!--
@@ -28,12 +28,11 @@ Example:
 1. You will see from the HTTP title that this the IP Address for <https://secure.inscope.com> 
 -->
 
-1. Browse to the URL endpoint: {{value}}
+1. Navigate to endpoint: {{value}}
 
-1. Access the applciation by sending the following payload on endpoint {{value}}:
+1. {{action}} and capture the request in a Web Proxy
 
-{{value}}
-
+1. Change {{value}} to {{value}} and then {{action}}
 
 ## Vulnerability Evidence
 <!--
@@ -51,4 +50,5 @@ The following image(s) show the full exploit:
 A WAF Bypass allows an attacker to bypass existing Web Application Firewall protections, leaving the web service open to attacks against the web service.
 --> 
 
-Using this bypass, a malicious attacker can {{value}}. Impact will vary depending on the type of application accessed.
+A successful IDN Homograph attack can allow a malicious attacker to social engineer users to navigate to a malicious website where it can use the trust of the credible domain name to phish users for their credentials.
+

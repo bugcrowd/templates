@@ -1,7 +1,6 @@
-# Get-Based Open Redirect
+# Header-Based Open Redirect
 
 ## Overview
-
 <!--
 **Please replace text in each section below**
 
@@ -13,25 +12,37 @@ Resources:
 
 -->
 
-Open redirects enable a malicious attacker to manipulate a user and redirect them to a malicious site. A malicious attacker can send a phishing email that contains a link with the business's name and the user will be redirected from the legitimate web server to any arbitrary external domain. The ability to use an authentic application URL, targeting the correct domain and with a valid SSL certificate (if SSL is used), lends credibility to the phishing attack because many users, even if they verify these features, will not notice the subsequent redirection to a different domain.
+Open Redirects are vulnerabilities is when an application accepts malicious input that causes an application to redirect to another URL under their control.
 
-An open redirect was found at {{url}} through {{parameter}} enabling {{action}} to take place.
+A malicious attacker can use open redirects to force users to navigate to another website.
 
 ## Walkthrough & PoC
 <!--
 Provide a step-by-step walkthrough on how to execute a successful redirect via the vulnerable Http parameter.
 Adding a dot-pointed walkthrough with relevant screenshots will speed triage time and result in faster rewards!
--->
 
 Example:
 
-1. Browse to `{{url}}`
+1. Browse to http://<inscopeDomain>.org/
+
 2. At the top of the site click on 'Compensation' and select 'Employers' from the drop down menu.
+
 3. Tick any 3 boxes and click the 'Boom' button. You should see a request similar to:
-`{{url}}/query.php?{{parameter}}=http%3A%2F%2F%3CexampleSite%3E.com%2F91383`
-4. Copy this and modify the URI so the URL is:
-`{{url}}/query.php?{{parameter}}={{payload}}`
-5. Submit this in a new browser window and you should be redirected to the Bugcrowd website.
+http://<inscopeDomain>.org/compensation/emp/query.php?url=http%3A%2F%2F%3CexampleSite%3E.com%2F91383
+
+4. Copy this and modify the URI so the URL is
+http://<inscopeDomain>.org/compensation/emp/query.php?url=https://bugcrowd.com/
+
+5. Submit this in a new browser window and you should be redirected to the bugcrowd website.
+-->
+
+1. Navigate to endpoint: {{value}}
+
+1. {{action}} and intercept the following request in a Web Proxy:
+
+{{screenshot}}
+
+1. Change header {{value}} to {{value}}
 
 ## Vulnerability Evidence
 <!--
@@ -42,7 +53,7 @@ For a GET open redirect vulnerability, please provide instructions on how to nav
 Posting the entire Http request and response is not required.
 -->
 
-The screenshot below demonstrates the GET based open redirect executing at {{url}} through the {{parameter}} parameter.
+The following image(s) show the full exploit:
 
 {{screenshot}}
 

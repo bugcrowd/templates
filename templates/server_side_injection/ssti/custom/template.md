@@ -1,7 +1,6 @@
-# SQL Injection
+# Custom Server Side Template Injection
 
 ## Overview
-
 <!--
 **Please replace text in each section below**
 
@@ -13,24 +12,31 @@ Resources:
 - <https://owasp.org/www-community/attacks/Blind_SQL_Injection>
 -->
 
+Server Side Template Injection (SSTI) is a vulnerability within application templating engines to execute code. Applications will sometimes run their own custom templating engine which are prone to vulnerabilities.
 
-SQL Injection is a vulnerability in which an application injects a valid payload within a SQL query from input data.
-
-SQL queries may be exploited in a variety of ways including exfiltration of database data, exfiltration of files, subtle data tampering, and resource exhaustion. A common escalation is to abuse the SQL functionality to upgrade to full remote command execution.
-
-A SQL Injection (SQLi) was discovered at {{target}} at {{url}} through {{parameter}} using {{payload}}. This allows a malicious attacker to {{action}} and perform arbitrary SQL queries.
+A malicious attacker can use SSTI to execute code on the underlything system by manipulating values within the embedded template.
 
 ## Walkthrough & PoC
 <!--
 Provide a step-by-step walkthrough on how to access the vulnerable injection point, and how to exploit the vulnerability.
 Adding a dot-pointed walkthrough with relevant screenshots will speed triage time and result in faster rewards!
+
+Example:
+
+1. Login to in-scope asset at <www.inscope.com/login>
+1. Browse to account page
+1. Modify ID token to add single quote
+1. View error which states 'SQL Syntax Error'
+1. Replace ID value with `1' waitfor delay '00:00:10'; `
 -->
 
-1. Login to in-scope asset at {{url}}
-2. Browse to account page
-3. Modify ID token to add single quote
-4. View error which states 'SQL Syntax Error'
-5. Replace ID value with {{payload}}
+1. Navigate to endpoint: {{value}}
+
+1. {{action}} on form and intercept request in a Web Proxy
+
+1. Replay or forward the request to see the error: {{value}}
+
+1. Replace {{parameter}} value with {{value}} to {{action}}
 
 ## Vulnerability Evidence
 <!--
@@ -43,7 +49,7 @@ You may present your evidence as output from a tool such as SQLMap, unless the p
 **DO NOT ACCESS PII**
 -->
 
-The screenshot/video below demonstrates the SQLi being executed at {{url}}.
+The following image(s) show the full exploit:
 
 {{screenshot}}
 
@@ -53,8 +59,5 @@ Demonstrating access to data other than the database version or database tables 
 **DO NOT ACCESS PII**
 --> 
 
-A malicious attacker could theoretically abuse this specific SQLi further to {{action}} by using the following SQL query:
+Server Side Template Injection allows for code execution within the underlying system allowing a malicious attacker to run permissioned commands under the exploited process or exploit Cross-Site Scripting to run code within the user's browser.
 
-```sql
-{{payload}}
-```

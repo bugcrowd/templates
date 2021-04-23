@@ -1,4 +1,7 @@
-# Overview
+# Remote Code Execution (RCE)
+
+## Overview
+
 <!--
 **Please replace text in each section below**
 
@@ -9,9 +12,10 @@ Resources:
 - <https://owasp.org/www-community/vulnerabilities/PHP_File_Inclusion>
 - <https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/07-Input_Validation_Testing/11.1-Testing_for_Local_File_Inclusion>
 -->
-Server Side Injection is a server-side exploit that lets a malicious attacker send code into an application to be executed later, locally, by the web server. This can leads to remote code execution (RCE) which allows a malicious attacker to execute arbitrary commands and leads to complete compromise of the server's data and functionality.
 
-RCE was found in {{application}} at {{url}} at {{parameter}} through the use of {{payload}}. This allows complete compromise of {{application}} and its data.
+Remote Code Execution (RCE) is a vulnerability that allows commands to be executed on the underlying system by crafting a certain request within the application.
+
+An RCE allows a malicious attacker to take control of a system using the privileges of the exploited process.
 
 ## Walkthrough & PoC
 <!--
@@ -22,7 +26,7 @@ Adding a dot-pointed walkthrough with relevant screenshots will speed triage tim
 Example:
 
 1. Using a Machine with access to cURL, run the command `curl {{url}}/cmd?=ping%20192.168.1.1;cat%20/etc/hostname`
-1. In the terminal, you will see the output of the ping command, then the hostname of the server hosting this website
+1. In the terminal, you will see the output of the ping command, then the hostname of the server hosting this website.
 
 ## Vulnerability Evidence
 <!--
@@ -36,7 +40,6 @@ The screenshot below demonstrates the RCE in the {{application}} at {{url}} thro
 
 {{screenshot}}
 
-
 ## Demonstrated Impact
 <!--
 Using the Remote Code Execution vulnerability, you are able to remotely execute code on this server, enabling an attacker to extract passwords, reconfigure running services, move laterally into attached networks, and potentially take over the server.
@@ -44,4 +47,4 @@ Using the Remote Code Execution vulnerability, you are able to remotely execute 
 **DO NOT ACCESS PII**
 -->
 
-As RCE has been proven - a malicious attacker can remotely execute code on {{application}}, extract passwords, reconfigure running services, move laterally into attached networks, and potentially take over the server.
+Using the Remote Code Execution vulnerability, you are able to remotely execute code on this server, enabling an attacker to extract passwords, reconfigure running services, move laterally into attached networks, and potentially take over the server.
