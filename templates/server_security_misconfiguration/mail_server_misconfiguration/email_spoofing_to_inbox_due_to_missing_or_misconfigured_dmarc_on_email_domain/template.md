@@ -23,7 +23,7 @@ Adding a dot-pointed walkthrough with relevant screenshots will speed triage tim
 
 Example:
 
-1. Using the dig command, you can request the details on DMARC on the domain `www.inscope.com`
+1. Using the dig command, you can request the details on DMARC on the domain `www.bugcrowd.com`
 
 ```bash
 dig TXT

@@ -18,7 +18,7 @@ Adding a dot-pointed walkthrough with relevant screenshots will speed triage tim
 
 Example:
 
-1. Login to in-scope asset at <www.inscope.com/login>
+1. Login to in-scope asset at <www.bugcrowd.com/login>
 1. Browse to account page
 1. Modify ID token to add single quote
 1. View error which states 'SQL Syntax Error'
