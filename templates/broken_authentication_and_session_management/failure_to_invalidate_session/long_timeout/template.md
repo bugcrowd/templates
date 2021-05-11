@@ -1,4 +1,9 @@
-# Overview
+# Failure to Invalidate Sessions via Long Timeout
+
+## Overview
+Sessions commonly fail to invalidate active sessions. A malicious attacker can replay a previously acquired request to gather information about a target and endpoints an unauthenticated user will not usually have access to.
+
+
 <!--
 **Please replace text in each section below**
 
@@ -29,6 +34,14 @@ Example:
 5. You should be presented with a panel that includes live depots and allows for redirection and dispatch of shipping.
 -->
 
+1. Login to Bugcrowd.com
+
+1. Capture any authenticated request
+
+1. Wait for 10 mins
+
+1. Replay the request
+
 ## Vulnerability Evidence
 <!--
 Your submission MUST include evidence of the vulnerability and not be theoretical in nature.
@@ -37,7 +50,15 @@ For authentication bypass vulnerabilities, include instructions on how to access
 Provide screenshots to show the functionality accessed without valid authentication. 
 -->
 
+The following image(s) show the full exploit:
+
+{{screenshot}}
+
 ## Demonstrated Impact
 <!--
 Explain why this bypass is a risk and how it can be used as an attack vector. If safe, perform a function that is shown to require authentication.
+
+Values are dependent on the type of authentication bypass or session management misconfiguration found and how the application works
 -->
+
+A malicious attacker can use previously acquired sessions to exploit the privacy of a targetted user by accessing their account while they are away from the computer.
