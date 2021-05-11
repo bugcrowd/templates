@@ -1,63 +1,38 @@
-# Failure to Invalidate Sessions on Logout
-
-## Overview
-Sessions commonly fail to invalidate active sessions. A malicious attacker can replay a previously acquired request to gather information about a target and endpoints an unauthenticated user will not usually have access to.
+# Failure to Invalidate Session on Logout
 
 <!--
-**Please replace text in each section below**
+Provide a 1-2 sentence description - see http://cveproject.github.io/docs/content/key-details-phrasing.pdf for tips
 
-Authentication Bypass Report
-
-Resources:
-- https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/04-Authentication_Testing/04-Testing_for_Bypassing_Authentication_Schema
-- https://www.bugcrowd.com/blog/authentication-bypass/
+This format is a good guide:
+[VULNTYPE] in [COMPONENT] in [APPLICATION] allows [ATTACKER] to [IMPACT] via [VECTOR] 
 -->
+
+Failure to invalidate session on logout in {{application}} allows a malicious attacker to {{action}}
 
 ## Walkthrough & PoC
-<!--
-Provide a step-by-step walkthrough on how to access the vulnerable authentication mechanism and how to exploit the vulnerability to obtain access or perform a function that is intended to enforce authentication.
+
+<!-- Provide a step-by-step walkthrough on how to access the vulnerable injection point, and how to exploit the vulnerability.
 Adding a dot-pointed walkthrough with relevant screenshots will speed triage time and result in faster rewards!
-
-Example:
-
-1. Browse to http://<inscope>.com/Login and login as a user that is part of the 'cargo' permissions group.
-
-2. With an Http proxy enabled, click the dropdown at the top left of the page and click 'Freight Control Panel'
-
-3. You will be prompted to enter a key-phrase. Enter 0000001 and hit Submit while your proxy has Intercept enabled.
-
-4. Multiple requests will be made. Forward them until you see a POST with parameters that includes "its_me=nobody"
-
-4. Modify the parameter to "itsme=boom" and turn off interception
-
-5. You should be presented with a panel that includes live depots and allows for redirection and dispatch of shipping.
 -->
 
-1. Login to Bugcrowd.com
-
-1. Capture any authenticated request
-
-1. Logout of the application
-
-1. Replay the request to see that it is still authorized.
+1. Log in to {{application}} at {{url}}
+1. In an HTTP proxy, capture any authenticated GET or POST request to repeat the request
+1. Log out of {{application}} at {{url}}
+1. Resend the captured request from step 2 and observe that the session token was not invalidated on logout
 
 ## Vulnerability Evidence
 <!--
 Your submission MUST include evidence of the vulnerability and not be theoretical in nature.
 
-For authentication bypass vulnerabilities, include instructions on how to access the vulnerable authentication mechanism and steps to bypass it in order to perform a function or access data not intended for that user.
-Provide screenshots to show the functionality accessed without valid authentication. 
+For a failure to invalidation session on logout vulnerability, please include a video showing the action taking place after signing out, or pictures showing the logout process not removing a token from the cache and performing a sensitive action.
 -->
-
-The following image(s) show the full exploit:
 
 {{screenshot}}
 
 ## Demonstrated Impact
+
 <!--
-Explain why this bypass is a risk and how it can be used as an attack vector. If safe, perform a function that is shown to require authentication.
+Attempt to escalate the XSS to perform additional actions (such as an account takeover or CSRF bypass to perform a sensitive action). If this is possible, provide a full proof-of-concept here.
+--> 
 
-Values are dependent on the type of authentication bypass or session management misconfiguration found and how the application works
--->
-
-A malicious attacker can use previously acquired sessions to exploit the privacy of a targetted user by accessing their account even if they logout.
+Failure to invalidate a session after a logout can allow an attacker, who has access to that local machine, full account access, and perform any action that the user can.

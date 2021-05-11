@@ -1,62 +1,55 @@
-# Broken Authentication and Session Management via Privilege Escalation
-
-## Overview
-A malicious attacker can leverage broken authentication and session management to escalate their privileges when logging into an application or when manipulating session variables. 
-
+# Overview
 <!--
 **Please replace text in each section below**
 
-Failure to Invalidate Session on Logout (Server-Side Only) Vulnerability Report
+Authentication Bypass Report
 
 Resources:
-
-- <https://owasp.org/www-project-top-ten/2017/A2_2017-Broken_Authentication>
+- https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/04-Authentication_Testing/04-Testing_for_Bypassing_Authentication_Schema
+- https://www.bugcrowd.com/blog/authentication-bypass/
 -->
+Authentication methods can be bypassed through a variety of ways including, calling an internal post authentication page, modifying the given URL parameters, by manipulating the form, or by counterfeiting sessions. A malicious attacker can perform a variety of actions through bypassing authentication methods, and is only limited by the permissions of the privilieged user. This could include viewing/editing senstive customer data, viewing/editing other user permissions, and taking over user accounts. 
+
+The authentication method for {{application}} at {{url}} is being bypased through {{action}}. This allows a malicious attacker to perform {{action}} which abuses the persmissions of the privilaged user.
 
 ## Walkthrough & PoC
-
-<!-- Provide a step-by-step walkthrough on how to access the vulnerable injection point, and how to exploit the vulnerability.
+<!--
+Provide a step-by-step walkthrough on how to access the vulnerable authentication mechanism and how to exploit the vulnerability to obtain access or perform a function that is intended to enforce authentication.
 Adding a dot-pointed walkthrough with relevant screenshots will speed triage time and result in faster rewards!
+-->
 
 Example:
 
-1. Attempt to sign in to the website at <www.inscope.com/login>
-2. Go to your local storage in your browser and take a copy of the session token
-3. Click on the logout button 
-4. Add the previous session token to your local storage in your browser
-5. Browse to the sensitive page or action <www.inscope.com/accountSettings>
-6. Complete the change 
-7. Sign in again on a different browser and see the change on <www.inscope.com/accountSettings>
- -->
-
-1. Sign in to website at Bugcrowd.com 
-
-1. Navigate to the following endpoint: {{value}}
-
-1. Capture the following endpoint in a Web Proxy: 
-
-{{screenshot}}
-
-1. Change the following parameters: {{parameter}}
-
-1. Login using the following credentials to see the privileges have been changed
+1. Browse to {{url}}/Login and login as a user that is part of the 'cargo' permissions group.
+2. With an Http proxy enabled, click the dropdown at the top left of the page and click 'Freight Control Panel'
+3. You will be prompted to enter a key-phrase. Enter 0000001 and hit Submit while your proxy has Intercept enabled.
+4. Multiple requests will be made. Forward them until you see a POST with parameters that includes {{parameter}}
+5. Modify the parameter to "{{payload}}" and turn off interception
+6. You should be presented with a panel that includes live depots and allows for redirection and dispatch of shipping.
 
 ## Vulnerability Evidence
-
-<!-- 
+<!--
 Your submission MUST include evidence of the vulnerability and not be theoretical in nature.
 
-This can include a video showing the action taking place after adding the session token, or pictures showing the addition of your session token the local storage in your browser and performing a sensitive action.
- -->
+For authentication bypass vulnerabilities, include instructions on how to access the vulnerable authentication mechanism and steps to bypass it in order to perform a function or access data not intended for that user.
+Provide screenshots to show the functionality accessed without valid authentication. 
+-->
 
-The following image(s) show the full exploit:
+The screenshots/video below demonstrates the authentication method being bypassed at {{url}}.
+
+Unauthenticated view:
+{{screenshot}} 
+
+Bypassing authentication/Escalting privileges:
+{{screenshot}}
+
+Privileged user view:
 {{screenshot}}
 
 ## Demonstrated Impact
 <!--
-Demonstrating increased impact results in higher rewards! 
-
-Failure to invalidate a session after a logout can allow an attacker, who has access to that local machine, full account access, and perform any action that the user can.
+Explain why this bypass is a risk and how it can be used as an attack vector. If safe, perform a function that is shown to require authentication.
 -->
+A malicious attacker could abuse this authentication bypass further to {{action}} by abusing the privileged users permissions through {{payload}}.
 
-A malicious attacker can use this vulnerablitity to escalate privileges to root or admin to {{action}}.
+{{screenshot}}

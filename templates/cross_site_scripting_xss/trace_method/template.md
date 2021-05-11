@@ -1,62 +1,52 @@
-# Cross Site Scripting via Trace Method
+# XSS TRACE Method
 
 ## Overview
-Cross Site Scripting (XSS) is an injection that allows a malicious attacker to leverage application specific functionality to execute code within a victim's browser.
-
-A malicious attacker can leverage XSS within the application to {{action}}.
 
 <!--
-**Please replace text in each section below**
+Provide a 1-2 sentence description - see http://cveproject.github.io/docs/content/key-details-phrasing.pdf for tips
 
-HTTPS not Available or HTTP by default on Login Page Vulnerability Report
+This format is a good guide:
+[VULNTYPE] in [COMPONENT] in [APPLICATION] allows [ATTACKER] to [IMPACT] via [VECTOR] 
+-->
 
-Resources:
-
-- <https://owasp.org/www-project-top-ten/2017/A3_2017-Sensitive_Data_Exposure
+XSS TRACE method attack in {{application}} of {{target}} allows malicious attacker to {{action}}
 
 ## Walkthrough & PoC
 
-<!-- Provide a step-by-step walkthrough on how to access the vulnerable injection point, and how to exploit the vulnerability.
+<!--
+Provide a step-by-step walkthrough on how to access the vulnerable injection point, and how to exploit the vulnerability.
 Adding a dot-pointed walkthrough with relevant screenshots will speed triage time and result in faster rewards!
+-->
 
-Example:
-
-1. Browse to the URL <www.inscope.com/login>
-1. Attempt to sign into the website using the login button
-1. Observe the page running on HTTP as default
-
-1. Run the following command on a machine with cURL installed
-```bash
-curl -I www.inscope.com/login
-```
-1. Observe the repsonse showing a 200 OK on the HTTP response
-
- -->
-
-1. Navigate to the following URL: bugcrowd.com/vulnerable-endpoint
-
-1. Intercept the request in a Web Proxy and change the HTTP method to TRACE
-
-{{screenshot}}
-
-1. Forward the request to see the arbitrary javascript execute
+1. Log in to {{application}} at {{url}}
+1. Send a cURL request to {{url}} using the TRACE header
+1. Observe the cookie header sent with the request is shown in the response
+1. Observe that the response containing reflected elements of the HTTP request
 
 ## Vulnerability Evidence
 
-<!-- 
+<!--
 Your submission MUST include evidence of the vulnerability and not be theoretical in nature.
 
-This can include a cURL response from the website showing that HTTP is default or HTTPS is not avalible.
- -->
+For a TRACE method XSS vulnerability, please include a cURL request that can be executed to easily demonstrate and reproduce the issue. 
+-->
 
-The following image(s) show the full exploit:
+Below is a screenshot demonstrating the injected JavaScript executing at {{url}}.
+
 {{screenshot}}
 
 ## Demonstrated Impact
+
 <!--
-Demonstrating increased impact results in higher rewards! 
+Attempt to escalate the XSS to perform additional actions (such as stealing HttpOnly cookies). If this is possible, provide a full proof-of-concept here.
+--> 
 
-Credentials transmitted over HTTP are transmitted in Plaintext, allowing any attacker to intercept these requests, and obtain the login credentials for that user. 
--->
+A malicious attacker could abuse this XSS further to {{action}} by using the following JavaScript payload.
 
-Cross Site Scripting vulnerabilities can lead to the ability to bypass CSRF protections, performing account takeovers (usually combined with missing `httpOnly` flag on session cookies), ultimately an attacker can perform any action that logged in user can perform.
+```
+{{payload}}
+```
+
+Here is a screenshot of the full exploit taking place:
+
+{{screenshot}}

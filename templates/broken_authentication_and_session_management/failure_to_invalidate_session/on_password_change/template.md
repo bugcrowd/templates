@@ -1,60 +1,38 @@
-# Failure to Invalidate Session on Password Change
-
-## Overview
-Sessions should be invalidated when a password is changed on both the server and client. A malicious attacker can use a previously used password or found session cookies to generate session identifiers to access unauthorized endpoints.
+# Failure to Invalidate Session on password change
 
 <!--
-**Please replace text in each section below**
+Provide a 1-2 sentence description - see http://cveproject.github.io/docs/content/key-details-phrasing.pdf for tips
 
-Failure to Invalidate Session on Logout (Server-Side Only) Vulnerability Report
-
-Resources:
-
-- <https://owasp.org/www-project-top-ten/2017/A2_2017-Broken_Authentication>
+This format is a good guide:
+[VULNTYPE] in [COMPONENT] in [APPLICATION] allows [ATTACKER] to [IMPACT] via [VECTOR]
 -->
+
+Failure to invalidate session on password change in {{application}} allows a malicious attacker to {{action}}
 
 ## Walkthrough & PoC
 
 <!-- Provide a step-by-step walkthrough on how to access the vulnerable injection point, and how to exploit the vulnerability.
 Adding a dot-pointed walkthrough with relevant screenshots will speed triage time and result in faster rewards!
-
-Example:
-
-1. Attempt to sign in to the website at <www.inscope.com/login>
-2. Go to your local storage in your browser and take a copy of the session token
-3. Click on the logout button 
-4. Add the previous session token to your local storage in your browser
-5. Browse to the sensitive page or action <www.inscope.com/accountSettings>
-6. Complete the change 
-7. Sign in again on a different browser and see the change on <www.inscope.com/accountSettings>
- -->
-
- 1. Sign in to website at Bugcrowd.com 
-
- 1. Copy the session token and store it for later
-
- 1. Using the same session change the password using the endpoint: bugcrowd.com/password-endpoint
-
- 1. Reuse token copied from Step 3 and browser to access the sensitive page: bugcrowd.com/sensitive-page 
-
- 1. Use token to {{action}}
-
-## Vulnerability Evidence
-
-<!-- 
-Your submission MUST include evidence of the vulnerability and not be theoretical in nature.
-
-This can include a video showing the action taking place after adding the session token, or pictures showing the addition of your session token the local storage in your browser and performing a sensitive action.
- -->
-
-The following image(s) show the full exploit:
-{{screenshot}}
-
-## Demonstrated Impact
-<!--
-Demonstrating increased impact results in higher rewards! 
-
-Failure to invalidate a session after a logout can allow an attacker, who has access to that local machine, full account access, and perform any action that the user can.
 -->
 
-Failure to invalidate a session after a password change can allow an attacker, who has access to session ID/cookies, full account access, and perform any action that the user can.
+1. Log in to {{application}} at {{url}}
+1. In an HTTP proxy, capture any authenticated GET or POST request to repeat the request
+1. Navigate to {{url}} and modify the password of the account used to login in step 1
+1. Resend the captured request from step 2 and observe that the session token was not invalidated on password change
+
+## Vulnerability Evidence
+<!--
+Your submission MUST include evidence of the vulnerability and not be theoretical in nature.
+
+For a failure to invalidation session on password change vulnerability, please include a video showing the action taking place after password change, or pictures showing the password change process not removing a token from the cache and performing a sensitive action.
+-->
+
+Please observe the failure to invalidate the session after password change below. {{screenshot}}
+
+## Demonstrated Impact
+
+<!--
+Attempt to escalate the failure to invalidate the session on password change. If this is possible, provide a full proof-of-concept here.
+-->
+
+Failure to invalidate a session after a password change can allow an attacker, who has access gained access to an account due to a compromised password, full account access even after the password has been changed

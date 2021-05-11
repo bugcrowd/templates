@@ -1,6 +1,7 @@
 # SQL Injection
 
 ## Overview
+
 <!--
 **Please replace text in each section below**
 
@@ -12,33 +13,24 @@ Resources:
 - <https://owasp.org/www-community/attacks/Blind_SQL_Injection>
 -->
 
-SQL Injection is a vulneralibity in which an application injects a valid payload within a SQL query from input data.
 
-A malicious attacker can use SQL Injection to interact with the underlying database or system via code execution or data exfiltration.
+SQL Injection is a vulnerability in which an application injects a valid payload within a SQL query from input data.
+
+SQL queries may be exploited in a variety of ways including exfiltration of database data, exfiltration of files, subtle data tampering, and resource exhaustion. A common escalation is to abuse the SQL functionality to upgrade to full remote command execution.
+
+A SQL Injection (SQLi) was discovered at {{target}} at {{url}} through {{parameter}} using {{payload}}. This allows a malicious attacker to {{action}} and perform arbitrary SQL queries.
 
 ## Walkthrough & PoC
 <!--
 Provide a step-by-step walkthrough on how to access the vulnerable injection point, and how to exploit the vulnerability.
 Adding a dot-pointed walkthrough with relevant screenshots will speed triage time and result in faster rewards!
-
-Example:
-
-1. Login to in-scope asset at <www.inscope.com/login>
-1. Browse to account page
-1. Modify ID token to add single quote
-1. View error which states 'SQL Syntax Error'
-1. Replace ID value with `1' waitfor delay '00:00:10'; `
 -->
 
-1. Login to in-scope asset at {{value}}
-
-1. Navigate to endpoint: {{value}}
-
-1. Modify {{parameter}} to {{action}}
-
-1. View error which states {{value}}
-
-1. Replace {{parameter}} value with {{value}}
+1. Login to in-scope asset at {{url}}
+2. Browse to account page
+3. Modify ID token to add single quote
+4. View error which states 'SQL Syntax Error'
+5. Replace ID value with {{payload}}
 
 ## Vulnerability Evidence
 <!--
@@ -51,7 +43,7 @@ You may present your evidence as output from a tool such as SQLMap, unless the p
 **DO NOT ACCESS PII**
 -->
 
-The following image(s) show the full exploit:
+The screenshot/video below demonstrates the SQLi being executed at {{url}}.
 
 {{screenshot}}
 
@@ -61,4 +53,8 @@ Demonstrating access to data other than the database version or database tables 
 **DO NOT ACCESS PII**
 --> 
 
-SQL Injection allows a malicious attacker to execute code within the underlying system, manipulate database tables, exfiltrate data, and deny access (DoS).
+A malicious attacker could theoretically abuse this specific SQLi further to {{action}} by using the following SQL query:
+
+```sql
+{{payload}}
+```

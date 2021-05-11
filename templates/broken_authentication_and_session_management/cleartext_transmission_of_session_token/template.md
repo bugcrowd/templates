@@ -1,67 +1,52 @@
 # Cleartext Transmission of Session Token
 
 ## Overview
-Cleartext transmission of a session token is a misconfigruation that can commonly be exposed in requests during authentication.
-
-A malicious attacker can leverage this exposure by intercepting or sniffing traffic of a target user and accessing the plaintext token to take over a user's session.
 
 <!--
-**Please replace text in each section below**
+Provide a 1-2 sentence description - see http://cveproject.github.io/docs/content/key-details-phrasing.pdf for tips
 
-Authentication Bypass Report
-
-Resources:
-- https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/04-Authentication_Testing/04-Testing_for_Bypassing_Authentication_Schema
-- https://www.bugcrowd.com/blog/authentication-bypass/
+This format is a good guide:
+[VULNTYPE] in [COMPONENT] in [APPLICATION] allows [ATTACKER] to [IMPACT] via [VECTOR] 
 -->
+
+Cleartext transmission of the session token over an unencrypted channel at {{url}} allows a malicious attacker to intercept this session token via a Person in the Middle (PitM) attack
 
 ## Walkthrough & PoC
+
 <!--
-Provide a step-by-step walkthrough on how to access the vulnerable authentication mechanism and how to exploit the vulnerability to obtain access or perform a function that is intended to enforce authentication.
+Provide a step-by-step walkthrough on how to access the vulnerable injection point, and how to exploit the vulnerability.
 Adding a dot-pointed walkthrough with relevant screenshots will speed triage time and result in faster rewards!
-
-Example:
-
-1. Browse to http://<inscope>.com/Login and login as a user that is part of the 'cargo' permissions group.
-
-2. With an Http proxy enabled, click the dropdown at the top left of the page and click 'Freight Control Panel'
-
-3. You will be prompted to enter a key-phrase. Enter 0000001 and hit Submit while your proxy has Intercept enabled.
-
-4. Multiple requests will be made. Forward them until you see a POST with parameters that includes "its_me=nobody"
-
-4. Modify the parameter to "itsme=boom" and turn off interception
-
-5. You should be presented with a panel that includes live depots and allows for redirection and dispatch of shipping.
 -->
 
-1. Login to Bugcrowd.com
-
-1. {{action}} to initiate the vulnerable request
-
-1. Intercept the request in a Web Proxy
-
-1. {{action}} and notice that the session token {{value}} is sent in plaintext
-
+1. Navigate to the {{application}} at {{url}}
+1. View the HTTP headers using an HTTP proxy
+1. Observe the secure flag is not set
+1. Observe cookies are sent in cleartext
 
 ## Vulnerability Evidence
+
 <!--
 Your submission MUST include evidence of the vulnerability and not be theoretical in nature.
 
-For authentication bypass vulnerabilities, include instructions on how to access the vulnerable authentication mechanism and steps to bypass it in order to perform a function or access data not intended for that user.
-Provide screenshots to show the functionality accessed without valid authentication. 
+For a cleartext transmission vulnerability, please include a simple URL that can be executed to easily demonstrate and reproduce the issue. 
 -->
 
-The following image(s) show the full exploit:
+Below is a screenshot displaying the HTTP header request for the page {{url}}.
 
 {{screenshot}}
 
 ## Demonstrated Impact
+
 <!--
-Explain why this bypass is a risk and how it can be used as an attack vector. If safe, perform a function that is shown to require authentication.
+Attempt to perform additional actions using the provided session token (such as cookie-based XSS). If this is possible, provide a full proof-of-concept here.
+--> 
 
-Values are dependent on the type of authentication bypass or session management misconfiguration found and how the application works
--->
+A malicious attacker could abuse the session token further to {{action}} by using the following payload.
 
-A malicious attacker can leverage exposed plaintext tokens from sniffed requests to hijack a user's session or make requests on behalf of users to {{action}}.
+```
+{{payload}}
+```
 
+Here is a screenshot of the full exploit taking place:
+
+{{screenshot}}
