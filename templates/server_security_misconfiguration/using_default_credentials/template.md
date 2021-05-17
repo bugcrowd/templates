@@ -1,4 +1,4 @@
-# Default Credentials 
+# Default Credentials
 
 ## Overview
 <!--
@@ -42,7 +42,7 @@ The following image(s) shows the full exploit:
 
 ## Demonstrated Impact
 <!--
-Describe what the impact of using default credentials on this service would be, what role does this account have, and how could it be used. 
---> 
+Describe what the impact of using default credentials on this service would be, what role does this account have, and how could it be used.
+-->
 
 An attacker can login to administrative accounts which may give authority to change the state of the application or users.

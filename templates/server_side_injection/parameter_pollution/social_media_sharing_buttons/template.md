@@ -22,7 +22,7 @@ Adding a dot-pointed walkthrough with relevant screenshots will speed triage tim
 
 Example:
 
-1. On your browser, browse to the URL `www.inscope.com/../../ect/hostname`
+1. On your browser, browse to the URL `www.bugcrowd.com/../../ect/hostname`
 1. You will see the hostname of the server running this website
 
 -->
