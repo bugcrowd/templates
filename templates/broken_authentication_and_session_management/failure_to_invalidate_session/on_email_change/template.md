@@ -1,9 +1,7 @@
-# Authentication Bypass
+# Failure to Invalidate Sessions via Email Change
 
 ## Overview
-There are many types authentication and session management mechanisms used in modern day web applications. Many of them contain misconfigurations or vulneraiblities that can be leveraged to bypass security controls enforced. 
-
-A malicious attacker can use these authentication and session misconfigurations to takeover accounts, session hijack, access unauthorized endpoints, or expose critical data.
+Sessions commonly fail to invalidate active sessions. A malicious attacker can replay a previously acquired request to gather information about a target and endpoints an unauthenticated user will not usually have access to.
 
 
 <!--
@@ -38,14 +36,11 @@ Example:
 
 1. Login to Bugcrowd.com
 
-1. {{action}} to initiate the vulnerable request
+1. Capture any authenticated request
 
-1. Intercept the request in a Web Proxy
+1. Use email change functionality to change the email
 
-1. Change {{parameter}} to {{value}}
-
-1. Notice that the application does {{action}}
-
+1. Replay the request to see that it is still authorized.
 
 ## Vulnerability Evidence
 <!--
@@ -66,4 +61,4 @@ Explain why this bypass is a risk and how it can be used as an attack vector. If
 Values are dependent on the type of authentication bypass or session management misconfiguration found and how the application works
 -->
 
-A malicious attacker can {{action}} to bypass authentication or break session management to access {{value}}
+A malicious attacker can use previously acquired sessions to exploit the privacy of a targetted user by accessing their account even if an email is changed.

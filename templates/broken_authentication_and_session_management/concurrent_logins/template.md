@@ -1,9 +1,7 @@
-# Authentication Bypass
+# Concurrent Logins
 
 ## Overview
-There are many types authentication and session management mechanisms used in modern day web applications. Many of them contain misconfigurations or vulneraiblities that can be leveraged to bypass security controls enforced. 
-
-A malicious attacker can use these authentication and session misconfigurations to takeover accounts, session hijack, access unauthorized endpoints, or expose critical data.
+Allowing multiple concurrent logins can allow a malicous attacker to reuse stolen or acquired session tokens to hijack requests. Old sessions are commonly found in open source intelligence efforts (OSINT) or through sniffed requests via Man-in-The-Middle(MiTM) attacks.
 
 
 <!--
@@ -38,14 +36,9 @@ Example:
 
 1. Login to Bugcrowd.com
 
-1. {{action}} to initiate the vulnerable request
+1. In another container or incognito tab, login using the same credentials
 
-1. Intercept the request in a Web Proxy
-
-1. Change {{parameter}} to {{value}}
-
-1. Notice that the application does {{action}}
-
+1. Intercept any request while logged in and replay requests in another tab
 
 ## Vulnerability Evidence
 <!--
@@ -66,4 +59,4 @@ Explain why this bypass is a risk and how it can be used as an attack vector. If
 Values are dependent on the type of authentication bypass or session management misconfiguration found and how the application works
 -->
 
-A malicious attacker can {{action}} to bypass authentication or break session management to access {{value}}
+A malicious attacker can use previously acquired sessions to exploit the privacy of a targetted user by continually accessing their account.
