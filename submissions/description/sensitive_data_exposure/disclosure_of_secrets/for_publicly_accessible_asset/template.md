@@ -36,9 +36,7 @@ curl -I www.inscope.com/login
  -->
 
 1. Navigate to the following URL: bugcrowd.com/data-disclosed-url
-
 1. Use {{software}} to crawl open source databases and publically accessible data for secrets
-
 1. Notice on the following endpoint the following secret was revealed:
 
 {{value}}
@@ -56,14 +54,12 @@ For exposed secrets for a publicly accessible asset, please include a screenshot
  -->
 
 The following image(s) show the full exploit:
-=======
+
 1. Login to in-scope asset at <www.bugcrowd.com/login>
 1. Browse to account page
 1. Modify ID token to add single quote
 1. View error which states 'SQL Syntax Error'
 1. Replace ID value with `1' waitfor delay '00:00:10'; `
--->
-
 1. Navigate to {{url}} and observe the disclosure of secrets for a publicly accessible asset
 
 You can observe the exposed secrets for a publicly accessible asset as well as verify its validity below:
