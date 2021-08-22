@@ -1,0 +1,88 @@
+
+# frozen_string_literal: true
+
+require 'spec_helper'
+
+describe BugcrowdTemplates::TemplatePath do
+  subject do
+    described_class.new(
+      type: type,
+      field: field,
+      category: category,
+      subcategory: subcategory,
+      item: item
+    )
+  end
+
+  describe '#new' do
+    context 'initialize with submission type' do
+      let!(:type) { 'submission' }
+      let!(:field) { 'description' }
+      let!(:category) { 'using_components_with_known_vulnerabilities' }
+      let!(:subcategory) { 'captcha_bypass' }
+      let!(:item) { 'ocr_optical_character_recognition' }
+
+      it 'initialize an item' do
+        expect(subject).to be_a(described_class)
+        expect(subject.type).to eq('submission')
+        expect(subject.field).to eq('description')
+        expect(subject.category).to eq('using_components_with_known_vulnerabilities')
+        expect(subject.subcategory).to eq('captcha_bypass')
+      end
+    end
+
+    context 'initialize with methodology type' do
+      let!(:type) { 'methodology' }
+      let!(:field) { 'notes' }
+      let!(:category) { 'website_testing' }
+      let!(:subcategory) { 'information' }
+      let!(:item) { '' }
+
+      it 'initialize an item' do
+        expect(subject).to be_a(described_class)
+        expect(subject.type).to eq('methodology')
+        expect(subject.field).to eq('notes')
+        expect(subject.category).to eq('website_testing')
+        expect(subject.subcategory).to eq('information')
+      end
+    end
+  end
+
+  describe '#template_file' do
+    subject do
+      described_class.new(
+        type: type,
+        field: field,
+        category: category,
+        subcategory: subcategory,
+        item: item
+      ).template_file(type)
+    end
+
+    let(:directory) { BugcrowdTemplates.current_directory }
+
+    context 'when it has all the params' do
+      let!(:type) { 'methodology' }
+      let!(:field) { 'notes' }
+      let!(:category) { 'website_testing' }
+      let!(:subcategory) { 'information' }
+      let!(:item) { '' }
+
+      it 'returns the template value' do
+        is_expected.to eq("#{directory}/methodology/notes/website_testing/information.md")
+      end
+    end
+
+    context 'when it has invalid params' do
+      let!(:type) { 'methodology' }
+      let!(:field) { 'notes' }
+      let!(:category) { 'website_testing' }
+      let!(:subcategory) { '' }
+      let!(:item) { '' }
+
+      it 'returns the template value' do
+        is_expected.to eq("#{directory}/methodology/notes/website_testing.md")
+      end
+    end
+  end
+end
