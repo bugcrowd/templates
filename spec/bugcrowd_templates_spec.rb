@@ -136,5 +136,53 @@ describe BugcrowdTemplates do
         is_expected.to be_nil
       end
     end
+
+    context 'with invalid input params' do
+      let!(:type) { '../../../../etc/passwd' }
+      let!(:field) { 'notes' }
+      let!(:category) { 'testing' }
+      let!(:subcategory) { 'information' }
+      let!(:item) { '' }
+
+      it 'raises InputError' do
+        expect { subject }.to raise_error BugcrowdTemplates::InputError
+      end
+
+      context 'with special character params' do
+        let!(:type) { 'methodology' }
+        let!(:field) { 'notes..@' }
+        let!(:category) { 'testing-testing' }
+        let!(:subcategory) { 'information' }
+        let!(:item) { '' }
+
+        it 'raises InputError' do
+          expect { subject }.to raise_error BugcrowdTemplates::InputError
+        end
+      end
+
+      context 'with number params' do
+        let!(:type) { 'methodology' }
+        let!(:field) { 'test_646' }
+        let!(:category) { 'testing-testing-87' }
+        let!(:subcategory) { 'information' }
+        let!(:item) { '' }
+
+        it 'raises InputError' do
+          expect { subject }.to raise_error BugcrowdTemplates::InputError
+        end
+      end
+
+      context 'with multiple special character params' do
+        let!(:type) { '#methodology' }
+        let!(:field) { 'test_646' }
+        let!(:category) { 'testing&-testing-87' }
+        let!(:subcategory) { 'infor%mation' }
+        let!(:item) { '' }
+
+        it 'raises InputError' do
+          expect { subject }.to raise_error BugcrowdTemplates::InputError
+        end
+      end
+    end
   end
 end
