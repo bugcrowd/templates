@@ -53,7 +53,7 @@ describe BugcrowdTemplates do
       end
     end
 
-    context 'with invalid category' do
+    context 'with incorrect category' do
       let!(:type) { 'methodology' }
       let!(:field) { 'notes' }
       let!(:category) { 'testing' }
@@ -65,7 +65,7 @@ describe BugcrowdTemplates do
       end
     end
 
-    context 'with invalid subcategory' do
+    context 'with incorrect subcategory' do
       let!(:type) { 'methodology' }
       let!(:field) { 'notes' }
       let!(:category) { 'testing' }
@@ -77,7 +77,7 @@ describe BugcrowdTemplates do
       end
     end
 
-    context 'with invalid field' do
+    context 'with incorrect field' do
       let!(:type) { 'methodology' }
       let!(:field) { 'notes_notes' }
       let!(:category) { 'testing' }
@@ -89,7 +89,7 @@ describe BugcrowdTemplates do
       end
     end
 
-    context 'with invalid type' do
+    context 'with incorrect type' do
       let!(:type) { 'methodologysss' }
       let!(:field) { 'notes_notes' }
       let!(:category) { 'testing' }
@@ -101,7 +101,19 @@ describe BugcrowdTemplates do
       end
     end
 
-    context 'with invalid params' do
+    context 'with upbase & downcase params' do
+      let!(:type) { 'METHODOLOGIESSS' }
+      let!(:field) { 'NOTES' }
+      let!(:category) { 'TESTING' }
+      let!(:subcategory) { 'hello' }
+      let!(:item) { 'world' }
+
+      it 'returns the nil value' do
+        is_expected.to be_nil
+      end
+    end
+
+    context 'with incorrect params' do
       let!(:type) { nil }
       let!(:field) { nil }
       let!(:category) { nil }
