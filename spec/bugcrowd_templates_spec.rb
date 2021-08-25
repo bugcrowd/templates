@@ -101,7 +101,7 @@ describe BugcrowdTemplates do
       end
     end
 
-    context 'with upbase & downcase params' do
+    context 'with incorrect up & down case params' do
       let!(:type) { 'METHODOLOGIESSS' }
       let!(:field) { 'NOTES' }
       let!(:category) { 'TESTING' }
