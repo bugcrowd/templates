@@ -7,7 +7,7 @@ module BugcrowdTemplates
     attr_reader :type, :field, :category, :subcategory, :item
 
     def initialize(type:, field:, category: '', subcategory: '', item: '')
-      @type = type
+      @type = type || ''
       @field = field || ''
       @category = category || ''
       @subcategory = subcategory || ''

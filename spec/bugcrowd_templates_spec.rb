@@ -10,6 +10,14 @@ describe BugcrowdTemplates do
     end
   end
 
+  describe '#TEMPLATE_TYPES' do
+    subject { described_class::TEMPLATE_TYPES }
+
+    it 'return template types' do
+      is_expected.to eq(methodology: 'methodology', submissions: 'submissions')
+    end
+  end
+
   describe '#current_directory' do
     subject { described_class.current_directory }
 
@@ -19,7 +27,15 @@ describe BugcrowdTemplates do
   end
 
   describe '#get' do
-    subject { described_class.get(type, field, category, subcategory, item) }
+    subject do
+      described_class.get(
+        template_type: type,
+        template_field: field,
+        template_category: category,
+        template_subcategory: subcategory,
+        template_item: item
+      )
+    end
 
     let(:type) { '' }
     let(:field) { '' }
@@ -96,8 +112,8 @@ describe BugcrowdTemplates do
       let!(:subcategory) { '' }
       let!(:item) { '' }
 
-      it 'returns the nil value' do
-        is_expected.to be_nil
+      it 'raises TemplateNotFoundError' do
+        expect { subject }.to raise_error BugcrowdTemplates::TemplateNotFoundError
       end
     end
 
@@ -108,8 +124,8 @@ describe BugcrowdTemplates do
       let!(:subcategory) { 'hello' }
       let!(:item) { 'world' }
 
-      it 'returns the nil value' do
-        is_expected.to be_nil
+      it 'raises TemplateNotFoundError' do
+        expect { subject }.to raise_error BugcrowdTemplates::TemplateNotFoundError
       end
     end
 
@@ -120,8 +136,8 @@ describe BugcrowdTemplates do
       let!(:subcategory) { nil }
       let!(:item) { nil }
 
-      it 'returns the nil value' do
-        is_expected.to be_nil
+      it 'raises TemplateNotFoundError' do
+        expect { subject }.to raise_error BugcrowdTemplates::TemplateNotFoundError
       end
     end
 
@@ -144,14 +160,14 @@ describe BugcrowdTemplates do
       let!(:subcategory) { nil }
       let!(:item) { nil }
 
-      it 'returns the nil value' do
-        is_expected.to be_nil
+      it 'raises TemplateNotFoundError' do
+        expect { subject }.to raise_error BugcrowdTemplates::TemplateNotFoundError
       end
     end
 
     context 'with invalid input params' do
-      let!(:type) { '../../../../etc/passwd' }
-      let!(:field) { 'notes' }
+      let!(:type) { 'methodology' }
+      let!(:field) { '../../etc/password' }
       let!(:category) { 'testing' }
       let!(:subcategory) { 'information' }
       let!(:item) { '' }
@@ -185,7 +201,7 @@ describe BugcrowdTemplates do
       end
 
       context 'with multiple special character params' do
-        let!(:type) { '#methodology' }
+        let!(:type) { 'methodology' }
         let!(:field) { 'test_646' }
         let!(:category) { 'testing&-testing-87' }
         let!(:subcategory) { 'infor%mation' }
@@ -193,6 +209,30 @@ describe BugcrowdTemplates do
 
         it 'raises InputError' do
           expect { subject }.to raise_error BugcrowdTemplates::InputError
+        end
+      end
+
+      context 'when there is no params' do
+        let!(:type) {}
+        let!(:field) {}
+        let!(:category) {}
+        let!(:subcategory) {}
+        let!(:item) {}
+
+        it 'raises TemplateNotFoundError' do
+          expect { subject }.to raise_error BugcrowdTemplates::TemplateNotFoundError
+        end
+      end
+
+      context 'when it has correct type & other params as empty' do
+        let!(:type) { 'submissions' }
+        let!(:field) {}
+        let!(:category) {}
+        let!(:subcategory) {}
+        let!(:item) {}
+
+        it 'returns the nil value' do
+          is_expected.to be_nil
         end
       end
     end
