@@ -20,22 +20,22 @@ module BugcrowdTemplates
 
   # returns the Bugcrowd template based on given inputs
   def get(
-    template_type: '',
-    template_field: '',
-    template_category: '',
-    template_subcategory: '',
-    template_item: ''
+    type: '',
+    field: '',
+    category: '',
+    subcategory: '',
+    item: ''
   )
 
-    raise TemplateNotFoundError unless TEMPLATE_TYPES.value?(template_type)
+    raise TemplateNotFoundError unless TEMPLATE_TYPES.value?(type)
 
     template_path = TemplatePath.new(
-      type: template_type,
-      field: template_field,
-      category: template_category,
-      subcategory: template_subcategory,
-      item: template_item
-    ).template_file(template_type)
+      type: type,
+      field: field,
+      category: category,
+      subcategory: subcategory,
+      item: item
+    ).template_file(type)
 
     template_data(template_path)
   end

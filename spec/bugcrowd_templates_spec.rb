@@ -29,11 +29,11 @@ describe BugcrowdTemplates do
   describe '#get' do
     subject do
       described_class.get(
-        template_type: type,
-        template_field: field,
-        template_category: category,
-        template_subcategory: subcategory,
-        template_item: item
+        type: type,
+        field: field,
+        category: category,
+        subcategory: subcategory,
+        item: item
       )
     end
 
