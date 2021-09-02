@@ -112,8 +112,8 @@ describe BugcrowdTemplates do
       let!(:subcategory) { '' }
       let!(:item) { '' }
 
-      it 'raises TemplateNotFoundError' do
-        expect { subject }.to raise_error BugcrowdTemplates::TemplateNotFoundError
+      it 'raises TypeError' do
+        expect { subject }.to raise_error BugcrowdTemplates::TypeError
       end
     end
 
@@ -124,8 +124,8 @@ describe BugcrowdTemplates do
       let!(:subcategory) { 'hello' }
       let!(:item) { 'world' }
 
-      it 'raises TemplateNotFoundError' do
-        expect { subject }.to raise_error BugcrowdTemplates::TemplateNotFoundError
+      it 'raises TypeError' do
+        expect { subject }.to raise_error BugcrowdTemplates::TypeError
       end
     end
 
@@ -136,8 +136,8 @@ describe BugcrowdTemplates do
       let!(:subcategory) { nil }
       let!(:item) { nil }
 
-      it 'raises TemplateNotFoundError' do
-        expect { subject }.to raise_error BugcrowdTemplates::TemplateNotFoundError
+      it 'raises TypeError' do
+        expect { subject }.to raise_error BugcrowdTemplates::TypeError
       end
     end
 
@@ -160,8 +160,8 @@ describe BugcrowdTemplates do
       let!(:subcategory) { nil }
       let!(:item) { nil }
 
-      it 'raises TemplateNotFoundError' do
-        expect { subject }.to raise_error BugcrowdTemplates::TemplateNotFoundError
+      it 'raises TypeError' do
+        expect { subject }.to raise_error BugcrowdTemplates::TypeError
       end
     end
 
@@ -219,8 +219,8 @@ describe BugcrowdTemplates do
         let!(:subcategory) {}
         let!(:item) {}
 
-        it 'raises TemplateNotFoundError' do
-          expect { subject }.to raise_error BugcrowdTemplates::TemplateNotFoundError
+        it 'raises TypeError' do
+          expect { subject }.to raise_error BugcrowdTemplates::TypeError
         end
       end
 
