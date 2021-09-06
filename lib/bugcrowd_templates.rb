@@ -5,7 +5,7 @@ require 'pathname'
 require 'bugcrowd_templates/template_path'
 
 module BugcrowdTemplates
-  class TemplateNotFoundError < StandardError; end
+  class TypeError < StandardError; end
 
   DATA_DIR = Pathname.new(Gem::Specification.find_by_name('bugcrowd_templates').gem_dir)
 
@@ -27,7 +27,7 @@ module BugcrowdTemplates
     item: ''
   )
 
-    raise TemplateNotFoundError unless TEMPLATE_TYPES.value?(type)
+    raise TypeError, 'Invalid template type' unless TEMPLATE_TYPES.value?(type)
 
     template_path = TemplatePath.new(
       type: type,
