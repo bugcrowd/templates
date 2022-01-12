@@ -9,6 +9,8 @@ This format is a good guide:
 [VULNTYPE] in [COMPONENT] in [APPLICATION] allows [ATTACKER] to [IMPACT] via [VECTOR]
 -->
 
+Cross-Site Scripting (XSS) is a type of injection attack where malicious scripts are injected into trusted websites. XSS vulnerabilities allow a malicious attacker to gain access to a user's account and carry out any actions that the user is able to perform, including accessing any of the user's data. The attacker might be able to gain full control over all of the application's functionality and data depending on the user's level of permissions.
+
 XSS in {{application}} of {{target}} allows malicious attacker to {{action}}
 
 ## Walkthrough & PoC
@@ -40,7 +42,7 @@ The screenshot below demonstrates the injected JavaScript executing at {{url}}.
 Attempt to escalate the XSS to perform additional actions (such as an account takeover or CSRF bypass to perform a sensitive action). If this is possible, provide a full proof-of-concept here.
 -->
 
-A malicious attacker could abuse this XSS further to {{action}} by using the following JavaScript payload.
+An attacker could abuse this XSS further to {{action}} by using the following JavaScript payload.
 
 
 ```javascript
@@ -51,4 +53,24 @@ You can find a screenshot of the full exploit taking place below:
 
 {{screenshot}}
 
-````
+## Recommendations
+All user input fields should be sanitized based on what the field is likely to contain. For example, a date of birth field should only contain a maximum of 10 characters consisting of numbers and forward slashes. Additionally, drop down or pick lists can be used for allowable inputs to ensure expected values are sent to the server.
+
+Encode outputs of HTTP responses to prevent them from being interpreted as active content.
+
+Use appropriate HTTP response headers to ensure the browser correctly interprets responses. For example: 
+
+```
+
+ x-content-type-options: nosniff 
+
+ x-xss-protection: 1; mode=block 
+
+ Content-Security-Policy: default-src ‘self’; script-src ‘self’
+
+```
+
+Ensure access controls are managed on the principle of least privilege, and are routinely audited for unnecessary access.
+
+For more information, please see:
+https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html
