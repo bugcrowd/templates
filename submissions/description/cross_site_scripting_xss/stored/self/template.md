@@ -6,6 +6,7 @@ Cross-Site Scripting (XSS) is a type of injection attack where malicious scripts
 Self-stored XSS in {{application}} of {{target}} allows an attacker to {{action}} by adding or modifying JavaScript permanently to their own account.
 
 ## Walkthrough & PoC
+
 1. Log in to {{application}} at {{url}}
 1. Navigate to {{url}}
 1. Insert {{payload}} in the appropriate area
