@@ -25,12 +25,12 @@ curl -I www.inscope.com/login
 1. Observe the response showing a 200 OK on the HTTP response
 
  -->
- 
+
  
 <!-- 
 Your submission MUST include evidence of the vulnerability and not be theoretical in nature.
 
-This can include a cURL response from the website showing that HTTP is default or HTTPS is not availible.
+This can include a cURL response from the website showing that HTTP is default or HTTPS is not available.
  -->
  
  <!--

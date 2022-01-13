@@ -25,6 +25,7 @@ curl -I www.inscope.com/login
 1. Observe the response showing a 200 OK on the HTTP response
 
  -->
+
  
  
 <!-- 
@@ -38,3 +39,4 @@ Demonstrating increased impact results in higher rewards!
 
 Credentials transmitted over HTTP are transmitted in Plaintext, allowing any attacker to intercept these requests, and obtain the login credentials for that user. 
 -->
+
