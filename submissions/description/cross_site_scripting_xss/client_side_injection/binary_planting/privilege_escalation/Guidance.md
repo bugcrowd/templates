@@ -22,7 +22,7 @@ Example:
 ```bash
 curl -I www.inscope.com/login
 ```
-1. Observe the repsonse showing a 200 OK on the HTTP response
+1. Observe the response showing a 200 OK on the HTTP response
 
  -->
  
@@ -30,7 +30,7 @@ curl -I www.inscope.com/login
 <!-- 
 Your submission MUST include evidence of the vulnerability and not be theoretical in nature.
 
-This can include a cURL response from the website showing that HTTP is default or HTTPS is not avalible.
+This can include a cURL response from the website showing that HTTP is default or HTTPS is not available.
  -->
 
 <!--
