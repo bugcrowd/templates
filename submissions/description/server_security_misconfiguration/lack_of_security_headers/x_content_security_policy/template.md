@@ -2,7 +2,7 @@
 
 ## Overview
 
-HTTP response headers determine how the client should process the content. There are multiple headers which can be implemented to improve security against well documented vulnerabilities. The `Content-Security-Policy` (CSP) security header allows admins to permissively control the types of resources allowed to load for a page. It also reduces the attack surface for Cross-Site Scripting (XSS) and click-jacking attacks.
+HTTP response headers determine how the client should process the content. There are multiple headers which can be implemented to improve security against well documented vulnerabilities. The `X-Content-Security-Policy` (CSP) security header allows admins to permissively control the types of resources allowed to load for a page. It also reduces the attack surface for Cross-Site Scripting (XSS) and click-jacking attacks.
  
 A lack of a CSP header in {{target}} allows a malicious attacker to {{action}}.
 
