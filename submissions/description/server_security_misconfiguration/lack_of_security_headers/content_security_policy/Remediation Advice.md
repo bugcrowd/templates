@@ -4,5 +4,5 @@ The `Content-Security-Policy` header should be configured in a way that reduces 
 
 For more information, please see:
 
-- https://owasp.org/www-community/controls/Content_Security_Policy/
-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP/
+- <https://owasp.org/www-community/controls/Content_Security_Policy/>
+- <https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP/>
