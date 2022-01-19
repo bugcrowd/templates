@@ -1,29 +1,15 @@
 # Lack of X-XSS-Protection Header
 
 ## Overview
+HTTP response headers determine how the client should process the content. There are multiple headers which can be implemented to improve security against well documented vulnerabilities. The `X-XSS-Protection` response header prevents clients from loading reflected Cross-Site scripting (XSS) attacks.
 
-<!--
-Provide a 1-2 sentence description - see http://cveproject.github.io/docs/content/key-details-phrasing.pdf for tips
-
-This format is a good guide:
-[VULNTYPE] in [COMPONENT] in [APPLICATION] allows [ATTACKER] to [IMPACT] via [VECTOR] 
--->
-
-The X-XSS-Protection response header that prevents clients from loading a reflected Cross-Site scripting (XSS) attacks.
-
-A lack of a X-XSS-Protection header in {{target}} allows a malicious attacker to successfully exploit a XSS attack.
+A lack of a `X-XSS-Protection` header in {{target}} allows a malicious attacker to successfully exploit a XSS attack.
 
 ## Walkthrough & PoC
 
-<!--
-Provide a step-by-step walkthrough on how to access the vulnerable injection point, and how to exploit the vulnerability.
-
-Adding a dot-pointed walkthrough with relevant screenshots will speed triage time and result in faster rewards!
--->
-
 1. Navigate to the endpoint with the missing header: {{value}}
 
-1. Intecept a request and send it to a Web Proxy
+1. Intercept a request and send it to a Web Proxy
 
 1. Replay the request and notice the missing header in response
 
@@ -34,23 +20,14 @@ Adding a dot-pointed walkthrough with relevant screenshots will speed triage tim
 
 ## Vulnerability Evidence
 
-<!--
-Your submission MUST include evidence of the vulnerability and not be theoretical in nature.
--->
-
 The image(s) below demonstrates the missing header:
 
 {{screenshot}}
 
 ## Demonstrated Impact
 
-<!--
-Provide a full Proof of Concept here.
---> 
-
-An attacker can leverage a missing X-XSS-Protection to bypass security controls of an application to execute a code within a victim's browser.
+An attacker can leverage a missing `X-XSS-Protection` to bypass security controls of an application to execute code within a user's browser.
 
 Below is a screenshot of a full exploit: 
 
 {{screenshot}}
-
