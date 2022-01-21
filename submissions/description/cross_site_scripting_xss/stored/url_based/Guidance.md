@@ -23,7 +23,7 @@ Example:
 ```bash
 curl -I www.inscope.com/login
 ```
-1. Observe the repsonse showing a 200 OK on the HTTP response
+1. Observe the response showing a 200 OK on the HTTP response
 
 
 <!-- 

@@ -1,6 +1,6 @@
-# Remediation Advice
+# Recommendations
 
-All user input fields should be sanitized  based on what the field is likely to contain. For example, a date of birth field should only contain a maximum of 10 characters consisting of numbers and forward slashes.  Additionally, drop down or pick lists can be used for allowable inputs to ensure expected values are sent to the server.
+All user input fields should be sanitized based on what the field is likely to contain. For example, a date of birth field should only contain a maximum of 10 characters consisting of numbers and forward slashes. Additionally, drop down or pick lists can be used for allowable inputs to ensure expected values are sent to the server.
 
 Encode outputs of HTTP responses to prevent them from being interpreted as active content.
 
