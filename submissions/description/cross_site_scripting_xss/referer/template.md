@@ -1,4 +1,4 @@
-# XSS - Referrer
+# Cross-Site Scripting (Referrer)
 
 ## Overview
 
