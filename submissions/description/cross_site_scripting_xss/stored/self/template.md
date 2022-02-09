@@ -1,23 +1,12 @@
-# Stored XSS (Self)
+# Self-Stored Cross-Site Scripting
 
 ## Overview
 
-<!--
-Provide a 1-2 sentence description - see http://cveproject.github.io/docs/content/key-details-phrasing.pdf for tips
+Stored Cross-Site Scripting (XSS) is an injection vulnerability which targets the users of a website. XSS occurs when an attacker embeds malicious HTML or Javascript directly into a HTTP request, or a user input field within a web application. Once executed, this untrusted data is stored server-side, typically within a database, a message forum, or comment field. As stored XSS is persistent, this vulnerability can affect multiple users when they browse to the affected page without further actions required of the attacker.
 
-This format is a good guide:
-[VULNTYPE] in [COMPONENT] in [APPLICATION] allows [ATTACKER] to [IMPACT] via [VECTOR] 
--->
-Cross-Site Scripting (XSS) attacks are a type of injection, in which malicious scripts are injected into trusted websites. XSS vulnerabilities allow a malicious attacker to pretend to be the user, and to carry out any actions that the user is able to perform, to access any of the user's data. The malicious attacker might be able to gain full control over all of the application's functionality and data depending on the users level of permissions.
-
-Self-stored XSS in {{application}} of {{target}} allows malicious attacker to {{action}} by adding or modifying JavaScript permanently to their own account.
+Self-stored XSS in {{application}} of {{target}} allows an attacker to {{action}} by adding or modifying JavaScript permanently to their own account.
 
 ## Walkthrough & PoC
-
-<!--
-Provide a step-by-step walkthrough on how to access the vulnerable injection point, and how to exploit the vulnerability.
-Adding a dot-pointed walkthrough with relevant screenshots will speed triage time and result in faster rewards!
--->
 
 1. Log in to {{application}} at {{url}}
 1. Navigate to {{url}}
@@ -26,25 +15,17 @@ Adding a dot-pointed walkthrough with relevant screenshots will speed triage tim
 
 ## Vulnerability Evidence
 
-<!--
-Your submission MUST include evidence of the vulnerability and not be theoretical in nature.
-
-For a stored XSS vulnerability, please include a simple URL or HTML payload that can be executed to easily demonstrate and reproduce the issue. 
--->
-
-Below is a screenshot demonstrating the injected JavaScript executing at {{url}}.
+Below is a screenshot demonstrating the injected JavaScript executing at {{url}}:
 
 {{screenshot}}
 
 ## Demonstrated Impact
 
-<!--
-Attempt to escalate the XSS to perform additional actions (such as an account takeover or CSRF bypass to perform a sensitive action). If this is possible, provide a full proof-of-concept here.
---> 
+XSS vulnerabilities can be escalated by a malicious attacker who can then attempt to bypass Cross-Site Request Forgery (CSRF) protections, or perform account takeovers, giving them the ability to perform any action that a logged in user can perform.
 
-A malicious attacker could abuse this self-stored XSS further to {{action}} by using the following JavaScript payload.
+A malicious attacker could abuse this XSS vulnerability further to {{action}} by using the following JavaScript payload:
 
-```
+```javascript
 {{payload}}
 ```
 

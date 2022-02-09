@@ -1,23 +1,12 @@
-# Stored XSS (Non-Privileged User to Anyone)
+# Stored Cross-Site Scripting (Non-Privileged User to Anyone)
 
 ## Overview
 
-<!--
-Provide a 1-2 sentence description - see http://cveproject.github.io/docs/content/key-details-phrasing.pdf for tips
+Cross-Site Scripting (XSS) is a type of injection attack where malicious scripts are injected into trusted websites. XSS vulnerabilities allow an attacker to gain access to a user's account and carry out any actions that the user is able to perform, including accessing any of the user's data. The attacker might be able to gain full control over all of the application's functionality and data depending on the user's level of permissions.
 
-This format is a good guide:
-[VULNTYPE] in [COMPONENT] in [APPLICATION] allows [ATTACKER] to [IMPACT] via [VECTOR] 
--->
-Cross-Site Scripting (XSS) attacks are a type of injection, in which malicious scripts are injected into trusted websites. XSS vulnerabilities allow a malicious attacker to pretend to be the user, and to carry out any actions that the user is able to perform, to access any of the user's data. The malicious attacker might be able to gain full control over all of the application's functionality and data depending on the users level of permissions.
-
-Stored XSS in {{application}} of {{target}} allows a malicious attacker to escalate a non-privileged user account to anyone by {{action}}.
+Stored XSS in {{application}} of {{target}} allows an attacker to escalate a non-privileged user account to anyone by {{action}}. An attacker has the ability to copy, edit, add, and delete data from within the application using these elevated privileges.
 
 ## Walkthrough & PoC
-
-<!--
-Provide a step-by-step walkthrough on how to access the vulnerable injection point, and how to exploit the vulnerability.
-Adding a dot-pointed walkthrough with relevant screenshots will speed triage time and result in faster rewards!
--->
 
 1. Log into {{application}} at {{url}} with the non-privileged account
 1. Navigate to {{url}} and insert a JavaScript payload at {{parameter}}
@@ -29,25 +18,17 @@ Adding a dot-pointed walkthrough with relevant screenshots will speed triage tim
 
 ## Vulnerability Evidence
 
-<!--
-Your submission MUST include evidence of the vulnerability and not be theoretical in nature.
-
-For a stored XSS vulnerability, please include a simple URL or HTML payload that can be executed to easily demonstrate and reproduce the issue. 
--->
-
 Below is a screenshot demonstrating the injected JavaScript executing at {{url}}.
 
 {{screenshot}}
 
 ## Demonstrated Impact
 
-<!--
-Attempt to escalate the XSS to perform additional actions (such as an account takeover or CSRF bypass to perform a sensitive action). If this is possible, provide a full proof-of-concept here.
---> 
+XSS vulnerabilities can be escalated by a malicious attacker who can then attempt to bypass Cross-Site Request Forgery (CSRF) protections, or perform account takeovers, giving them the ability to perform any action that a logged in user can perform.
 
-A malicious attacker could abuse this XSS further to {{action}} by using the following JavaScript payload.
+A malicious attacker could abuse this XSS vulnerability further to {{action}} by using the following JavaScript payload:
 
-```
+```javascript
 {{payload}}
 ```
 
