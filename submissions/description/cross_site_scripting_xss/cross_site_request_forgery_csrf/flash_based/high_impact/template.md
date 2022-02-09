@@ -1,38 +1,12 @@
-# Flash Based Cross Site Request Forgery (High)
+# Flash Based Cross-Site Request Forgery (High)
 
 ## Overview
-Cross Site Request Forgery (CSRF) occurs when requests are submitted on behalf of the user via hidden forms, images, and JavaScript. When making critical read/write requests to the application, it's required that a CSRF token or nonce is used for each request.
 
-A malicious attacker can leverage CSRF to ride a user's session and make requests to a trusted application the targeted user is interfacing with by using a single nonce or CSRF token.
+Cross-Site Request Forgery (CSRF) occurs when requests to the application are submitted on behalf of a user via hidden forms, images, and JavaScript. The application is unable to distinguish between the malicious request and the legitimate request.
 
-<!--
-**Please replace text in each section below**
-
-HTTPS not Available or HTTP by default on Login Page Vulnerability Report
-
-Resources:
-
-- <https://owasp.org/www-project-top-ten/2017/A3_2017-Sensitive_Data_Exposure>
--->
+A CSRF token or nonce needs to be used for each request when making critical read/write requests to the application. Therefore, a malicious attacker can leverage CSRF to ride a user's session and make requests to a trusted application the targeted user is authenticated to by using a single nonce or CSRF token.
 
 ## Walkthrough & PoC
-
-<!-- Provide a step-by-step walkthrough on how to access the vulnerable injection point, and how to exploit the vulnerability.
-Adding a dot-pointed walkthrough with relevant screenshots will speed triage time and result in faster rewards!
-
-Example:
-
-1. Browse to the URL <www.inscope.com/login>
-1. Attempt to sign into the website using the login button
-1. Observe the page running on HTTP as default
-
-1. Run the following command on a machine with cURL installed
-```bash
-curl -I www.inscope.com/login
-```
-1. Observe the repsonse showing a 200 OK on the HTTP response
-
- -->
 
 1. Navigate to Bugcrowd.com/vulnerable-endpoint
 
@@ -48,22 +22,11 @@ curl -I www.inscope.com/login
 
 ## Vulnerability Evidence
 
-<!-- 
-Your submission MUST include evidence of the vulnerability and not be theoretical in nature.
-
-This can include a cURL response from the website showing that HTTP is default or HTTPS is not avalible.
- -->
-
 The following image(s) show the full exploit:
 {{screenshot}}
 
 ## Demonstrated Impact
-<!--
-Demonstrating increased impact results in higher rewards! 
 
-Credentials transmitted over HTTP are transmitted in Plaintext, allowing any attacker to intercept these requests, and obtain the login credentials for that user. 
--->
+A malicious attacker can perform actions on behalf of a user, potentially being able to copy, edit, or delete data, or otherwise perform actions within the application that the user's privileges allow.
 
-A malicious attacker can issue a request on behalf of the user to do an unintended action such as {{action}}.
-
-
+In this instance, a malicious attacker can issue a request on behalf of the user to do an unintended action, such as {{action}}.
