@@ -1,29 +1,16 @@
-# Lack of X-Content-Security-Policy Header 
+# Lack of X-Content-Security-Policy Header
 
 ## Overview
 
-<!--
-Provide a 1-2 sentence description - see http://cveproject.github.io/docs/content/key-details-phrasing.pdf for tips
+HTTP response headers determine how the client should process the content. There are multiple headers which can be implemented to improve security against well documented vulnerabilities. The `X-Content-Security-Policy` (CSP) security header allows admins to permissively control the types of resources allowed to load for a page. It also reduces the attack surface for Cross-Site Scripting (XSS) and click-jacking attacks.
 
-This format is a good guide:
-[VULNTYPE] in [COMPONENT] in [APPLICATION] allows [ATTACKER] to [IMPACT] via [VECTOR] 
--->
-
-The HTTP X-Content-Security-Policy (CSP) response header is a header that allows admins permissively control the types of resources allowed to load for a page. 
-
-A lack of a CSP header in {{target}} allows a malicious attacker to {{action}}
+A lack of a CSP header in {{target}} allows a malicious attacker to {{action}}.
 
 ## Walkthrough & PoC
 
-<!--
-Provide a step-by-step walkthrough on how to access the vulnerable injection point, and how to exploit the vulnerability.
-
-Adding a dot-pointed walkthrough with relevant screenshots will speed triage time and result in faster rewards!
--->
-
 1. Navigate to the endpoint with missing CSP: {{value}}
 
-1. Intecept a request and send it to a Web Proxy
+1. Intercept a request and send it to a Web Proxy
 
 1. The following CSP headers/directives are either missing or implemented poorly:
 
@@ -33,12 +20,7 @@ Adding a dot-pointed walkthrough with relevant screenshots will speed triage tim
 
 {{value}}
 
-
 ## Vulnerability Evidence
-
-<!--
-Your submission MUST include evidence of the vulnerability and not be theoretical in nature.
--->
 
 The image(s) below demonstrates the missing CSP:
 
@@ -46,12 +28,8 @@ The image(s) below demonstrates the missing CSP:
 
 ## Demonstrated Impact
 
-<!--
-Provide a full Proof of Concept here.
---> 
+An attacker can leverage a missing CSP header to bypass the security controls of an application to execute a code within a victim's browser.
 
-An attacker can leverage a missing CSP to bypass security controls of an application to execute a code within a victim's browser.
-
-Below is a screenshot of a full exploit: 
+Below is a screenshot of a full exploit:
 
 {{screenshot}}
