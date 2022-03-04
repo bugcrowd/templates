@@ -1,40 +1,21 @@
-# No Rate Limiting on Login
+# No Rate Limiting on Login Form
 
 ## Overview
 
-<!--
-Provide a 1-2 sentence description - see http://cveproject.github.io/docs/content/key-details-phrasing.pdf for tips
+Rate Limiting prevents an application from becoming unresponsive or unavailable due to too many requests exhausting the application's resources. Without rate limiting on a login form a malicious attacker can perform a brute force attack on the login page which greatly increases the likelihood of account takeover.
 
-This format is a good guide:
-[VULNTYPE] in [COMPONENT] in [APPLICATION] allows [ATTACKER] to [IMPACT] via [VECTOR] 
--->
+A lack of a Rate Limiting in {{target}} allows a malicious attacker to {{action}}.
 
-Rate Limiting is a measure used by applications to prevent spam attacks or brute forcing.
-
-A lack of a Rate Limiting in {{target}} allows a malicious attacker to brute force or spam an application/functionality.
-
-## Walkthrough & PoC
-
-<!--
-Provide a step-by-step walkthrough on how to access the vulnerable injection point, and how to exploit the vulnerability.
-
-Adding a dot-pointed walkthrough with relevant screenshots will speed triage time and result in faster rewards!
--->
+## Steps to Reproduce
 
 1. Navigate to the following URL:
-
 {{value}}
 
-1. Fill in the form to login and intercept in a Web Proxy
+1. Fill in the form to login and intercept in a HTTP Intercept Proxy
 
-
-1. Use {{program}} (Up to 10 requests) to launch a spam attack 
+1. Use {{program}} (Up to 10 requests) to launch a spam attack
 
 ## Vulnerability Evidence
-
-<!--
-Your submission MUST include evidence of the vulnerability and not be theoretical in nature.
--->
 
 The image(s) below demonstrates the lack of rate limiting on the login functionality:
 
@@ -42,9 +23,4 @@ The image(s) below demonstrates the lack of rate limiting on the login functiona
 
 ## Demonstrated Impact
 
-<!--
-Provide a full Proof of Concept here.
---> 
-
-
-This will enable an attacker to bruteforce any login for the website, and allow an attacker to attempt Credential Stuffing. 
+This vulnerability enables an attacker to brute force any login for the website, and allow an attacker to attempt an account takeover. A lack of rate limiting on this login form can lead to financial loss, theft of personally identifiable information, and reputational damage of {{program}}.
