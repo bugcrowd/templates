@@ -1,4 +1,7 @@
-# Recommendations
+# Recommendation(s)
 
-It is important to enforce access control policies so that users can only access data from within their intended permissions. To do this, authorization checks should occur when a user requests a resource. Another way of preventing IDOR occurring is to use hash functions and hashed strings to map an object instead of a direct ID.
+Preventing IDOR involves ensuring that each user accessible object is sufficiently protected. When an object is requested by an untrusted source, each request should pass through an access control check to ensure that the user has authorization to access that object. 
 
+These authorization checks should also occur when a known user requests a resource so that the users can only access data from within their intended permissions group. 
+
+Additionally, hash functions and hashed strings should be used to map an object instead of a direct ID, so that it is not a predictable value and easily guessed.
