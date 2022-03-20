@@ -1,35 +1,57 @@
 # Insecure Direct Object References (IDOR)
 
-## Overview
+## Overview of the Vulnerability 
 
-An Insecure Direct Object Reference (IDOR) occurs when an application directly exposes a reference to an object, such as user details or files. These objects can be directly accessed regardless of the authorisation, allowing a malicious attacker to potentially access, edit, or delete other users' objects.
+Insecure Direct Object Reference (IDOR) occurs when there are no access control checks in place to verify if the request of an object within the application can be viewed by the person requesting access. Depending on the type of IDOR within an application, an attacker could perform the following actions:
 
-IDOR in {{application}} of {{target}} allows malicious attacker to {{action}}.
+-   Gain unauthorized access to data from the application and retrieve privileged information
+-   Perform unauthorized operations, such as escalating their privileges within the application, or forcing a password change on a user’s account in order to takeover that account
+-   Manipulate internal application objects and elevate their privileges, alter data, or gain access to and manipulate the application’s APIs
+-   Gain direct access to files and manipulate the file system, such as uploading, downloading, adding, or deleting data, including other user’s data
+    
+Vulnerability Specifics to the Application:
 
-## Walkthrough & PoC
+IDOR in {{application}} of {{target}} allows a malicious attacker to {{action}}.
 
-1. Log in to {{application}} at {{url}}
-1. Send a request to {{url}} with the following parameter {{parameter}}
-1. Modify the {{parameter}} to a different value
-1. Observe PII is displayed.
+## Steps to Reproduce
 
-## Vulnerability Evidence
+<!-- Prerequisites and environment used for testing - fill in as needed
 
-Below is a screenshot demonstrating the exposed object executing at {{url}}.
+Prerequisites:
+-   Example, having access to two different levels of user permissions
+-   Example, having HTTP interception proxy (such as Burp Suite or OWASP ZAP) set up with the browser
+    
+Researcher’s Environment:
+-   Browser and version:
+-   Operating System and version:
+-   Tools used and versions of each: 
+-   User Agent: 
+-->
+
+1. Using {{browser-used}}, log in to {{application}} at {{url}}
+1. Send a request to {{url}}, with the following parameter, {{parameter}}:
+https://example.com/parameter(user1)
+1. In the URL bar, modify the parameter to a different value, {{value}}:
+https://example.com/parameter(user2)
+1. Observe that the application displays information of user2, as seen in the screenshot below:  
+
+{{screenshot}}
+
+## Proof of Concept (PoC)
+
+Below is a screenshot demonstrating the exposed object executing at, {{url}}:
 
 {{screenshot}}
 
 ## Demonstrated Impact 
 
-A malicious attacker could extract all data that can be referenced by the parameter that is able to be manipulated. Data could contain PII of users, passwords, files, or financial information. When assessing the impact if this IDOR vulnerability, consideration also needs to be applied to the impact of public exposure the data.
-
-A malicious attacker could abuse this IDOR further to {{action}} by using the following {{payload}} to extract sensitive information.
-
-```
+An attacker could extract all data which can be referenced by the parameter that is subject to manipulation. Exposure of this data could lead to financial loss, theft of personally identifiable information (PII), and reputational damage of {{program}} and their users.
+A malicious attacker could abuse this IDOR vulnerability further to {{action}} by using the following payload to extract data:  
+  
+``` bash
 {{payload}}
 ```
 
-The screenshot below demonstrates the objects accessed:
+The following screenshot demonstrates this additional impact:
 
 {{screenshot}}
-
