@@ -30,9 +30,9 @@ Researcher’s Environment:
 
 1. Using {{browser-used}}, log in to {{application}} at {{url}}
 1. Send a request to {{url}}, with the following parameter, {{parameter}}:
-https://example.com/parameter(user1)
+<https://example.com/parameter(user1)>
 1. In the URL bar, modify the parameter to a different value, {{value}}:
-https://example.com/parameter(user2)
+<https://example.com/parameter(user2)>
 1. Observe that the application displays information of user2, as seen in the screenshot below:  
 
 {{screenshot}}
