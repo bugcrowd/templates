@@ -1,4 +1,4 @@
-# Recommendations
+# Recommendation(s)
 
 It is recommended to encrypt sensitive data both when at rest and when in transit. All data that is processed, stored, and transmitted by the application should be classified by business need, regulatory and industry requirements, and appropriate privacy laws.
 

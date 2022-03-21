@@ -1,23 +1,39 @@
 # Disclosure of Secrets for Internal Assets
 
-## Overview
+## Overview of Vulnerability
 
-Secrets are information related to credentials of user accounts. When this information is exposed for internal assets, it can place sensitive data at risk. This can occur due to a variety of scenarios such as: not encrypting data, SSL not being used for authenticated pages, or passwords being stored using unsalted hashes. A malicious attacker could leverage disclosed secrets to access the internal application or environments where the application is hosted.
+Sensitive data exposure occurs when the sensitive data is not behind an authorization barrier. When this information is exposed it can place critical sensitive data, such as secrets, at risk. This can occur due to a variety of scenarios such as: not encrypting data, Hyper Text Transfer Protocol Secure (HTTPS) not being used for authenticated pages, or passwords being stored using unsalted hashes. An attacker could leverage disclosed secrets to access the internal application or the environment where the application is hosted.
 
-Disclosure of secrets for an internal asset in {{application}} of {{target}}, allows a malicious attacker to {{action}}.
+Vulnerability Specifics to the Application:
 
-## Walkthrough & PoC
+Disclosure of secrets for an internal asset in {{application}} of {{target}}, allows an attacker to {{action}}.
 
-1. Navigate to the following URL: bugcrowd.com/vulnerable-endpoint
-1. Setup a Web Proxy using {{software}}
-1. {{action}} and intercept with Web Proxy
-1. Notice the disclosure of sensitive data in the response:
+## Steps to Reproduce
+
+<!-- Prerequisites and environment used for testing - fill in as needed
+
+Prerequisites:
+-   Example, having access to two different levels of user permissions
+-   Example, having HTTP interception proxy (such as Burp Suite or OWASP ZAP) set up with the browser
+    
+Researcher’s Environment:
+-   Browser and version:
+-   Operating System and version:
+-   Tools used and versions of each: 
+-   User Agent: 
+-->
+
+1. Setup a HTTP interception proxy, such as Burp Suite or OWASP ZAP
+1. Using {{browser-used}}, navigate to: {{url}}/vulnerable-endpoint/
+1. Perform {{action}} and intercept with HTTP interception proxy
+1. Observe the disclosure of sensitive data in the response, as seen below:
 
 {{screenshot}}
 
-## Vulnerability Evidence
+## Proof of Concept (PoC)
 
 The following image(s) show the full exploit:
+
 {{screenshot}}
 
 ## Demonstrated Impact
