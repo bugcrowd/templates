@@ -4,15 +4,18 @@ module BugcrowdTemplates
   class InputError < StandardError; end
 
   class TemplatePath
-    attr_reader :type, :field, :category, :subcategory, :item
+    attr_reader :type, :field, :category, :subcategory, :item, :file_name
 
-    def initialize(type:, field:, category: '', subcategory: '', item: '')
+    # rubocop:disable Metrics/ParameterLists, Metrics/CyclomaticComplexity
+    def initialize(type:, field:, category: '', subcategory: '', item: '', file_name: '')
       @type = type || ''
       @field = field || ''
       @category = category || ''
       @subcategory = subcategory || ''
       @item = item || ''
+      @file_name = file_name || ''
     end
+    # rubocop:enable Metrics/ParameterLists, Metrics/CyclomaticComplexity
 
     def template_file(type)
       validate_input_attrs
@@ -20,7 +23,7 @@ module BugcrowdTemplates
       file_pathname = case type
                       when 'submissions'
                         BugcrowdTemplates.current_directory.join(
-                          type, field, category, subcategory, item, 'template'
+                          type, field, category, subcategory, item, file_name
                         )
                       when 'methodology'
                         BugcrowdTemplates.current_directory.join(type, field, category, subcategory, item)
@@ -33,7 +36,7 @@ module BugcrowdTemplates
     end
 
     def validate_input_attrs
-      [type, field, category, subcategory, item].each do |input_field|
+      [type, field, category, subcategory, item, file_name].each do |input_field|
         raise InputError, 'Invalid input param(s)' unless valid?(input_field)
       end
     end

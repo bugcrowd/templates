@@ -33,7 +33,8 @@ describe BugcrowdTemplates do
         field: field,
         category: category,
         subcategory: subcategory,
-        item: item
+        item: item,
+        file_name: file_name
       )
     end
 
@@ -42,6 +43,7 @@ describe BugcrowdTemplates do
     let(:category) { '' }
     let(:subcategory) { '' }
     let(:item) { '' }
+    let(:file_name) { '' }
 
     context 'with correct params' do
       context 'with methodology type' do
@@ -50,6 +52,7 @@ describe BugcrowdTemplates do
         let!(:category) { 'website_testing' }
         let!(:subcategory) { 'information' }
         let!(:item) { '' }
+        let!(:file_name) { 'template' }
 
         it 'returns the bugcrowd template value as string' do
           is_expected.to include('# Information gathering')
@@ -60,11 +63,46 @@ describe BugcrowdTemplates do
         let!(:type) { 'submissions' }
         let!(:field) { 'description' }
         let!(:category) { 'using_components_with_known_vulnerabilities' }
-        let!(:subcategory) { 'captcha_bypass' }
-        let!(:item) { 'ocr_optical_character_recognition' }
+        let!(:subcategory) { 'outdated_software_version' }
+        let!(:item) { '' }
+        let!(:file_name) { 'template' }
 
         it 'returns the bugcrowd template value as string' do
-          is_expected.to include('# Optical Character Recognition')
+          is_expected.to include('# Outdated Software Version')
+        end
+
+        context 'when file_name with multiple options' do
+          context 'file_name as template' do
+            let!(:file_name) { 'template' }
+
+            it 'returns the bugcrowd template value as string' do
+              is_expected.to include('# Outdated Software Version')
+            end
+          end
+
+          context 'file_name as testing' do
+            let!(:file_name) { 'testing' }
+
+            it 'returns the nil for not presence of template' do
+              is_expected.to be_nil
+            end
+          end
+
+          context 'file_name as guidance' do
+            let!(:file_name) { 'guidance' }
+
+            it 'returns the nil for not presence of template' do
+              is_expected.to be_nil
+            end
+          end
+
+          context 'file_name as $5%' do
+            let!(:file_name) { '$5%' }
+
+            it 'returns the error message for invalid name' do
+              expect { subject }.to raise_error BugcrowdTemplates::InputError
+            end
+          end
         end
       end
     end
@@ -75,6 +113,7 @@ describe BugcrowdTemplates do
       let!(:category) { 'testing' }
       let!(:subcategory) { 'information' }
       let!(:item) { '' }
+      let!(:file_name) { '' }
 
       it 'returns the nil value' do
         is_expected.to be_nil
@@ -147,6 +186,7 @@ describe BugcrowdTemplates do
       let!(:category) { nil }
       let!(:subcategory) { nil }
       let!(:item) { nil }
+      let!(:file_name) { nil }
 
       it 'returns the nil value' do
         is_expected.to be_nil

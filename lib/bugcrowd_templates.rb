@@ -19,12 +19,14 @@ module BugcrowdTemplates
   module_function
 
   # returns the Bugcrowd template based on given inputs
+  # rubocop:disable Metrics/ParameterLists
   def get(
     type: '',
     field: '',
     category: '',
     subcategory: '',
-    item: ''
+    item: '',
+    file_name: ''
   )
 
     raise TypeError, 'Invalid template type' unless TEMPLATE_TYPES.value?(type)
@@ -34,11 +36,13 @@ module BugcrowdTemplates
       field: field,
       category: category,
       subcategory: subcategory,
-      item: item
+      item: item,
+      file_name: file_name
     ).template_file(type)
 
     template_data(template_path)
   end
+  # rubocop:enable Metrics/ParameterLists
 
   def current_directory
     DATA_DIR

@@ -10,7 +10,8 @@ describe BugcrowdTemplates::TemplatePath do
       field: field,
       category: category,
       subcategory: subcategory,
-      item: item
+      item: item,
+      file_name: file_name
     )
   end
 
@@ -21,6 +22,7 @@ describe BugcrowdTemplates::TemplatePath do
       let!(:category) { 'using_components_with_known_vulnerabilities' }
       let!(:subcategory) { 'captcha_bypass' }
       let!(:item) { 'ocr_optical_character_recognition' }
+      let!(:file_name) { 'template' }
 
       it 'initialize an item' do
         expect(subject).to be_a(described_class)
@@ -28,6 +30,7 @@ describe BugcrowdTemplates::TemplatePath do
         expect(subject.field).to eq('description')
         expect(subject.category).to eq('using_components_with_known_vulnerabilities')
         expect(subject.subcategory).to eq('captcha_bypass')
+        expect(subject.file_name).to eq('template')
       end
     end
 
@@ -37,6 +40,7 @@ describe BugcrowdTemplates::TemplatePath do
       let!(:category) { 'website_testing' }
       let!(:subcategory) { 'information' }
       let!(:item) { '' }
+      let!(:file_name) { '' }
 
       it 'initialize an item' do
         expect(subject).to be_a(described_class)
@@ -55,7 +59,8 @@ describe BugcrowdTemplates::TemplatePath do
         field: field,
         category: category,
         subcategory: subcategory,
-        item: item
+        item: item,
+        file_name: file_name
       ).template_file(type)
     end
 
@@ -67,6 +72,7 @@ describe BugcrowdTemplates::TemplatePath do
       let!(:category) { 'website_testing' }
       let!(:subcategory) { 'information' }
       let!(:item) { '' }
+      let!(:file_name) { 'template' }
 
       it 'returns the template value' do
         is_expected.to eq("#{directory}/methodology/notes/website_testing/information.md")
@@ -79,6 +85,7 @@ describe BugcrowdTemplates::TemplatePath do
       let!(:category) { 'website_testing' }
       let!(:subcategory) { '' }
       let!(:item) { '' }
+      let!(:file_name) { '' }
 
       it 'returns the template value' do
         is_expected.to eq("#{directory}/methodology/notes/website_testing.md")
@@ -91,6 +98,7 @@ describe BugcrowdTemplates::TemplatePath do
       let!(:category) { 'website_testing_9' }
       let!(:subcategory) { '' }
       let!(:item) { '' }
+      let!(:file_name) { 'template' }
 
       it 'raises InputError' do
         expect { subject }.to raise_error BugcrowdTemplates::InputError
@@ -105,7 +113,8 @@ describe BugcrowdTemplates::TemplatePath do
         field: field,
         category: category,
         subcategory: subcategory,
-        item: item
+        item: item,
+        file_name: file_name
       ).valid?(type)
     end
 
@@ -115,6 +124,7 @@ describe BugcrowdTemplates::TemplatePath do
       let!(:category) { 'website_testing' }
       let!(:subcategory) { 'information' }
       let!(:item) { '' }
+      let!(:file_name) { 'template' }
 
       it 'returns true' do
         is_expected.to be_truthy
@@ -127,6 +137,7 @@ describe BugcrowdTemplates::TemplatePath do
       let!(:category) { 'website_testing' }
       let!(:subcategory) { 'information' }
       let!(:item) { '' }
+      let!(:file_name) { 'template' }
 
       it 'returns false' do
         is_expected.to be_falsey
@@ -141,7 +152,8 @@ describe BugcrowdTemplates::TemplatePath do
         field: field,
         category: category,
         subcategory: subcategory,
-        item: item
+        item: item,
+        file_name: file_name
       ).validate_input_attrs
     end
 
@@ -151,9 +163,10 @@ describe BugcrowdTemplates::TemplatePath do
       let!(:category) { 'website_testing' }
       let!(:subcategory) { 'information' }
       let!(:item) { 'test' }
+      let!(:file_name) { 'template' }
 
       it 'returns the valid input params' do
-        is_expected.to eq [type, field, category, subcategory, item]
+        is_expected.to eq [type, field, category, subcategory, item, file_name]
       end
     end
 
@@ -163,6 +176,7 @@ describe BugcrowdTemplates::TemplatePath do
       let!(:category) { 'website_testing' }
       let!(:subcategory) { 'information' }
       let!(:item) { '' }
+      let!(:file_name) { 'template' }
 
       it 'raises InputError' do
         expect { subject }.to raise_error BugcrowdTemplates::InputError
