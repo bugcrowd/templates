@@ -1,7 +1,9 @@
 # Guidance
 
-Provide a 1-2 sentence description - see [CVE Project's Key Details Phrasing Guide](http://cveproject.github.io/docs/content/key-details-phrasing.pdf) for tips. Adding a dot-pointed walkthrough with relevant screenshots will speed triage time and result in faster rewards.
+Provide a 1-2 sentence description - see [CVE Project's Key Details Phrasing Guide](http://cveproject.github.io/docs/content/key-details-phrasing.pdf) for tips.
 
-For authentication bypass vulnerabilities, include instructions on how to access the vulnerable authentication mechanism and steps to bypass it in order to perform a function or access data not intended for that user. Provide screenshots to show the functionality accessed without valid authentication.
+Provide steps to reproduce with screenshots on how you exploited the vulnerability. This will speed triage time and result in faster rewards.
 
-Explain why this bypass is a risk and how it can be used as an attack vector. If safe, perform a function that is shown to require authentication.
+For sensitive data exposure, try to take a screenshot of the data that is being exposed, if the data includes PII, do not access this data as there are legal consequences for doing so. Describe the impact of the sensitive data being exposed, do your best to describe what the impact for this data may be to the company.
+
+For more information on sensitive data exposure, see OWASP [here](https://owasp.org/Top10/A02_2021-Cryptographic_Failures/) and [here](https://owasp.org/www-project-top-ten/2017/A3_2017-Sensitive_Data_Exposure).

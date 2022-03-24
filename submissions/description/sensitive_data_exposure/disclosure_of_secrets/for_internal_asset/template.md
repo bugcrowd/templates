@@ -1,6 +1,6 @@
 # Disclosure of Secrets for Internal Assets
 
-## Overview of Vulnerability
+## Overview of the Vulnerability
 
 Sensitive data exposure occurs when the sensitive data is not behind an authorization barrier. When this information is exposed it can place critical sensitive data, such as secrets, at risk. This can occur due to a variety of scenarios such as: not encrypting data, Hyper Text Transfer Protocol Secure (HTTPS) not being used for authenticated pages, or passwords being stored using unsalted hashes. An attacker could leverage disclosed secrets to access the internal application or the environment where the application is hosted.
 
@@ -8,20 +8,11 @@ Vulnerability Specifics to the Application:
 
 Disclosure of secrets for an internal asset in {{application}} of {{target}}, allows an attacker to {{action}}.
 
+## Business Impact
+
+Disclosure of secrets for internal assets can enable malicious attackers to attack and escalate privileges on endpoints that are otherwise non-public. This could lead to financial loss, identity theft, and reputational damage of {{customer-name}} and their users.
+
 ## Steps to Reproduce
-
-<!-- Prerequisites and environment used for testing - fill in as needed
-
-Prerequisites:
--   Example, having access to two different levels of user permissions
--   Example, having HTTP interception proxy (such as Burp Suite or OWASP ZAP) set up with the browser
-    
-Researcher’s Environment:
--   Browser and version:
--   Operating System and version:
--   Tools used and versions of each: 
--   User Agent: 
--->
 
 1. Setup a HTTP interception proxy, such as Burp Suite or OWASP ZAP
 1. Using {{browser-used}}, navigate to: {{url}}/vulnerable-endpoint/
@@ -35,7 +26,3 @@ Researcher’s Environment:
 The following image(s) show the full exploit:
 
 {{screenshot}}
-
-## Demonstrated Impact
-
-Disclosure of secrets for internal assets can enable malicious attackers to attack and escalate privileges on endpoints that are otherwise non-public. This could lead to financial loss, identity theft, and reputational damage of {{program}} and their users.

@@ -6,5 +6,5 @@ All data that is processed, stored, and transmitted by the application should be
 
 It is best practice to not store sensitive data when it is no longer required, as data that is not retained cannot be accessed and used maliciously. All sensitive data should therefore be a part of a regularly reviewed maintenance cycle.
 
-For further information on protecting sensitive data, please see:
+For more information, please see Open Web Application Security Project (OWASP):
 <https://owasp.org/www-project-proactive-controls/v3/en/c8-protect-data-everywhere>
