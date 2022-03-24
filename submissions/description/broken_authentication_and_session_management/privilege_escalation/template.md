@@ -1,4 +1,4 @@
-# Broken Authentication Allows Privilege Escalation
+# Privilege Escalation via Broken Authentication
 
 ## Overview of the Vulnerability
 
@@ -10,36 +10,24 @@ Vulnerability Specifics to the Application:
 
 The authentication method for {{application}} at {{url}} is being bypassed through {{action}}. This allows a malicious attacker to perform {{action}} which abuses the permissions of the privileged user.
 
+## Business Impact
+
+The impact of privilege escalation can vary in severity depending on the degree of access to resources or functionality the malicious attacker is able to gain. Generally, privilege escalation can result in the modification or theft of data, including any Personally Identifiable Information (PII) stored within the application. This can lead to financial loss from a compromised application, legal ramifications, and reputational damage of {{customer-name}} and their users.
+
 ## Steps to Reproduce
 
-<!-- Prerequisites and environment used for testing - please fill in as needed
-
-Prerequisites:
-
-- Having access to two different levels of user permissions
-- Having HTTP interception proxy (such as Burp Suite or OWASP ZAP) set up with the browser
-
-Environment:
-Browser and version:
-Operating System and version:
-Tools used and versions of each: 
-User Agent: 
--->
-
-Example:
-
 1. Using {{browser-used}}, navigate to {{url}}
-2. Login as User A, an Admin user. This user is a known Admin due to their ability to modify or delete other user accounts
-3. Login as a User B, a user within a specific permissions group
-4. With a HTTP interception proxy enabled, such as Burp Suite or OWASP ZAP, click the dropdown at the top left of the page and click 'Control Panel'
-5. This will prompt User B  to enter a key-phrase. Enter 0000001,  and hit Submit making sure to capture the request with the HTTP interception proxy. (always third-person, remove ‘you’)
-6. Multiple requests will be made. Forward them until you see a POST with parameters that includes {{parameter}}
-7. Modify the parameter to "{{payload}}" and turn off interception in the proxy
-8. User B will be presented with a panel that includes live depots and allows for redirection and dispatch of shipping, as seen for User A.
+1. Login as User A, an Admin user. This user is a known Admin due to their ability to modify or delete other user accounts
+1. Login as a User B, a user within a specific permissions group
+1. With a HTTP interception proxy enabled, such as Burp Suite or OWASP ZAP, click the dropdown at the top left of the page and click 'Control Panel'
+1. This will prompt User B  to enter a key-phrase. Enter 0000001,  and hit Submit making sure to capture the request with the HTTP interception proxy. (always third-person, remove ‘you’)
+1. Multiple requests will be made. Forward them until you see a POST with parameters that includes {{parameter}}
+1. Modify the parameter to "{{payload}}" and turn off interception in the proxy
+1. User B will be presented with a panel that includes live depots and allows for redirection and dispatch of shipping, as seen for User A.
 
 ## Proof of Concept (PoC)
 
-The screenshots below demonstrate the authentication method being bypassed at {{url}}.
+The screenshots below demonstrate the authentication method being bypassed at, {{url}}.
 
 Unauthenticated view:
 
@@ -52,10 +40,6 @@ Bypassing authentication and escalating privileges:
 Privileged user view:
 
 {{screenshot}}
-
-## Demonstrated Impact
-
-The impact of privilege escalation can vary in severity depending on the degree of access to resources or functionality the malicious attacker is able to gain. Generally, privilege escalation can result in the modification or theft of data, including any Personally Identifiable Information (PII) stored within the application. This can lead to financial loss from a compromised application, legal ramifications, and reputational damage of {{program}} and their users.
 
 A malicious attacker could abuse this authentication bypass further to {{action}} by abusing the privileged users permissions through {{payload}}. This is demonstrated in the screenshot below:
 
