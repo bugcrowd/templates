@@ -275,17 +275,20 @@ Examples:
 - `{{payload}}`: A command or payload that is executed on an asset 
 - `{{value}}`: A specific metric value (seconds, milliseconds, frequencies, etc.)
 
-# BugcrowdTemplates Rubygem
+## BugcrowdTemplates Rubygem
 
 This repo has `bugcrowd_templates` gem. This gem is used to fetch the `templates` for submission description and methodologies notes based on VRT selections. It is used and maintained by [Bugcrowd Engineering](https://bugcrowd.com).
 
 ## Getting Started
+
 Add this line to your application's Gemfile:
+
 ```ruby
 gem 'bugcrowd_templates'
 ```
 
 ## Usage
+
 For convenience in development, we provide a utility for spinning up a
 playground for playing with the gem. You can invoke it with:
 
@@ -308,7 +311,7 @@ BugcrowdTemplates.get(
 )
 ```
 
-## Example
+## Example for templates
 
 Below is an example to call `BugcrowdTemplates` for fetching `template` in submission description field.
 
@@ -323,6 +326,7 @@ BugcrowdTemplates.get(
 )
 => '# Clickjacking on a non-sensitive action\n\n## Overview\n\n' # template fetched from templates path
 ```
+
 Example for fetching `guidance` template
 
 ```ruby
