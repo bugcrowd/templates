@@ -1,4 +1,4 @@
-# Insecure Direct Object References (IDOR)
+# Insecure Direct Object Reference (IDOR)
 
 ## Overview of the Vulnerability 
 
@@ -13,20 +13,11 @@ Vulnerability Specifics to the Application:
 
 IDOR in {{application}} of {{target}} allows a malicious attacker to {{action}}.
 
+## Demonstrated Impact 
+
+An attacker could extract all data which can be referenced by the parameter that is subject to manipulation. Exposure of this data could lead to financial loss, theft of personally identifiable information (PII), and reputational damage of {{customer-name}} and their users.
+
 ## Steps to Reproduce
-
-<!-- Prerequisites and environment used for testing - fill in as needed
-
-Prerequisites:
--   Example, having access to two different levels of user permissions
--   Example, having HTTP interception proxy (such as Burp Suite or OWASP ZAP) set up with the browser
-    
-Researcher’s Environment:
--   Browser and version:
--   Operating System and version:
--   Tools used and versions of each: 
--   User Agent: 
--->
 
 1. Using {{browser-used}}, log in to {{application}} at {{url}}
 1. Send a request to {{url}}, with the following parameter, {{parameter}}:
@@ -43,9 +34,6 @@ Below is a screenshot demonstrating the exposed object executing at, {{url}}:
 
 {{screenshot}}
 
-## Demonstrated Impact 
-
-An attacker could extract all data which can be referenced by the parameter that is subject to manipulation. Exposure of this data could lead to financial loss, theft of personally identifiable information (PII), and reputational damage of {{program}} and their users.
 A malicious attacker could abuse this IDOR vulnerability further to {{action}} by using the following payload to extract data:  
   
 ``` bash
