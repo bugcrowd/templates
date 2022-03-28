@@ -275,3 +275,85 @@ Examples:
 - `{{payload}}`: A command or payload that is executed on an asset 
 - `{{value}}`: A specific metric value (seconds, milliseconds, frequencies, etc.)
 
+## BugcrowdTemplates Rubygem
+
+This repo has `bugcrowd_templates` gem. This gem is used to fetch the `templates` for submission description and methodologies notes based on VRT selections. It is used and maintained by [Bugcrowd Engineering](https://bugcrowd.com).
+
+## Getting Started
+
+Add this line to your application's Gemfile:
+
+```ruby
+gem 'bugcrowd_templates'
+```
+
+## Usage
+
+For convenience in development, we provide a utility for spinning up a
+playground for playing with the gem. You can invoke it with:
+
+```bash
+bin/console
+```
+
+## File structure
+
+Below is an example to call `BugcrowdTemplates` for fetching `templates` in submission description & methodologies notes fields.
+
+```ruby
+BugcrowdTemplates.get(
+  type: 'any_value', # type can be submissions or methodologies
+  field: 'any_value', # field name of the type
+  category: 'any_value', # any category name from VRT option
+  subcategory: 'any_value', # any subcategory name from VRT option
+  item: 'any_value', # any item name from VRT option
+  file_name: 'any_value' # file_name can be 'template' or 'guidance'
+)
+```
+
+## Example for templates
+
+Below is an example to call `BugcrowdTemplates` for fetching `template` in submission description field.
+
+```ruby
+BugcrowdTemplates.get(
+  type: 'submissions',
+  field: 'description', # field name of the submissions
+  category: 'server_security_misconfiguration', # category name from VRT option
+  subcategory: 'clickjacking', # subcategory name from VRT option
+  item: 'non_sensitive_action', # item name from VRT option
+  file_name: 'template' # template
+)
+=> '# Clickjacking on a non-sensitive action\n\n## Overview\n\n' # template fetched from templates path
+```
+
+Example for fetching `guidance` template
+
+```ruby
+BugcrowdTemplates.get(
+  type: 'submissions',
+  field: 'description',
+  category: 'using_components_with_known_vulnerabilities',
+  subcategory: 'outdated_software_version',
+  file_name: 'guidance'
+)
+```
+
+Below is an example to call `BugcrowdTemplates` for fetching `templates` in methodologies notes field.
+
+```ruby
+BugcrowdTemplates.get(
+  type: 'methodology',
+  field: 'notes', # field name of the methodologies
+  category: 'website_testing',
+  subcategory: 'information'
+)
+=> '# Information gathering and Reconnaisance\n\n##' # template fetched from templates path
+```
+
+
+
+
+
+
+
