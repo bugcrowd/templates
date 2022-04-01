@@ -1,27 +1,30 @@
 # Non-Sensitive Data Exposure
 
-## Overview
+## Overview of the Vulnerability
 
-Web servers can list the contents of directories which do not have an index page. This increases the exposure of sensitive files which are not intended to be accessed by users. A malicious attacker can quickly identify resources of a specific path or gain access to sensitive data stored in the directory.
+Web servers can list the contents of directories which do not have an index page. This increases the exposure of data which are not intended to be accessed. An attacker can quickly identify resources of a specific path or gain access to sensitive data stored in the directory.
 
-Non-sensitive data was exposed on {{target}} by {{action}}.
+Vulnerability Specifics to the Application:
 
-## Walkthrough & PoC
+Sensitive data was exposed on {{target}} by {{action}}.
 
-1. Navigate to the following URL(s) to find the directory indexing is enabled:
+## Business Impact
+
+Depending on the type of data found in the directory listing, exposure of this information could lead to financial loss and reputational damage of {{customer-name}} and their users.
+
+## Steps to Reproduce
+
+1. Using {{browser-used}}, navigate to the following URL(s) to find the following directory indexing is enabled:
 
 {{value}}
 
-1. The non-sensitive information was discovered by {{action}}
+1. The non-sensitive information was discovered by performing {{action}}
+1. The following sensitive data was discovered:
 
-## Vulnerability Evidence
+{{sensitive-data-type(s)}}
 
-The image(s) below demonstrates the vulnerable information found:
+## Proof of Concept (PoC)
 
-{{screenshot}}
+An attacker can leverage this non-sensitive data to {{action}}. The image(s) below demonstrates the information found:
 
-## Demonstrated Impact
-
-Depending on the type of information found in the directory listing, exposure of this sensitive data could lead to financial loss, identity theft, and reputational damage of {{program}} and their users.
-
-A malicious attacker can leverage this information to {{action}}.
+{{screenshot}
