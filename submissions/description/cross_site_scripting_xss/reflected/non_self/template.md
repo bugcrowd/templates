@@ -1,33 +1,36 @@
-# Reflected Cross-Site Scripting (Non-Self)
+# Reflected Cross-Site Scripting (Non-self)
 
 ## Overview of the Vulnerability
 
-Reflected Cross-Site Scripting (XSS) is a type of injection attack where malicious JavaScript code is injected into a trusted website. When a user visits the page with the malicious code, the JavaScript code executes and its input is reflected in a user’s browser without being safely encoded. If an attacker can control code that is executed within a user’s browser they are able to steal data, such as session cookies, and perform a session hijack, which can lead to account takeover. An attacker can also carry out any actions that the user is able to perform, including accessing any of the user's data and modifying information within the user’s permissions.
+Reflected Cross-Site Scripting (XSS) is a type of injection attack where malicious JavaScript code is injected into a website. When a user visits the affected web page, the JavaScript code executes and its input is reflected in the user’s browser. Reflected XSS can be found on this domain which allows an attacker to create a crafted URL. When opened by a user,  this URL will execute arbitrary Javascript within that user’s browser in the context of this domain.
 
-Vulnerability Specifics to the Application:
-
-Non-Self Reflected XSS in {{application}} of {{target}} allows an attacker to execute arbitrary JavaScript, then perform {{action}}.
+When an attacker can control code that is executed within a user’s browser, they are able to carry out any actions that the user is able to perform, including accessing any of the user's data and modifying information within the user’s permissions. This can result in modification, deletion, or theft of data, including accessing or deleting files, or stealing session cookies which an attacker could use to hijack a user’s session.
 
 ## Business Impact
 
-A malicious attacker could gain full control over all of the application's functionality and data depending on the user's level of permissions. This could lead to financial loss, data theft, and reputational damage of {{customer-name}} and their users.
+Reflected XSS could lead to data theft through the attacker’s ability to manipulate data through their access to the application, and their ability to interact with other users, including performing other malicious attacks, which would appear to originate from a legitimate user. These malicious actions could also result in reputational damage for the business through the impact to customers’ trust.
 
 ## Steps to Reproduce
 
 1. Enable a HTTP interception proxy, such as Burp Suite or OWASP ZAP
-1. Using {{browser-used}}, navigate to: {{URL}}
-1. Using the HTTP interception proxy, modify the request to contain the JavaScript payload {{parameter}} in {{location}}
-1. Forward the request and observe the JavaScript payload being executed
+1. Use a browser to navigate to: {{URL}}
+1. Forward the following request to the endpoint:
+
+```HTTP Request
+{{request}}
+```
+
+1. Observe the JavaScript payload being executed
 
 ## Proof of Concept (PoC)
 
-Below is a screenshot demonstrating the injected JavaScript executing at {{url}:
+Below is a screenshot demonstrating the injected JavaScript executing at the vulnerable endpoint:
 
 {{screenshot}}
 
-This XSS vulnerability could be further abused to perform {{action}} by using the following JavaScript payload:
+This XSS vulnerability could be further abused by using the following JavaScript payload:
 
-```javascript
+```JavaScript
 {{payload}}
 ```
 
