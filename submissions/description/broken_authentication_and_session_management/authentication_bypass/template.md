@@ -1,33 +1,23 @@
 # Authentication Bypass
 
-## Overview
+## Overview of the Vulnerability
 
-Authentication Bypass allows a malicious attacker to gain access to an application with equivalent privileges as an authenticated user without having to go through the application's authentication procedure.
+Authentication bypass vulnerabilities allow an attacker to gain access to an account without having to go through the application's authentication procedure. Authentication bypass often occurs through logic flaws and poor implementation of authentication mechanisms. Bypassing the authentication mechanisms of this application allows an attacker to view or edit data or other user’s permissions, take over user accounts, access unauthorized endpoints, or expose critical data, depending on the authorization of the account they gain access to.
 
-A malicious attacker can perform a variety of actions through bypassing authentication methods, and is only limited by the permissions of the privileged user. This could include viewing or editing sensitive customer data, viewing or editing other user permissions, taking over user accounts, hijacking sessions, accessing unauthorized endpoints, or exposing critical data.
+## Business Impact
 
-Bypassing the authentication methods in {{application}} allows a malicious attacker to {{action}}.
+Authentication bypass can lead to data loss or theft through an attacker’s access to data. The severity of which is dependent on the sensitivity of the data within the application. It can also result in reputational damage to the application or the company due to legitimate users not trusting the security of the application if the application’s data becomes publicly available.
 
-## Walkthrough & PoC
+## Steps to Reproduce
 
-1. Login to Bugcrowd.com
+1. Navigate to: {{URL}} and login as a regular user
+1. In the URL, change the `/user` to `/user/administrator`
+1. Observe that the application now allows the user to view other user’s profile details. These actions are usually restricted to an authenticated user
 
-1. {{action}} to initiate the vulnerable request
-
-1. Intercept the request in a Web Proxy
-
-1. Change {{parameter}} to {{value}}
-
-1. Notice that the application does {{action}}
-
-## Vulnerability Evidence
+## Proof of Concept (PoC)
 
 The following image(s) show the full exploit:
 
 {{screenshot}}
 
-## Demonstrated Impact
-
-Authentication bypass can result in modification or theft of data, including Personally Identifiable Information (PII). This can lead to financial loss, users' identity theft, and reputational damage of {{program}} and their users.
-
-A malicious attacker can {{action}} to bypass authentication or break session management to access {{value}}.
+An attacker can bypass authentication or break session management to access the application’s data.
