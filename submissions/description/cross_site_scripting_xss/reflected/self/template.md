@@ -1,52 +1,29 @@
-# Reflected XSS (Self)
+# Reflected Cross-Site Scripting (Self)
 
-## Overview
+## Overview of the Vulnerability
 
-<!--
-Provide a 1-2 sentence description - see http://cveproject.github.io/docs/content/key-details-phrasing.pdf for tips
+Reflected Cross-Site Scripting (XSS) is a type of injection attack where malicious JavaScript code is injected into a website. When a user visits the affected web page, the JavaScript code executes and its input is reflected in the user’s browser. Self-reflected XSS can be found on this domain which allows an attacker to create crafted JavaScript payload. Additionally, the attacker needs to socially engineer the user to paste the JavaScript payload into the user’s browser. If successful, the JavaScript will execute temporarily within that user’s browser in the context of the domain.
 
-This format is a good guide:
-[VULNTYPE] in [COMPONENT] in [APPLICATION] allows [ATTACKER] to [IMPACT] via [VECTOR] 
--->
-Cross-Site Scripting (XSS) attacks are a type of injection, in which malicious scripts are injected into trusted websites. XSS vulnerabilities allow a malicious attacker to pretend to be the user, and to carry out any actions that the user is able to perform, to access any of the user's data. The malicious attacker might be able to gain full control over all of the application's functionality and data depending on the users level of permissions.
+When an attacker can control code that is executed within a user’s browser, they are able to carry out any actions that the user is able to perform, including accessing any of the user's data and modifying information within the user’s permissions. This can result in modification, deletion, or theft of data, including accessing or deleting files, or stealing session cookies which an attacker could use to hijack a user’s session.
 
-A self reflected XSS in {{application}} at {{url}} allows a malicious attacker to {{action}} by adding or modifying JavaScript temporarily to their own account.
+## Business Impact
 
-## Walkthrough & PoC
+Self-reflected XSS could lead to data theft through the attacker’s ability to manipulate data through their access to the application, and their ability to interact with other users, including performing other malicious attacks, which would appear to originate from a legitimate user. These malicious actions could also result in reputational damage for the business through the impact to customers’ trust.
 
-<!--
-Provide a step-by-step walkthrough on how to access the vulnerable injection point, and how to exploit the vulnerability.
-Adding a dot-pointed walkthrough with relevant screenshots will speed triage time and result in faster rewards!
--->
+## Steps to Reproduce
 
-1. Log in to {{application}} at {{url}} using an existing account
-1. Navigate to {{url}}
-1. Observe the JavaScript payload that was executed
+1. Use a browser to navigate to: {{URL}}
+1. Login as a user
+1. Insert the following JavaScript payload:
 
-## Vulnerability Evidence
-
-<!--
-Your submission MUST include evidence of the vulnerability and not be theoretical in nature.
-
-For a reflected XSS vulnerability, please include a simple URL or HTML payload that can be executed to easily demonstrate and reproduce the issue. 
--->
-
-Below is a screenshot demonstrating the injected JavaScript executing at {{url}}.
-
-{{screenshot}}
-
-## Demonstrated Impact
-
-<!--
-Attempt to escalate the XSS to perform additional actions (such as an account takeover or CSRF bypass to perform a sensitive action). If this is possible, provide a full proof-of-concept here.
---> 
-
-A malicious attacker could abuse this XSS further to {{action}} by using the following JavaScript payload.
-
-```
+```JavaScript
 {{payload}}
 ```
 
-Here is a screenshot of the full exploit taking place:
+1. Observe the JavaScript payload being executed
+
+## Proof of Concept (PoC)
+
+Below is a screenshot demonstrating the injected JavaScript executing at the vulnerable endpoint:
 
 {{screenshot}}
