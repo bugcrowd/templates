@@ -1,31 +1,28 @@
 # Generic Broken Access Control
 
-## Overview
+## Overview of the Vulnerability
 
-Access controls help enforce users' access and interactions with applications and APIs through authorization. When access controls are broken, users are able to perform functions outside of the intended user functionality. Malicious attackers can typically leverage broken access controls to elevate privileges, or manipulate, destroy, or disclose data, depending on the type of access control vulnerability being exploited.
+When access controls are broken, users are able to perform functions outside of their intended user functionality within the application. Access controls help enforce users' access and how they interact with applications and APIs through authorization. There can be vertical, horizontal, and conditional access controls which give a user their intended permissions within an application. Broken access control in this application can be leveraged by an attacker to elevate privileges, or manipulate, destroy, or disclose data, depending on the type of access control vulnerability being exploited.
 
-Broken access control in {{application}} of {{target}} allows malicious attacker to {{action}}.
+## Business Impact
 
-## Walkthrough & PoC
+Broken access controls can lead to financial loss through an attacker accessing, deleting, or modifying data from within the application. This could also result in reputational damage for the business through the impact to customers’ trust. The severity of the impact to the business is dependent on the sensitivity of the data being stored in, and transmitted by the application.
 
-1. Navigate to {{url}} and log into an account that should not be able to perform {{action}}
-1. Insert {{payload}} into {{parameter}} in {{url}}
-1. Observe that the account that should not be able to perform {{action}} can now perform {{action}}
+## Steps to Reproduce
 
-## Vulnerability Evidence
+1. Enable a HTTP interception proxy, such as Burp Suite or OWASP ZAP
+1. Use a browser to navigate to: {{URL}}
+1. Login to an account that should not be able to perform {{action}}
+1. Forward the following request to the endpoint:
 
-The screenshot below demonstrates the broken access control at {{url}}:
+```HTTP Request
+{{request}}
+```
 
-{{screenshot}}
+1. Observe that the account now has additional user functionality and access to data it was previously not authorized to access
 
-## Demonstrated Impact
+## Proof of Concept (PoC)
 
-Broken access controls can result in modification or theft of data, including Personally Identifiable Information (PII), This can lead to financial loss, identity theft, and reputational damage of {{program}} and their users.
-
-A malicious attacker could abuse this broken access control further to {{action}} by using the following payload:
-
-{{payload}}
-
-You can find a screenshot of the full exploit taking place below:
+The screenshot below demonstrates the broken access control:
 
 {{screenshot}}
