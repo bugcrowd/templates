@@ -2,30 +2,32 @@
 
 ## Overview
 
-SQL Injection is a vulnerability in which an application injects a valid payload within a SQL query from input data. Typically, SQLi allows a malicious attacker to view, modify or delete data that should not be able to be retrieved. SQL queries may be exploited in a variety of ways including exfiltration of database data, exfiltration of files, subtle data tampering, and resource exhaustion. A common escalation is to abuse the SQL functionality to upgrade to full remote command execution.
+SQL injection (SQLi) is a vulnerability in which an application accepts input into an SQL statement and treats this input as part of the statement. Typically, SQLi allows a malicious attacker to view, modify or delete data that should not be able to be retrieved. An SQLi vulnerability was found for this host which allows an attacker to execute code and view data from the SQL service by submitting SQL queries.
 
-A SQL Injection (SQLi) was discovered at {{target}} at {{url}} through {{parameter}} using {{payload}}. This allows a malicious attacker to {{action}} and perform arbitrary SQL queries.
+An attacker could exploit this lack of input sanitization to exfiltrate database data and files, tamper with the data, or perform resource exhaustion. Depending on the database and how it is configured, an attacker could potentially remotely execute code on the server running the database.
 
-## Walkthrough & PoC
+## Business Impact
 
-1. Login to in-scope asset at {{url}}
-2. Browse to account page
-3. Modify ID token to add single quote
-4. View error which states 'SQL Syntax Error'
-5. Replace ID value with {{payload}}
+Data exfiltration through a SQLi attack could lead to reputational damage or regulatory fines for the business due to an attacker’s unauthorized access to data. This could also result in reputational damage for the business through the impact to customers’ trust. The severity of the impact to the business is dependent on the sensitivity of the data being stored in, and transmitted by the application.
 
-## Vulnerability Evidence
+## Steps to Reproduce
 
-The screenshot/video below demonstrates the SQLi being executed at {{url}}:
+1. Using a browser, login to in-scope asset at: {{URL}}
+1. Browse to account page
+1. Modify ID token to add single quote
+1. View error which states 'SQL Syntax Error'
+1. Replace ID value with the following payload:
+
+```SQL
+{{payload}}
+```
+
+## Proof of Concept (PoC)
+
+The screenshot below demonstrates the SQLi being executed:
 
 {{screenshot}}
 
-## Demonstrated Impact
+The following database name and database user have been retrieved to demonstrate that the PoC exfiltrates valid database information:
 
-A SQLi attack can result in unauthorized access to sensitive data, including but not limited to, users' personally identifiable information, passwords, credit card details, and other sensitive data accessible through the application. Data exfiltration through a SQLi attack could lead to reputational damage and regulatory fines. However, a malicious attacker could also deface the application, compromise the underlying server, cause a denial-of-service attack, or otherwise pivot their attack to create a persistent backdoor into an organisation's systems of perform remote command execution.
-
-Within the in-scope asset at {{url}}, a malicious attacker could theoretically abuse this specific SQLi further to {{action}} by using the following SQL query:
-
-```sql
-{{payload}}
-```
+{{database name/database user}}
