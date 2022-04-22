@@ -1,38 +1,24 @@
-# Failure to Invalidate Session on password change
+# Failure to Invalidate Session on Password Change
 
-<!--
-Provide a 1-2 sentence description - see http://cveproject.github.io/docs/content/key-details-phrasing.pdf for tips
+Failure to invalidate a session after a password change is a vulnerability which allows an attacker to maintain access on a service. Most users have the expectation that when they reset their password, no one else can access their account. When sessions are not invalidated upon a password reset, the user's trust is broken. Applications that fail to invalidate sessions when the password is changed are more susceptible to account takeover by an attacker who has gained a foothold in a legitimate user's account.
 
-This format is a good guide:
-[VULNTYPE] in [COMPONENT] in [APPLICATION] allows [ATTACKER] to [IMPACT] via [VECTOR]
--->
+An attacker may compromise a user's session through a variety of ways including, calling an internal post authentication page, modifying the given URL parameters, phishing a user, by manipulating a form, or by counterfeiting sessions. Once they have gained account access, an attacker may be able to change the password of the account and lock out the legitimate user. The attacker's actions are limited by the privileges of the user's account that they gain access to. This could include viewing or editing sensitive customer data, viewing or editing other user permissions.
 
-Failure to invalidate session on password change in {{application}} allows a malicious attacker to {{action}}
+## Business Impact
 
-## Walkthrough & PoC
+This vulnerability can lead to reputational damage and indirect financial loss to the company as customers may view the application as insecure. Additionally, this can cause escalations where a user knows that their account is compromised, but have no means of evicting an attacker by changing their password.
 
-<!-- Provide a step-by-step walkthrough on how to access the vulnerable injection point, and how to exploit the vulnerability.
-Adding a dot-pointed walkthrough with relevant screenshots will speed triage time and result in faster rewards!
--->
+## Steps to Reproduce
 
-1. Log in to {{application}} at {{url}}
-1. In an HTTP proxy, capture any authenticated GET or POST request to repeat the request
-1. Navigate to {{url}} and modify the password of the account used to login in step 1
-1. Resend the captured request from step 2 and observe that the session token was not invalidated on password change
+1. Sign into a user's account (Browser A)
+1. Sign into the same user's account, using a different browser (Browser B)
+1. Using Browser A, change the password of the account
+1. Using Browser B, observe that the user session is still valid
 
-## Vulnerability Evidence
-<!--
-Your submission MUST include evidence of the vulnerability and not be theoretical in nature.
+## Proof of Concept (PoC)
 
-For a failure to invalidation session on password change vulnerability, please include a video showing the action taking place after password change, or pictures showing the password change process not removing a token from the cache and performing a sensitive action.
--->
+The screenshots below show the password change and the application failing to invalidate the session:
 
-Please observe the failure to invalidate the session after password change below. {{screenshot}}
+{{screenshot}}
 
-## Demonstrated Impact
-
-<!--
-Attempt to escalate the failure to invalidate the session on password change. If this is possible, provide a full proof-of-concept here.
--->
-
-Failure to invalidate a session after a password change can allow an attacker, who has access gained access to an account due to a compromised password, full account access even after the password has been changed
+{{screenshot}}
