@@ -61,7 +61,7 @@ describe BugcrowdTemplates::TemplatePath do
         subcategory: subcategory,
         item: item,
         file_name: file_name
-      ).template_file(type)
+      ).template_file
     end
 
     let(:directory) { BugcrowdTemplates.current_directory }
@@ -72,7 +72,7 @@ describe BugcrowdTemplates::TemplatePath do
       let!(:category) { 'website_testing' }
       let!(:subcategory) { 'information' }
       let!(:item) { '' }
-      let!(:file_name) { 'template' }
+      let!(:file_name) { '' }
 
       it 'returns the template value' do
         is_expected.to eq("#{directory}/methodology/notes/website_testing/information.md")
@@ -102,6 +102,226 @@ describe BugcrowdTemplates::TemplatePath do
 
       it 'raises InputError' do
         expect { subject }.to raise_error BugcrowdTemplates::InputError
+      end
+    end
+  end
+
+  describe '#find_template_file' do
+    subject do
+      described_class.new(
+        type: type,
+        field: field,
+        category: category,
+        subcategory: subcategory,
+        item: item,
+        file_name: file_name
+      ).find_template_file
+    end
+
+    let(:dir) { BugcrowdTemplates.current_directory }
+
+    context 'when item folder is not having template for submissions' do
+      let!(:type) { 'submissions' }
+      let!(:field) { 'description' }
+      let!(:category) { 'server_security_misconfiguration' }
+      let!(:subcategory) { 'clickjacking' }
+      let!(:item) { 'form_input' }
+      let!(:file_name) { 'template' }
+
+      it 'returns the template from the subcategory folder as template' do
+        is_expected.to eq("#{dir}/submissions/description/server_security_misconfiguration/clickjacking/template.md")
+      end
+    end
+
+    context 'when it has category params for submissions' do
+      let!(:type) { 'submissions' }
+      let!(:field) { 'description' }
+      let!(:category) { 'using_components_with_known_vulnerabilities' }
+      let!(:subcategory) { '' }
+      let!(:item) { '' }
+      let!(:file_name) { 'template' }
+
+      it 'returns the category folder as template' do
+        is_expected.to eq("#{dir}/submissions/description/using_components_with_known_vulnerabilities/template.md")
+      end
+    end
+
+    context 'when item folder is not having template for methodology' do
+      let!(:type) { 'methodology' }
+      let!(:field) { 'notes' }
+      let!(:category) { 'website_testing' }
+      let!(:subcategory) { 'information' }
+      let!(:item) { '' }
+      let!(:file_name) { '' }
+
+      it 'returns the methodology template' do
+        is_expected.to eq("#{dir}/methodology/notes/website_testing/information.md")
+      end
+    end
+  end
+
+  describe '#item_file_path' do
+    subject do
+      described_class.new(
+        type: type,
+        field: field,
+        category: category,
+        subcategory: subcategory,
+        item: item,
+        file_name: file_name
+      ).item_file_path
+    end
+
+    let(:dir) { BugcrowdTemplates.current_directory }
+
+    context 'when searching item folder for submissions' do
+      let!(:type) { 'submissions' }
+      let!(:field) { 'description' }
+      let!(:category) { 'server_security' }
+      let!(:subcategory) { 'clickjacking' }
+      let!(:item) { 'form' }
+      let!(:file_name) { 'template' }
+
+      it 'returns the template' do
+        is_expected.to eq("#{dir}/submissions/description/server_security/clickjacking/form/template.md")
+      end
+    end
+
+    context 'when searching item folder for methodology' do
+      let!(:type) { 'methodology' }
+      let!(:field) { 'notes' }
+      let!(:category) { 'website_testing' }
+      let!(:subcategory) { 'information' }
+      let!(:item) { 'infor' }
+      let!(:file_name) { '' }
+
+      it 'returns the template' do
+        is_expected.to eq("#{dir}/methodology/notes/website_testing/information/infor.md")
+      end
+    end
+  end
+
+  describe '#subcategory_file_path' do
+    subject do
+      described_class.new(
+        type: type,
+        field: field,
+        category: category,
+        subcategory: subcategory,
+        item: item,
+        file_name: file_name
+      ).subcategory_file_path
+    end
+
+    let(:dir) { BugcrowdTemplates.current_directory }
+
+    context 'when searching subcategory folder for submissions' do
+      let!(:type) { 'submissions' }
+      let!(:field) { 'description' }
+      let!(:category) { 'server_security' }
+      let!(:subcategory) { 'clickjacking' }
+      let!(:item) { '' }
+      let!(:file_name) { 'template' }
+
+      it 'returns the template' do
+        is_expected.to eq("#{dir}/submissions/description/server_security/clickjacking/template.md")
+      end
+    end
+
+    context 'when searching subcategory folder for methodology' do
+      let!(:type) { 'methodology' }
+      let!(:field) { 'notes' }
+      let!(:category) { 'website_testing' }
+      let!(:subcategory) { 'information' }
+      let!(:item) { '' }
+      let!(:file_name) { '' }
+
+      it 'returns the template' do
+        is_expected.to eq("#{dir}/methodology/notes/website_testing/information.md")
+      end
+    end
+  end
+
+  describe '#category_file_path' do
+    subject do
+      described_class.new(
+        type: type,
+        field: field,
+        category: category,
+        subcategory: subcategory,
+        item: item,
+        file_name: file_name
+      ).category_file_path
+    end
+
+    let(:dir) { BugcrowdTemplates.current_directory }
+
+    context 'when searching category folder for submissions' do
+      let!(:type) { 'submissions' }
+      let!(:field) { 'description' }
+      let!(:category) { 'server_security' }
+      let!(:subcategory) { '' }
+      let!(:item) { '' }
+      let!(:file_name) { 'template' }
+
+      it 'returns the template' do
+        is_expected.to eq("#{dir}/submissions/description/server_security/template.md")
+      end
+    end
+
+    context 'when searching category folder for methodology' do
+      let!(:type) { 'methodology' }
+      let!(:field) { 'notes' }
+      let!(:category) { 'website_testing' }
+      let!(:subcategory) { '' }
+      let!(:item) { '' }
+      let!(:file_name) { '' }
+
+      it 'returns the template' do
+        is_expected.to eq("#{dir}/methodology/notes/website_testing.md")
+      end
+    end
+  end
+
+  describe '#file_path_url' do
+    subject do
+      described_class.new(
+        type: type,
+        field: field,
+        category: category,
+        subcategory: subcategory,
+        item: item,
+        file_name: file_name
+      ).file_path_url(file_path)
+    end
+
+    let(:dir) { BugcrowdTemplates.current_directory }
+
+    context 'when file path for submission' do
+      let!(:type) { 'submissions' }
+      let!(:field) { 'description' }
+      let!(:category) { 'server_security' }
+      let!(:subcategory) { 'subcategory' }
+      let!(:item) { 'item' }
+      let!(:file_name) { 'template' }
+      let(:file_path) { '/category/subcategory/item/template' }
+
+      it 'returns the template' do
+        is_expected.to eq('/category/subcategory/item/template.md')
+      end
+    end
+
+    context 'when file path for methodology' do
+      let!(:type) { 'methodology' }
+      let!(:field) { 'notes' }
+      let!(:category) { 'website_testing' }
+      let!(:subcategory) { 'information' }
+      let!(:item) { '' }
+      let!(:file_name) { '' }
+      let(:file_path) { '/methodology/notes/website_testing/information' }
+
+      it 'returns the template' do
+        is_expected.to eq('/methodology/notes/website_testing/information.md')
       end
     end
   end

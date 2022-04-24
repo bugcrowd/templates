@@ -38,9 +38,9 @@ module BugcrowdTemplates
       subcategory: subcategory,
       item: item,
       file_name: file_name
-    ).template_file(type)
+    ).template_file
 
-    template_data(file_path: template_path, category: category, subcategory: subcategory, item: item)
+    template_data(template_path)
   end
   # rubocop:enable Metrics/ParameterLists
 
@@ -48,44 +48,7 @@ module BugcrowdTemplates
     DATA_DIR
   end
 
-  def template_data(file_path:, category:, subcategory:, item:)
-    if File.exist?(file_path)
-      File.open(file_path).read
-    else
-      find_template(file_path, category, subcategory, item)
-    end
-  end
-
-  def find_template(file_path, category, subcategory, item)
-    return File.open(file_path).read if File.exist?(file_path)
-
-    file_path = get_pathname(file_path)
-    presented_template(file_path, category, subcategory, item)
-  end
-
-  def get_pathname(file_path)
-    Pathname.new(file_path)
-  end
-
-  def get_parent_path(file_path)
-    File.dirname(file_path.parent)
-  end
-
-  def get_file_basename(file_path)
-    File.basename(file_path)
-  end
-
-  # when there is no template.md in `item_1` folder
-  # It will look the parent folder in `sub_category_1`
-  # return the template as `category_1/sub_category_1/template.md`
-  def presented_template(file_path, category, subcategory, item)
-    parent_path_template = get_parent_path(file_path) + '/' + get_file_basename(file_path)
-
-    # check the parent directory templates within in the category, subcategory & item folders only
-    if [category, subcategory, item].include?(get_pathname(get_parent_path(file_path)).basename.to_s)
-      template_data(file_path: parent_path_template, category: category, subcategory: subcategory, item: item)
-    elsif File.exist?(parent_path_template)
-      return File.open(parent_path_template).read
-    end
+  def template_data(file_path)
+    File.open(file_path).read if file_path && File.exist?(file_path)
   end
 end
