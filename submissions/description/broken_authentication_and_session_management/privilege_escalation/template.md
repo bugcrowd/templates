@@ -2,32 +2,37 @@
 
 ## Overview of the Vulnerability
 
-Authentication methods identify and confirm that a user is who they say they are which allows for the appropriate access controls to be given to that user. However, these access controls can be bypassed by a malicious attacker due to broken authentication and broken session management within an application. Authentication and session management controls  can be bypassed through a variety of ways including, calling an internal post authentication page, modifying the given URL parameters, by manipulating the form, or by counterfeiting sessions.
-
-A malicious attacker can perform a variety of actions through bypassing authentication methods and is limited only by the permissions of the user account that they have access to. This could include viewing or editing sensitive customer data, viewing or editing other user permissions, and taking over user accounts. This privilege escalation by the malicious attacker enables them to have access to more resources or functionality within the application.
-
-Vulnerability Specifics to the Application:
-
-The authentication method for {{application}} at {{url}} is being bypassed through {{action}}. This allows a malicious attacker to perform {{action}} which abuses the permissions of the privileged user.
+Authentication and session management controls can be bypassed through a variety of ways including, calling an internal post authentication page, modifying the given URL parameters, by manipulating the form, or by counterfeiting sessions. The authentication method for this application can be bypassed by an attacker which enables them to access a privileged user’s account and functionality, giving them access to more resources or functionality within the application. This could include viewing or editing sensitive customer data, and viewing or editing other user permissions.
 
 ## Business Impact
 
-The impact of privilege escalation can vary in severity depending on the degree of access to resources or functionality the malicious attacker is able to gain. Generally, privilege escalation can result in the modification or theft of data, including any Personally Identifiable Information (PII) stored within the application. This can lead to financial loss from a compromised application, legal ramifications, and reputational damage of {{customer-name}} and their users.
+The impact of privilege escalation through broken authentication controls can vary in severity depending on the degree of access to resources or functionality the malicious attacker is able to gain. An attacker with the ability to access, delete, or modify data from within the application could result in reputational damage for the business through the impact to customers’ trust. This can also result in indirect financial cost to the business through fines and regulatory bodies if sensitive data is accessed. The severity of the impact to the business is dependent on the sensitivity of the data being stored in, and transmitted by the application.
 
 ## Steps to Reproduce
 
-1. Using {{browser-used}}, navigate to {{url}}
-1. Login as User A, an Admin user. This user is a known Admin due to their ability to modify or delete other user accounts
-1. Login as a User B, a user within a specific permissions group
-1. With a HTTP interception proxy enabled, such as Burp Suite or OWASP ZAP, click the dropdown at the top left of the page and click 'Control Panel'
-1. This will prompt User B  to enter a key-phrase. Enter 0000001,  and hit Submit making sure to capture the request with the HTTP interception proxy. (always third-person, remove ‘you’)
-1. Multiple requests will be made. Forward them until you see a POST with parameters that includes {{parameter}}
-1. Modify the parameter to "{{payload}}" and turn off interception in the proxy
-1. User B will be presented with a panel that includes live depots and allows for redirection and dispatch of shipping, as seen for User A.
+1. Enable a HTTP interception proxy, such as Burp Suite or OWASP ZAP
+1. Use a browser to navigate to: {{URL}}
+1. Login to User Account A
+1. Using the HTTP interception proxy, forward the following request to the endpoint:
+
+```HTTP Request
+{{request}}
+```
+
+1. Forward the requests until there is a POST request visible with the following parameters:
+
+{{parameter}}
+
+1. Modify the parameter to the following payload:
+
+{{payload}}
+
+1. Forward the request then turn off interception in the prox
+1. Observe that User Account A now has additional Administrator privileges and user functionality it was previously not authorized to access
 
 ## Proof of Concept (PoC)
 
-The screenshots below demonstrate the authentication method being bypassed at, {{url}}.
+The screenshots below demonstrate the authentication method being bypassed.
 
 Unauthenticated view:
 
@@ -41,6 +46,6 @@ Privileged user view:
 
 {{screenshot}}
 
-A malicious attacker could abuse this authentication bypass further to {{action}} by abusing the privileged users permissions through {{payload}}. This is demonstrated in the screenshot below:
+A malicious attacker could abuse this authentication bypass further by abusing the privileged users permissions. This is demonstrated in the screenshot below:
 
 {{screenshot}}
