@@ -1,78 +1,26 @@
-# Disclosure of Secrets for Publicly Accessible Asset
+# Disclosure of Secrets for a Publicly Accessible Asset
 
-## Overview
+## Overview of the Vulnerability
 
-A malicious attacker can leverage disclosed secrets to access and escalate privileges on applications and hosted environments.
+Disclosure of secrets for a publicly available asset occurs when sensitive data is not behind an authorization barrier. When this information is exposed it can place sensitive data, such as secrets, at risk. This can occur due to a variety of scenarios such as not encrypting data, secrets committed to GitHub within public repositories, or exposed external assets. Disclosure of secrets for publicly available assets could be leveraged by an attacker to gain privileged access to the application or the environment where the application is hosted. From here, an attacker could execute functions under the guise of an Administrator user, depending on the permissions level they are able to access.
 
-<!--
-**Please replace text in each section below**
+## Business Impact
 
-HTTPS not Available or HTTP by default on Login Page Vulnerability Report
+Disclosure of secrets for a publicly available asset can lead to indirect financial loss due to an attacker accessing, deleting, or modifying data from within the application. Reputational damage for the business can also occur via the impact to customers’ trust that these events create. The severity of the impact to the business is dependent on the sensitivity of the data being stored in, and transmitted by the application.
 
-Resources:
+## Steps to Reproduce
 
-- <https://owasp.org/www-project-top-ten/2017/A3_2017-Sensitive_Data_Exposure
+1. Use a browser to navigate to: {{url}}/data/
+1. Observe that secrets are being disclosed
 
--->
-Disclosure of secrets for a publicly accessible asset on {{application}} of {{target}}, allows a malicious attacker to {{action}}
-
-## Walkthrough & PoC
-<!--
-Provide a step-by-step walkthrough on how to access the vulnerable injection point, and how to exploit the vulnerability.
-Adding a dot-pointed walkthrough with relevant screenshots will speed triage time and result in faster rewards!
-
-Example:
-
-1. Browse to the URL <www.inscope.com/login>
-1. Attempt to sign into the website using the login button
-1. Observe the page running on HTTP as default
-
-1. Run the following command on a machine with cURL installed
-```bash
-curl -I www.inscope.com/login
-```
-1. Observe the repsonse showing a 200 OK on the HTTP response
-
- -->
-
-1. Navigate to the following URL: bugcrowd.com/data-disclosed-url
-1. Use {{software}} to crawl open source databases and publically accessible data for secrets
-1. Notice on the following endpoint the following secret was revealed:
-
-{{value}}
-
-
-## Vulnerability Evidence
-
-<!-- 
-Your submission MUST include evidence of the vulnerability and not be theoretical in nature.
-
-This can include a cURL response from the website showing that HTTP is default or HTTPS is not avalible.
-
-For exposed secrets for a publicly accessible asset, please include a screenshot of the data.
-**DO NOT SAVE PII**
- -->
-
-The following image(s) show the full exploit:
-
-1. Login to in-scope asset at <www.bugcrowd.com/login>
-1. Browse to account page
-1. Modify ID token to add single quote
-1. View error which states 'SQL Syntax Error'
-1. Replace ID value with `1' waitfor delay '00:00:10'; `
-1. Navigate to {{url}} and observe the disclosure of secrets for a publicly accessible asset
-
-You can observe the exposed secrets for a publicly accessible asset as well as verify its validity below:
+1. Use a browser to navigate to: {{URL}}/data-disclosed/
+1. Crawl open source databases and publicly accessible data for secrets
+1. Observe that the following endpoint reveals secret data:
 
 {{screenshot}}
 
-## Demonstrated Impact
-<!--
-Demonstrating increased impact results in higher rewards! 
+## Proof of Concept (PoC)
 
-Sensitive data disclosure of secrets for assets can enable malicious attackers to attack and escalate privileges on API endpoints and application environments, they can then execute functions under the guise of an admin or user depending on the permissions of the secret
+The exposed secrets for this publicly accessible asset can be seen in the screenshot below:
 
-Attempt to abuse the exposed secrets for a publicly accessible asset to access sensitive data or sensitive functions that you control, but do not save or utilize the sensitive data in any way.
--->
-
-A malicious attacker could abuse the exposed secrets for a publicly accessible asset to perform {{action}}.
+{{screenshot}}
