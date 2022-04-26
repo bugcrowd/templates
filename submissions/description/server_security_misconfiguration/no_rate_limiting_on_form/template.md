@@ -1,23 +1,24 @@
 # No Rate Limiting on Form
 
-## Overview
+## Overview of the Vulnerability
 
-Rate Limiting prevents an application from becoming unresponsive or unavailable due to too many requests exhausting the application's resources. Without rate limiting on a form a malicious attacker is able to perform spam attacks through the form. Depending on what is returned from the application, an attacker may also be able to enumerate users or users' information.
+Rate limiting is a strategy to limit the frequency of a repeat action within a particular time frame. This ensures that a service doesn’t become unresponsive or unavailable due to too many requests exhausting the application's resources. A lack of rate limiting on this endpoint allows an attacker to send a large number of requests to the server and potentially cause accelerated service usage for the business or exhaust the application resources.
 
-A lack of a Rate Limiting in {{target}} allows a malicious attacker to spam submissions of the form or a denial of service to other customers attempting to submit the form.
+## Business Impact
+
+No rate limiting on a form can result in reputational damage to the organization if the rate limiting prevents legitimate form submissions and responses. It also has the potential to cause accelerated service usage, which can incur a direct financial cost in environments with SaaS services or pay on demand systems.
 
 ## Steps to Reproduce
 
-1. Navigate to the URL {{value}}
-1. Fill in the form and intercept the submission in a HTTP interception proxy
-1. Use {{program}} (Up to 10 requests) to launch a spam attack
+1. Enable a HTTP intercept proxy, such as Burp Suite or OWASP ZAP, to record and intercept web traffic from your browser
+1. Using a browser, sign into the application
+1. Navigate to {{url}} and fill out the form
+1. Submit the form while using the HTTP intercept proxy to intercept the request
+1. Using the HTTP intercept proxy, re-issue the captured request 400 times in rapid succession
+1. Observe within the HTTP intercept proxy that all 400 of these requests generate a ‘HTTP 200 OK’ response, showing that there is no rate-limiting on the form
 
-## Vulnerability Evidence
+## Proof of Concept
 
-The image(s) below demonstrates the lack of rate limiting on the form:
+The following screenshot shows a lack of rate limiting on the form:
 
 {{screenshot}}
-
-## Demonstrated Impact
-
-A malicious attacker can leverage this functionality to slow down the network and perform denial of service on {{application}}. A lack of rate limiting on this form can lead to financial loss and reputational damage of {{program}}.
