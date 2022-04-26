@@ -2,39 +2,38 @@
 
 ## Overview of the Vulnerability
 
-Insecure Direct Object Reference (IDOR) occurs when there are no access control checks in place to verify if the request of an object within the application can be viewed by the person requesting access. Given which type of IDOR within an application, an attacker could perform the following actions:
+Insecure Direct Object Reference (IDOR) occurs when there are no access control checks to verify if a request to interact with a resource is valid. An IDOR vulnerability within this application can be leveraged by an attacker to manipulate, destroy, or disclose data through their ability to bypass access controls and  horizontally or vertically escalate their privileges. 
+
+Given the type of IDOR within an application, an attacker could perform the following actions:
 
 - Gain unauthorized access to data from the application and retrieve privileged information
 - Perform unauthorized operations, such as escalating their privileges within the application, or forcing a password change on a user’s account in order to takeover that account
 - Manipulate internal application objects and elevate their privileges, alter data, or gain access to and manipulate the application’s APIs
 - Gain direct access to files and manipulate the file system, such as uploading, downloading, adding, or deleting data, including other user’s data.
 
-Vulnerability Specifics to the Application:
-
-IDOR in {{application}} of {{target}} allows a malicious attacker to {{action}}.
-
 ## Business Impact
 
-An attacker could extract all data which can be referenced by the parameter that is subject to manipulation. Exposure of this data could lead to financial loss, theft of personally identifiable information (PII), and reputational damage of {{customer-name}} and their users.
+IDOR can lead to indirect financial loss through an attacker accessing, deleting, or modifying data from within the application. This could also result in reputational damage for the business through the impact to customers’ trust. The severity of the impact to the business is dependent on the sensitivity of the data being stored in, and transmitted by the application.
 
 ## Steps to Reproduce
 
-1. Using {{browser-used}}, log in to {{application}} at {{url}}
-1. Send a request to {{url}}, with the following parameter, {{parameter}}:
-<https://example.com/parameter(user1)>
-1. In the URL bar, modify the parameter to a different value, {{value}}:
-<https://example.com/parameter(user2)>
-1. Observe that the application displays information of user2, as seen in the screenshot below:  
+1. Use a browser to navigate to: {{URL}}
+1. Login to User Account A
+1. In the URL bar, modify the parameter to a different value:
+
+{{eg.<https://example.com/parameter(UserAccountB)>}}
+
+1. Observe that the application displays information of User Account B, as seen in the screenshot below:  
 
 {{screenshot}}
 
 ## Proof of Concept (PoC)
 
-Below is a screenshot demonstrating the exposed object executing at, {{url}}:
+Below is a screenshot demonstrating the exposed object executing:
 
 {{screenshot}}
 
-A malicious attacker could abuse this IDOR vulnerability further to {{action}} by using the following payload to extract data:  
+A malicious attacker could leverage this IDOR vulnerability to extract data by using the following payload:  
   
 ``` bash
 {{payload}}
@@ -43,3 +42,4 @@ A malicious attacker could abuse this IDOR vulnerability further to {{action}} b
 The following screenshot demonstrates this additional impact:
 
 {{screenshot}}
+
