@@ -1,42 +1,26 @@
-# No Rate Limiting on Email Triggering Form
+# No Rate Limiting on Form which Triggers Emails
 
-## Overview
+## Overview of the Vulnerability
 
-<!--
-Provide a 1-2 sentence description - see http://cveproject.github.io/docs/content/key-details-phrasing.pdf for tips
+Rate Limiting prevents an application from becoming unresponsive or unavailable due to too many requests exhausting the application's resources. A lack of rate limiting on an email triggering endpoint was identified. This allows an attacker to create a large amount of emails to any email address, which they could use to spam a target with emails.
 
-This format is a good guide:
-[VULNTYPE] in [COMPONENT] in [APPLICATION] allows [ATTACKER] to [IMPACT] via [VECTOR]
--->
+## Business Impact
 
-No rate limiting on email-triggering form on {{application}} allows a malicious attacker to {{action}}
+No rate limiting on a form which triggers email can result in reputational damage for the business as customers’ trust is impacted through receiving large amounts of unwanted and unsolicited emails. This also creates the risk of the email address domain being added to a spam list.
 
-## Walkthrough & PoC
+Additionally, for systems that use Software-as-a-Service (SaaS) email providers, there can be direct financial costs associated with sending large volumes of email.
 
-<!-- Provide a step-by-step walkthrough on how to access the vulnerable injection point, and how to exploit the vulnerability.
-Adding a dot-pointed walkthrough with relevant screenshots will speed triage time and result in faster rewards!
--->
+## Steps to Reproduce
 
-1. Utilize an HTTP proxy to record and intercept web traffic from your browser
-1. Sign in to {{application}} at {{url}}
+1. Enable a HTTP intercept proxy, such as Burp Suite or OWASP ZAP, to record and intercept web traffic from your browser
+1. Using a browser, sign into the application
 1. Navigate to {{url}} and fill out the form that triggers an email, using an email that you own as the destination
-1. On submitting the form, use the HTTP proxy to intercept the request
-1. Re-issue the captured request 25 times in rapid succession
-1. In the target email address, observe that all 25 of these requests triggered an email, showing that there is no rate-limiting on the form at {{url}}
+1. Submit the form while using the HTTP intercept proxy to intercept the request
+1. Using the HTTP intercept proxy, re-issue the captured request 400 times in rapid succession
+1. Observe within the target email address inbox that all 400 of these requests triggered an email, showing that there is no rate-limiting on the form
 
-## Vulnerability Evidence
-<!--
-Your submission MUST include evidence of the vulnerability and not be theoretical in nature.
+## Proof of Concept
 
-For a lack of rate limiting on a form that triggers an email, please include a screenshot or video showing that multiple submissions of the form in rapid succession failed to trigger any rate limiting by the application.
--->
+The following screenshot shows a lack of rate limiting on the form which triggers emails:
 
-Please view the evidence showing a lack of rate limiting on a form that triggers an email below. {{screenshot}}
-
-## Demonstrated Impact
-
-<!--
-Attempt to escalate a lack of rate limiting on a form that triggers an email. If this is possible, provide a full proof-of-concept here.
--->
-
-A form that lacks rate limiting and triggers an email sent could be used by an attacker to send a massive amount of unwanted and unsolicited emails to a specified email address. 
+{{screenshot}}

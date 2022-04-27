@@ -1,49 +1,24 @@
-# No Rate Limiting on Registration 
+# No Rate Limiting on Registration Form
 
-## Overview
+## Overview of the Vulnerability
 
-<!--
-Provide a 1-2 sentence description - see http://cveproject.github.io/docs/content/key-details-phrasing.pdf for tips
+Rate Limiting prevents an application from becoming unresponsive or unavailable due to too many requests exhausting the application's resources. A lack of rate limiting on a registration form allows an attacker to send a number of requests to the server which registers an account on the service for each request, and will generate a new user. This has the risk of generating a large set of spam accounts with the service, which the attacker can use to spam other users and disrupt the platform.
 
-This format is a good guide:
-[VULNTYPE] in [COMPONENT] in [APPLICATION] allows [ATTACKER] to [IMPACT] via [VECTOR] 
--->
+## Business Impact
 
-Rate Limiting is a measure used by applications to prevent spam attacks or brute forcing.
+No rate limiting on a registration form can result in reputational damage to the organization if an attacker generates a large amount of accounts for a service and uses it to spam other users, or to disrupt the platform via other means. It also has the potential to cause accelerated service usage, which can incur a direct financial cost in environments with SaaS services or pay on demand systems.
 
-A lack of a Rate Limiting in {{target}} allows a malicious attacker to brute force or spam an application/functionality.
+## Steps to Reproduce
 
-## Walkthrough & PoC
+1. Enable a HTTP intercept proxy, such as Burp Suite or OWASP ZAP, to record and intercept web traffic from your browser
+1. Using a browser, sign into the application
+1. Navigate to {{url}} and fill out the registration form
+1. Submit the registration form while using the HTTP intercept proxy to intercept the request
+1. Using the HTTP intercept proxy, re-issue the captured request 400 times in rapid succession
+1. Observe within the HTTP intercept proxy that all 400 of these requests successfully generate new accounts, showing that there is no rate-limiting on the form
 
-<!--
-Provide a step-by-step walkthrough on how to access the vulnerable injection point, and how to exploit the vulnerability.
+## Proof of Concept
 
-Adding a dot-pointed walkthrough with relevant screenshots will speed triage time and result in faster rewards!
--->
-
-1. Navigate to the following URL:
-
-{{value}}
-
-1. Fill in the form to register and intercept in a Web Proxy
-
-
-1. Use {{program}} (Up to 10 requests) to launch a spam attack 
-
-## Vulnerability Evidence
-
-<!--
-Your submission MUST include evidence of the vulnerability and not be theoretical in nature.
--->
-
-The image(s) below demonstrates the lack of rate limiting on the registration functionality:
+The following screenshot shows a lack of rate limiting on the registration form:
 
 {{screenshot}}
-
-## Demonstrated Impact
-
-<!--
-Provide a full Proof of Concept here.
---> 
-
-This will allow an attacker to generate multiple spam accounts on the website, and squat usernames on the website, preventing legitmate users from joining.

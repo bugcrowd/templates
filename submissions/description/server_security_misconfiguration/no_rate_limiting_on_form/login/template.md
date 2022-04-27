@@ -1,50 +1,24 @@
-# No Rate Limiting on Login
+# No Rate Limiting on Login Form
 
-## Overview
+## Overview of the Vulnerability
 
-<!--
-Provide a 1-2 sentence description - see http://cveproject.github.io/docs/content/key-details-phrasing.pdf for tips
+Rate Limiting prevents an application from becoming unresponsive or unavailable due to too many requests exhausting the application's resources. A lack of rate limiting on a login form allows an attacker to send a number of requests to the server which will attempt to authenticate a user with the supplied credentials, even if they are invalid. This has the risk of an attacker being able to attempt to bruteforce credentials for users without any protections, and can be used as a method of credential stuffing and compromising accounts to the service.
 
-This format is a good guide:
-[VULNTYPE] in [COMPONENT] in [APPLICATION] allows [ATTACKER] to [IMPACT] via [VECTOR] 
--->
+## Business Impact
 
-Rate Limiting is a measure used by applications to prevent spam attacks or brute forcing.
+No rate limiting on a login form can result in reputational damage to the organization if an attacker successfully takes over an account through a bruteforce login attempt. It also has the potential to cause accelerated service usage, which can incur a direct financial cost in environments with SaaS services or pay on demand systems.
 
-A lack of a Rate Limiting in {{target}} allows a malicious attacker to brute force or spam an application/functionality.
+## Steps to Reproduce
 
-## Walkthrough & PoC
+1. Enable a HTTP intercept proxy, such as Burp Suite or OWASP ZAP, to record and intercept web traffic from your browser
+1. Using a browser, sign into the application
+1. Navigate to {{url}} and fill out the form
+1. Submit the login form while using the HTTP intercept proxy to intercept the request
+1. Using the HTTP intercept proxy, re-issue the captured request 400 times in rapid succession
+1. Observe within the HTTP intercept proxy that all 400 of these requests generate successful login attempts, showing that there is no rate-limiting on the form
 
-<!--
-Provide a step-by-step walkthrough on how to access the vulnerable injection point, and how to exploit the vulnerability.
+## Proof of Concept
 
-Adding a dot-pointed walkthrough with relevant screenshots will speed triage time and result in faster rewards!
--->
-
-1. Navigate to the following URL:
-
-{{value}}
-
-1. Fill in the form to login and intercept in a Web Proxy
-
-
-1. Use {{program}} (Up to 10 requests) to launch a spam attack 
-
-## Vulnerability Evidence
-
-<!--
-Your submission MUST include evidence of the vulnerability and not be theoretical in nature.
--->
-
-The image(s) below demonstrates the lack of rate limiting on the login functionality:
+The following screenshot shows a lack of rate limiting on the login form:
 
 {{screenshot}}
-
-## Demonstrated Impact
-
-<!--
-Provide a full Proof of Concept here.
---> 
-
-
-This will enable an attacker to bruteforce any login for the website, and allow an attacker to attempt Credential Stuffing. 

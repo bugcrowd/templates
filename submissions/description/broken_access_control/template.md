@@ -1,52 +1,28 @@
 # Generic Broken Access Control
 
-## Overview
+## Overview of the Vulnerability
 
-<!--
-Provide a 1-2 sentence description - see http://cveproject.github.io/docs/content/key-details-phrasing.pdf for tips
+When access controls are broken, users are able to perform functions outside of their intended user functionality within the application. Access controls help enforce users' access and how they interact with applications and APIs through authorization. There can be vertical, horizontal, and conditional access controls which give a user their intended permissions within an application. Broken access control in this application can be leveraged by an attacker to elevate privileges, or manipulate, destroy, or disclose data, depending on the type of access control vulnerability being exploited.
 
-This format is a good guide:
-[VULNTYPE] in [COMPONENT] in [APPLICATION] allows [ATTACKER] to [IMPACT] via [VECTOR]
--->
+## Business Impact
 
-Broken access control in {{application}} of {{target}} allows malicious attacker to {{action}}
+Broken access controls can lead to financial loss through an attacker accessing, deleting, or modifying data from within the application. This could also result in reputational damage for the business through the impact to customers’ trust. The severity of the impact to the business is dependent on the sensitivity of the data being stored in, and transmitted by the application.
 
-## Walkthrough & PoC
+## Steps to Reproduce
 
-<!--
-Provide a step-by-step walkthrough on how to access the vulnerable injection point, and how to exploit the vulnerability.
-Adding a dot-pointed walkthrough with relevant screenshots will speed triage time and result in faster rewards!
--->
+1. Enable a HTTP interception proxy, such as Burp Suite or OWASP ZAP
+1. Use a browser to navigate to: {{URL}}
+1. Login to an account that should not be able to perform {{action}}
+1. Forward the following request to the endpoint:
 
-1. Navigate to {{url}} and log into an account that should not be able to perform {{action}}
-1. Insert {{payload}} into {{parameter}} in {{url}}
-1. Observe that the account that should not be able to perform {{action}} can now perform {{action}}
+```HTTP
+{{request}}
+```
 
-## Vulnerability Evidence
+1. Observe that the account now has additional user functionality and access to data it was previously not authorized to access
 
-<!--
-Your submission MUST include evidence of the vulnerability and not be theoretical in nature.
+## Proof of Concept (PoC)
 
-For a broken access control vulnerability, please include a simple URL or HTTP payload that can be executed to easily demonstrate and reproduce the issue.
--->
-
-The screenshot below demonstrates the broken access control at {{url}}.
+The screenshot below demonstrates the broken access control:
 
 {{screenshot}}
-
-## Demonstrated Impact
-
-<!--
-Attempt to escalate the broken access control to perform additional actions (such as an account takeover or sensitive data exposure). If this is possible, provide a full proof-of-concept here.
--->
-
-A malicious attacker could abuse this broken access control further to {{action}} by using the following payload
-
-
-{{payload}}
-
-You can find a screenshot of the full exploit taking place below:
-
-{{screenshot}}
-
-````

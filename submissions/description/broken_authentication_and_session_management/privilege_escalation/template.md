@@ -1,55 +1,51 @@
-# Overview
-<!--
-**Please replace text in each section below**
+# Privilege Escalation via Broken Authentication
 
-Authentication Bypass Report
+## Overview of the Vulnerability
 
-Resources:
-- https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/04-Authentication_Testing/04-Testing_for_Bypassing_Authentication_Schema
-- https://www.bugcrowd.com/blog/authentication-bypass/
--->
-Authentication methods can be bypassed through a variety of ways including, calling an internal post authentication page, modifying the given URL parameters, by manipulating the form, or by counterfeiting sessions. A malicious attacker can perform a variety of actions through bypassing authentication methods, and is only limited by the permissions of the privilieged user. This could include viewing/editing senstive customer data, viewing/editing other user permissions, and taking over user accounts. 
+Authentication and session management controls can be bypassed through a variety of ways including, calling an internal post authentication page, modifying the given URL parameters, by manipulating the form, or by counterfeiting sessions. The authentication method for this application can be bypassed by an attacker which enables them to access a privileged user’s account and functionality, giving them access to more resources or functionality within the application. This could include viewing or editing sensitive customer data, and viewing or editing other user permissions.
 
-The authentication method for {{application}} at {{url}} is being bypased through {{action}}. This allows a malicious attacker to perform {{action}} which abuses the persmissions of the privilaged user.
+## Business Impact
 
-## Walkthrough & PoC
-<!--
-Provide a step-by-step walkthrough on how to access the vulnerable authentication mechanism and how to exploit the vulnerability to obtain access or perform a function that is intended to enforce authentication.
-Adding a dot-pointed walkthrough with relevant screenshots will speed triage time and result in faster rewards!
--->
+The impact of privilege escalation through broken authentication controls can vary in severity depending on the degree of access to resources or functionality the malicious attacker is able to gain. An attacker with the ability to access, delete, or modify data from within the application could result in reputational damage for the business through the impact to customers’ trust. This can also result in indirect financial cost to the business through fines and regulatory bodies if sensitive data is accessed. The severity of the impact to the business is dependent on the sensitivity of the data being stored in, and transmitted by the application.
 
-Example:
+## Steps to Reproduce
 
-1. Browse to {{url}}/Login and login as a user that is part of the 'cargo' permissions group.
-2. With an Http proxy enabled, click the dropdown at the top left of the page and click 'Freight Control Panel'
-3. You will be prompted to enter a key-phrase. Enter 0000001 and hit Submit while your proxy has Intercept enabled.
-4. Multiple requests will be made. Forward them until you see a POST with parameters that includes {{parameter}}
-5. Modify the parameter to "{{payload}}" and turn off interception
-6. You should be presented with a panel that includes live depots and allows for redirection and dispatch of shipping.
+1. Enable a HTTP interception proxy, such as Burp Suite or OWASP ZAP
+1. Use a browser to navigate to: {{URL}}
+1. Login to User Account A
+1. Using the HTTP interception proxy, forward the following request to the endpoint:
 
-## Vulnerability Evidence
-<!--
-Your submission MUST include evidence of the vulnerability and not be theoretical in nature.
+```HTTP
+{{request}}
+```
 
-For authentication bypass vulnerabilities, include instructions on how to access the vulnerable authentication mechanism and steps to bypass it in order to perform a function or access data not intended for that user.
-Provide screenshots to show the functionality accessed without valid authentication. 
--->
+1. Forward the requests until there is a POST request visible with the following parameters:
 
-The screenshots/video below demonstrates the authentication method being bypassed at {{url}}.
+{{parameter}}
+
+1. Modify the parameter to the following payload:
+
+{{payload}}
+
+1. Forward the request then turn off interception in the prox
+1. Observe that User Account A now has additional Administrator privileges and user functionality it was previously not authorized to access
+
+## Proof of Concept (PoC)
+
+The screenshots below demonstrate the authentication method being bypassed.
 
 Unauthenticated view:
-{{screenshot}} 
 
-Bypassing authentication/Escalting privileges:
+{{screenshot}}
+
+Bypassing authentication and escalating privileges:
+
 {{screenshot}}
 
 Privileged user view:
+
 {{screenshot}}
 
-## Demonstrated Impact
-<!--
-Explain why this bypass is a risk and how it can be used as an attack vector. If safe, perform a function that is shown to require authentication.
--->
-A malicious attacker could abuse this authentication bypass further to {{action}} by abusing the privileged users permissions through {{payload}}.
+A malicious attacker could abuse this authentication bypass further by abusing the privileged users permissions. This is demonstrated in the screenshot below:
 
 {{screenshot}}
