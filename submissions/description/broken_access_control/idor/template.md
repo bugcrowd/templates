@@ -1,55 +1,45 @@
-# Insecure Direct Object References (IDOR)
+# Insecure Direct Object Reference (IDOR)
 
-## Overview
+## Overview of the Vulnerability
 
-<!--
-Provide a 1-2 sentence description - see http://cveproject.github.io/docs/content/key-details-phrasing.pdf for tips
+Insecure Direct Object Reference (IDOR) occurs when there are no access control checks to verify if a request to interact with a resource is valid. An IDOR vulnerability within this application can be leveraged by an attacker to manipulate, destroy, or disclose data through their ability to bypass access controls and  horizontally or vertically escalate their privileges. 
 
-This format is a good guide:
-[VULNTYPE] in [COMPONENT] in [APPLICATION] allows [ATTACKER] to [IMPACT] via [VECTOR] 
--->
+Given the type of IDOR within an application, an attacker could perform the following actions:
 
-An Insecure Direct Object Reference (IDOR) occurs when an application directly exposes a reference to an object such as user details or files. Which can be directly accessed regardless of the authorisation.
+- Gain unauthorized access to data from the application and retrieve privileged information
+- Perform unauthorized operations, such as escalating their privileges within the application, or forcing a password change on a user’s account in order to takeover that account
+- Manipulate internal application objects and elevate their privileges, alter data, or gain access to and manipulate the application’s APIs
+- Gain direct access to files and manipulate the file system, such as uploading, downloading, adding, or deleting data, including other user’s data.
 
-IDOR in {{application}} of {{target}} allows malicious attacker to {{action}}
+## Business Impact
 
-## Walkthrough & PoC
+IDOR can lead to indirect financial loss through an attacker accessing, deleting, or modifying data from within the application. This could also result in reputational damage for the business through the impact to customers’ trust. The severity of the impact to the business is dependent on the sensitivity of the data being stored in, and transmitted by the application.
 
-<!--
-Provide a step-by-step walkthrough on how to access the vulnerable injection point, and how to exploit the vulnerability.
-Adding a dot-pointed walkthrough with relevant screenshots will speed triage time and result in faster rewards!
--->
+## Steps to Reproduce
 
-1. Log in to {{application}} at {{url}}
-1. Send a request to {{url}} with the following parameter {{parameter}}
-1. Modify the {{parameter}} to a different value
-1. Observe PII is displayed.
+1. Use a browser to navigate to: {{URL}}
+1. Login to User Account A
+1. In the URL bar, modify the parameter to a different value:
 
-## Vulnerability Evidence
+{{eg.<https://example.com/parameter(UserAccountB)>}}
 
-<!--
-Your submission MUST include evidence of the vulnerability and not be theoretical in nature.
-
-For an IDOR, please include a simple URL or parameter that can be executed to easily demonstrate and reproduce the issue. 
--->
-
-Below is a screenshot demonstrating the exposed object executing at {{url}}.
+1. Observe that the application displays information of User Account B, as seen in the screenshot below:  
 
 {{screenshot}}
 
-## Demonstrated Impact
+## Proof of Concept (PoC)
 
-<!--
-Attempt to escalate the IDOR to extract additional privileged information (such as using a higher privilege account to access restricted data). If this is possible, provide a full proof-of-concept here.
--->
+Below is a screenshot demonstrating the exposed object executing:
 
-A malicious attacker could abuse this IDOR further to {{action}} by using the following {{payload}} to extract sensitive information.
+{{screenshot}}
 
-```
+A malicious attacker could leverage this IDOR vulnerability to extract data by using the following payload:  
+  
+``` bash
 {{payload}}
 ```
 
-The screenshot below demonstrates the objects accessed:
+The following screenshot demonstrates this additional impact:
 
 {{screenshot}}
 
