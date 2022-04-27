@@ -15,7 +15,7 @@ Broken access controls can lead to financial loss through an attacker accessing,
 1. Login to an account that should not be able to perform {{action}}
 1. Forward the following request to the endpoint:
 
-```HTTP Request
+```HTTP
 {{request}}
 ```
 
