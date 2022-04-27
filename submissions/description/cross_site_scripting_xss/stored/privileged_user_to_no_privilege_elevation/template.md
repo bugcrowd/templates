@@ -1,54 +1,33 @@
-# Stored XSS (Privileged User to No Privilege Elevation)
+# Stored Cross-Site Scripting (Privileged User to No Privilege Elevation)
 
-## Overview
+## Overview of the Vulnerability
 
-<!--
-Provide a 1-2 sentence description - see http://cveproject.github.io/docs/content/key-details-phrasing.pdf for tips
+Stored Cross-Site Scripting (XSS) is a type of injection attack where malicious JavaScript is injected into a website. When a user visits the affected web page, the Javascript executes within that user’s browser in the context of this domain. Stored XSS can be found on this domain which allows an attacker to submit data to a form and gain access to an account of a user with the same privilege level.
 
-This format is a good guide:
-[VULNTYPE] in [COMPONENT] in [APPLICATION] allows [ATTACKER] to [IMPACT] via [VECTOR] 
--->
-Cross-Site Scripting (XSS) attacks are a type of injection, in which malicious scripts are injected into trusted websites. XSS vulnerabilities allow a malicious attacker to pretend to be the user, and to carry out any actions that the user is able to perform, to access any of the user's data. The malicious attacker might be able to gain full control over all of the application's functionality and data depending on the users level of permissions.
+When an attacker can control code that is executed within a user’s browser, they are able to carry out any actions that the user is able to perform, including accessing any of the user's data and modifying information within the user’s permissions. This can result in modification, deletion, or theft of data, including accessing or deleting files, or stealing session cookies which an attacker could use to hijack a user’s session.
+  
+## Business Impact
 
-Stored XSS in {{application}} at {{url}} allows a malicious actor to {{action}}.
+Stored XSS could lead to data theft through the attacker’s ability to manipulate data through their access to the application, and their ability to interact with other users, including performing other malicious attacks, which would appear to originate from a legitimate user. These malicious actions could also result in reputational damage for the business through the impact to customers’ trust.
 
-## Walkthrough & PoC
+## Steps to Reproduce
 
-<!--
-Provide a step-by-step walkthrough on how to access the vulnerable injection point, and how to exploit the vulnerability.
-Adding a dot-pointed walkthrough with relevant screenshots will speed triage time and result in faster rewards!
--->
+1. Enable a HTTP interception proxy, such as Burp Suite or OWASP ZAP
+1. Log into the application at with an account (User A)
+1. Forward the following request to the endpoint:
 
-1. Log in to {{application}} at {{url}} with a privileged user account
-1. Navigate to {{url}}
-1. Insert {{payload}} in the appropriate area
-1. Observe the JavaScript payload was executed
-1. Verify the payload is stored and accessible to anyone
-
-## Vulnerability Evidence
-
-<!--
-Your submission MUST include evidence of the vulnerability and not be theoretical in nature.
-
-For a stored XSS vulnerability, please include a simple URL or HTML payload that can be executed to easily demonstrate and reproduce the issue. 
--->
-
-Below is a screenshot demonstrating the injected JavaScript executing at {{url}}.
-
-{{screenshot}}
-
-## Demonstrated Impact
-
-<!--
-Attempt to escalate the XSS to perform additional actions (such as an account takeover or CSRF bypass to perform a sensitive action). If this is possible, provide a full proof-of-concept here.
---> 
-
-A malicious attacker could abuse this XSS further to {{action}} by using the following JavaScript payload.
-
-```
-{{payload}}
+```HTTP
+{{request}}
 ```
 
-Here is a screenshot of the full exploit taking place:
+1. Observe the JavaScript payload being executed
+1. Log out of the account for User A
+1. Log into another account (User B) and navigate to {{url}} which contains the payload
+1. Log out of User B and log into the account of User A
+1. Observe the account for User A has access to account information of User B
+
+## Proof of Concept (PoC)
+
+Below is a screenshot demonstrating the injected JavaScript executing at the vulnerable endpoint, {{URL}}:
 
 {{screenshot}}
