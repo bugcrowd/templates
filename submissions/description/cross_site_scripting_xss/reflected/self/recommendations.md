@@ -6,7 +6,7 @@ Encode outputs of HTTP responses to prevent them from being interpreted as activ
 
 Use appropriate HTTP response headers to ensure the browser correctly interprets responses. For example:
 
-``` bash
+``` HTTP
 
  x-content-type-options: nosniff
  Content-Security-Policy: default-src ‘self’; script-src ‘self’
