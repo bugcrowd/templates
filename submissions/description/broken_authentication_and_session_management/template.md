@@ -1,52 +1,29 @@
-# Generic Broken authentication and session management
+# Broken Authentication and Session Management
 
-## Overview
+## Overview of the Vulnerability
 
-<!--
-Provide a 1-2 sentence description - see http://cveproject.github.io/docs/content/key-details-phrasing.pdf for tips
+Broken authentication and session management vulnerabilities exist when a user is able to access resources or perform actions not intended for their user role. Identity and access controls can be bypassed through a variety of ways including but not limited to, calling an internal post authentication page, modifying the given URL parameters, by manipulating the form, or by counterfeiting sessions.
 
-This format is a good guide:
-[VULNTYPE] in [COMPONENT] in [APPLICATION] allows [ATTACKER] to [IMPACT] via [VECTOR]
--->
+This application has authentication and session management controls which an attacker can bypass to access a user account. The attacker is only limited by the permissions of the user account they access, including Administrator users. This could include viewing or editing sensitive customer data, viewing or editing other user permissions, and taking over other user accounts or elevating privileges.
 
-Broken authentication or session management in {{application}} of {{target}} allows malicious attacker to {{action}}
+## Business Impact
 
-## Walkthrough & PoC
+Broken authentication and session management could lead to data theft through the attacker’s ability to manipulate data through their access to the application, and their ability to interact with other users, including performing other malicious attacks, which would appear to originate from a legitimate user. These malicious actions could also result in reputational damage for the business through the impact to customers’ trust.
 
-<!--
-Provide a step-by-step walkthrough on how to access the vulnerable injection point, and how to exploit the vulnerability.
-Adding a dot-pointed walkthrough with relevant screenshots will speed triage time and result in faster rewards!
--->
+## Steps to Reproduce
 
-1. Navigate to {{url}}
-1. Insert {{payload}} into {{parameter}} in {{url}}
+1. Enable a HTTP interception proxy, such as Burp Suite or OWASP ZAP
+1. Use a browser to navigate to: {{URL}}
+1. Forward the following request to the endpoint:
+
+```HTTP
+{{request}}
+```
+
 1. Observe that the authentication method or session management has been compromised in some way
 
-## Vulnerability Evidence
+## Proof of Concept (PoC)
 
-<!--
-Your submission MUST include evidence of the vulnerability and not be theoretical in nature.
-
-For a broken authentication or session management vulnerability, please include a simple URL or HTTP payload that can be executed to easily demonstrate and reproduce the issue.
--->
-
-The screenshot below demonstrates the broken authentication or session management at {{url}}.
+The screenshot below demonstrates the broken authentication and session management:
 
 {{screenshot}}
-
-## Demonstrated Impact
-
-<!--
-Attempt to escalate the broken authentication or session management to perform additional actions (such as an account takeover or CSRF bypass to perform a sensitive action). If this is possible, provide a full proof-of-concept here.
--->
-
-A malicious attacker could abuse this broken authentication or session management further to {{action}} by using the following payload.
-
-
-{{payload}}
-
-You can find a screenshot of the full exploit taking place below:
-
-{{screenshot}}
-
-````
