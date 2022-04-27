@@ -2,59 +2,32 @@
 
 ## Overview
 
-<!--
-**Please replace text in each section below**
+SQL injection (SQLi) is a vulnerability in which an application accepts input into an SQL statement and treats this input as part of the statement. Typically, SQLi allows a malicious attacker to view, modify or delete data that should not be able to be retrieved. An SQLi vulnerability was found for this host which allows an attacker to execute code and view data from the SQL service by submitting SQL queries.
 
-SQL Injection Vulnerability Report
+An attacker could exploit this lack of input sanitization to exfiltrate database data and files, tamper with the data, or perform resource exhaustion. Depending on the database and how it is configured, an attacker could potentially remotely execute code on the server running the database.
 
-Resources:
+## Business Impact
 
-- <https://owasp.org/www-community/attacks/SQL_Injection>
-- <https://owasp.org/www-community/attacks/Blind_SQL_Injection>
--->
+Data exfiltration through a SQLi attack could lead to reputational damage or regulatory fines for the business due to an attacker’s unauthorized access to data. This could also result in reputational damage for the business through the impact to customers’ trust. The severity of the impact to the business is dependent on the sensitivity of the data being stored in, and transmitted by the application.
 
+## Steps to Reproduce
 
-SQL Injection is a vulnerability in which an application injects a valid payload within a SQL query from input data.
+1. Using a browser, login to in-scope asset at: {{URL}}
+1. Browse to account page
+1. Modify ID token to add single quote
+1. View error which states 'SQL Syntax Error'
+1. Replace ID value with the following payload:
 
-SQL queries may be exploited in a variety of ways including exfiltration of database data, exfiltration of files, subtle data tampering, and resource exhaustion. A common escalation is to abuse the SQL functionality to upgrade to full remote command execution.
+```SQL
+{{payload}}
+```
 
-A SQL Injection (SQLi) was discovered at {{target}} at {{url}} through {{parameter}} using {{payload}}. This allows a malicious attacker to {{action}} and perform arbitrary SQL queries.
+## Proof of Concept (PoC)
 
-## Walkthrough & PoC
-<!--
-Provide a step-by-step walkthrough on how to access the vulnerable injection point, and how to exploit the vulnerability.
-Adding a dot-pointed walkthrough with relevant screenshots will speed triage time and result in faster rewards!
--->
-
-1. Login to in-scope asset at {{url}}
-2. Browse to account page
-3. Modify ID token to add single quote
-4. View error which states 'SQL Syntax Error'
-5. Replace ID value with {{payload}}
-
-## Vulnerability Evidence
-<!--
-Your submission MUST include evidence of the vulnerability and not be theoretical in nature.
-
-For an SQL Injection vulnerability, please include specific NON-PII information discovered in the database, such as Database Version, a listing of database tables, or an injected 'sleep' payload.
-
-You may present your evidence as output from a tool such as SQLMap, unless the program forbids the use of these tools, and it may be in the format of terminal output, screenshots, or video..
-
-**DO NOT ACCESS PII**
--->
-
-The screenshot/video below demonstrates the SQLi being executed at {{url}}.
+The screenshot below demonstrates the SQLi being executed:
 
 {{screenshot}}
 
-## Demonstrated Impact
-<!--
-Demonstrating access to data other than the database version or database tables is NOT permitted without explicit permission from the program.
-**DO NOT ACCESS PII**
---> 
+The following database name and database user have been retrieved to demonstrate that the PoC exfiltrates valid database information:
 
-A malicious attacker could theoretically abuse this specific SQLi further to {{action}} by using the following SQL query:
-
-```sql
-{{payload}}
-```
+{{database name/database user}}
