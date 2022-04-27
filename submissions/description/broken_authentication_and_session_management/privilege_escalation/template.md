@@ -15,7 +15,7 @@ The impact of privilege escalation through broken authentication controls can va
 1. Login to User Account A
 1. Using the HTTP interception proxy, forward the following request to the endpoint:
 
-```HTTP Request
+```HTTP
 {{request}}
 ```
 
