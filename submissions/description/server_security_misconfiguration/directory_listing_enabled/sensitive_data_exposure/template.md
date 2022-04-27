@@ -1,45 +1,23 @@
-# Sensitive Data Exposure
+# Sensitive Data Exposure via Directory Listing Enabled
 
-## Overview
+## Overview of the Vulnerability
 
-<!--
-Provide a 1-2 sentence description - see http://cveproject.github.io/docs/content/key-details-phrasing.pdf for tips
+Sensitive data can be exposed by web servers which list the contents of directories that do not have an index page. This increases the exposure of sensitive files which are not intended to be accessed.
 
-This format is a good guide:
-[VULNTYPE] in [COMPONENT] in [APPLICATION] allows [ATTACKER] to [IMPACT] via [VECTOR] 
--->
+Sensitive data was exposed within this application through directory listing being enabled. This allows an attacker to quickly identify resources of a specific path, or gain access to sensitive data stored in the director, by browsing to the directory listing.
 
-Sensitive data was exposed on {{target}} by {{action}}.
+## Business Impact
 
-## Walkthrough & PoC
+Sensitive data exposure could lead to reputational damage or regulatory fines for the business due to an attacker’s unauthorized access to data. This could also result in reputational damage for the business through the impact to customers’ trust. The severity of the impact to the business is dependent on the sensitivity of the data being stored in the directory listing.
 
-<!--
-Provide a step-by-step walkthrough on how to access the vulnerable injection point, and how to exploit the vulnerability.
+## Steps to Reproduce
 
-Adding a dot-pointed walkthrough with relevant screenshots will speed triage time and result in faster rewards!
--->
+1. Using a browser, navigate to the following URL to find that directory listing is enabled:
 
-1. Navigate to the following URL(s) to find the directory indexing is enabled:
+{{URL}}
 
-{{value}}
+## Proof of Concept (PoC)
 
-1. Sensitive information was discovered by {{action}}
-
-## Vulnerability Evidence
-
-<!--
-Your submission MUST include evidence of the vulnerability and not be theoretical in nature.
--->
-
-The image(s) below demonstrates the vulnerable information found: 
+The screenshot below demonstrates the sensitive data found:
 
 {{screenshot}}
-
-## Demonstrated Impact
-
-<!--
-Provide a full Proof of Concept here.
---> 
-
-A malicious attacker can leverage this information to {{action}}, the impact is dependent on the type of information found in the directory listing.
-
