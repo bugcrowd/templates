@@ -1,44 +1,30 @@
 # Non-Sensitive Data Exposure
 
-## Overview
+## Overview of the Vulnerability
 
-<!--
-Provide a 1-2 sentence description - see http://cveproject.github.io/docs/content/key-details-phrasing.pdf for tips
+Web servers can list the contents of directories which do not have an index page. This increases the exposure of data which are not intended to be accessed. An attacker can quickly identify resources of a specific path or gain access to sensitive data stored in the directory.
 
-This format is a good guide:
-[VULNTYPE] in [COMPONENT] in [APPLICATION] allows [ATTACKER] to [IMPACT] via [VECTOR] 
--->
+Vulnerability Specifics to the Application:
 
-Non-sensitive data was exposed on {{target}} by {{action}}.
+Sensitive data was exposed on {{target}} by {{action}}.
 
-## Walkthrough & PoC
+## Business Impact
 
-<!--
-Provide a step-by-step walkthrough on how to access the vulnerable injection point, and how to exploit the vulnerability.
+Depending on the type of data found in the directory listing, exposure of this information could lead to financial loss and reputational damage of {{customer-name}} and their users.
 
-Adding a dot-pointed walkthrough with relevant screenshots will speed triage time and result in faster rewards!
--->
+## Steps to Reproduce
 
-1. Navigate to the following URL(s) to find the directory indexing is enabled:
+1. Using {{browser-used}}, navigate to the following URL(s) to find the following directory indexing is enabled:
 
 {{value}}
 
-1. The sensitive information was discovered by {{action}}
+1. The non-sensitive information was discovered by performing {{action}}
+1. The following sensitive data was discovered:
 
-## Vulnerability Evidence
+{{sensitive-data-type(s)}}
 
-<!--
-Your submission MUST include evidence of the vulnerability and not be theoretical in nature.
--->
+## Proof of Concept (PoC)
 
-The image(s) below demonstrates the vulnerable information found: 
+An attacker can leverage this non-sensitive data to {{action}}. The image(s) below demonstrates the information found:
 
-{{screenshot}}
-
-## Demonstrated Impact
-
-<!--
-Provide a full Proof of Concept here.
---> 
-
-A malicious attacker can leverage this information to {{action}}, the impact is dependent on the type of information found in the directory listing.
+{{screenshot}
