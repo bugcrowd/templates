@@ -1,24 +1,26 @@
 # No Rate Limiting on Form which Triggers SMS
 
-## Overview
+## Overview of the Vulnerability
 
-Rate Limiting prevents an application from becoming unresponsive or unavailable due to too many requests exhausting the application's resources. Without rate limiting on a form which triggers an SMS, a malicious attacker can spam messages to one or more phone numbers.
+Rate Limiting prevents an application from becoming unresponsive or unavailable due to too many requests exhausting the application's resources. A lack of rate limiting on a SMS triggering endpoint was identified. This allows an attacker to create a large amount of messages to any valid mobile number, which they could use to spam a target with SMS messages.
 
-A lack of a rate limiting in {{target}} allows a malicious attacker to {{action}}.
+## Business Impact
+
+No rate limiting on a form which triggers SMS can result in reputational damage for the business as customers’ trust is impacted through receiving large amounts of unwanted and unsolicited SMS messages. This also creates the risk of the business’ phone number being added to a spam list.
+
+Additionally, for systems that use Software-as-a-Service (SaaS) SMS providers, there can be direct financial costs associated with sending large volumes of SMS messages.
 
 ## Steps to Reproduce
 
-1. Navigate to the following URL:
-{{value}}
-1. Fill in the form to send an SMS message and intercept in a HTTP intercept proxy
-1. Use {{program}} (Up to 10 requests) to resend the SMS multiple times
+1. Enable a HTTP intercept proxy, such as Burp Suite or OWASP ZAP, to record and intercept web traffic from your browser
+1. Using a browser, sign into the application
+1. Navigate to {{url}} and fill out the form that triggers SMS, using a phone number that you own as the destination
+1. Submit the form while using the HTTP intercept proxy to intercept the request
+1. Using the HTTP intercept proxy, re-issue the captured request 400 times in rapid succession
+1. Observe within the target phone number inbox that all 400 of these requests triggered a SMS message, showing that there is no rate-limiting on the form
 
-## Vulnerability Evidence
+## Proof of Concept
 
-The image(s) below demonstrates the lack of rate limiting on the SMS functionality:
+The following screenshot shows a lack of rate limiting on the form which triggers SMS:
 
 {{screenshot}}
-
-## Demonstrated Impact
-
-This vulnerability enables an attacker to use this form to send spam to a target mobile number, cause service interruptions for the service provider, or could result in the SMS number being placed on a spam list. A lack of rate limiting on the SMS functionality can lead to financial loss and reputational damage of {{program}}.
