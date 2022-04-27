@@ -1,50 +1,26 @@
-# No Rate Limiting on SMS Triggering
+# No Rate Limiting on Form which Triggers SMS
 
-## Overview
+## Overview of the Vulnerability
 
-<!--
-Provide a 1-2 sentence description - see http://cveproject.github.io/docs/content/key-details-phrasing.pdf for tips
+Rate Limiting prevents an application from becoming unresponsive or unavailable due to too many requests exhausting the application's resources. A lack of rate limiting on a SMS triggering endpoint was identified. This allows an attacker to create a large amount of messages to any valid mobile number, which they could use to spam a target with SMS messages.
 
-This format is a good guide:
-[VULNTYPE] in [COMPONENT] in [APPLICATION] allows [ATTACKER] to [IMPACT] via [VECTOR] 
--->
+## Business Impact
 
-Rate Limiting is a measure used by applications to prevent spam attacks or brute forcing.
+No rate limiting on a form which triggers SMS can result in reputational damage for the business as customers’ trust is impacted through receiving large amounts of unwanted and unsolicited SMS messages. This also creates the risk of the business’ phone number being added to a spam list.
 
-A lack of a Rate Limiting in {{target}} allows a malicious attacker to brute force or spam an application/functionality.
+Additionally, for systems that use Software-as-a-Service (SaaS) SMS providers, there can be direct financial costs associated with sending large volumes of SMS messages.
 
-## Walkthrough & PoC
+## Steps to Reproduce
 
-<!--
-Provide a step-by-step walkthrough on how to access the vulnerable injection point, and how to exploit the vulnerability.
+1. Enable a HTTP intercept proxy, such as Burp Suite or OWASP ZAP, to record and intercept web traffic from your browser
+1. Using a browser, sign into the application
+1. Navigate to {{url}} and fill out the form that triggers SMS, using a phone number that you own as the destination
+1. Submit the form while using the HTTP intercept proxy to intercept the request
+1. Using the HTTP intercept proxy, re-issue the captured request 400 times in rapid succession
+1. Observe within the target phone number inbox that all 400 of these requests triggered a SMS message, showing that there is no rate-limiting on the form
 
-Adding a dot-pointed walkthrough with relevant screenshots will speed triage time and result in faster rewards!
--->
+## Proof of Concept
 
-1. Navigate to the following URL:
-
-{{value}}
-
-1. Fill in the form to send an SMS message and intercept in a Web Proxy
-
-
-1. Use {{program}} (Up to 10 requests) to launch a spam attack 
-
-## Vulnerability Evidence
-
-<!--
-Your submission MUST include evidence of the vulnerability and not be theoretical in nature.
--->
-
-The image(s) below demonstrates the lack of rate limiting on the SMS functionality:
+The following screenshot shows a lack of rate limiting on the form which triggers SMS:
 
 {{screenshot}}
-
-## Demonstrated Impact
-
-<!--
-Provide a full Proof of Concept here.
---> 
-
-
-This can enable an attacker to use this form to send spam to a target mobile number, cause service interuptions for the service provider, and could put the SMS Number on a spam list.
