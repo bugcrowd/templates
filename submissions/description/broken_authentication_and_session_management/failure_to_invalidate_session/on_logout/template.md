@@ -29,8 +29,6 @@ Failure to invalidate a session on logout may also lead to data theft through th
 
 ## Proof of Concept (PoC)
 
-The screenshots below show the logout occurring and the application failing to invalidate the session:
-
-{{screenshot}}
+The screenshot below show the logout occurring and the application failing to invalidate the session:
 
 {{screenshot}}
