@@ -50,9 +50,9 @@ describe BugcrowdTemplates do
         let!(:type) { 'methodology' }
         let!(:field) { 'notes' }
         let!(:category) { 'website_testing' }
-        let!(:subcategory) { 'information' }
+        let!(:subcategory) { '' }
         let!(:item) { '' }
-        let!(:file_name) { '' }
+        let!(:file_name) { 'information' }
 
         it 'returns the bugcrowd template value as string' do
           is_expected.to include('# Information gathering')
@@ -233,9 +233,9 @@ describe BugcrowdTemplates do
         let!(:type) { 'methodology' }
         let!(:field) { 'notes' }
         let!(:category) { 'website_testing' }
-        let!(:subcategory) { 'information' }
+        let!(:subcategory) { '' }
         let!(:item) { '' }
-        let!(:file_name) { '' }
+        let!(:file_name) { 'information' }
 
         it 'returns the methodology template value as string' do
           is_expected.to include('# Information gathering')

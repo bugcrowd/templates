@@ -36,35 +36,31 @@ module BugcrowdTemplates
     # check upto item directory, and return if template exist
     # e.g: `templates/submissions/description/server_security_misconfiguration/clickjacking/form_input/template.md`
     def item_file_path
-      item_path = BugcrowdTemplates.current_directory.join(
-        type, field, category, subcategory, item, file_name
-      )
+      file_name_with_extension = [file_name, 'md'].join('.')
 
-      file_path_url(item_path)
+      BugcrowdTemplates.current_directory.join(
+        type, field, category, subcategory, item, file_name_with_extension
+      )
     end
 
     # check upto subcategory directory, and return if template exist
     # e.g: `templates/submissions/description/server_security_misconfiguration/clickjacking/template.md`
     def subcategory_file_path
-      subcategory_path = BugcrowdTemplates.current_directory.join(
-        type, field, category, subcategory, file_name
-      )
+      file_name_with_extension = [file_name, 'md'].join('.')
 
-      file_path_url(subcategory_path)
+      BugcrowdTemplates.current_directory.join(
+        type, field, category, subcategory, file_name_with_extension
+      )
     end
 
     # check upto category directory, and return if template exist
     # e.g: `templates/submissions/description/server_security_misconfiguration/template.md`
     def category_file_path
-      category_path = BugcrowdTemplates.current_directory.join(
-        type, field, category, file_name
+      file_name_with_extension = [file_name, 'md'].join('.')
+
+      BugcrowdTemplates.current_directory.join(
+        type, field, category, file_name_with_extension
       )
-
-      file_path_url(category_path)
-    end
-
-    def file_path_url(file_path)
-      "#{file_path}.md"
     end
 
     def valid?(input_str)
