@@ -1,38 +1,36 @@
-# Failure to Invalidate Session on Logout
+# Failure to Invalidate Session on Logout (Server-Side)
 
-<!--
-Provide a 1-2 sentence description - see http://cveproject.github.io/docs/content/key-details-phrasing.pdf for tips
+## Overview of the Vulnerability
 
-This format is a good guide:
-[VULNTYPE] in [COMPONENT] in [APPLICATION] allows [ATTACKER] to [IMPACT] via [VECTOR] 
--->
+Failure to invalidate a session when a user logs out is a vulnerability that increases the attack surface for session hijacking attacks, such as Cross-Site Scripting (XSS), session sniffing, and other client-side attacks. Most users have the expectation that when they logout, no one else can access their account. When sessions are not invalidated on logout, the user’s trust is broken.
 
-Failure to invalidate session on logout in {{application}} allows a malicious attacker to {{action}}
+This application fails to invalidate a user’s session server-side on logout, leaving the account vulnerable to session hijacking. An attacker may compromise a user’s session then be able to change the password of the account and lock out the legitimate user. Once the attacker has gained access to an account their actions are only limited by the privileges of the user’s account that they have gained access to. This could include viewing or editing sensitive customer data, viewing or editing other user permissions.
 
-## Walkthrough & PoC
+## Business Impact
 
-<!-- Provide a step-by-step walkthrough on how to access the vulnerable injection point, and how to exploit the vulnerability.
-Adding a dot-pointed walkthrough with relevant screenshots will speed triage time and result in faster rewards!
--->
+This vulnerability can lead to reputational damage and indirect financial loss to the company as customers may view the application as insecure.
 
-1. Log in to {{application}} at {{url}}
-1. In an HTTP proxy, capture any authenticated GET or POST request to repeat the request
-1. Log out of {{application}} at {{url}}
-1. Resend the captured request from step 2 and observe that the session token was not invalidated on logout
+Failure to invalidate a session on logout may also lead to data theft through the attacker’s ability to manipulate data through their access to the application, and their ability to interact with other users, including performing other malicious attacks, which would appear to originate from a legitimate user. These malicious actions could also result in reputational damage for the business through the impact to customers’ trust.
 
-## Vulnerability Evidence
-<!--
-Your submission MUST include evidence of the vulnerability and not be theoretical in nature.
+## Steps to Reproduce
 
-For a failure to invalidation session on logout vulnerability, please include a video showing the action taking place after signing out, or pictures showing the logout process not removing a token from the cache and performing a sensitive action.
--->
+1. Enable a HTTP interception proxy, such as Burp Suite or OWASP ZAP
+1. Use a browser to navigate to: {{URL}}
+1. Sign into a user account
+1. In the HTTP interception proxy, capture any authenticated GET or POST request
+1. Log out of the user account in the browser
+1. In the HTTP interception proxy, resend the captured request to the endpoint:
+
+```HTTP
+{{request}}
+```
+
+1. Observe that the session token was not invalidated on logout
+
+## Proof of Concept (PoC)
+
+The screenshots below show the logout occurring and the application failing to invalidate the session:
 
 {{screenshot}}
 
-## Demonstrated Impact
-
-<!--
-Attempt to escalate the XSS to perform additional actions (such as an account takeover or CSRF bypass to perform a sensitive action). If this is possible, provide a full proof-of-concept here.
---> 
-
-Failure to invalidate a session after a logout can allow an attacker, who has access to that local machine, full account access, and perform any action that the user can.
+{{screenshot}}
