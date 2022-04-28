@@ -38,7 +38,7 @@ module BugcrowdTemplates
       subcategory: subcategory,
       item: item,
       file_name: file_name
-    ).template_file(type)
+    ).template_file
 
     template_data(template_path)
   end
@@ -49,6 +49,6 @@ module BugcrowdTemplates
   end
 
   def template_data(file_path)
-    File.open(file_path).read if File.exist?(file_path)
+    File.open(file_path).read if file_path && File.exist?(file_path)
   end
 end

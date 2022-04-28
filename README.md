@@ -346,7 +346,7 @@ BugcrowdTemplates.get(
   type: 'methodology',
   field: 'notes', # field name of the methodologies
   category: 'website_testing',
-  subcategory: 'information'
+  file_name: 'information'
 )
 => '# Information gathering and Reconnaisance\n\n##' # template fetched from templates path
 ```

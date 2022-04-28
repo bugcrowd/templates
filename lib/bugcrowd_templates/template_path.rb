@@ -17,18 +17,50 @@ module BugcrowdTemplates
     end
     # rubocop:enable Metrics/ParameterLists, Metrics/CyclomaticComplexity
 
-    def template_file(type)
+    def template_file
       validate_input_attrs
 
-      file_pathname = case type
-                      when 'submissions'
-                        BugcrowdTemplates.current_directory.join(
-                          type, field, category, subcategory, item, file_name
-                        )
-                      when 'methodology'
-                        BugcrowdTemplates.current_directory.join(type, field, category, subcategory, item)
-                      end
-      "#{file_pathname}.md"
+      find_template_file
+    end
+
+    # find the template file from  `category/subcategory/item` directories, checking from item to category level
+    # when dir is `item` then it will return `.../submissions/description/category/subcategory/item/template.md`
+    # when dir is `subcategory` then it will return  `.../submissions/description/category/subcategory/template.md`
+    # when dir is `category` then it will return `.../submissions/description/category/template.md`
+    def find_template_file
+      return item_file_path if item && File.exist?(item_file_path)
+      return subcategory_file_path if subcategory && File.exist?(subcategory_file_path)
+      category_file_path
+    end
+
+    # check upto item directory, and return if template exist
+    # e.g: `templates/submissions/description/server_security_misconfiguration/clickjacking/form_input/template.md`
+    def item_file_path
+      file_name_with_extension = [file_name, 'md'].join('.')
+
+      BugcrowdTemplates.current_directory.join(
+        type, field, category, subcategory, item, file_name_with_extension
+      )
+    end
+
+    # check upto subcategory directory, and return if template exist
+    # e.g: `templates/submissions/description/server_security_misconfiguration/clickjacking/template.md`
+    def subcategory_file_path
+      file_name_with_extension = [file_name, 'md'].join('.')
+
+      BugcrowdTemplates.current_directory.join(
+        type, field, category, subcategory, file_name_with_extension
+      )
+    end
+
+    # check upto category directory, and return if template exist
+    # e.g: `templates/submissions/description/server_security_misconfiguration/template.md`
+    def category_file_path
+      file_name_with_extension = [file_name, 'md'].join('.')
+
+      BugcrowdTemplates.current_directory.join(
+        type, field, category, file_name_with_extension
+      )
     end
 
     def valid?(input_str)

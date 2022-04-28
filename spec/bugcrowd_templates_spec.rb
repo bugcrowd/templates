@@ -50,9 +50,9 @@ describe BugcrowdTemplates do
         let!(:type) { 'methodology' }
         let!(:field) { 'notes' }
         let!(:category) { 'website_testing' }
-        let!(:subcategory) { 'information' }
+        let!(:subcategory) { '' }
         let!(:item) { '' }
-        let!(:file_name) { 'template' }
+        let!(:file_name) { 'information' }
 
         it 'returns the bugcrowd template value as string' do
           is_expected.to include('# Information gathering')
@@ -91,6 +91,7 @@ describe BugcrowdTemplates do
           context 'file_name as guidance' do
             let!(:file_name) { 'guidance' }
 
+            # need to change the when it has guidance template
             it 'returns the nil for not presence of template' do
               is_expected.to be_nil
             end
@@ -103,6 +104,141 @@ describe BugcrowdTemplates do
               expect { subject }.to raise_error BugcrowdTemplates::InputError
             end
           end
+        end
+
+        context 'when file_name with multiple options' do
+          context 'file_name as template' do
+            let!(:file_name) { 'template' }
+
+            it 'returns the bugcrowd template value as string' do
+              is_expected.to include('# Outdated Software Version')
+            end
+          end
+
+          context 'file_name as testing' do
+            let!(:file_name) { 'testing' }
+
+            it 'returns the nil for not presence of template' do
+              is_expected.to be_nil
+            end
+          end
+
+          context 'file_name as guidance' do
+            let!(:file_name) { 'guidance' }
+
+            # need to change the when it has guidance template
+            it 'returns the nil for not presence of template' do
+              is_expected.to be_nil
+            end
+          end
+
+          context 'file_name as $5%' do
+            let!(:file_name) { '$5%' }
+
+            it 'returns the error message for invalid name' do
+              expect { subject }.to raise_error BugcrowdTemplates::InputError
+            end
+          end
+        end
+      end
+
+      context 'when a user searching templates with different vrt items' do
+        let!(:type) { 'submissions' }
+        let!(:field) { 'description' }
+        let!(:category) { category }
+        let!(:subcategory) { subcategory }
+        let!(:item) { item }
+        let!(:file_name) { template }
+
+        context 'when there is no template in item folder' do
+          let!(:category) { 'server_security_misconfiguration' }
+          let!(:subcategory) { 'clickjacking' }
+          let!(:item) { 'form_input' }
+          let!(:file_name) { 'template' }
+
+          it 'returns the template defined in the subcategory folder' do
+            is_expected.to include('# Clickjacking')
+          end
+        end
+
+        context 'when there is no item params' do
+          let!(:category) { 'server_security_misconfiguration' }
+          let!(:subcategory) { 'clickjacking' }
+          let!(:item) { '' }
+          let!(:file_name) { 'template' }
+
+          it 'returns the template defined in the subcategory folder' do
+            is_expected.to include('# Clickjacking')
+          end
+        end
+
+        context 'with category, subcategory & template' do
+          let!(:category) { 'using_components_with_known_vulnerabilities' }
+          let!(:subcategory) { 'outdated_software_version' }
+          let!(:item) { '' }
+          let!(:file_name) { 'template' }
+
+          it 'returns the template defined in the subcategory folder' do
+            is_expected.to include('# Outdated Software Version')
+          end
+        end
+
+        context 'with category, subcategory & guidance' do
+          let!(:category) { 'using_components_with_known_vulnerabilities' }
+          let!(:subcategory) { 'outdated_software_version' }
+          let!(:item) { '' }
+          let!(:file_name) { 'guidance' }
+
+          # need to change the when it has guidance template
+          it 'returns the guidance defined in the subcategory folder' do
+            is_expected.to be_nil
+          end
+        end
+
+        context 'when there is no template in category folder' do
+          let!(:category) { 'using_components_with_known_vulnerabilities' }
+          let!(:subcategory) { '' }
+          let!(:item) { '' }
+          let!(:file_name) { 'template' }
+
+          it 'returns the nil' do
+            is_expected.to be_nil
+          end
+        end
+
+        context 'when there is no template in subcategory folder' do
+          let!(:category) { 'server_security_misconfiguration' }
+          let!(:subcategory) { 'waf_bypass' }
+          let!(:item) { '' }
+          let!(:file_name) { 'template' }
+
+          it 'returns the template defined in the category folder' do
+            is_expected.to include('# Generic server security misconfiguration')
+          end
+        end
+
+        context 'when category, subcategory, items as nil values' do
+          let!(:category) { nil }
+          let!(:subcategory) { nil }
+          let!(:item) { nil }
+          let!(:file_name) {}
+
+          it 'returns the nil' do
+            is_expected.to be_nil
+          end
+        end
+      end
+
+      context 'when a user searching template with methodologies type' do
+        let!(:type) { 'methodology' }
+        let!(:field) { 'notes' }
+        let!(:category) { 'website_testing' }
+        let!(:subcategory) { '' }
+        let!(:item) { '' }
+        let!(:file_name) { 'information' }
+
+        it 'returns the methodology template value as string' do
+          is_expected.to include('# Information gathering')
         end
       end
     end
