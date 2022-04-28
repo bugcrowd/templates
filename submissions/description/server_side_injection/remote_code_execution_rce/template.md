@@ -1,50 +1,24 @@
 # Remote Code Execution (RCE)
 
-## Overview
+## Overview of the Vulnerability
 
-<!--
-**Please replace text in each section below**
+Remote Code Execution (RCE) is a vulnerability that allows commands to be executed remotely on a target machine by crafting a request within the application where there should be no context to access or execute code.
 
-Remote Code Execution Report
+A RCE vulnerability in this application allows a malicious attacker to remotely execute code on the server, enabling an attacker to extract passwords, reconfigure running services, move laterally into attached networks, and potentially take over the server.
 
-Resources:
+## Business Impact
 
-- <https://owasp.org/www-community/vulnerabilities/PHP_File_Inclusion>
-- <https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/07-Input_Validation_Testing/11.1-Testing_for_Local_File_Inclusion>
--->
+RCE could lead to data theft through the attacker’s ability to manipulate data through their access to the application server. These malicious actions could also result in reputational damage for the business through the impact to customers’ trust.
 
-Remote Code Execution (RCE) is a vulnerability that allows commands to be executed on the underlying system by crafting a certain request within the application.
-
-An RCE allows a malicious attacker to take control of a system using the privileges of the exploited process.
-
-## Walkthrough & PoC
-<!--
-Provide a step-by-step walkthrough on how to access the vulnerable injection point, and how to exploit the vulnerability.
-Adding a dot-pointed walkthrough with relevant screenshots will speed triage time and result in faster rewards!
--->
+## Steps to Reproduce
 
 Example:
 
 1. Using a Machine with access to cURL, run the command `curl {{url}}/cmd?=ping%20192.168.1.1;cat%20/etc/hostname`
 1. In the terminal, you will see the output of the ping command, then the hostname of the server hosting this website.
 
-## Vulnerability Evidence
-<!--
-Your submission MUST include evidence of the vulnerability and not be theoretical in nature.
+## Proof of Concept
 
-For a Remote Code Execution vulnerability, you may execute some commands to prove that the code execution works, but do not access or attempt to access sensitive information, an example of some commands that can show access to the server are; `cat /etc/hostname`, `cat /etc/password`, `cat /etc/issues`, and `ifconfig`.
-**DO NOT ACCESS PII**
--->
-
-The screenshot below demonstrates the RCE in the {{application}} at {{url}} through {{parameter}}.
+The screenshot below demonstrates the RCE in the application through the specified parameter:
 
 {{screenshot}}
-
-## Demonstrated Impact
-<!--
-Using the Remote Code Execution vulnerability, you are able to remotely execute code on this server, enabling an attacker to extract passwords, reconfigure running services, move laterally into attached networks, and potentially take over the server.
-
-**DO NOT ACCESS PII**
--->
-
-Using the Remote Code Execution vulnerability, you are able to remotely execute code on this server, enabling an attacker to extract passwords, reconfigure running services, move laterally into attached networks, and potentially take over the server.
