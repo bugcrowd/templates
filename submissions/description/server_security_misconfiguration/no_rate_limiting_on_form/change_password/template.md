@@ -2,7 +2,7 @@
 
 ## Overview of the Vulnerability
 
-Rate Limiting prevents an application from becoming unresponsive or unavailable due to too many requests exhausting the application's resources. A lack of rate limiting on a password changeform allows an attacker to send a number of requests to the server which will attempt to change the password of a user with the supplied credentials, even if they are invalid. This has the risk of an attacker being able to attempt to bruteforce credentials for users without any protections, and can be used as a method of credential stuffing and compromising accounts to the service.
+Rate Limiting prevents an application from becoming unresponsive or unavailable due to too many requests exhausting the application's resources. A lack of rate limiting on a password change form allows an attacker to send a number of requests to the server which will attempt to change the password of a user with the supplied credentials, even if they are invalid. This has the risk of an attacker being able to attempt to bruteforce credentials for users without any protections, and can be used as a method of credential stuffing and compromising accounts to the service.
 
 ## Business Impact
 
