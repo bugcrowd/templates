@@ -1,10 +1,18 @@
-# Recommendations
+# Recommendation(s)
 
-A Cross-Site Request Forgery (CSRF) token should be included within all relevant requests. The CSRF token needs to be unpredictable, tied to a user's session, strictly validated before actions are executed, and not be stored within cookies.
+There is no single technique to stop CSRF from occurring. However, implementing the right combination of defensive measures within the application will prevent and limit the impact of CSRF. Some best practices include the following:
 
-CSRF tokens can be used to prevent CSRF attacks by making it near impossible for a malicious attacker to predict and construct a valid HTTP request of a user because they don't know the value of the CSRF token. Therefore, any request that a malicious attacker attempts to construct will not have all of the necessary parameters for the application to validate and execute the request.
+- All state changing requests should include CSRF tokens which are validated on the backend of the application. This token should be tied to the user’s session, strictly validated before an action is executed, and be unpredictable with high entropy.
+- Ensure that the framework is using built-in or existing CSRF prevention protections that exist within most major frameworks
+- Use the `SameSite` cookie attribute, which can have the values of `Lax`, `Strict`, or `None`. For example:
 
-For more information, please see:
+    ``` HTTP
+    Set-Cookie: JSESSIONID=xxxxx; SameSite=Strict
+    ```
+
+For more information, please see the Open Web Application Security Project (OWASP) guides located at:
 
 - <https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html>
-- <https://owasp.org/www-community/attacks/csrf>
+- <https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html#token-based-mitigation>
+- <https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html#use-built-in-or-existing-csrf-implementations-for-csrf-protection>
+- <https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html#samesite-cookie-attribute>
