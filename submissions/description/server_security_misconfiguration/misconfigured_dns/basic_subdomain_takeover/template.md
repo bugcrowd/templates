@@ -14,11 +14,7 @@ Basic subdomain takeover could lead to data theft and indirect financial loss th
 
 1. Register DNS record using a registration service and point to the following endpoint: {{URL}}
 1. Browse to the URL `takeover.inscope.com/proof.txt`
-1. You will see a Bugcrowd Username, for example:
-
-```text
-Subdomain Takeover of takeover.inscope.com by l33tHax0r1337
-```
+1. You will see a Bugcrowd Username which matches the HTML comment in the Proof of Concept
 
 ## Proof of Concept (PoC)
 
