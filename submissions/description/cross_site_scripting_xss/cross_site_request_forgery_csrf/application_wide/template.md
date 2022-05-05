@@ -2,11 +2,9 @@
 
 ## Overview of the Vulnerability
 
-Cross-Site Request Forgery (CSRF) occurs when requests to the application are submitted on behalf of an authenticated user without their knowledge via crafted, malicious code which can be in the form of a link the user clicks. The application is unable to distinguish between the malicious request and a legitimate request from the user.
+Cross-Site Request Forgery (CSRF) occurs when requests to the application are submitted on behalf of an authenticated user without their knowledge via crafted, malicious code which can be in the form of a link the user clicks. The application is unable to distinguish between the malicious request and a legitimate request from the user. Additionally, the attacker needs to socially engineer the user to click on a link, or paste the malicious code into the user’s browser. If successful, the code will execute within that user’s browser in the context of this domain.
 
-Application-wide CSRF is possible for this application, allowing an attacker to submit requests to the application on behalf of an authenticated user on multiple endpoints. Additionally, the attacker needs to socially engineer the user to click on a link, or paste the malicious code into the user’s browser. If successful, the code will execute within that user’s browser in the context of this domain.
-
-When an attacker can control code that is executed within a user’s browser, they are able to carry out any actions that the user is able to perform, including accessing any of the user's data and modifying information within the user’s permissions. This can result in modification, deletion, or theft of data, including accessing or deleting files, or stealing session cookies which an attacker could use to hijack a user’s session. The attacker’s actions are limited by the privileges of the user, as well as the application’s capabilities and the data stored within it.
+Application-wide CSRF is possible for this application, allowing an attacker to submit requests to the application on behalf of an authenticated user on multiple endpoints. This can include changing the password and email associated with the account, or deleting the user account. These actions can severely disrupt a user's experience and lead to account takeover.
 
 ## Business Impact
 
@@ -15,23 +13,20 @@ CSRF could lead to data theft through the attacker’s ability to manipulate dat
 ## Steps to Reproduce
 
 1. Enable a HTTP interception proxy, such as Burp Suite or OWASP ZAP
-1. Use a browser to sign into the application at: {{URL}}
-1. Navigate to the following URL and submit the form: {{URL}}
-1. Use the HTTP interception proxy to intercept the request triggered by the form
 1. Modify the request with the following CSRF POC code:
 
 ```HTML
 {{CSRF POC}}
 ```
 
-and forward the request to the endpoint:
+ and forward the request to the endpoint:
 
 ```HTTP
 {{request}}
 ```
 
-1. Navigate to the following URL and observe the action taken by the CSRF POC code was successful: {{URL}}
-1. Repeat the above steps for every form on the application, demonstrating that the lack of CSRF protection is an application-wide issue
+1. Navigate to the following URL and observe within the HTTP interception proxy that the action taken by the CSRF POC code was successful: {{URL}}
+1. Repeat the above steps for every user action on the application, demonstrating that the lack of CSRF protection is an application-wide issue
 
 ## Proof of Concept (PoC)
 
