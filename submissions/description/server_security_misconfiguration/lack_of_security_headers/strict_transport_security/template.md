@@ -1,29 +1,24 @@
-# Lack of Strict-Transport-Security Header
+# Lack of HTTP Strict Transport Security Header
 
-## Overview
+## Overview of the Vulnerability
 
-HTTP response headers are used in communication between the server and client. There are multiple headers which can be implemented to improve security against well documented vulnerabilities. The HTTP Strict Transport Security (HSTS) header instructs the website to enforce the use of HTTPS.
+A lack of HTTP response headers can lead to sensitive data being transmitted unencrypted and being intercepted while in transit.There are multiple HTTP response headers used in communication between the server and client which can be implemented to improve security against well documented vulnerabilities. For example, the HTTP Strict Transport Security (HSTS) header instructs the website to enforce the use of HTTPS.
 
-A lack of an HSTS header in {{target}} allows a malicious attacker to Man-in-the-Middle (MitM) a HTTP connection.
+By not having a HSTS header in place, the application fails to enforce users to connect to it over an encrypted connection. If an attacker is positioned to intercept or modify a user’s network traffic, they can perform a protocol downgrade attack, a Machine-in-the-Middle (MitM) attack, or hijack a user’s cookies. This aids an attacker in gaining access to the data being sent between the server and client, such as login credentials or application cookies.
 
-## Walkthrough & PoC
+## Business Impact
 
-1. Navigate to endpoint: {{value}}
+Not having a HSTS header can lead to reputational damage and indirect financial loss to the business due to an attacker’s access to data over an unencrypted HTTP connection. The degree of impact is dependent on the sensitivity of data being transmitted over the wire.
 
-1. Intercept request in a Web Proxy
+## Steps to Reproduce
 
-1. Notice that no HSTS header is used
+1. Enable a HTTP interception proxy, such as Burp Suite or OWASP ZAP
+1. Navigate to the following endpoint using a browser: {{URL}}
+1. Capture the request using the HTTP interception proxy
+1. Observe that a HSTS header is not used within the HTTP headers
 
-## Vulnerability Evidence
+## Proof of Concept (PoC)
 
-The image(s) below demonstrates a lack of HSTS headers:
-
-{{screenshot}}
-
-## Demonstrated Impact
-
-A lack of HSTS headers allows for a MitM attack to redirect users to a malicious site. This allows a malicious attacker to gain access to sensitive information being transmitted by a user.
-
-Below is a screenshot of a full exploit:
+The screenshot below demonstrates a lack of HSTS header:
 
 {{screenshot}}
