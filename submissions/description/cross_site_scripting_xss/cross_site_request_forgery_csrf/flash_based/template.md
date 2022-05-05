@@ -13,17 +13,7 @@ CSRF could lead to data theft through the attacker’s ability to manipulate dat
 ## Steps to Reproduce
 
 1. Enable a HTTP interception proxy, such as Burp Suite or OWASP ZAP
-1. Use a browser to sign into the application at: {{URL}}
-1. Navigate to the following URL and submit the form: {{URL}}
-1. Use the HTTP interception proxy to intercept the request triggered by the form
-1. Observe that a request is sent using `.SWF` file:
-
-{{screenshot}}
-
-1. Create a malicious `.SWF`file
-1. Host the `.SWF` file on an attack server
-1. Create a CSRF Proof of Concept with a redirection to the hosted malicious file
-1. Modify the request with the following CSRF POC code:
+1. Modify the request with the following CSRF POC code which uses a `.SWF` file:
 
 ```HTML
 {{CSRF POC}}
@@ -35,7 +25,7 @@ CSRF could lead to data theft through the attacker’s ability to manipulate dat
 {{request}}
 ```
 
-1. Navigate to the following URL and observe the action taken by the CSRF POC code was successful: {{URL}}
+1. Navigate to the following URL and observe within the HTTP interception proxy that the action taken by the CSRF POC code was successful: {{URL}}
 
 ## Proof of Concept (PoC)
 
