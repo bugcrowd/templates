@@ -8,7 +8,7 @@ An advanced attacker can leverage a missing `X-Content-Security-Policy` header t
 
 ## Business Impact
 
-Not having a `X-Content-Security-Policy`` header can lead to reputational damage and indirect financial loss to the business due to an advanced attacker’s ability to access data through a XSS attack. The degree of impact is dependent on the sensitivity of data being transmitted over the wire and the sophistication of the attacker’s abilities.
+Not having a `X-Content-Security-Policy` header can lead to reputational damage and indirect financial loss to the business due to an advanced attacker’s ability to access data through a XSS attack. The degree of impact is dependent on the sensitivity of data being transmitted over the wire and the sophistication of the attacker’s abilities.
 
 ## Steps to Reproduce
 
