@@ -13,9 +13,6 @@ CSRF could lead to reputational damage for the business through the impact to cu
 ## Steps to Reproduce
 
 1. Enable a HTTP interception proxy, such as Burp Suite or OWASP ZAP
-1. Use a browser to login to the application at: {{URL}}
-1. Navigate to the following URL and logout: {{URL}}
-1. Use the HTTP interception proxy to intercept the request triggered by the logout function
 1. Modify the request with the following CSRF POC code:
 
 ```HTML
