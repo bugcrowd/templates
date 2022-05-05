@@ -10,7 +10,7 @@ No rate limiting on a password change form can result in reputational damage to 
 
 ## Steps to Reproduce
 
-1. Enable a HTTP intercept proxy, such as Burp Suite or OWASP ZAP, to record and intercept web traffic from your browser
+1. Enable a HTTP intercept proxy, such as Burp Suite or OWASP ZAP
 1. Using a browser, sign into the application
 1. Navigate to {{url}} and fill out the password change form
 1. Submit the form while using the HTTP intercept proxy to intercept the request
