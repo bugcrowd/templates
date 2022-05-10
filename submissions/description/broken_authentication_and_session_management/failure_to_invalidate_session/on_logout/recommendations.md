@@ -1,18 +1,9 @@
 # Recommendation(s)
 
-There is no single technique to stop CSRF from occurring. However, implementing the right combination of defensive measures within the application will prevent and limit the impact of CSRF. Some best practices include the following:
+At a minimum, the current user sessions should be invalidated when the user logs out. As many common user scenarios involve users leaving or closing a page instead of logging out, short session expiration should be considered for all user sessions. This allows an attacker less time to use a valid session ID. However, session timeout values should be set based upon business needs which take into consideration the criticality of the application and the data contained within.
 
-- All state changing requests should include CSRF tokens which are validated on the backend of the application. This token should be tied to the user’s session, strictly validated before an action is executed, and be unpredictable with high entropy.
-- Ensure that the framework is using built-in or existing CSRF prevention protections that exist within most major frameworks
-- Use the `SameSite` cookie attribute, which can have the values of `Lax`, `Strict`, or `None`. For example:
+For further information, please see Open Web Application Security Project (OWASP):
 
-    ``` HTTP
-    Set-Cookie: JSESSIONID=xxxxx; SameSite=Strict
-    ```
-
-For more information, please see the Open Web Application Security Project (OWASP) guides located at:
-
-- <https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html>
-- <https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html#token-based-mitigation>
-- <https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html#use-built-in-or-existing-csrf-implementations-for-csrf-protection>
-- <https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html#samesite-cookie-attribute>
+- <https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#renew-the-session-id-after-any-privilege-level-change>
+- <https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#session-expiration>
+- <https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html>
