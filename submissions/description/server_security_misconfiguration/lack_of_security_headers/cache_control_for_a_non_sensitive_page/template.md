@@ -14,7 +14,7 @@ When data is being stored and transmitted by the application which does not have
 
 1. Enable a HTTP interception proxy, such as Burp Suite or OWASP ZAP
 1. Navigate to the following endpoint using a browser: {{URL}}
-1. Capture the request using the HTTP interception proxy
+1. Capture the request using the HTTP interception proxy and review the response
 1. Observe that no `Cache-Control` header is implemented within the HTTP headers
 
 ## Proof of Concept (PoC)
