@@ -14,8 +14,10 @@ When sensitive data is being stored and transmitted by the application which doe
 
 1. Enable a HTTP interception proxy, such as Burp Suite or OWASP ZAP
 1. Navigate to the following endpoint using a browser: {{URL}}
-1. Capture the request using the HTTP interception proxy
+1. Capture the request using the HTTP interception proxy and review the response
 1. Observe that no `Cache-Control` header is implemented within the HTTP headers
+1. Close the browser tab and any open sessions
+1. View the cache and observe sensitive details are present
 
 ## Proof of Concept (PoC)
 
