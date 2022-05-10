@@ -14,7 +14,7 @@ Not having security headers implemented following best practices can lead to rep
 
 1. Enable a HTTP interception proxy, such as Burp Suite or OWASP ZAP
 1. Navigate to the following endpoint using a browser: {{URL}}
-1. Capture the request using the HTTP interception proxy
+1. Capture the request using the HTTP interception proxy and review the response
 1. Observe that the security headers are not implemented according to best practice
 
 ## Proof of Concept (PoC)
