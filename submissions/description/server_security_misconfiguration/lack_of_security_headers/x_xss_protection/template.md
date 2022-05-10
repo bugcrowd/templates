@@ -14,7 +14,7 @@ Not having a `X-XSS-Protection` header can lead to reputational damage and indir
 
 1. Enable a HTTP interception proxy, such as Burp Suite or OWASP ZAP
 1. Navigate to the following endpoint using a browser: {{URL}}
-1. Capture the request using the HTTP interception proxy
+1. Capture the request using the HTTP interception proxy and review the response
 1. Observe that no `X-XSS-Protection` header is implemented within the HTTP headers
 
 ## Proof of Concept (PoC)
