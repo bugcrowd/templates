@@ -2,9 +2,9 @@
 
 ## Overview of the Vulnerability
 
-A lack of the HTTP response header for `Public-Key-Pins` can lead to sensitive user data being retrieved by an advanced attacker through Machine-in-the-Middle (MitM) attacks. There are multiple HTTP response headers used in communication between the server and client which can be implemented to improve security against well documented vulnerabilities. For example, the `Public-Key-Pins` security header is used in legacy versions of browsers to prevent clients from loading reflected XSS attacks.
+A lack of the HTTP response header for `Public-Key-Pins` can lead to sensitive user data being retrieved by an advanced attacker through Person-in-the-Middle (PitM) attacks. There are multiple HTTP response headers used in communication between the server and client which can be implemented to improve security against well documented vulnerabilities. For example, the `Public-Key-Pins` security header is used in legacy versions of browsers to prevent clients from loading reflected XSS attacks.
 
-An advanced attacker can leverage a missing `Public-Key-Pins` header to forge certificates and gain access to data through a MitM attack.
+An advanced attacker can leverage a missing `Public-Key-Pins` header to forge certificates and gain access to data through a PitM attack.
 
 ## Business Impact
 
@@ -14,7 +14,7 @@ Not having a `Public-Key-Pins` header can lead to reputational damage and indire
 
 1. Enable a HTTP interception proxy, such as Burp Suite or OWASP ZAP
 1. Navigate to the following endpoint using a browser: {{URL}}
-1. Capture the request using the HTTP interception proxy
+1. Capture the request using the HTTP interception proxy and review the response
 1. Observe that no `Public-Key-Pins` header is implemented within the HTTP headers
 
 ## Proof of Concept (PoC)
