@@ -15,7 +15,8 @@ This vulnerability can lead to reputational damage and indirect financial loss t
 1. Sign into a user’s account (Browser A)
 1. Sign into the same user’s account, using a different browser (Browser B)
 1. Using Browser A, set up 2FA for the account
-1. Using Browser B, observe that the user session is still valid
+1. Using Browser B, perform an authenticated action, such as changing the profile name
+1. Observe that the authenticated action is successful and that the user session is still valid
 
 ## Proof of Concept (PoC)
 
