@@ -2,7 +2,7 @@
 
 ## Overview of the Vulnerability
 
-Cross-Site Scripting (XSS) is a type of injection attack where malicious JavaScript is injected into a website. When a user visits the affected web page, the Javascript executes within that user’s browser in the context of the domain. XSS can be found on this domain which allows an attacker to control code that is executed within a user’s Internet Explorer browser which is older than version 11.
+Cross-Site Scripting (XSS) is a type of injection attack where malicious JavaScript is injected into a website. When a user visits the affected web page, the Javascript executes within that user’s browser in the context of the domain. This instance of XSS can be found on the domain listed, which allows an attacker to insert code that is executed within the user's browser, as long as it is Internet Explorer prior to Version 11.
 
 From here, an attacker could carry out any actions that the user is able to perform, including accessing any of the user's data and modifying information within the user’s permissions. This can result in modification, deletion, or theft of data, including accessing or deleting files, or stealing session cookies which an attacker could use to hijack a user’s session.
   
