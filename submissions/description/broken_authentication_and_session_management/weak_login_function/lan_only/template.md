@@ -6,7 +6,7 @@ Weak login functionality arises from improperly configured authentication practi
 
 ## Business Impact
 
-Weak login function can lead to indirect financial loss through an attacker accessing login credentials and gain access to the user’s account. From here, the attacker could delete, or modify data. This could also result in reputational damage for the business through the impact to customers’ trust. The severity of the impact is dependent on the sensitivity of the data being stored in, and transmitted by the application, as well as the privileges of the account the attacker gains access to.
+Weak login function can lead to indirect financial loss through an attacker accessing login credentials and gaining access to the user’s account. From here, the attacker could delete, or modify data. This could also result in reputational damage for the business through the impact to customers’ trust. The severity of the impact is dependent on the sensitivity of the data being stored in, and transmitted by the application, as well as the privileges of the account the attacker gains access to.
 
 ## Steps to Reproduce
 
@@ -22,6 +22,6 @@ Weak login function can lead to indirect financial loss through an attacker acce
 
 ## Proof of Concept (PoC)
 
-The following screenhots show the full exploit:
+The following screenshots show the full exploit:
 
 {{screenshot}}
