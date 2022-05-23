@@ -1,49 +1,28 @@
-# Critically sensitive data exposure: password disclosure
+# Critically Sensitive Data Exposure: Password Disclosure
 
-## Overview
-<!--
-Provide a 1-2 sentence description - see http://cveproject.github.io/docs/content/key-details-phrasing.pdf for tips
+## Overview of the Vulnerability
 
-This format is a good guide:
-[VULNTYPE] in [COMPONENT] in [APPLICATION] allows [ATTACKER] to [IMPACT] via [VECTOR]
+Disclosure of critically sensitive data occurs when the data is not behind an authorization barrier, placing critically sensitive data, such as secrets or internal API keys, at risk. This application discloses the password of a user’s account which an attacker could use to take over the account and access, delete, or modify data from within the application.
 
+## Business Impact
 
--->
-Passwords are exposed on {{application}} of {{target}}, allowing a malicious attacker to {{action}}
+Disclosure of secrets can lead to indirect financial loss through an attacker accessing, deleting, or modifying data from within the application. This could also result in reputational damage for the business through the impact to customers’ trust. The severity of the impact to the business is dependent on the sensitivity of the data being stored in, and transmitted by the application.
 
-## Walkthrough & PoC
-<!--
-Provide a step-by-step walkthrough on how to access the vulnerable injection point, and how to exploit the vulnerability.
-Adding a dot-pointed walkthrough with relevant screenshots will speed triage time and result in faster rewards!
+## Steps to Reproduce
 
-Example:
+1. Enable a HTTP interception proxy, such as Burp Suite or OWASP ZAP
+1. Use a browser to navigate to: {{URL}}
+1. Observe and copy the password value that is exposed
+1. Using the HTTP interception proxy, forward the following request:
 
-1. Login to in-scope asset at <www.bugcrowd.com/login>
-1. Browse to account page
-1. Modify ID token to add single quote
-1. View error which states 'SQL Syntax Error'
-1. Replace ID value with `1' waitfor delay '00:00:10'; `
--->
+```HTTP
+{{request}}
+```
 
-1. Navigate to {{url}} and observe and copy the password value that is exposed
-1. Using an HTTP proxy or web browser, use the password to submit {{payload}} to {{url}}, verifying that using the password allows {{action}} and is valid
+1. Verify that the password is valid and allows authenticated actions to be performed in the user’s account
 
+## Proof of Concept (PoC)
 
-## Vulnerability Evidence
-<!--
-Your submission MUST include evidence of the vulnerability and not be theoretical in nature.
-
-For exposed passwords, please include a screenshot of both the exposed password as well as a screenshot from the HTTP proxy of the password being used successfully to perform {{action}}.
-**DO NOT SAVE PII**
--->
-
-You can observe the exposed password as well as verify its validity below:
+The screenshots below displays the password disclosed:
 
 {{screenshot}}
-
-## Demonstrated Impact
-<!--
-Attempt to abuse the exposed password to access sensitive data or sensitive functions that you control, but do not save or utilize the sensitive data in any way.
--->
-
-A malicious attacker could abuse exposed password by using them to perform {{action}}.
