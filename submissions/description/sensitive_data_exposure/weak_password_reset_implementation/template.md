@@ -1,6 +1,6 @@
 # Weak Password Reset Implementation
 
-## Overview of the VUlnerability
+## Overview of the Vulnerability
 
 When the password reset implementation is weak, the strength of the overall authentication process for the application is diminished. Tokens sent over HTTP, predictable reset tokens, and long expiry times create weak conditions for the password reset implementation. This application’s weak password reset implementation allows an attacker to intercept the password reset token and reset a user’s password, locking the user out of their account and achieving full account takeover.
 
