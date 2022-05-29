@@ -2,7 +2,7 @@
 
 ## Overview of the Vulnerability
 
-Sensitive data can be exposed when it is not behind an authorization barrier. When this information is exposed it can place the application at further risk of compromise. The application discloses a sensitive token in the URL that is user facing which can be captured by an attacker. This allows the attacker to gain access to a legitimate user’s account, breaching the confidentiality and integrity of their account.
+Sensitive data can be exposed when it is not behind an authorization barrier. When this information is exposed it can place the application at further risk of compromise. The application discloses a sensitive token in the URL that is user facing which can be captured by an attacker. This allows the attacker to gain access to a legitimate user’s account, breaching the Confidentiality and Integrity of their account.
 
 ## Business Impact
 
