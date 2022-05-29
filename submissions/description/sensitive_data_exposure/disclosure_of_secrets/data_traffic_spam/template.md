@@ -2,7 +2,7 @@
 
 ## Overview of the Vulnerability
 
-Disclosure of secrets occurs when sensitive data is not behind an authorization barrier, placing sensitive data, such as secrets or API keys, at risk. This application discloses data within data traffic spam which can enable an attacker to use secrets for privilege escalation within the application, or to send API requests on behalf of the user.
+Disclosure of secrets occurs when the data is not properly secured, allowing sensitive data, such as secrets, API keys, or other data critical to business operation to be exposed. This application discloses data within data traffic spam which can enable an attacker to use secrets for privilege escalation within the application, or to send API requests on behalf of the user.
 
 ## Business Impact
 
