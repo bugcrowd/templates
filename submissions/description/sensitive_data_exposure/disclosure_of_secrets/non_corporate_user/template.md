@@ -2,7 +2,7 @@
 
 ## Overview of the Vulnerability
 
-Disclosure of secrets occurs when sensitive data is not behind an authorization barrier. When this information is exposed it can place the application at further risk of compromise. This application discloses secrets for a non-corporate user which can be leveraged by an attacker to access the application and make requests on the legitimate user’s behalf.
+Disclosure of secrets occurs when the data is not properly secured. When secrets are exposed it can place the application at further risk of compromise. This application discloses secrets for a non-corporate user which can be leveraged by an attacker to access the application and make requests on the legitimate user’s behalf.
 
 ## Business Impact
 
