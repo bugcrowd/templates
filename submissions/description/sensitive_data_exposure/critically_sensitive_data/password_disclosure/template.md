@@ -2,7 +2,7 @@
 
 ## Overview of the Vulnerability
 
-Disclosure of critically sensitive data occurs when the data is not behind an authorization barrier, placing critically sensitive data, such as secrets or internal API keys, at risk. This application discloses the password of a user’s account which an attacker could use to take over the account and access, delete, or modify data from within the application.
+Disclosure of critically sensitive data occurs when the data is not properly secured, allowing critically sensitive data, such as secrets, API keys, or other data critical to business operation to be exposed. This application discloses the password of a user’s account which an attacker could use to take over the account and access, delete, or modify data from within the application.
 
 ## Business Impact
 
