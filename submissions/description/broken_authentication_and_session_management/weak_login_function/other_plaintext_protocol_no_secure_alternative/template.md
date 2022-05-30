@@ -2,7 +2,7 @@
 
 ## Overview of the Vulnerability
 
-Weak login functionality arises from improperly configured authentication practices which weakens the security of the authentication process of an application. This application does not protect the security of users’ credentials as it allows the login page to load over a plaintext protocol and does not implement a secure alternative. This means that it is possible for user credentials to be transmitted in plaintext, allowing an attacker on the same network to observe these requests, and obtain the login credentials.
+Weak login functionality arises from improperly configured authentication practices which weakens the security of the authentication process of an application. This application does not protect the security of users’ credentials as it allows the authentication to be transmitted over a plaintext protocol and does not implement a secure alternative. This means that it is possible for user credentials to be transmitted in plaintext, allowing an attacker on the same network to observe these requests, and obtain the login credentials.
 
 ## Business Impact
 
