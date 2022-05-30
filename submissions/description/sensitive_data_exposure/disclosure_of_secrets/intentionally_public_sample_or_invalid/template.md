@@ -2,7 +2,7 @@
 
 ## Overview of the Vulnerability
 
-Disclosure of secrets occurs when sensitive data is not behind an authorization barrier, placing sensitive data, such as secrets or API keys, at risk. This application discloses an invalid, or intentionally public sample, of secrets that are used for the application. While seemingly harmless, an attacker can use these examples to build wordlists, which can be used to bruteforce requests to the application until a valid secret is processed successfully.
+Disclosure of critically sensitive data occurs when the data is not properly secured, allowing critically sensitive data, such as secrets, API keys, or other data critical to business operation to be exposed. This application discloses an invalid, or intentionally public sample, of secrets that are used for the application. While seemingly harmless, an attacker can use these examples to build wordlists, which can be used to bruteforce requests to the application until a valid secret is processed successfully.
 
 ## Business Impact
 
