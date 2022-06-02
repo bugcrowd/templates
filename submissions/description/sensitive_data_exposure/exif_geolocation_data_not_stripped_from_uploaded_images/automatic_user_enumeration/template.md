@@ -2,7 +2,7 @@
 
 ## Overview of the Vulnerability
 
-Exchangeable Image File Format (EXIF) data is a standard used to specify the format of metadata in photographs. Most EXIF data contains the make, model and type of camera used, the lens settings, as well as the geolocation data. This application does not remove the EXIF data when a user uploads photographs, which could be used by an attacker to find and collect the geolocation data of users. Additionally, software can be used to automatically extract the EXIF geolocation data from multiple uploaded images.
+Exchangeable Image File Format (EXIF) data is a standard used to specify the format of metadata in photographs. Most EXIF data contains the make, model and type of camera used, the lens settings, as well as the geolocation data. This application does not remove the EXIF data when a user uploads photographs, which could be used by an attacker to find and collect the geolocation data of users. Additionally, software can be used to automatically extract the EXIF geolocation data from multiple uploaded images, which can be used to automatically enumerate users.
 
 ## Business Impact
 
