@@ -12,7 +12,7 @@ Having no password policy can result in reputational damage for the business thr
 
 1. Use a browser to navigate to: {{URL}}
 1. Attempt to login
-1. Observe that the application allows the use of weak passwords, such as `a`, `password`, password123`
+1. Observe that the application allows the use of weak passwords, such as `a`
 
 ## Proof of Concept (PoC)
 
