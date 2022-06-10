@@ -1,8 +1,8 @@
-# Lack of Verification Email
+# Verification of Contact Method Not Required
 
 ## Overview of the Vulnerability
 
-The overall security of an application is diminished when accounts are not properly configured to include a notification email upon contact method account changes, such as a phone number or email address change. A lack of a verification email for an updated contact method allows a malicious attacker to associate any email address or phone number with an account without verification. This could allow them to perform spam, phishing, or impersonation attacks.
+The overall security of an application is diminished when accounts are not properly verified upon creation of a new contact method, such as an email address. The lack of a verification email for a contact method allows an attacker to associate their account with an unvalidated method of contact. This allows them to perform phishing, or impersonation attacks, and can lead to attacks such as account squatting.
 
 ## Business Impact
 
