@@ -30,7 +30,7 @@ Below is a screenshot demonstrating the injected JavaScript executing at the vul
 
 This XSS vulnerability could be further abused by using the following JavaScript payload:
 
-```javaScript
+```javascript
 {{payload}}
 ```
 
