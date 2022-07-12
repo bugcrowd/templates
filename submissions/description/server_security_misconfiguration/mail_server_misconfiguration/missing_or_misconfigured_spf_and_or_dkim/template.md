@@ -10,13 +10,13 @@ Depending on the type of misconfiguration found in the mail server, an attacker 
 
 ## Steps to Reproduce
 
-1. Using the dig command, you can request the details on DMARC on the domain
+1. Using the dig command, you can request the details on SPF/DKIM on the domain
 
 ```bash
 dig TXT 
 ```
 
-1. Observe in the response that there is no answer section for DMARC on the domain:
+1. Observe in the response that there is no answer section for SPF/DKIM on the domain:
 
 ```text
 ```
