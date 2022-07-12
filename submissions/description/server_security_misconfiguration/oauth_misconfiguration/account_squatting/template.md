@@ -4,7 +4,7 @@
 
 OAuth is an authorization framework used to identify and authenticate users for an application. There are a number of implementation misconfigurations which can lead to an OAuth framework being implemented insecurely.
 
-During the OAuth based account registration process, the OAuth authorization flow creates a new account for an email address and grants access via an OAuth token without checking if there is a pre-existing account for the same email address. This allows an attacker to register an account with a legitimate email and “squat” on the account, denying the legitimate user access to their account.
+During the OAuth based account registration process, the OAuth authorization flow creates a new account for an email address and grants access via an OAuth token without checking if there is a pre-existing account for the same email address. This allows an attacker to register an account with a legitimate email and “squat” on the account. When the legitimate user creates an account with their email address using the OAuth workflow, they are unknowingly logged into the original account that the attacker created. This means that the attacker is still able to access the account.
 
 ## Business Impact
 
