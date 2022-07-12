@@ -10,13 +10,13 @@ Depending on the type of misconfiguration found in the mail server, an attacker 
 
 ## Steps to Reproduce
 
-1. Use dig or nslookup to request details for SPF/DKIM on the domain:
+1. Use dig or nslookup to request details for SPF/DKIM/DMARC on the domain:
 
 ```bash
 dig TXT 
 ```
 
-1. Observe in the response that the SPF/DKIM is missing or misconfigured:
+1. Observe in the response that the SPF/DKIM/DMARC is missing or misconfigured:
 
 {{response}}
 
