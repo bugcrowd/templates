@@ -2,7 +2,7 @@
 
 ## Overview of the Vulnerability
 
-Unsafe file uploads occur when the web server fails to sufficiently validate the file’s size, type, name, contents, or what restrictions are placed on the file once it has been successfully uploaded. The application fails to validate the size of files that are uploaded. An attacker can serve a Denial of Service (DoS) to the application by uploading large files to the server as there is no file size limit. This may cause outages and slowdowns.
+Unsafe file uploads occur when the web server fails to sufficiently validate the file’s size, type, name, contents, or what restrictions are placed on the file once it has been successfully uploaded. The application fails to check if files contain viruses or viral signatures. Therefore, an attacker can host malicious files on the server and serve them to victims under the same domain.
 
 ## Business Impact
 
