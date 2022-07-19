@@ -8,7 +8,7 @@ The insecure configuration of  SSL within this application can lead to the conne
 
 ## Business Impact
 
-Banner disclosures can lead to reputational damage for the business due to a loss in confidence from users who can see that the web server is running on older software. If an attacker is successful in identifying and exploiting a known vulnerability for the identified version of software on this host, this can lead to indirect financial losses and data loss.
+Insecure SSL can lead to reputational damage for the business due to a loss in confidence and trust by users who can see that the transport layer security is insecure. 
 
 ## Steps to Reproduce
 
