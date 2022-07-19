@@ -12,7 +12,8 @@ Insecure SSL can lead to reputational damage for the business due to a loss in c
 
 ## Steps to Reproduce
 
-1. Use a tool such as SSLScan, TestSLL, or SSLyze to find that the application is using the following insecure SSL:
+1. Run a tool such as SSLScan, TestSLL, or SSLyze to scan the SSL/TLS configuration
+1. Observe the results showing that the application is using the following insecure SSL:
 
 {{value}}
 
