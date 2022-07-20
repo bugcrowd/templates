@@ -11,7 +11,6 @@ Certificate errors can lead to reputational damage for the business due to a los
 ## Steps to Reproduce
 
 1. Navigate to the following URL to find a certificate error is thrown by the browser: {{URL}}
-1. Sensitive information can be discovered by {{action}}
 
 ## Proof of Concept (PoC)
 
