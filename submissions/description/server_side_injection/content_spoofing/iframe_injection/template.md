@@ -23,6 +23,6 @@ This vulnerability could lead to data theft and indirect financial loss through 
 
 ## Proof of Concept (PoC)
 
-The screenshot(s) below demonstrates the IDN Homograph attack:
+The screenshot(s) below demonstrates the iFrame injection attack:
 
 {{screenshot}}
