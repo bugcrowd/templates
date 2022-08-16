@@ -2,11 +2,11 @@
 
 ## Overview of the Vulnerability
 
-When a sensitive data is transmitted in cleartext over an unencrypted channel, it can be intercepted via a Person-in-the-Middle (PitM) attack. An attacker can access the sensitive via a PitM attack and send requests to the server pretending to be the legitimate user.
+When sensitive data is transmitted in cleartext over an unencrypted channel, it can be intercepted via a Person-in-the-Middle (PitM) attack. An attacker can access the sensitive via a PitM attack and send requests to the server pretending to be the legitimate user.
 
 ## Business Impact
 
-This vulnerability can lead to reputational damage and indirect financial loss to the company as customers may view the application as insecure. It can also lead to data theft through the attacker’s ability to manipulate data through their ability to make requests to the server through a legitimate session token.
+This vulnerability can lead to reputational damage and indirect financial loss to the company as customers may view the application as insecure. It can also lead to data theft via an attacker’s ability to manipulate data through their ability to make requests to the server using a legitimate session token.
 
 ## Steps to Reproduce
 
