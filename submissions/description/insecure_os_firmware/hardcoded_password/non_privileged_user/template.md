@@ -4,7 +4,7 @@
 
 When Operating System (OS) firmware is insecure, it broadens the application’s attack surface and gives  an attacker more opportunity to maintain persistence and achieve a high level of privilege within the application. Firmware can be exploited via network, software, or hardware layers. Once compromised, an attacker can establish persistence, capture sensitive data, exfiltrate data, impact application performance, or pivot into attacking the company’s wider network.
 
-A hard-coded password was identified in the source code of the application. An attacker could abuse the hard-coded password for a non-privileged to gain access to aspects of the application they normally would not have access to. With this increased access, a malicious attacker could perform other attacks on the application, elevate their privileges, or gather sensitive data from within the application.
+A hard-coded password for a non-privileged user was identified in the source code of the application. An attacker could abuse the hard-coded password for a non-privileged user to gain access to aspects of the application they normally would not have access to. With this increased access, a malicious attacker could perform other attacks on the application, elevate their privileges, or gather sensitive data from within the application.
 
 ## Business Impact
 
