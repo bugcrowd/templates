@@ -16,7 +16,7 @@ This vulnerability can lead to reputational damage and indirect financial loss t
 1. Use a browser to navigate to: {{URL}}
 1. Sign into a user’s account
 1. Capture any authenticated request
-1. Logout of the application
+1. Wait for 10 mins
 1. Replay the request using the HTTP interception proxy
 1. Observe that the application responds to the request
 
