@@ -13,8 +13,8 @@ POST-based open redirects can result in reputational damage for the business as 
 ## Steps to Reproduce
 
 1. Using a browser, navigate to: {{URL}}
-1. Copy and modify the URI so that the URL redirects to <http://www.bugcrowd.com/>
-1. Submit this in a new browser window and you should be redirected to the Bugcrowd website.
+1. Open the attached HTML file in the target browser and follow the prompts
+1. Submit this in a new browser window and you should be redirected to the Bugcrowd website
 
 ## Proof of Concept (PoC)
 
