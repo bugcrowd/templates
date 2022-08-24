@@ -10,8 +10,8 @@ File inclusion can result in data theft and manipulation, and reputational damag
 
 ## Steps to Reproduce
 
-1. Using a browser, navigate to: `{{url}}/../../etc/hostname`
-1. You will see the hostname of the server running this website
+1. In a browser, navigate to the URL: `{{url}}viewer.php?filename=a\./../../etc/hostname`
+1. You will see the hostname of the server running this request in the browser
 
 ## Proof of Concept (PoC)
 
