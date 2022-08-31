@@ -10,11 +10,13 @@ This vulnerability can lead to direct financial loss to the company due to data 
 
 ## Steps to Reproduce
 
-1. Enable a HTTP interception proxy, such as Burp Suite or OWASP ZAP
 1. Start {{application}} on the operating system and navigate to {{url}}
-1. Input the following payload into {{parameter}} and observe that the application is vulnerable:
+1. Input the following payload into {{parameter}}:
 
 {{Payload}}
+
+1. Observe that the OS firmware is insecure
+
 
 ## Proof of Concept (PoC)
 
