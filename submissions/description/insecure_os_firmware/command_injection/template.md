@@ -10,9 +10,9 @@ This vulnerability can lead to direct financial loss to the company due to data 
 
 ## Steps to Reproduce
 
-1. Enable a HTTP interception proxy, such as Burp Suite or OWASP ZAP
 1. Start {{application}} on the operating system and navigate to {{url}}
-1. Input the following payload into {{parameter}} and observe that the application binary is vulnerable to command injection:
+1. Observe that the OS firmware is insecure by {{action}}
+1. Input the following payload into {{parameter}} to perform command injection:
 
 {{Payload}}
 
