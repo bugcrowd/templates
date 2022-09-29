@@ -1,8 +1,9 @@
-# Command Injection
+# Insecure OS Firmware (Command Injection)
 
 ## Overview of the Vulnerability
 
-Command injection is an attack type where it is possible to inject operating system commands into the application where they execute on the host operating system with the privileges of the application. The application is vulnerable to command injection which can allow an attacker to execute system commands on the operating system and exfiltrate sensitive data, or elevate privileges. Depending on the privileges of the account, an attacker may be able to inject commands and take over the server or systems that the application is running on.
+When Operating System (OS) firmware is insecure, it broadens the application’s attack surface and gives  an attacker more opportunity to maintain persistence and achieve a high level of privilege within the application. Firmware can be exploited via network, software, or hardware layers. Once compromised, an attacker can establish persistence, capture sensitive data, exfiltrate data, impact application performance, or pivot into attacking the company’s wider network. An attacker could abuse this command injection  vulnerability in the application to execute arbitrary commands on the user's operating system.
+
 
 ## Business Impact
 
@@ -10,14 +11,14 @@ This vulnerability can lead to direct financial loss to the company due to data 
 
 ## Steps to Reproduce
 
-1. Login to the application
-1. Navigate to the account page
-1. Modify ID token in the URL to add single quote, `'`
-1. View error which states 'SQL Syntax Error'
-1. Replace ID value with `1' waitfor delay '00:00:10';`
+1. Start {{application}} on the operating system and navigate to {{url}}
+1. Observe that the OS firmware is insecure by {{action}}
+1. Input the following payload into {{parameter}} to perform command injection:
+
+{{Payload}}
 
 ## Proof of Concept (PoC)
 
-The screenshot below shows the command injection:
+The screenshots below show the steps required to exploit the command injection:
 
 {{screenshot}}
