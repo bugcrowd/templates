@@ -52,18 +52,20 @@ Below is an example template. All sections should be updated to include correct 
 
 ```markdown
 
-## Overview
-<!--
-Provide a 1-2 sentence description - see http://cveproject.github.io/docs/content/key-details-phrasing.pdf for tips
+## Overview of the Vulnerability
+
+Provide a 1-2 sentence description of the vulnerability.
 
 This format is a good guide:
 [VULNTYPE] in [COMPONENT] in [APPLICATION] allows [ATTACKER] to [IMPACT] via [VECTOR] 
--->
 
-## Walkthrough & PoC
-<!--
+## Business Impact
+
+Provide an example of the impact to the business. This could be reputational damage, financial loss, a loss in customer trust, etc.
+
+## Steps to Reproduce
+
 Provide a step-by-step walkthrough on how to access the vulnerable injection point, and how to exploit the vulnerability.
-Adding a dot-pointed walkthrough with relevant screenshots will speed triage time and result in faster rewards!
 
 Example:
 
@@ -72,26 +74,13 @@ Example:
 1. Modify ID token to add single quote
 1. View error which states 'SQL Syntax Error'
 1. Replace ID value with `1' waitfor delay '00:00:10'; `
--->
 
-## Vulnerability Evidence
-<!--
-Your submission MUST include evidence of the vulnerability and not be theoretical in nature.
 
-For an SQL Injection vulnerability, please include specific NON-PII information discovered in the database, such as Database Version, a listing of database tables, or an injected 'sleep' payload.
+## Proof of Concept (PoC)
 
-You may present your evidence as output from a tool such as SQLMap, unless the program forbids the use of these tools, and it may be in the format of terminal output, screenshots, or video.
-
-**DO NOT ACCESS PII**
--->
-
-## Demonstrated Impact
-<!--
-Demonstrating access to data other than the database version or database tables is NOT permitted without explicit permission from the program.
-**DO NOT ACCESS PII**
-
-A malicious attacker could ...
---> 
+Your submission must include evidence of the vulnerability and not be theoretical in nature.
+You may present your evidence as output from a tool, such as SQLMap, unless the program forbids the use of these tools. Evidence may also be in the format of terminal output, screenshots, or video.
+Use this section to demonstrate clearly the effect of the vulnerability. However, do not access Personally Identifiable Information (PII).
 
 ```
 
@@ -100,56 +89,33 @@ A malicious attacker could ...
 This is an example template:
 
 ````markdown
-# Reflected XSS (Non-self)
+# Reflected Cross-Site Scripting (Non-self)
 
-## Overview
+## Overview of the Vulnerability
 
-<!--
-Provide a 1-2 sentence description - see http://cveproject.github.io/docs/content/key-details-phrasing.pdf for tips
+Reflected Cross-Site Scripting (XSS) is a type of injection attack where malicious JavaScript code is injected into a website. When a user visits the affected web page, the JavaScript code executes and its input is reflected in the user’s browser. Reflected XSS can be found on this domain which allows an attacker to create a crafted URL. When opened by a user,  this URL will execute arbitrary Javascript within that user’s browser in the context of this domain.
 
-This format is a good guide:
-[VULNTYPE] in [COMPONENT] in [APPLICATION] allows [ATTACKER] to [IMPACT] via [VECTOR] 
--->
+When an attacker can control code that is executed within a user’s browser, they are able to carry out any actions that the user is able to perform, including accessing any of the user's data and modifying information within the user’s permissions. This can result in modification, deletion, or theft of data, including accessing or deleting files, or stealing session cookies which an attacker could use to hijack a user’s session.
 
-Reflected XSS in {{application}} of {{target}} allows malicious attacker to {{action}}
+## Business Impact
 
-## Walkthrough & PoC
+Reflected XSS could lead to data theft through the attacker’s ability to manipulate data through their access to the application, and their ability to interact with other users, including performing other malicious attacks, which would appear to originate from a legitimate user. These malicious actions could also result in reputational damage for the business through the impact to customers’ trust.
 
-<!--
-Provide a step-by-step walkthrough on how to access the vulnerable injection point, and how to exploit the vulnerability.
-Adding a dot-pointed walkthrough with relevant screenshots will speed triage time and result in faster rewards!
--->
+## Steps to Reproduce
 
-1. Log in to {{application}} at {{url}}
-1. Navigate to {{url}}
-1. Observe that the JavaScript payload was executed
+1. Enable a HTTP interception proxy, such as Burp Suite or OWASP ZAP
+1. Use a browser to navigate to: {{URL}}
+1. Forward the following request to the endpoint:
 
-## Vulnerability Evidence
-
-<!--
-Your submission MUST include evidence of the vulnerability and not be theoretical in nature.
-
-For a reflected XSS vulnerability, please include a simple URL or HTML payload that can be executed to easily demonstrate and reproduce the issue. 
--->
-
-The screenshot below demonstrates the injected JavaScript executing at {{url}}.
-
-{{screenshot}}
-
-## Demonstrated Impact
-
-<!--
-Attempt to escalate the XSS to perform additional actions (such as an account takeover or CSRF bypass to perform a sensitive action). If this is possible, provide a full proof-of-concept here.
---> 
-
-A malicious attacker could abuse this XSS further to {{action}} by using the following JavaScript payload.
-
-
-```javascript
-{{payload}}
+```HTTP Request
+{{request}}
 ```
 
-You can find a screenshot of the full exploit taking place below:
+1. Observe the JavaScript payload being executed
+
+## Proof of Concept (PoC)
+
+Below is a screenshot demonstrating the injected JavaScript executing at the vulnerable endpoint:
 
 {{screenshot}}
 
@@ -245,7 +211,7 @@ Language used should always be unemotive and impartial.
 ## Researcher / Hacker / Attacker
 
 - Use the word "researcher" when referring to a person who presents submissions to Bugcrowd.
-- Use the words "malicious attacker" when walking through an attack scenario, for example: "a malicious attacker is able to exfiltrate customer data and perform arbitrary SQL queries".
+- Use the words "attacker" when walking through an attack scenario, for example: "an attacker is able to exfiltrate customer data and perform arbitrary SQL queries".
 - Never use the word "hacker".
 
 ## Use of "victim"

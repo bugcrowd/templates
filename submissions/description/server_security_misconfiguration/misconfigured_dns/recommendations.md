@@ -1,0 +1,3 @@
+# Recommendation(s)
+       
+The DNS server should be configured to only reveal a limited amount of information needed to perform necessary tasks. This includes but is not limited to configuring to only accept zone transfers from a trusted list of IP addresses, and enabled appropriate records, such as CAA record. It is also best practice to clearly define and implement standard processes for the provisioning and deprovisioning of hosts. For example, ensure that all steps are performed closely together. When provisioning, claim the virtual host first, and create the DNS records last. When deprovisioning, remove the DNS records first.
