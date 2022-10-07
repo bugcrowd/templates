@@ -31,3 +31,4 @@ Stored XSS could lead to data theft through the attacker’s ability to manipula
 Below is a screenshot demonstrating the injected JavaScript executing at the vulnerable endpoint, {{URL}}:
 
 {{screenshot}}
+
