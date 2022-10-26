@@ -196,7 +196,7 @@ describe BugcrowdTemplates do
         end
 
         context 'when there is no template in category folder' do
-          let!(:category) { 'using_components_with_known_vulnerabilities' }
+          let!(:category) { 'dummy_empty_category' }
           let!(:subcategory) { '' }
           let!(:item) { '' }
           let!(:file_name) { 'template' }
@@ -207,13 +207,13 @@ describe BugcrowdTemplates do
         end
 
         context 'when there is no template in subcategory folder' do
-          let!(:category) { 'server_security_misconfiguration' }
-          let!(:subcategory) { 'waf_bypass' }
+          let!(:category) { 'dummy_category' }
+          let!(:subcategory) { 'dummy_subcategory' }
           let!(:item) { '' }
           let!(:file_name) { 'template' }
 
           it 'returns the template defined in the category folder' do
-            is_expected.to include('# Generic server security misconfiguration')
+            is_expected.to include('# Dummy Category')
           end
         end
 
