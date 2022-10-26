@@ -128,7 +128,7 @@ describe BugcrowdTemplates::TemplatePath do
       let!(:subcategory) { 'clickjacking' }
       let!(:item) { 'form_input' }
       let!(:file_name) { 'template' }
-      let!(:result) { directory.join(type, field, category, subcategory, file_name_with_extension) }
+      let!(:result) { directory.join(type, field, category, subcategory, item, file_name_with_extension) }
 
       it 'returns the template from the subcategory folder as template' do
         is_expected.to eq(result)
@@ -142,7 +142,7 @@ describe BugcrowdTemplates::TemplatePath do
       let!(:subcategory) { '' }
       let!(:item) { '' }
       let!(:file_name) { 'template' }
-      let!(:result) { directory.join(type, field, category, file_name_with_extension) }
+      let!(:result) { directory.join(type, field, category, item, file_name_with_extension) }
 
       it 'returns the category folder as template' do
         is_expected.to eq(result)
@@ -156,7 +156,7 @@ describe BugcrowdTemplates::TemplatePath do
       let!(:subcategory) { '' }
       let!(:item) { '' }
       let!(:file_name) { 'information' }
-      let!(:result) { directory.join(type, field, category, file_name_with_extension) }
+      let!(:result) { directory.join(type, field, category, item, file_name_with_extension) }
 
       it 'returns the methodology template' do
         is_expected.to eq(result)
