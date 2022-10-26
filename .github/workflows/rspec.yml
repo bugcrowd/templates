@@ -4,7 +4,7 @@ on: [push, pull_request]
 
 jobs:
   build:
-    name: CI
+    name: Rspec
     runs-on: ubuntu-latest
 
     steps:
