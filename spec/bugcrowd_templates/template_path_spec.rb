@@ -124,8 +124,8 @@ describe BugcrowdTemplates::TemplatePath do
     context 'when item folder is not having template for submissions' do
       let!(:type) { 'submissions' }
       let!(:field) { 'description' }
-      let!(:category) { 'dummy_category_for_items' }
-      let!(:subcategory) { 'dummy_subcategory' }
+      let!(:category) { 'fixture_category_for_items' }
+      let!(:subcategory) { 'fixture_subcategory' }
       let!(:item) { 'form_input' }
       let!(:file_name) { 'template' }
       let!(:result) {
@@ -142,8 +142,8 @@ describe BugcrowdTemplates::TemplatePath do
     context 'when sub_category folder is not having template for submissions' do
       let!(:type) { 'submissions' }
       let!(:field) { 'description' }
-      let!(:category) { 'dummy_category' }
-      let!(:subcategory) { 'dummy_subcategory' }
+      let!(:category) { 'fixture_category' }
+      let!(:subcategory) { 'fixture_subcategory' }
       let!(:item) { 'form_input' }
       let!(:file_name) { 'template' }
       let!(:result) {
