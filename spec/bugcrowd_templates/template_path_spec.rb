@@ -124,16 +124,40 @@ describe BugcrowdTemplates::TemplatePath do
     context 'when item folder is not having template for submissions' do
       let!(:type) { 'submissions' }
       let!(:field) { 'description' }
-      let!(:category) { 'server_security_misconfiguration' }
-      let!(:subcategory) { 'clickjacking' }
+      let!(:category) { 'dummy_category_for_items' }
+      let!(:subcategory) { 'dummy_subcategory' }
       let!(:item) { 'form_input' }
       let!(:file_name) { 'template' }
-      let!(:result) { directory.join(type, field, category, subcategory, item, file_name_with_extension) }
+      let!(:result) {
+        Pathname.new(Gem::Specification.find_by_name('bugcrowd_templates').gem_dir).join('spec', 'fixture')
+        .join(type, field, category, subcategory, file_name_with_extension) }
 
       it 'returns the template from the subcategory folder as template' do
+        allow(BugcrowdTemplates).to receive(:current_directory).and_return(
+        Pathname.new(Gem::Specification.find_by_name('bugcrowd_templates').gem_dir).join('spec', 'fixture'))
         is_expected.to eq(result)
       end
     end
+
+    context 'when sub_category folder is not having template for submissions' do
+      let!(:type) { 'submissions' }
+      let!(:field) { 'description' }
+      let!(:category) { 'dummy_category' }
+      let!(:subcategory) { 'dummy_subcategory' }
+      let!(:item) { 'form_input' }
+      let!(:file_name) { 'template' }
+      let!(:result) {
+        Pathname.new(Gem::Specification.find_by_name('bugcrowd_templates').gem_dir).join('spec', 'fixture')
+        .join(type, field, category, file_name_with_extension) }
+
+      it 'returns the template from the category folder as template' do
+        allow(BugcrowdTemplates).to receive(:current_directory).and_return(
+        Pathname.new(Gem::Specification.find_by_name('bugcrowd_templates').gem_dir).join('spec', 'fixture'))
+        is_expected.to eq(result)
+      end
+    end
+
+
 
     context 'when it has category params for submissions' do
       let!(:type) { 'submissions' }
@@ -142,7 +166,7 @@ describe BugcrowdTemplates::TemplatePath do
       let!(:subcategory) { '' }
       let!(:item) { '' }
       let!(:file_name) { 'template' }
-      let!(:result) { directory.join(type, field, category, item, file_name_with_extension) }
+      let!(:result) { directory.join(type, field, category, file_name_with_extension) }
 
       it 'returns the category folder as template' do
         is_expected.to eq(result)
@@ -156,7 +180,7 @@ describe BugcrowdTemplates::TemplatePath do
       let!(:subcategory) { '' }
       let!(:item) { '' }
       let!(:file_name) { 'information' }
-      let!(:result) { directory.join(type, field, category, item, file_name_with_extension) }
+      let!(:result) { directory.join(type, field, category, file_name_with_extension) }
 
       it 'returns the methodology template' do
         is_expected.to eq(result)
@@ -181,7 +205,7 @@ describe BugcrowdTemplates::TemplatePath do
       let!(:field) { 'description' }
       let!(:category) { 'server_security' }
       let!(:subcategory) { 'clickjacking' }
-      let!(:item) { 'form' }
+      let!(:item) { 'form_input' }
       let!(:file_name) { 'template' }
       let!(:result) { directory.join(type, field, category, subcategory, item, file_name_with_extension) }
 
