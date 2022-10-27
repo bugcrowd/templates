@@ -196,6 +196,9 @@ describe BugcrowdTemplates do
         end
 
         context 'when there is no template in category folder' do
+              let!(:directory) { Pathname.new(Gem::Specification.find_by_name('bugcrowd_templates').gem_dir)
+              .join('spec')
+              .join('fixture') }
           let!(:category) { 'dummy_empty_category' }
           let!(:subcategory) { '' }
           let!(:item) { '' }
@@ -213,6 +216,9 @@ describe BugcrowdTemplates do
           let!(:file_name) { 'template' }
 
           it 'returns the template defined in the category folder' do
+            allow(BugcrowdTemplates).to receive(:current_directory).and_return(
+            Pathname.new(Gem::Specification.find_by_name('bugcrowd_templates').gem_dir).join('spec').join('fixture'))
+
             is_expected.to include('# Dummy Category')
           end
         end
@@ -224,6 +230,8 @@ describe BugcrowdTemplates do
           let!(:file_name) {}
 
           it 'returns the nil' do
+            allow(BugcrowdTemplates).to receive(:current_directory).and_return(
+            Pathname.new(Gem::Specification.find_by_name('bugcrowd_templates').gem_dir).join('spec').join('fixture'))
             is_expected.to be_nil
           end
         end
