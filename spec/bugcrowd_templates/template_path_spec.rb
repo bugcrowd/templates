@@ -17,6 +17,7 @@ describe BugcrowdTemplates::TemplatePath do
 
   let!(:directory) { BugcrowdTemplates.current_directory }
   let!(:file_name_with_extension) { [file_name, 'md'].join('.') }
+  let!(:mock_path) { Pathname.new(Gem::Specification.find_by_name('bugcrowd_templates').gem_dir).join('spec', 'fixture')}
 
   describe '#new' do
     context 'initialize with submission type' do
@@ -26,6 +27,8 @@ describe BugcrowdTemplates::TemplatePath do
       let!(:subcategory) { 'captcha_bypass' }
       let!(:item) { 'ocr_optical_character_recognition' }
       let!(:file_name) { 'template' }
+
+
 
       it 'initialize an item' do
         expect(subject).to be_a(described_class)
@@ -124,16 +127,34 @@ describe BugcrowdTemplates::TemplatePath do
     context 'when item folder is not having template for submissions' do
       let!(:type) { 'submissions' }
       let!(:field) { 'description' }
-      let!(:category) { 'server_security_misconfiguration' }
-      let!(:subcategory) { 'clickjacking' }
+      let!(:category) { 'fixture_category_for_items' }
+      let!(:subcategory) { 'fixture_subcategory' }
       let!(:item) { 'form_input' }
       let!(:file_name) { 'template' }
-      let!(:result) { directory.join(type, field, category, subcategory, file_name_with_extension) }
+      let!(:result) { mock_path.join(type, field, category, subcategory, file_name_with_extension) }
 
       it 'returns the template from the subcategory folder as template' do
+        allow(BugcrowdTemplates).to receive(:current_directory).and_return(mock_path)
         is_expected.to eq(result)
       end
     end
+
+    context 'when sub_category folder is not having template for submissions' do
+      let!(:type) { 'submissions' }
+      let!(:field) { 'description' }
+      let!(:category) { 'fixture_category' }
+      let!(:subcategory) { 'fixture_subcategory' }
+      let!(:item) { 'form_input' }
+      let!(:file_name) { 'template' }
+      let!(:result) { mock_path.join(type, field, category, file_name_with_extension) }
+
+      it 'returns the template from the category folder as template' do
+        allow(BugcrowdTemplates).to receive(:current_directory).and_return(mock_path)
+        is_expected.to eq(result)
+      end
+    end
+
+
 
     context 'when it has category params for submissions' do
       let!(:type) { 'submissions' }
@@ -181,7 +202,7 @@ describe BugcrowdTemplates::TemplatePath do
       let!(:field) { 'description' }
       let!(:category) { 'server_security' }
       let!(:subcategory) { 'clickjacking' }
-      let!(:item) { 'form' }
+      let!(:item) { 'form_input' }
       let!(:file_name) { 'template' }
       let!(:result) { directory.join(type, field, category, subcategory, item, file_name_with_extension) }
 

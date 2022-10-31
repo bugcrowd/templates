@@ -2,6 +2,8 @@
 require 'spec_helper'
 
 describe BugcrowdTemplates do
+
+
   describe '#VERSION' do
     subject { described_class::VERSION }
 
@@ -44,6 +46,7 @@ describe BugcrowdTemplates do
     let(:subcategory) { '' }
     let(:item) { '' }
     let(:file_name) { '' }
+    let!(:mock_path) {Pathname.new(Gem::Specification.find_by_name('bugcrowd_templates').gem_dir).join('spec').join('fixture')}
 
     context 'with correct params' do
       context 'with methodology type' do
@@ -53,6 +56,7 @@ describe BugcrowdTemplates do
         let!(:subcategory) { '' }
         let!(:item) { '' }
         let!(:file_name) { 'information' }
+
 
         it 'returns the bugcrowd template value as string' do
           is_expected.to include('# Information gathering')
@@ -196,24 +200,27 @@ describe BugcrowdTemplates do
         end
 
         context 'when there is no template in category folder' do
-          let!(:category) { 'using_components_with_known_vulnerabilities' }
+          let!(:category) { 'fixture_empty_category' }
           let!(:subcategory) { '' }
           let!(:item) { '' }
           let!(:file_name) { 'template' }
 
           it 'returns the nil' do
+            allow(BugcrowdTemplates).to receive(:current_directory).and_return( mock_path )
             is_expected.to be_nil
           end
         end
 
         context 'when there is no template in subcategory folder' do
-          let!(:category) { 'server_security_misconfiguration' }
-          let!(:subcategory) { 'waf_bypass' }
+          let!(:category) { 'fixture_category' }
+          let!(:subcategory) { 'fixture_subcategory' }
           let!(:item) { '' }
           let!(:file_name) { 'template' }
 
           it 'returns the template defined in the category folder' do
-            is_expected.to include('# Generic server security misconfiguration')
+            allow(BugcrowdTemplates).to receive(:current_directory).and_return( mock_path )
+
+            is_expected.to include('# Fixture Category')
           end
         end
 
@@ -224,6 +231,7 @@ describe BugcrowdTemplates do
           let!(:file_name) {}
 
           it 'returns the nil' do
+            allow(BugcrowdTemplates).to receive(:current_directory).and_return( mock_path )
             is_expected.to be_nil
           end
         end
