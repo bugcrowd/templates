@@ -20,6 +20,6 @@ No rate limiting on a form can result in reputational damage to the organization
 
 ## Proof of Concept
 
-The following screenshots demonstrate a lack of rate limiting on the login form followed by a successful foem submission:
+The following screenshots demonstrate a lack of rate limiting on the login form followed by a successful form submission:
 
 {{screenshot}}
