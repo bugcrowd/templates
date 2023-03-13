@@ -10,15 +10,17 @@ No rate limiting on a password change form can result in reputational damage to 
 
 ## Steps to Reproduce
 
-1. Enable a HTTP intercept proxy, such as Burp Suite or OWASP ZAP
-1. Using a browser, sign into the application
-1. Navigate to {{url}} and fill out the password change form
+1. Enable a HTTP intercept proxy, such as Burp Suite or OWASP ZAP, to record and intercept web traffic from your browser
+1. Using a browser, sign into the application and navigate to {{url}}
+1. Fill out the password change form 
 1. Submit the form while using the HTTP intercept proxy to intercept the request
 1. Using the HTTP intercept proxy, re-issue the captured request 400 times in rapid succession
-1. Observe within the HTTP intercept proxy that all 400 of these requests generate successful password change attempts, showing that there is no rate-limiting on the form
+1. Observe within the HTTP intercept proxy that all 400 of these requests generate a ‘HTTP 200 OK’ response, showing that there is no rate-limiting on the form
+1. Perform another, manual password change form submission in the browser without the interception proxy enabled
+1. Observe that the form is submitted successfully which shows that there is no silent lockout implemented
 
 ## Proof of Concept
 
-The following screenshot shows a lack of rate limiting on the password change form:
+The following screenshots demonstrate a lack of rate limiting on the password change form, followed by a successful form submission:
 
 {{screenshot}}
