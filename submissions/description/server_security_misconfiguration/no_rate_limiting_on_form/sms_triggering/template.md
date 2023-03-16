@@ -19,7 +19,7 @@ Additionally, for systems that use Software-as-a-Service (SaaS) SMS providers, t
 1. Using the HTTP intercept proxy, re-issue the captured request 400 times in rapid succession
 1. Observe within the HTTP intercept proxy that all 400 of these requests triggered an email, showing that there is no rate-limiting on the form
 1. Perform another, manual SMS triggering form submission in the browser without the interception proxy enabled
-1. Observe that the form is submitted and an email is triggered successfully. This shows that there is no silent lockout implemented
+1. Observe that the form is submitted and an SMS is triggered successfully. This shows that there is no silent lockout implemented
 
 ## Proof of Concept
 
