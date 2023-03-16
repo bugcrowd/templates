@@ -13,7 +13,7 @@ Stored XSS could lead to data theft through the attacker’s ability to manipula
 ## Steps to Reproduce
 
 1. Enable a HTTP interception proxy, such as Burp Suite or OWASP ZAP
-1. Log into the application at with the non-privileged account (User B)
+1. Log into the application at with the privileged user account (User B)
 1. Forward the following request to the endpoint:
 
 ```HTTP
@@ -21,10 +21,10 @@ Stored XSS could lead to data theft through the attacker’s ability to manipula
 ```
 
 1. Observe the JavaScript payload being executed
-1. Log out of the non-privileged account (User B)
-1. Log into a privileged account (User A) and navigate to {{url}} which contains the payload
-1. Log out of the privileged account (User A) and log into the non-privileged account (User B)
-1. Observe the non-privileged account (User B) has gained escalated privileges
+1. Log out of the privileged account (User B)
+1. Log into a higher-privileged account (User A) and navigate to {{url}} which contains the payload
+1. Log out of the higher-privileged account (User A) and log into the privileged account (User B)
+1. Observe the privileged account (User B) has gained escalated privileges
 
 ## Proof of Concept (PoC)
 
