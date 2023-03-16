@@ -10,8 +10,8 @@ This vulnerability can lead to reputational damage and indirect financial loss t
 
 ## Steps to Reproduce
 
-1. Sign into a user's account (Browser A)
-1. Sign into the same user's account, using a different browser (Browser B)
+1. Using one browser (Browser A), sign into a user's account using the login page: {{URL}}
+1. Using a different browser (Browser B), sign into the same user's account 
 1. Using Browser A, change the password of the account
 1. Using Browser B, observe that the user session is still valid
 
