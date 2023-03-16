@@ -1,35 +1,34 @@
-# Stored XSS (Privileged User to Privilege Elevation)
+# Stored Cross-Site Scripting (Privileged User to Privilege Elevation)
 
-## Overview
+## Overview of the Vulnerability
 
-Cross-Site Scripting (XSS) is a type of injection attack where malicious scripts are injected into trusted websites. XSS vulnerabilities allow an attacker to gain access to a user's account and carry out any actions that the user is able to perform, including accessing any of the user's data. The attacker might be able to gain full control over all of the application's functionality and data depending on the user's level of permissions.
+Stored Cross-Site Scripting (XSS) is a type of injection attack where malicious JavaScript is injected into a website. When a user visits the affected web page, the Javascript executes within that user’s browser in the context of this domain. Stored XSS can be found on this domain which allows an attacker to submit data to a form and escalate from a privileged user to a higher privileged user, which could include an Administrator level user. 
 
-Stored XSS in {{application}} of {{target}} allows an attacker to elevate a privileged user account to by {{action}}.
+When an attacker can control code that is executed within a user’s browser, they are able to carry out any actions that the user is able to perform, including accessing any of the user's data and modifying information within the user’s permissions. This can result in modification, deletion, or theft of data, including accessing or deleting files, or stealing session cookies which an attacker could use to hijack a user’s session.
+  
+## Business Impact
 
-## Walkthrough & PoC
+Stored XSS could lead to data theft through the attacker’s ability to manipulate data through their access to the application, and their ability to interact with other users, including performing other malicious attacks, which would appear to originate from a legitimate user. These malicious actions could also result in reputational damage for the business through the impact to customers’ trust.
 
-1. Log in to {{application}} at {{url}} with a privileged user account
-1. Navigate to {{url}}
-1. Insert {{payload}} in the appropriate area
-1. Observe the JavaScript payload was executed
-1. Verify the payload is stored and accessible to another privileged account
+## Steps to Reproduce
 
-## Vulnerability Evidence
+1. Enable a HTTP interception proxy, such as Burp Suite or OWASP ZAP
+1. Log into the application at with the privileged user account (User B)
+1. Forward the following request to the endpoint:
 
-The screenshot below demonstrates the injected JavaScript executing at {{url}}.
-
-{{screenshot}}
-
-## Demonstrated Impact
-
-XSS vulnerabilities can be escalated by a malicious attacker who can then attempt to bypass Cross-Site Request Forgery (CSRF) protections, or perform account takeovers, giving them the ability to perform any action that a logged in user can perform.
-
-A malicious attacker could abuse this XSS vulnerability further to {{action}} by using the following JavaScript payload.
-
-```javascript
-{{payload}}
+```HTTP
+{{request}}
 ```
 
-Here is a screenshot of the full exploit taking place:
+1. Observe the JavaScript payload being executed
+1. Log out of the privileged account (User B)
+1. Log into a higher-privileged account (User A) and navigate to {{url}} which contains the payload
+1. Log out of the higher-privileged account (User A) and log into the privileged account (User B)
+1. Observe the privileged account (User B) has gained escalated privileges
+
+## Proof of Concept (PoC)
+
+Below is a screenshot demonstrating the injected JavaScript executing at the vulnerable endpoint, {{URL}}:
 
 {{screenshot}}
+
