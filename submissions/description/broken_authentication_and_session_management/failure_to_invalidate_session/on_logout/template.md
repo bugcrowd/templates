@@ -14,10 +14,18 @@ Failure to invalidate a session on logout may also lead to data theft through th
 
 ## Steps to Reproduce
 
-1. Sign into a user’s account (Browser A)
-1. Sign into the same user’s account, using a different browser (Browser B)
-1. Using Browser A, logout of the account
-1. Using Browser B, observe that the user session is still valid
+1. Enable a HTTP interception proxy, such as Burp Suite or OWASP ZAP
+1. Use a browser to navigate to: {{URL}}
+1. Sign into a user account
+1. In the HTTP interception proxy, capture any authenticated GET or POST request
+1. Log out of the user account in the browser
+1. In the HTTP interception proxy, resend the following request to the endpoint {{URL}}:
+
+```HTTP
+{{request}}
+```
+
+1. Observe that the session token was not invalidated on logout
 
 ## Proof of Concept (PoC)
 
