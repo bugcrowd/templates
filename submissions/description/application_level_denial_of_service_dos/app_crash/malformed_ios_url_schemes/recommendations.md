@@ -1,6 +1,6 @@
 # Recommendation(s)
 
-It is recommended to perform input validation to limit the total request size, and file upload and extension sizes. and, It’s also important to prevent any user input based function or threading interaction. These preventative measures help against application-level DoS attacks.
+It is recommended to perform input validation to ensure that all inputs, including the URL Schemes sent to your application, meet the expected format and content while rejecting any malformed inputs. This can include limiting URL Schemes to ones that are expected or known in order to prevent attackers from using other URL Schemes to trigger crashes. It’s also important to implement exception handling so that the application gracefully handles errors without crashing.
 
 For more information, refer to the following resources:
 
