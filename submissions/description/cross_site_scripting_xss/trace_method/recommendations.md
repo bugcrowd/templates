@@ -2,6 +2,7 @@
 
 There is no single technique to stop XSS from occurring. However, implementing the right combination of defensive measures within the application will prevent and limit the impact of XSS. Some best practices include the following:
 
+- Disable the use of the TRACE method to prevent attacks through this method. This can be achieved by configuring the web server or through WAF rules.
 - All user input fields should be sanitized based on what the field is likely to contain. For example, a date field (01/01/2001) should only contain a maximum of 10 characters consisting of numbers and forward slashes. Additionally, drop down or pick lists can be used for allowable inputs to ensure expected values are sent to the server.
 - Use appropriate HTTP response headers to ensure the browser correctly interprets responses. These should be customized specific to the application and its environment. For example:
 
