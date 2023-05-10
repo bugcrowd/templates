@@ -1,3 +1,3 @@
 # Recommendation(s)
 
-It is recommended to adjust sensitive input parameters to have autocorrect turned off to limit the caching of sensitive data.
+It is recommended to set the autocorrect attribute to "off" for any sensitive input parameters to limit the caching of sensitive data. For example, `autocorrect="off"`.
