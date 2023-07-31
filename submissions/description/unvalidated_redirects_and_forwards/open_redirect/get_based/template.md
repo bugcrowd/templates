@@ -12,7 +12,7 @@ GET-based open redirects can result in reputational damage for the business as c
 
 ## Steps to Reproduce
 
-1. Using a browser, navigate to the open redirect on the endpoint: {{URL_with_no_redirect}}
+1. Using a browser, navigate to the vulnerable endpoint: {{URL_with_no_redirect}}
 1. Modify the URL so that it redirects to `http://www.bugcrowd.com/`: {{URL_with_redirect}}
 1. Submit this in a new browser window and you should be redirected to the Bugcrowd website
 
