@@ -2,14 +2,7 @@
 
 ## Overview of the Vulnerability
 
-Insecure Direct Object Reference (IDOR) occurs when there are no access control checks to verify if a request to interact with a resource is valid. An IDOR vulnerability within this application can be leveraged by an attacker to manipulate, destroy, or disclose data through their ability to bypass access controls and  horizontally or vertically escalate their privileges. 
-
-Given the type of IDOR within an application, an attacker could perform the following actions:
-
-- Gain unauthorized access to data from the application and retrieve privileged information
-- Perform unauthorized operations, such as escalating their privileges within the application, or forcing a password change on a user’s account in order to takeover that account
-- Manipulate internal application objects and elevate their privileges, alter data, or gain access to and manipulate the application’s APIs
-- Gain direct access to files and manipulate the file system, such as uploading, downloading, adding, or deleting data, including other user’s data.
+Insecure Direct Object Reference (IDOR) occurs when there are no access control checks to verify if a request to interact with a resource is valid. An IDOR vulnerability within this application can be leveraged by an attacker to manipulate, destroy, or disclose data through their ability to bypass access controls, horizontally or vertically escalate their privileges, and gain access to sensitive information or take over users' accounts.
 
 ## Business Impact
 
@@ -42,4 +35,3 @@ A malicious attacker could leverage this IDOR vulnerability to extract data by u
 The following screenshot demonstrates this additional impact:
 
 {{screenshot}}
-
