@@ -22,6 +22,6 @@ The following screenshot shows the token exposed within the `Referer` HTTP reque
 
 {{screenshot}}
 
-Here is a list of the untrusted 3rd party hosts that leak the token:
+Here is a list of the untrusted 3rd party hosts that receive the token:
 
 - 
