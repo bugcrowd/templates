@@ -25,6 +25,6 @@ Application-level DoS can result in indirect financial loss for the business thr
 
 ## Proof of Concept (PoC)
 
-The screenshot below demonstrates proof of the vulnerability:
+The screenshot(s) below demonstrate(s) proof of the vulnerability:
 
 {{screenshot}}
