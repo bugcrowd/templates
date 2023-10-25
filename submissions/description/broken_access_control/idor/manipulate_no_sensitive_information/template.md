@@ -32,6 +32,6 @@ An attacker could leverage this IDOR vulnerability to extract data by using the 
 {{payload}}
 ```
 
-The following screenshot demonstrates this IDOR occurring:
+The following screenshot(s) demonstrate(s) this vulnerability:
 
 {{screenshot}}
