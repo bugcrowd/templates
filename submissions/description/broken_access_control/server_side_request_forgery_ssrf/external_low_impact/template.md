@@ -22,6 +22,6 @@ External SSRF can lead to data theft and through an attacker accessing, deleting
 
 ## Proof of Concept (PoC)
 
-The screenshot below shows incoming HTTP requests and the external queries from the application:
+The following screenshot(s) demonstrate(s) this vulnerability:
 
 {{screenshot}}
