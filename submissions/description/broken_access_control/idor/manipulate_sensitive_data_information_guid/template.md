@@ -32,6 +32,6 @@ A malicious attacker could leverage this IDOR vulnerability to extract data by u
 {{payload}}
 ```
 
-The following screenshot demonstrates this additional impact:
+The following screenshot(s) demonstrate(s) this additional impact:
 
 {{screenshot}}
