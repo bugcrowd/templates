@@ -22,6 +22,6 @@ External DNS-only SSRF can result in the application and internal network being 
 
 ## Proof of Concept (PoC)
 
-The screenshot below shows the external DNS queries from the application:
+The following screenshot(s) demonstrate(s) this vulnerability:
 
 {{screenshot}}
