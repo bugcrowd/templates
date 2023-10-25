@@ -17,6 +17,6 @@ This vulnerability can lead to reputational damage of the company through the im
 
 ## Proof of Concept (PoC)
 
-The screenshot below demonstrates the differential fault analysis attack:
+The following screenshot(s) demonstrate(s) this vulnerability:
 
 {{screenshot}}
