@@ -28,6 +28,6 @@ SSRF can lead to data theft and through an attacker accessing, deleting, or modi
 
 ## Proof of Concept (PoC)
 
-The screenshot below shows the Burp intruder results filtering out active hosts:
+The following screenshot(s) demonstrate(s) this vulnerability:
 
 {{screenshot}}
