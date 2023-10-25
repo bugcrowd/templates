@@ -32,6 +32,6 @@ A malicious attacker could leverage this IDOR vulnerability to read data by usin
 {{payload}}
 ```
 
-The following screenshot demonstrates this additional impact:
+The following screenshot(s) demonstrate(s) this additional impact:
 
 {{screenshot}}
