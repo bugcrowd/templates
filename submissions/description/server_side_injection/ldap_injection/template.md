@@ -1,18 +1,16 @@
 # LDAP Injection
 
 ## Overview
-LDAP Injection is an attack used to exploit web based applications that construct LDAP statements based on user input. When an application fails to properly sanitize user input, it’s possible to modify LDAP statements using a local proxy. This could result in the execution of arbitrary commands such as granting permissions to unauthorized queries, and content modification inside the LDAP tree. The same advanced exploitation techniques available in SQL Injection can be similarly applied in LDAP Injection.
+LDAP injection is an attack used to exploit web based applications that construct LDAP statements based on user input. When an application fails to properly sanitize user input, it’s possible to modify LDAP statements using a local proxy. This LDAP injection vulnerability could allow an attacker to execute arbitrary commands, such as granting permissions to unauthorized queries, and content modification inside the LDAP tree. The same advanced exploitation techniques available in SQL injection can be similarly applied in LDAP injection.
 
 ## Business Impact
-Attackers might use an LDAP injection to insert malicious code that allows them to see all the usernames and passwords assigned to a system or to add their names as system administrators. A successful LDAP injection can be a major security breach,reputation loss and financial losses for the company.
+LDAP injection vulnerabilities can lead to reputational damage through the impact to customers’ trust, or to regulatory fines due to an attacker’s unauthorized access to data. The severity of the impact to the business is dependent on the sensitivity of the data being stored in, and transmitted by the application.
 
 ## Steps to Reproduce
 
-1. Using a browser, login to in-scope asset at: {{URL}}
-1. Browse to account page
-1. Modify ID token to add single quote
-1. View the following query which states 'LDAP Injection'
-1. Replace ID value with the following payload:
+1. Using a browser, log into the webpage: {{URL}}
+1. In the request to URI modify the token XYZ by appending a quote ``` and you'll see an error return
+1. Replace this with the payload below and you'll see a response indicating an injection occuring:
 
 ```
 {{payload}}
@@ -20,10 +18,6 @@ Attackers might use an LDAP injection to insert malicious code that allows them 
 
 ## Proof of Concept (PoC)
 
-The screenshot below demonstrates the LDAP Injection being executed:
+The screenshot(s) below demonstrate(s) the vulnerability:
 
 {{screenshot}}
-
-
-## References
-https://cheatsheetseries.owasp.org/cheatsheets/LDAP_Injection_Prevention_Cheat_Sheet.html
