@@ -21,6 +21,10 @@ When sensitive data is being stored and transmitted by the application which doe
 
 ## Proof of Concept (PoC)
 
-The screenshot below demonstrates the missing header:
+The screenshot below demonstrates the missing `Cache-Control` header:
+
+{{screenshot}}
+
+The screenshot below shows the sensitive details present in the cache:
 
 {{screenshot}}
