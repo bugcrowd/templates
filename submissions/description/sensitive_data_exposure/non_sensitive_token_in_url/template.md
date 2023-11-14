@@ -1,4 +1,4 @@
-# Sensitive data disclosure: Non-Sensitive Token in URL
+# Sensitive Data Disclosure: Non-Sensitive Token in URL
 
 ## Overview of the Vulnerability
 
