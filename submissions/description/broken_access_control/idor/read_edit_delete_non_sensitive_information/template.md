@@ -1,4 +1,4 @@
-# Manipulate Non-Sensitive Information
+# Read/Edit/Delete Non-Sensitive Information
 
 ## Overview of the Vulnerability
 
