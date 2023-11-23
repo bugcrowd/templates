@@ -1,16 +1,16 @@
 # Remote Code Execution (RCE)
 
-## Overview of the Vulnerability
+## Overview of the Vulnerability:
 
 Remote Code Execution (RCE) is a vulnerability that allows commands to be executed remotely on a target machine by crafting a request within the application where there should be no context to access or execute code.
 
 A RCE vulnerability in this application allows a malicious attacker to remotely execute code on the server, enabling an attacker to extract passwords, reconfigure running services, move laterally into attached networks, and potentially take over the server.
 
-## Business Impact
+## Business Impact:
 
 RCE could lead to data theft through the attacker's ability to manipulate data through their access to the application server. These malicious actions could also result in reputational damage for the business through the impact to customers' trust.
 
-## Steps to Reproduce
+## Steps to Reproduce:
 
 Example:
 
