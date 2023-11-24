@@ -13,7 +13,7 @@ This vulnerability can lead to reputational damage as customers may view the app
 ## Steps to Reproduce
 
 1. View the source code files of the application
-1. Navigate to {{url}} and view the sensitive UI functionality does not have the attribute `"filterTouchesWhenObscured="true"`, thus allowing tapjacking attacks on certain Android OS versions
+1. Navigate to the following URL: {{url}} and view the sensitive UI functionality does not have the attribute `"filterTouchesWhenObscured="true"`, thus allowing tapjacking attacks on certain Android OS versions
 
 ## Proof of Concept (PoC)
 

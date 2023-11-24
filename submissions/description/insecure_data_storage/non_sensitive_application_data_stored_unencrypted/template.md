@@ -12,7 +12,7 @@ This vulnerability can lead to reputational damage and indirect financial loss t
 
 1. Login to the application and input data so that it is stored by the application
 1. Navigate to where the application stores the gathered information
-1. Navigate to {{url}}
+1. Navigate to the following URL: {{url}}
 1. Observe the application data that is stored unencrypted
 
 ## Proof of Concept (PoC)
