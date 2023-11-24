@@ -12,7 +12,7 @@ Application-level DoS can result in indirect financial loss for the business thr
 
 ## Steps to Reproduce
 
-1. Navigate to {{url}}
+1. Navigate to the following URL: {{url}}
 1. Use the following payload:
 
 {{payload}}
@@ -25,6 +25,6 @@ Application-level DoS can result in indirect financial loss for the business thr
 
 ## Proof of Concept (PoC)
 
-The screenshot below demonstrates the Denial of Service:
+The screenshot(s) below demonstrate(s) proof of the vulnerability:
 
 {{screenshot}}
