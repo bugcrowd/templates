@@ -2,7 +2,7 @@
 
 ## Overview of the Vulnerability
 
-Application-level denial of service (DoS) attacks are designed to deny service to users of an application by flooding it with many HTTP requests. This makes it impossible for the server to respond to legitimate requests in any practical time frame.
+Application-level Denial of Service (DoS) attacks are designed to deny service to users of an application by flooding it with many HTTP requests. This makes it impossible for the server to respond to legitimate requests in any practical time frame.
 
 There is a local application-level DoS vulnerability within this Android application that causes it to crash. An attacker can use this vulnerability to provide empty, malformed, or irregular data via the Intent binding mechanism, crashing the application and making it unavailable for its designed purpose to legitimate users.
 
@@ -21,10 +21,10 @@ Application-level DoS can result in indirect financial loss for the business thr
 
 {{parameter}}
 
-1. Observe that the payload causes a denial of service
+1. Observe that the payload causes a Denial of Service
 
 ## Proof of Concept (PoC)
 
-The screenshot below demonstrates the denial of service:
+The screenshot below demonstrates the Denial of Service:
 
 {{screenshot}}
