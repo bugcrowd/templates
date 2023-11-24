@@ -2,7 +2,7 @@
 
 ## Overview of the Vulnerability
 
-Sensitive data can be exposed when it is not behind an authorization barrier. When this information is exposed it can place the application at further risk of compromise. This application discloses an internal IP address which an attacker could interact with to send requests and execute functions on the underlying system.
+Sensitive data can be exposed when it is not behind an authorization barrier. When this information is exposed it can place the application at further risk of compromise. This application discloses an internal IP address which an attacker could use to gather information, and carry out network-layer attacks, on the underlying system.
 
 ## Business Impact
 
