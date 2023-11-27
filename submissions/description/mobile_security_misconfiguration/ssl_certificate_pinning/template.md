@@ -1,8 +1,8 @@
-# Mobile Security Misconfiguration (SSL Certificate Pinning)
+# Secure Sockets Layer (SSL) Certificate Pinning
 
 ## Overview of the Vulnerability
 
-Mobile security misconfigurations can occur at any level of the application stack and can involve unpatched software, unprotected files or pages, or unauthorized access to the application. SSL pinning adds an extra layer of security for an application as it forces the application to validate the server’s CA certificate against a known copy.
+Mobile security misconfigurations can occur at any level of the application stack and can involve unpatched software, unprotected files or pages, or unauthorized access to the application. Secure Sockets Layer (SSL) pinning adds an extra layer of security for an application as it forces the application to validate the server’s CA certificate against a known copy.
 
 When SSL certificate pinning is misconfigured, an attacker could perform a Person-in-the-Middle (PitM) attack on the user. With access to sensitive data through a PitM attack they could perform further attacks on the application, the business, or its users.
 
