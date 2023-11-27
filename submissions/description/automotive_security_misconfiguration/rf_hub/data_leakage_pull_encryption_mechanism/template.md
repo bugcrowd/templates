@@ -13,7 +13,7 @@ This RFH misconfiguration can result in reputational damage and indirect financi
 ## Steps to Reproduce
 
 1. Setup {{hardware}} and {{software}} to interact with the RF layer of {{target}}
-1. Perform a Man-in-the-Middle (MitM) attack by doing {{action}}, using {{hardware}} and {{software}}
+1. Perform a Person-in-the-Middle (PitM) attack by doing {{action}}, using {{hardware}} and {{software}}
 1. Attempt to bypass the encryption by {{action}} or using meta data from the intercepted messages to decode/decrypt the communication
 
 ## Proof of Concept (PoC)

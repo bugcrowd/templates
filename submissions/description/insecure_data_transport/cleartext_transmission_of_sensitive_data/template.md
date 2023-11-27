@@ -2,7 +2,7 @@
 
 ## Overview of the Vulnerability
 
-When sensitive data is transmitted in cleartext over an unencrypted channel, it can be intercepted via a Man-in-the-Middle (MitM) attack. An attacker can send requests to the server pretending to be the legitimate user by using a PitM attack to access the sensitive data.
+When sensitive data is transmitted in cleartext over an unencrypted channel, it can be intercepted via a Person-in-the-Middle (PitM) attack. An attacker can send requests to the server pretending to be the legitimate user by using a PitM attack to access the sensitive data.
 
 ## Business Impact
 

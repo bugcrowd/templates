@@ -2,7 +2,7 @@
 
 ## Overview of the Vulnerability
 
-A lack of the HTTP response header for `Public-Key-Pins` can lead to sensitive user data being retrieved by an advanced attacker through Man-in-the-Middle (MitM) attacks. There are multiple HTTP response headers used in communication between the server and client which can be implemented to improve security against well documented vulnerabilities. For example, the `Public-Key-Pins` security header is used in legacy versions of browsers to prevent clients from loading reflected XSS attacks.
+A lack of the HTTP response header for `Public-Key-Pins` can lead to sensitive user data being retrieved by an advanced attacker through Person-in-the-Middle (PitM) attacks. There are multiple HTTP response headers used in communication between the server and client which can be implemented to improve security against well documented vulnerabilities. For example, the `Public-Key-Pins` security header is used in legacy versions of browsers to prevent clients from loading reflected XSS attacks.
 
 An advanced attacker can leverage a missing `Public-Key-Pins` header to forge certificates and gain access to data through a PitM attack.
 

@@ -4,7 +4,7 @@
 
 Mobile security misconfigurations can occur at any level of the application stack and can involve unpatched software, unprotected files or pages, or unauthorized access to the application. Sockets Layer (SSL) pinning adds an extra layer of security for an application as it forces the application to validate the server’s CA certificate against a known copy.
 
-When SSL certificate pinning is defeatable, an attacker could perform a Man-in-the-Middle (MitM) attack on the user. With access to sensitive data through a PitM attack they could perform further attacks on the application, the business, or its users.
+When SSL certificate pinning is defeatable, an attacker could perform a Person-in-the-Middle (PitM) attack on the user. With access to sensitive data through a PitM attack they could perform further attacks on the application, the business, or its users.
 
 ## Business Impact
 
