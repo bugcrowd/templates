@@ -2,7 +2,7 @@
 
 ## Overview of the Vulnerability
 
-A lack of the HTTP response header for Content Security Policy (CSP) can lead to sensitive user data being retrieved by an attacker and increases the attack surface for Cross-Site Scripting (XSS) and click-jacking attacks. There are multiple HTTP response headers used in communication between the server and client which can be implemented to improve security against well documented vulnerabilities. For example, the `Content-Security-Policy` security header allows admins to permissively control the types of resources allowed to load for a page.
+A lack of the HTTP response header for Content Security Policy (CSP) can lead to sensitive user data being retrieved by an attacker and increases the attack surface for Cross-Site Scripting (XSS) and clickjacking attacks. There are multiple HTTP response headers used in communication between the server and client which can be implemented to improve security against well documented vulnerabilities. For example, the `Content-Security-Policy` security header allows admins to permissively control the types of resources allowed to load for a page.
 
 An advanced attacker can leverage a missing `Content-Security-Policy` header to launch XSS attacks and execute malicious code in a user’s browser.
 

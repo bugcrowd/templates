@@ -2,7 +2,7 @@
 
 ## Overview of the Vulnerability
 
-A lack of the HTTP response header for `Content-Security-Policy-Report-Only` can lead to sensitive user data being retrieved by an attacker through Cross-Site Scripting (XSS) and click-jacking attacks without being detected. There are multiple HTTP response headers used in communication between the server and client which can be implemented to improve security against well documented vulnerabilities. For example, the `Content-Security-Policy-Report-Only` security header allows for a report to be generated each time the browser detects a violation from the Content Security Policy (CSP).
+A lack of the HTTP response header for `Content-Security-Policy-Report-Only` can lead to sensitive user data being retrieved by an attacker through Cross-Site Scripting (XSS) and clickjacking attacks without being detected. There are multiple HTTP response headers used in communication between the server and client which can be implemented to improve security against well documented vulnerabilities. For example, the `Content-Security-Policy-Report-Only` security header allows for a report to be generated each time the browser detects a violation from the Content Security Policy (CSP).
 
 An advanced attacker can leverage a missing `Content-Security-Policy-Report-Only` header to launch XSS attacks and execute malicious code in a user’s browser without detection.
 
