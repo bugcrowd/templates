@@ -2,7 +2,7 @@
 
 ## Overview of the Vulnerability
 
-HTTP request methods are used to indicate the desired action to be performed in communications between a client and a server. It is possible to perform create, read, update, and delete, amongst other operations. While not a vulnerability within itself, an attacker can use different HTTP methods when they are enabled to gather information, or interact with an endpoint in a way that is unintended. This can lead to an attacker modifying the endpoint in unsafe ways and gathering further information about the system for further attacks.
+HTTP request methods are used to indicate the desired action to be performed in communications between a client and a server. It is possible to perform create, read, update, and delete, amongst other operations. While not a vulnerability within itself, an attacker can use different HTTP methods when they are enabled to gather information or interact with an endpoint in a way that is unintended. This can lead to an attacker modifying the endpoint in unsafe ways and gathering further information about the system for further attacks.
 
 ## Business Impact
 
