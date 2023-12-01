@@ -5,7 +5,7 @@ There is no single technique to prevent excessive insecure output handling from 
 - Apply input validation and sanitization principles for all LLM outputs.
 - Use JavaScript or Markdown to encode LLM model outputs that are returned to the user.
 - Use privilege controls for access to backend systems or when performing privileged operations. Apply the principle of least privilege to restrict the LLM's access to backend systems to that which is strictly necessary for its intended functionality.
-- For privileged operations, require user interaction to approve any authorized action that would be performed on behalf of them.
+Require user interaction for approving any action that performs privileged operations on their behalf.
 - Treat user input, external input, and the LLM as untrusted input sources.
 - Establish trust boundaries between external sources, the LLM, any plugins, and any neighboring systems.
 - Limit the tools, plugins, and functions that the LLM can access to the minimum necessary for intended functionality.
