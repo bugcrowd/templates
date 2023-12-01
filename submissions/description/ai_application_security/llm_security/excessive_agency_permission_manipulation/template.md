@@ -2,7 +2,7 @@
 
 ## Overview of the Vulnerability
 
-Excessive agency or permission manipulation occurs when an attacker is able to manipulate the Large Language Model (LLM) outputs to perform actions that are damaging or otherwise harmful. This usually stems from excessive functionality, permissions, or autonomy. An attacker can abuse excessive agency or permission manipulation within the LLM to gain access to, modify, or delete data, without any confirmation from a user.
+Excessive agency or permission manipulation occurs when an attacker is able to manipulate the Large Language Model (LLM) outputs to perform actions that may be damaging or otherwise harmful. An attacker can abuse excessive agency or permission manipulation within the LLM to gain access to, modify, or delete data, without any confirmation from a user.
 
 ## Business Impact
 
