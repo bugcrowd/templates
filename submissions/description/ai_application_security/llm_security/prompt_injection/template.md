@@ -10,11 +10,13 @@ This vulnerability can lead to reputational and financial damage of the company 
 
 ## Steps to Reproduce
 
-1. Navigate to the following URL:
+1. Navigate to the following URL: {{URL}}
 1. Inject the following prompt into the LLM:
+
 ```prompt
   {malicious prompt}
 ```
+
 1. Observe that the LLM returns sensitive data
 
 ## Proof of Concept (PoC)
