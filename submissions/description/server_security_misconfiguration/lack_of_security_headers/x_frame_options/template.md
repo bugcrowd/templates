@@ -4,11 +4,11 @@
 
 A lack of the HTTP response header for `X-Frame-Options` can lead to sensitive user data being retrieved by an attacker. There are multiple HTTP response headers used in communication between the server and client which can be implemented to improve security against well documented vulnerabilities. For example, the `X-Frame-Options` security header is used to instruct a browser whether it should or should not render an `<iframe>`, `<frame>`, `<embed>`, or `<object>` tag.
 
-An advanced attacker can leverage a missing `X-Frame-Options` header to render an `<iframe>`, `<frame>`, `<embed>`, or `<object>` tag to bypass Same Origin Policy (SOP) and read data, or to exploit a click-jacking attack.
+An advanced attacker can leverage a missing `X-Frame-Options` header to render an `<iframe>`, `<frame>`, `<embed>`, or `<object>` tag to bypass Same Origin Policy (SOP) and read data, or to exploit a clickjacking attack.
 
 ## Business Impact
 
-Not having an `X-Frame-Options` header can lead to reputational damage and indirect financial loss to the business due to an advanced attacker’s ability to access data through a click-jacking attack, or via bypassing the SOP. The degree of impact is dependent on the sensitivity of data being transmitted over the wire and the sophistication of the attacker’s abilities.
+Not having an `X-Frame-Options` header can lead to reputational damage and indirect financial loss to the business due to an advanced attacker’s ability to access data through a clickjacking attack, or via bypassing the SOP. The degree of impact is dependent on the sensitivity of data being transmitted over the wire and the sophistication of the attacker’s abilities.
 
 ## Steps to Reproduce
 

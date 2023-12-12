@@ -13,18 +13,18 @@ IDOR can result in reputational damage for the business through the impact to cu
 1. Use a browser to navigate to: {{URL}}
 1. Login to User Account A
 1. In the URL bar, modify the parameter to a different value:
-
-{{eg.<https://example.com/parameter(UserAccountB)>}}
+>
+> {{eg.<https://example.com/parameter(UserAccountB)>}}
 
 1. Observe that the application displays information of User Account B, as seen in the screenshot below:  
-
-{{screenshot}}
+>
+> {{screenshot}}
 
 ## Proof of Concept (PoC)
 
 Below is a screenshot demonstrating the exposed object executing:
-
-{{screenshot}}
+>
+> {{screenshot}}
 
 An attacker could leverage this IDOR vulnerability to extract data by using the following payload:  
   
@@ -33,5 +33,5 @@ An attacker could leverage this IDOR vulnerability to extract data by using the 
 ```
 
 The following screenshot(s) demonstrate(s) this vulnerability:
-
-{{screenshot}}
+>
+> {{screenshot}}

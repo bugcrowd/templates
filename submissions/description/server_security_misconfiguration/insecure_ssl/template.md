@@ -1,10 +1,10 @@
-# Insecure SSL
+# Insecure Secure Socket Layer (SSL)
 
 ## Overview of the Vulnerability
 
-Insecure SSL refers to implementation flaws within the configuration of Secure Socket Layer (SSL)/Transport Layer Security (TLS), the security of the transport layer through encryption.
+Transport Layer Security (TLS) is the successor to Secure Sockets Layer (SSL). Insecure SSL refers to implementation flaws within the configuration of TLS, or use of the insecure SSL protocols.
 
-The insecure configuration of  SSL within this application can lead to the connection between client and server being vulnerable. An attacker can use this weakness to execute a Denial of Service (DoS) attack, or Person-in-The-Middle (PiTM) the connection between the client and server to view or manipulate data in transit.
+The insecure configuration of TLS within this application can lead to the connection between client and server being vulnerable. An attacker can use this weakness to execute a Denial of Service (DoS) attack, or Man-in-the-Middle (MitM) the connection between the client and server to view or manipulate data in transit.
 
 ## Business Impact
 
@@ -19,6 +19,6 @@ Insecure SSL can lead to reputational damage for the business due to a loss in c
 
 ## Proof of Concept (PoC)
 
-The screenshot below demonstrates the insecure SSL:
+The screenshot(s) below demonstrate(s) the vulnerability:
 
 {{screenshot}}

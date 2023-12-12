@@ -6,7 +6,7 @@ A lack of jailbreak (iOS) or root access (Android) detections in an application 
 
 ## Business Impact
 
-This vulnerability can lead to indirect financial loss to the company due to data theft, application manipulation and corruption, or denial of service to customers and users of the application. It can also lead to reputational damage as customers may view the application as insecure.
+This vulnerability can lead to indirect financial loss to the company due to data theft, application manipulation and corruption, or Denial of Service to customers and users of the application. It can also lead to reputational damage as customers may view the application as insecure.
 
 ## Steps to Reproduce
 

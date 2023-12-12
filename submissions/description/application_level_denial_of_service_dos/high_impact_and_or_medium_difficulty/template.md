@@ -21,10 +21,10 @@ Application-level DoS can result in indirect financial loss for the business thr
 
 {{parameter}}
 
-1. Observe that the payload causes a denial of service that has high impact or medium difficulty to be performed
+1. Observe that the payload causes a Denial of Service that has high impact or medium difficulty to be performed
 
 ## Proof of Concept (PoC)
 
-The screenshot below demonstrates proof of the vulnerability:
+The screenshot below demonstrates the Denial of Service:
 
 {{screenshot}}

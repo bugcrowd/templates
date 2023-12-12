@@ -13,7 +13,7 @@ This vulnerability can lead to reputational damage as customers may view the app
 ## Steps to Reproduce
 
 1. Install the application on your mobile device
-1. Navigate to {{url}} and copy some sensitive account information
+1. Navigate to the following URL: {{url}} and copy some sensitive account information
 1. Paste this data in some other area of your mobile device and observe that access to the clipboard was enabled in the application
 
 ## Proof of Concept (PoC)

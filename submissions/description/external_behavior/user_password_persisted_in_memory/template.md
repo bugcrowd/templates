@@ -12,7 +12,7 @@ This vulnerability can lead to reputational damage for the business due to a los
 
 1. Utilize some software that allows computer memory to be accessed in a human-readable format
 1. Log in to the application
-1. Navigate to {{url}} and perform {{action}}
+1. Navigate to the following URL: {{url}} and perform {{action}}
 1. Cease using the application
 1. Using the computer memory viewer, view the password of the user that remained in memory after use
 

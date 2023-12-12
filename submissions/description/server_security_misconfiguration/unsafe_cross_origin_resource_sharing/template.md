@@ -1,4 +1,4 @@
-# Unsafe Cross-Origin Resource Sharing
+# Unsafe Cross-Origin Resource Sharing (CORS)
 
 ## Overview of the Vulnerability
 
