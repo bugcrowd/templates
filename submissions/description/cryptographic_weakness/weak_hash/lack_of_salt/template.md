@@ -2,7 +2,7 @@
 
 ## Overview of the Vulnerability
 
-Cryptography is used to ensure secure storage and transmission of data. However, there are a number of best practices that must be followed to ensure the cryptography in use remains secure and does not result in the exposure of sensitive data. It was identified that the hash does not have a salt which can allow an attacker to use rainbow table attacks.
+Cryptography is used to ensure secure storage and transmission of data. However, there are a number of best practices that must be followed to ensure the cryptography in use remains secure and does not result in the exposure of sensitive data. A lack of salt in the application's cryptographic hash means that there is no unique randomness added to the hash. This significantly reduces the complexity of an attacker being able to guess the hash value, or perform rainbow table or brute force attacks.
 
 ## Business Impact
 
