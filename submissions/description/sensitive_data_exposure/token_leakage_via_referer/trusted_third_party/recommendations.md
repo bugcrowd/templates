@@ -1,6 +1,6 @@
 # Recommendation(s)
 
-The application should transmit sensitive tokens via HTTP cookies, or via hidden field forms which are submitted by using the HTTP Post method.
+It is recommended to configure the application to transmit valid third-party tokens via HTTP cookies, or via hidden field forms which are submitted by using the HTTP Post method.
 
 If using the `Referer` header, set a `Referrer-Policy` header and set the directives as appropriate to the information displayed. For example, on sensitive pages such as the password reset page the `Referrer-Policy` header can be set as follows:
 
