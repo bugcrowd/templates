@@ -1,14 +1,14 @@
 # Unsafe Cross-Origin Resource Sharing
 
-## Overview of the Vulnerability
+## Overview of the Vulnerability:
 
 The Cross-Origin Resource Sharing (CORS) Policy is a security control implemented by browsers to extend Same-Origin Policy (SOP) to cross domain requests via an allow list. However, misconfigurations can create unsafe CORS instances where cross-domain attacks can occur. An attacker can leverage unsafe CORS policies in the application to break the SOP and exfiltrate data or execute code on users’ browsers.
 
-## Business Impact
+## Business Impact:
 
 Unsafe CORS can lead to reputational damage for the business due to a loss in confidence from users who are attempting to perform legitimate actions within the application.
 
-## Steps to Reproduce
+## Steps to Reproduce:
 
 1. Enable a HTTP intercept proxy, such as Burp Suite or OWASP ZAP
 1. With the HTTP intercept proxy turned on, use a browser to navigate to: {{URL}}
@@ -28,7 +28,7 @@ Unsafe CORS can lead to reputational damage for the business due to a loss in co
 {{Response}}
 ```
 
-## Proof of Concept (PoC)
+## Proof of Concept (PoC):
 
 The screenshot below demonstrates the full exploit:
 
