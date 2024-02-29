@@ -27,3 +27,4 @@ Broken authentication and session management could lead to data theft through th
 The screenshot below demonstrates the broken authentication and session management:
 
 {{screenshot}}
+
