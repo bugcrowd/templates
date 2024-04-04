@@ -1,4 +1,3 @@
-
 # frozen_string_literal: true
 
 require 'spec_helper'
@@ -6,18 +5,20 @@ require 'spec_helper'
 describe BugcrowdTemplates::TemplatePath do
   subject do
     described_class.new(
-      type: type,
-      field: field,
-      category: category,
-      subcategory: subcategory,
-      item: item,
-      file_name: file_name
+      type:,
+      field:,
+      category:,
+      subcategory:,
+      item:,
+      file_name:
     )
   end
 
   let!(:directory) { BugcrowdTemplates.current_directory }
   let!(:file_name_with_extension) { [file_name, 'md'].join('.') }
-  let!(:mock_path) { Pathname.new(Gem::Specification.find_by_name('bugcrowd_templates').gem_dir).join('spec', 'fixture')}
+  let!(:mock_path) do
+    Pathname.new(Gem::Specification.find_by_name('bugcrowd_templates').gem_dir).join('spec', 'fixture')
+  end
 
   describe '#new' do
     context 'initialize with submission type' do
@@ -27,8 +28,6 @@ describe BugcrowdTemplates::TemplatePath do
       let!(:subcategory) { 'captcha_bypass' }
       let!(:item) { 'ocr_optical_character_recognition' }
       let!(:file_name) { 'template' }
-
-
 
       it 'initialize an item' do
         expect(subject).to be_a(described_class)
@@ -61,12 +60,12 @@ describe BugcrowdTemplates::TemplatePath do
   describe '#template_file' do
     subject do
       described_class.new(
-        type: type,
-        field: field,
-        category: category,
-        subcategory: subcategory,
-        item: item,
-        file_name: file_name
+        type:,
+        field:,
+        category:,
+        subcategory:,
+        item:,
+        file_name:
       ).template_file
     end
 
@@ -115,12 +114,12 @@ describe BugcrowdTemplates::TemplatePath do
   describe '#find_template_file' do
     subject do
       described_class.new(
-        type: type,
-        field: field,
-        category: category,
-        subcategory: subcategory,
-        item: item,
-        file_name: file_name
+        type:,
+        field:,
+        category:,
+        subcategory:,
+        item:,
+        file_name:
       ).find_template_file
     end
 
@@ -154,8 +153,6 @@ describe BugcrowdTemplates::TemplatePath do
       end
     end
 
-
-
     context 'when it has category params for submissions' do
       let!(:type) { 'submissions' }
       let!(:field) { 'description' }
@@ -188,12 +185,12 @@ describe BugcrowdTemplates::TemplatePath do
   describe '#item_file_path' do
     subject do
       described_class.new(
-        type: type,
-        field: field,
-        category: category,
-        subcategory: subcategory,
-        item: item,
-        file_name: file_name
+        type:,
+        field:,
+        category:,
+        subcategory:,
+        item:,
+        file_name:
       ).item_file_path
     end
 
@@ -229,12 +226,12 @@ describe BugcrowdTemplates::TemplatePath do
   describe '#subcategory_file_path' do
     subject do
       described_class.new(
-        type: type,
-        field: field,
-        category: category,
-        subcategory: subcategory,
-        item: item,
-        file_name: file_name
+        type:,
+        field:,
+        category:,
+        subcategory:,
+        item:,
+        file_name:
       ).subcategory_file_path
     end
 
@@ -270,12 +267,12 @@ describe BugcrowdTemplates::TemplatePath do
   describe '#category_file_path' do
     subject do
       described_class.new(
-        type: type,
-        field: field,
-        category: category,
-        subcategory: subcategory,
-        item: item,
-        file_name: file_name
+        type:,
+        field:,
+        category:,
+        subcategory:,
+        item:,
+        file_name:
       ).category_file_path
     end
 
@@ -311,12 +308,12 @@ describe BugcrowdTemplates::TemplatePath do
   describe '#valid?' do
     subject do
       described_class.new(
-        type: type,
-        field: field,
-        category: category,
-        subcategory: subcategory,
-        item: item,
-        file_name: file_name
+        type:,
+        field:,
+        category:,
+        subcategory:,
+        item:,
+        file_name:
       ).valid?(type)
     end
 
@@ -350,12 +347,12 @@ describe BugcrowdTemplates::TemplatePath do
   describe '#validate_input_attrs' do
     subject do
       described_class.new(
-        type: type,
-        field: field,
-        category: category,
-        subcategory: subcategory,
-        item: item,
-        file_name: file_name
+        type:,
+        field:,
+        category:,
+        subcategory:,
+        item:,
+        file_name:
       ).validate_input_attrs
     end
 
