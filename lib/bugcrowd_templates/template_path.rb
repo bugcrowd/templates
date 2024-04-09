@@ -6,7 +6,7 @@ module BugcrowdTemplates
   class TemplatePath
     attr_reader :type, :field, :category, :subcategory, :item, :file_name
 
-    # rubocop:disable Metrics/ParameterLists, Metrics/CyclomaticComplexity
+    # rubocop:disable Metrics/ParameterLists
     def initialize(type:, field:, category: '', subcategory: '', item: '', file_name: '')
       @type = type || ''
       @field = field || ''
@@ -15,7 +15,7 @@ module BugcrowdTemplates
       @item = item || ''
       @file_name = file_name || ''
     end
-    # rubocop:enable Metrics/ParameterLists, Metrics/CyclomaticComplexity
+    # rubocop:enable Metrics/ParameterLists
 
     def template_file
       validate_input_attrs
@@ -30,6 +30,7 @@ module BugcrowdTemplates
     def find_template_file
       return item_file_path if item && File.exist?(item_file_path)
       return subcategory_file_path if subcategory && File.exist?(subcategory_file_path)
+
       category_file_path
     end
 
