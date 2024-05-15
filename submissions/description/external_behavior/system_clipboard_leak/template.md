@@ -2,7 +2,7 @@
 
 ## Overview of the Vulnerability
 
-The system clipboard, used when performing a copy and paste function, leaks sensitive information. An attacker could abuse this clipboard leak to steal sensitive information that a user copied to their clipboard in the application.
+The system clipboard leaks sensitive information when performing a copy and paste function within the application. An attacker could abuse this clipboard leak to steal sensitive information that a user copied to their clipboard in the application.
 
 ## Business Impact
 
