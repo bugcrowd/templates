@@ -1,4 +1,4 @@
-# CAN Injection Disallowed Messages
+# CAN Injection - Disallowed Messages
 
 ## Overview of the Vulnerability
 

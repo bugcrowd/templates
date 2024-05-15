@@ -14,7 +14,7 @@ Additionally, for systems that use Software-as-a-Service (SaaS) email providers,
 
 1. Enable a HTTP intercept proxy, such as Burp Suite or OWASP ZAP, to record and intercept web traffic from your browser
 1. Using a browser, sign into the application and navigate to {{url}}
-1. Fill out the form that triggers an email, using an email that you own as the destination
+1. Fill out the {{insert_form_name_here}} that triggers an email, using an email that you own as the destination
 1. Submit the form while using the HTTP intercept proxy to intercept the request
 1. Using the HTTP intercept proxy, re-issue the captured request 400 times in rapid succession
 1. Observe within the HTTP intercept proxy that all 400 of these requests triggered an email, showing that there is no rate-limiting on the form
@@ -23,6 +23,6 @@ Additionally, for systems that use Software-as-a-Service (SaaS) email providers,
 
 ## Proof of Concept
 
-The following screenshots demonstrate a lack of rate limiting on the email triggering form, followed by a successful form submission:
+The following screenshots demonstrate a lack of rate limiting on the email triggering form, followed by a successful form submission after 400 requests:
 
 {{screenshot}}

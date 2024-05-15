@@ -2,7 +2,7 @@
 
 ## Overview of the Vulnerability
 
-When telnet is enabled, all data sent over the connection is unsecured as telent transmits all data via plain text. An attacker could perform a Person-in-the-Middle (PitM) attack and access sensitive data being transmitted via the telnet connection. With access to sensitive data through a PitM attack they could perform further attacks on the application, the business, or its users.
+When telnet is enabled, all data sent over the connection is unsecured as telnet transmits all data via plain text. An attacker could perform a Person-in-the-Middle (PitM) attack and access sensitive data being transmitted via the telnet connection. With access to sensitive data through a PitM attack they could perform further attacks on the application, the business, or its users.
   
 ## Business Impact
 

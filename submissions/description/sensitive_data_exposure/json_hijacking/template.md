@@ -8,7 +8,7 @@ This application is susceptible to JSON hijacking which enables an attacker to r
 
 ## Business Impact
 
-When an application fails to mask internal IP addresses it leaves the internal network more susceptible to future network based attacks.
+Sensitive data disclosure through JSON hijacking can result in reputational damage for the business through the impact to customers’ trust. The severity of the impact to the business is dependent on the sensitivity of the data being stored in, and transmitted by the application.
 
 ## Steps to Reproduce
 

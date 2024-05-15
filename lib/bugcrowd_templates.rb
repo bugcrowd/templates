@@ -32,12 +32,12 @@ module BugcrowdTemplates
     raise TypeError, 'Invalid template type' unless TEMPLATE_TYPES.value?(type)
 
     template_path = TemplatePath.new(
-      type: type,
-      field: field,
-      category: category,
-      subcategory: subcategory,
-      item: item,
-      file_name: file_name
+      type:,
+      field:,
+      category:,
+      subcategory:,
+      item:,
+      file_name:
     ).template_file
 
     template_data(template_path)

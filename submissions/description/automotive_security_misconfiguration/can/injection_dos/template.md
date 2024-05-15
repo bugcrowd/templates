@@ -1,4 +1,4 @@
-# CAN Injection Denial of Service
+# CAN Injection - Denial of Service
 
 ## Overview of the Vulnerability
 
