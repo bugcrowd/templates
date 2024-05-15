@@ -1,6 +1,6 @@
 # Recommendation(s)
 
-The application should implement a session token renewal once a user has successfully authenticated.
+The application should use a unique, randomly generated session identifier for each session and ensure that the identifier is regenerated upon successful authentication.
 
 For further information, please see:
 
