@@ -2,6 +2,8 @@
 
 Weak login function can be remediated by implementing a handful of best practices relating to authentication and session management to ensure secure implementation. These include:
 
+- Removing or restricting public access to endpoints that are not operational
+- If the endpoint is intended for public access, consider using multi-factor authentication (MFA), to reduce the risk of unauthorized access
 - Enabling HTTPS for the login page and all subsequent authenticated pages
 - Disable the option of forcing a HTTP connection by browsers
 - Implement the HTTP Strict Transport Security (HSTS) header
