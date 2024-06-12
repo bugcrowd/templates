@@ -1,4 +1,4 @@
-# Use of Expired Cryptographic Key (or Certificate)
+# Use of Expired Cryptographic Key or Certificate
 
 ## Overview of the Vulnerability
 
