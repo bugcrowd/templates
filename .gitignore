@@ -1,3 +1,5 @@
 .DS_Store
 # https://yehudakatz.com/2010/12/16/clarifying-the-roles-of-the-gemspec-and-gemfile/
 Gemfile.lock
+submissions/description/broken_access_control/privilege_escalation/.gitkeep
+submissions/description/sensitive_data_exposure/password_reset_token/.gitkeep
