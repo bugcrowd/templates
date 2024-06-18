@@ -15,7 +15,7 @@ Missing SRI could result in reputational damage for the business through the imp
 3. Search for `<script>` and `<link>` tags that load external resources.
 4. Observe that the following tags are missing an `integrity` attribute:
 
-> - <List of tags missing an 'integrity' attribute>
+{{List of tags missing an 'integrity' attribute}}
 
 ## Proof of Concept (PoC)
 

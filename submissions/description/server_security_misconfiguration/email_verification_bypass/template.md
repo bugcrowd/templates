@@ -11,20 +11,20 @@ The impact of this vulnerability can lead to an attacker creating multiple fake 
 ## Steps to Reproduce
 
 1. Enable a HTTP interception proxy, such as Burp Suite or OWASP ZAP
-2. Use a browser to navigate to: {{URL}}
-3. Register User Account A
-4. Using the HTTP interception proxy, intercept the following request:
+1. Use a browser to navigate to: {{URL}}
+1. Register User Account A
+1. Using the HTTP interception proxy, intercept the following request:
 
 ```HTTP
 {{request}}
 ```
 
-5. Modify the following parameters:
+1. Modify the following parameters:
 
 {{payload}}
 
-6. Forward the request then turn off interception in the proxy
-7. Observe that User Account A is activated without email verification.
+1. Forward the request then turn off interception in the proxy
+1. Observe that User Account A is activated without email verification.
 
 ## Proof of Concept (PoC)
 
