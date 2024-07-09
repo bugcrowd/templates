@@ -2,7 +2,7 @@
 
 ## Overview of the Vulnerability
 
-Cryptography is used to ensure secure storage and transmission of data. However, there are a number of best practices that must be followed to ensure the cryptography in use remains secure and does not result in the exposure of sensitive data. It was identified that the application's cryptographic mechanism reuses keys across different environment (inter-environment). This can allow an attacker to leverage the key to gain access to information or privileges within the application that are protected by the same key.
+Cryptography is used to ensure secure storage and transmission of data. However, there are a number of best practices that must be followed to ensure the cryptography in use remains secure and does not result in the exposure of sensitive data. The application's cryptographic mechanism reuses keys across different environments (inter-environment). This can allow an attacker to leverage the key to gain access to information or privileges within the application that are protected by the same key.
 
 ## Business Impact
 

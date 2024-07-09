@@ -2,7 +2,7 @@
 
 ## Overview of the Vulnerability
 
-Cryptographic algorithms use an initial block of data (called an initialization vector) alongside the plaintext data that is encrypted. When this IV is predictable, an attacker can identify the IV from the original data within the encryption.
+Cryptographic algorithms use an initial block of data called an Initialization Vector (IV) alongside the plaintext data that is encrypted. A predictable IV weakens the cryptographic algorithms as an attacker can differentiate the IV from the original encrypted data. This can lead to further targeted attacks.
 
 ## Business Impact
 
