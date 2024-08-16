@@ -1,14 +1,10 @@
-# Master Key Identification
-
-## Overview of the Vulnerability
-
 The physical access control system designed to secure the device utilizes a master keyed system. In such systems, locks can be opened by multiple keys, each cut differently, but all locks within the system can also be opened by a single master key. This configuration presents a significant security vulnerability. An attacker with access to a mastered lock, or who comes into possession of a key from the system, could derive the master key. With the master key, the attacker would have the capability to open all locks within the system, severely compromising security.
 
-## Business Impact
+#### Business Impact
 
 The potential for an attacker to derive the master key and gain unrestricted access to all areas secured by the system poses a considerable threat. It could lead to unauthorized access to sensitive areas, data breaches, theft of physical and intellectual property, and other security incidents. Such breaches can have far-reaching consequences, including financial losses, damage to the organization’s reputation, and loss of customer trust. The use of a master keyed system thereby introduces a critical point of failure in the physical security infrastructure.
 
-## Steps to Reproduce
+#### Steps to Reproduce
 
 1. Obtain access to a lock from the master keyed system.
 2. Apply a metal shim to the back of the lock cylinder where the key pins are binding.
@@ -26,7 +22,7 @@ or
 4. Using a tool, such as KeySpace, enter the details for the key system, and cut test keys to suit.
 5. After testing each key, the key with the bitting {{bitting}} is our master key for this system.
 
-## Proof of Concept (PoC)
+#### Proof of Concept (PoC)
 
 The following screenshot(s) demonstrate(s) this vulnerability:
 
