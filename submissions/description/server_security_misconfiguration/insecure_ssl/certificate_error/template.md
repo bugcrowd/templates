@@ -1,7 +1,3 @@
-# Certificate Error
-
-## Overview of the Vulnerability
-
 When a web page is loaded, the browser makes a series of checks against the website’s Secure Socket Layer (SSL) certificate. When these checks fail, the browser blocks the webpage from loading and issues a certificate error. An attacker can leverage this information to identify what caused the certificate error and execute a Person-in-The-Middle (PitM) attack to view and modify information that passes between the vulnerable endpoints.
 
 ## Business Impact

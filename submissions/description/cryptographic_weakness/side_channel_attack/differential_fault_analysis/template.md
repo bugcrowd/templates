@@ -1,7 +1,3 @@
-# Differential Fault Analysis
-
-## Overview of the Vulnerability
-
 Cryptography is used to ensure secure storage and transmission of data. However, there are a number of best practices that must be followed to ensure the cryptography in use remains secure and does not result in the exposure of sensitive data. The application is vulnerable to a differential fault analysis attack as there are changes to the system's response to specially crafted fault conditions during specific steps of cryptographic operations.
 
 ## Business Impact

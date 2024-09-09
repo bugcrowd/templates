@@ -1,7 +1,3 @@
-# Exposed Sensitive iOS URL Scheme
-
-## Overview of the Vulnerability
-
 A URL Scheme helps facilitate the transfer of a limited amount of data between iOS applications on Apple mobile devices. iOS applications operate in separate sandboxes to limit the access and transfer of data between applications. However, it is possible to perform an App-in-the-Middle (AitM) attack where a malicious application sends a manipulated URL Scheme to trick a legitimate application into sharing a user’s sensitive data, bypassing access controls of the legitimate application.
 
 The application has an exposed sensitive iOS URL Scheme, which an attacker can take advantage of to perform an AitM attack, bypass the access controls of the application, and gather sensitive user data. This data could be used to perform further attacks on the application, the business, or its users, including account takeover.

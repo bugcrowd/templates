@@ -1,7 +1,3 @@
-# Exposed Sensitive Android Intent
-
-## Overview of the Vulnerability
-
 An `Intent` is a messaging object used within an Android application to request action from a different component of the application. When a request occurs and information is retrieved, a lack of validation can result in access controls being bypassed and sensitive information being leaked.
 The application has an exposed sensitive Android `Intent` which an attacker can query to gather sensitive information from the application which they could use to perform further attacks on the application, the business, or its users.
 

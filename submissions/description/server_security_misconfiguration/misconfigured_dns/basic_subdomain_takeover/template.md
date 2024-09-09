@@ -1,7 +1,3 @@
-# Basic Subdomain Takeover
-
-## Overview of the Vulnerability
-
 A subdomain takeover is when a misconfigured Domain Name System (DNS) record is re-registered to an endpoint owned by an attacker. An attacker is then able to redirect users to the endpoint and capture data such as cookies and credentials, perform Cross-Site Scripting (XSS) attacks, and potentially take over accounts in the legitimate application.
 
 A basic subdomain takeover vulnerability was identified which could impact the reputation and brand of the business. An attacker can register a subdomain on behalf of the target domain and use it for spamming and phishing attacks.

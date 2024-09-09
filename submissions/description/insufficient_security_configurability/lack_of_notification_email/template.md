@@ -1,7 +1,3 @@
-# Lack of Notification Email
-
-## Overview of the Vulnerability
-
 The overall security of an application is diminished when accounts are not properly configured to include a notification email upon important account changes, such as a password or email address change. A lack of notification email on account changes allows an attacker who has gained access to a user's account through other means to make changes without notifying the user.
 
 ## Business Impact

@@ -1,7 +1,3 @@
-# Password Reset Token Leakage via Host Header Poisoning
-
-## Overview of the Vulnerability
-
 When the password reset implementation is weak, the strength of the overall authentication process for the application is diminished. `Host` header poisoning occurs when the `Host` header is manipulated in a HTTP request to point to a domain an attacker controls. From here, when the user clicks on the password reset link sent to their email, the attacker can capture the the token and reset a user’s password, locking the user out of their account and achieving full account takeover.
 
 ## Business Impact

@@ -1,7 +1,3 @@
-# Weak Login Function on Non-Operational Endpoint
-
-## Overview of the Vulnerability
-
 Weak login functionality arises from improperly configured authentication practices which weakens the security of the authentication process of an application. This application does not protect the security of users’ credentials as it allows a login function to load on a non-operational endpoint that is not intended for public access. An attacker can Person-in-the-Middle (PiTM) communication between the user and the application on the specified IP to steal administrative credentials and login to the system using admin privileges.
 
 ## Business Impact

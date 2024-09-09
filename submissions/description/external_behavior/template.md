@@ -1,7 +1,3 @@
-# External Behavior
-
-## Overview of the Vulnerability
-
 Behavior  external from the application is leaking user sensitive information due to misconfiguration errors of system or browser features. A local attacker can take advantage of these external behavior errors to gather sensitive user information and impersonate a user or make requests on their behalf.
 
 ## Business Impact

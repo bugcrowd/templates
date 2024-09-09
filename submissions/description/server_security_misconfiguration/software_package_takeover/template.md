@@ -1,7 +1,3 @@
-# Software Package Takeover
-
-## Overview of the Vulnerability
-
 Software package takeover is where an attacker is able to gain control of software packages or dependencies used by an application by hijacking ownership or exploiting weak security controls in package repositories. This control allows the attacker to modify the package, potentially injecting malicious code or making other unauthorized changes. This can in turn have downstream affects on the web application.
 
 ## Business Impact

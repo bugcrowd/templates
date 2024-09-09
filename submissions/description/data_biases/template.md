@@ -1,7 +1,3 @@
-# Data Biases
-
-## Overview of the Vulnerability
-
 Data biases occurs when the data used train the AI model is flawed, unrepresentative or systematically skewed. Biases can stem from different sources, such as sampling errors, historical prejudices, or a lack of diversity in the dataset. Outputs from AI models that have a data bias can result in inaccurate, unfair, or otherwise discriminatory predictions or decisions.
 
 ## Business Impact

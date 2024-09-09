@@ -1,7 +1,3 @@
-# Outdated Software Version
-
-## Overview of the Vulnerability
-
 Outdated software is common in applications that use many types of different software stacks. Some outdated software versions have well known and documented vulnerabilities, including those with Common Vulnerabilities and Exposures (CVE) IDs. An attacker can take advantage of old software versions in this application by using open source vulnerabilities and CVEs to exploit an application.
 
 ## Business Impact

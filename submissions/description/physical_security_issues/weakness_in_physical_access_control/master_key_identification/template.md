@@ -1,7 +1,3 @@
-# Master Key Identification
-
-## Overview of the Vulnerability
-
 The physical access control system designed to secure the device utilizes a master keyed system. In such systems, locks can be opened by multiple keys, each cut differently, but all locks within the system can also be opened by a single master key. This configuration presents a significant security vulnerability. An attacker with access to a mastered lock, or who comes into possession of a key from the system, could derive the master key. With the master key, the attacker would have the capability to open all locks within the system, severely compromising security.
 
 ## Business Impact

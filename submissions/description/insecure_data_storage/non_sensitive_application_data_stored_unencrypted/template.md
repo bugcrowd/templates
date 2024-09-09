@@ -1,7 +1,3 @@
-# Non-Sensitive Application Data Stored Unencrypted
-
-## Overview of the Vulnerability
-
 Insecure data storage can occur in both the client and server sides of an application. Non-sensitive data from the application is stored unencrypted and is susceptible to being identified and used maliciously. An attacker with access to the unencrypted non-sensitive data can leverage the data to gather further information on users and the application, and use it to perform further attacks.
 
 ## Business Impact

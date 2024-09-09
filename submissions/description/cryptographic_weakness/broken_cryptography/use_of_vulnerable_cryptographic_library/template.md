@@ -1,7 +1,3 @@
-# Use of Vulnerable Cryptographic Library
-
-## Overview of the Vulnerability
-
 Cryptography is used to ensure secure storage and transmission of data. However, there are a number of best practices that must be followed to ensure the cryptography in use remains secure and does not result in the exposure of sensitive data. The application uses a vulnerable cryptographic library which can allow an attacker to decrypt sensitive information.
 
 ## Business Impact

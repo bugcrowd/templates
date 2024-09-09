@@ -1,7 +1,3 @@
-# Sensitive Data Exposure via Directory Listing Enabled
-
-## Overview of the Vulnerability
-
 Sensitive data can be exposed by web servers which list the contents of directories that do not have an index page, which increases the exposure of files that are not intended to be accessed. Within this application, sensitive data has been exposed through a directory listing being enabled. This allows an attacker to quickly identify resources of a specific path, or gain access to data stored in the directory by browsing to the directory listing.
 
 ## Business Impact

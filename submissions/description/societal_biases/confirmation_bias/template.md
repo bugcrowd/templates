@@ -1,7 +1,3 @@
-# Confirmation Bias
-
-## Overview of the Vulnerability
-
 Confirmation bias occurs when AI algorithms selectively process information that confirms pre-existing beliefs, assumptions, or hypotheses, while disregarding contrary evidence. Outputs from AI models that have a confirmation bias can result in misinformed choices, or the reinforcement of existing stereotypes and misconceptions.
 
 ## Business Impact

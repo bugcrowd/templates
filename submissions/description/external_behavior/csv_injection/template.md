@@ -1,7 +1,3 @@
-# Comma Separated Values (CSV) Injection
-
-## Overview of the Vulnerability
-
 Applications will often embed unsafe input in exported spreadsheets targeting desktop applications such as Excel or LibreOffice, or their cloud application equivalents. A malicious attacker can leverage this unsafe input to exfiltrate data from users, or deliver malicious binary to users downloading their input controlled file. Unsafe CSV formulas in CSV files within the application allow malicious attackers to deliver payloads or exfiltrate data using specifically crafted input.
 
 ## Business Impact

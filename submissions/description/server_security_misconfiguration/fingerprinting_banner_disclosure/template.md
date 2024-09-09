@@ -1,7 +1,3 @@
-# Fingerprinting Banner Disclosure
-
-## Overview of the Vulnerability
-
 Fingerprinting is where an attacker identifies the services running on a host due to visible default banners. This information helps an attacker to formulate a list of applicable exploits on a target system.
 
 The application responds with a banner disclosing the type and version of the web server being run. From this information an attacker can determine if the application is vulnerable to known vulnerabilities. Older versions of servers are particularly susceptible to known, version-specific attacks if they do not have up-to-date security patches.

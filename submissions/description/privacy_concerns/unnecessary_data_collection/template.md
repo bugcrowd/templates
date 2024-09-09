@@ -1,7 +1,3 @@
-# Unnecessary Data Collection
-
-## Overview of the Vulnerability
-
 Unnecessary data collection is where an application collects user or user device data that is not necessary for the functionality of the application. If an attacker were to gain access to this collected information they could perform further attacks on the application, the business, or its users.
   
 ## Business Impact

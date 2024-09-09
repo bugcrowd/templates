@@ -1,7 +1,3 @@
-# Insecure OS Firmware
-
-## Overview of the Vulnerability
-
 When Operating System (OS) firmware is insecure, it broadens the application’s attack surface and gives  an attacker more opportunity to maintain persistence and achieve a high level of privilege within the application. Firmware can be exploited via network, software, or hardware layers. Once compromised, an attacker can establish persistence, capture sensitive data, exfiltrate data, impact application performance, or pivot into attacking the company’s wider network.
 
 ## Business Impact

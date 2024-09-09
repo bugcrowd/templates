@@ -1,7 +1,3 @@
-# Poorly Configured Disk Encryption
-
-## Overview of the Vulnerability
-
 The device uses a disk encryption to protect stored data from being accessed while at rest. However, due to a poor configuration of the encryption mechanism, an unauthorized attacker with physical access to the device can decrypt the disk's contents. This vulnerability could expose secrets, customer data, or other sensitive information stored on the device.
 
 ## Business Impact

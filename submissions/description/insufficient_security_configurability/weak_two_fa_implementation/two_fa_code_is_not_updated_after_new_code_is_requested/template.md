@@ -1,7 +1,3 @@
-# 2FA Code is Not Updated After New Code is Requested
-
-## Overview of the Vulnerability
-
 Two Factor Authentication (2FA) adds an extra layer of security to user accounts by prompting them to enter a uniquely generated one-time password (OTP) after they have successfully inputted their username and password. A 2FA code is not updated when a new code is requested in the application which does not follow best practice for 2FA implementation. An attacker can take advantage of this weak 2FA implementation and potentially take over user accounts.
 
 ## Business Impact

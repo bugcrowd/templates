@@ -1,7 +1,3 @@
-# Aggregation Bias
-
-## Overview of the Vulnerability
-
 Aggregation bias occurs in an AI model when systematic favoritism is displayed when processing data from different demographic groups. This bias originates from training data that is skewed, or that has an under representation of certain groups. Outputs from AI models that have an aggregation bias can result in unequal treatment of users based on demographic characteristics, which can lead to unfair and discriminatory outcomes.
 
 ## Business Impact

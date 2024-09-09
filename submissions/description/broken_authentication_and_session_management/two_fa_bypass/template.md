@@ -1,7 +1,3 @@
-# Second Factor Authentication (2FA) Bypass
-
-## Overview of the Vulnerability
-
 Incorrectly implemented Second Factor Authentication (2FA) mechanisms can be bypassed through manipulation of the form, modifying the given URL parameters, or by counterfeiting the session. The 2FA mechanism for this application can be bypassed by an attacker who can gain access to the application through a user’s account and impersonate users.
 
 The attacker is only limited by the permissions of the user account they access, including Administrator users. This could include viewing or editing sensitive customer data, viewing or editing other user permissions, and taking over other user accounts or elevating privileges.

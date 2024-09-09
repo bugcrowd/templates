@@ -1,7 +1,3 @@
-# Username Enumeration (Non-Brute Force)
-
-## Overview of the Vulnerability
-
 Username enumeration is a vulnerability where an attacker is able to confirm or guess correct usernames through a difference in the server’s response to input. It often occurs on login, registration, and password reset pages. This application has a username enumeration vulnerability which allows an attacker to identify the username or email of a user without brute forcing it, allowing an attacker to gain this user information for all users within the application in a short period of time.
 
 ## Business Impact

@@ -1,7 +1,3 @@
-# Weak 2FA Implementation
-
-## Overview of the Vulnerability
-
 Two Factor Authentication (2FA) adds an extra layer of security to user accounts by prompting them to enter a uniquely generated one-time password (OTP) after they have successfully inputted their username and password. The application’s implementation of 2FA is weak which makes user accounts more susceptible to compromise. An attacker can take advantage of this weak 2FA implementation and potentially take over user accounts.
 
 ## Business Impact

@@ -1,7 +1,3 @@
-# Missing DNSSEC
-
-## Overview of the Vulnerability
-
 Domain name system security extensions (DNSSEC) are security controls used for DNS lookups to protect users from Cache Poisoning and Person-in-The-Middle (PiTM) attacks. It does this by using a cryptographic signature to ensure DNS servers are non-malicious.
 
 Missing DNSSEC keys in {{target}} allow a malicious attacker to execute PiTM and Cache Poisoning attacks.

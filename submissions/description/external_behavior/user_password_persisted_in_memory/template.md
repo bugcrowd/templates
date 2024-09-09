@@ -1,7 +1,3 @@
-# User Password Persisted in Memory
-
-## Overview of the Vulnerability
-
 The user’s password is kept in memory after the application has ceased utilizing it. An attacker can abuse this to read the user password in memory and login as the user, impersonate them, or make requests on their behalf.
 
 ## Business Impact

@@ -1,7 +1,3 @@
-# Session Fixation using Local Attack Vector
-
-## Overview of the Vulnerability
-
 Session fixation occurs when there is an error in the way the application manages session IDs for users. An attacker with local access to the application can set the session or cookies manually to force the targeted user’s browser to fixate on using the attacker's session cookies. This can be performed remotely by setting a token in the URL or a hidden form by chaining vulnerabilities.
 
 ## Business Impact

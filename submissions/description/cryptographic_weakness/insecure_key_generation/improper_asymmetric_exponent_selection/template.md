@@ -1,7 +1,3 @@
-# Improper Asymmetric Exponent Selection
-
-## Overview of the Vulnerability
-
 Cryptography is used to ensure secure storage and transmission of data. However, there are a number of best practices that must be followed to ensure the cryptography in use remains secure and does not result in the exposure of sensitive data. It was identified that the endpoint contains an insecure key generation mechanism that involves improper asymmetric exponent selection. This can allow an attacker to identify keys and break the confidentiality of requests sent to and from the endpoint.
 
 ## Business Impact

@@ -1,7 +1,3 @@
-# Prompt Injection
-
-## Overview of the Vulnerability
-
 Prompt injection occurs when an attacker crafts a malicious prompt that manipulates a Large Language Model (LLM) into executing unintended actions. The LLM's inability to distinguish user input from its dataset influences the output it generates. This flaw allows attackers to exploit the system by injecting malicious prompts, thereby bypassing safeguards.
 
 ## Business Impact

@@ -1,7 +1,3 @@
-# Request Smuggling
-
-## Overview of the Vulnerability
-
 HTTP request smuggling is a vulnerability that occurs due to the discrepancies between the way two or more servers interprets a sequence of requests, such as there the servers using different mechanisms to determine where the boundaries are between requests.
 
 These misconfigurations can lead to a broad range of issues that result in an attacker bypassing security controls, taking over other user's accounts, or gaining unauthorized access to sensitive content.

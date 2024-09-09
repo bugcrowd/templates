@@ -1,7 +1,3 @@
-# Insecure Data Transport
-
-## Overview of the Vulnerability
-
 When data is transmitted over unencrypted channels, it can be intercepted via a Person-in-the-Middle (PitM) attack. An attacker can then gather user data and potentially send requests to the server pretending to be the legitimate user, or otherwise collect sensitive user data.
 
 ## Business Impact

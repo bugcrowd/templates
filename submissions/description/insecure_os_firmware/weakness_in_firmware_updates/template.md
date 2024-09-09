@@ -1,7 +1,3 @@
-# Weakness in Firmware Updates
-
-## Overview of the Vulnerability
-
 There is a weakness in firmware updates that leaves the system exposed to unpatched vulnerabilities and security risks. These limitations prevents effective maintenance and security management, rendering the device obsolete against evolving threats. An attacker can leverage the weakness in firmware updates to gain access to sensitive information.
 
 ## Business Impact

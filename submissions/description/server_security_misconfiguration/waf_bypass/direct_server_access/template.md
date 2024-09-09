@@ -1,7 +1,3 @@
-# WAF Bypass With Direct Server Access
-
-## Overview of the Vulnerability
-
 A Web Application Firewall (WAF) protects applications from attacks such as Cross-Site Scripting (XSS), SQL injection, and malicious strings using pattern matching and traffic analysis. Some applications will completely rely on WAFs as their primary defense. By bypassing the WAF, an attacker can gain direct access to an application’s server via a specifically crafted payload.
 
 ## Business Impact

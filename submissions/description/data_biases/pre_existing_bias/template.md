@@ -1,7 +1,3 @@
-# Pre-existing Bias (Historical Bias)
-
-## Overview of the Vulnerability
-
 Pre-existing bias occurs when historical or societal prejudices are present in the training data. This can look like a lack of certain data points, over representation or under representation of groups, a bias in the selection of data points that make up the AI model, or data labels that are discriminatory or subjective. Outputs from AI models that have a pre-existing bias can result in inferior performance and outcomes that disadvantage certain groups.
 
 ## Business Impact

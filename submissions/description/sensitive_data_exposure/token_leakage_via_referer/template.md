@@ -1,7 +1,3 @@
-# Token Leakage via Referer Header
-
-## Overview of the Vulnerability
-
 The `Referer` HTTP request header is used to show the URL of the page a user requested the resource from. This application’s `Referer` headers leak valid user tokens which can be intercepted by an attacker performing a Person-in-The-Middle (PiTM) attack, or by exploiting third-party vendors. With access to the exposed token in the `Referer` HTTP header, the attacker could escalate privileges and execute API calls on behalf of a user in the application.
 
 ## Business Impact

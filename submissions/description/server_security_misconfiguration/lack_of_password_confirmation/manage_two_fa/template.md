@@ -1,7 +1,3 @@
-# Lack of Password Confirmation on Management of Multi-Factor Authentication
-
-## Overview of the Vulnerability
-
 User accounts are more susceptible to account takeover when there is no password confirmation on certain actions. For example, change of email address, change of password, management of Multi-Factor Authentication (MFA) details, and account deletion.
 
 The application lacks password confirmation on the management of MFA which could be abused by an attacker who has access to the user’s account (eg. a public computer the user has not logged out of). From here the attacker could set up MFA for the account using an email or phone number they control.

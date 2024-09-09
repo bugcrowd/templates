@@ -1,7 +1,3 @@
-# Pseudo-Random Number Generator (PRNG) Seed Reuse
-
-## Overview of the Vulnerability
-
 A Pseudo-Random Number Generator (PRNG) uses an initial seed value to generate random number through a complex algorithm. When this seed value is known, it is possible to determine the random numbers produce by the PRNG. An attacker with access to the seed value can predict or guess the random numbers which can lead to unauthorized access if that seed value is used for authorization and authentication.
 
 ## Business Impact

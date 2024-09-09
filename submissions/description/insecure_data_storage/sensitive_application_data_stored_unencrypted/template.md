@@ -1,7 +1,3 @@
-# Sensitive Application Data Stored Unencrypted
-
-## Overview of the Vulnerability
-
 Insecure data storage can occur in both the client and server sides of an application. When sensitive application data is stored insecurely it is susceptible to being identified and used maliciously. An attacker could abuse this unencrypted data storage to steal sensitive information that a user inputted. With this sensitive information, a malicious attacker could perform further attacks on the application or impersonate the user.
 
 ## Business Impact

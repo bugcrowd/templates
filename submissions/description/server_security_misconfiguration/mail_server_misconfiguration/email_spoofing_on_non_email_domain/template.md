@@ -1,7 +1,3 @@
-# Email Spoofing on Non-Email Domain
-
-## Overview of the Vulnerability
-
 Email spoofing is an attack that modifies email headers to send emails on behalf of a domain. It is commonly used in phishing and spam campaigns to appear as if the emails originate from a legitimate source. A misconfiguration of this non-email domain enables an attacker to spoof the name of a domain and send spoofed emails on its behalf.
 
 ## Business Impact

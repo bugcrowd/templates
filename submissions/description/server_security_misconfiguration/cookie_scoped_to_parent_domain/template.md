@@ -1,7 +1,3 @@
-# Cookie Scoped to Parent Domain
-
-## Overview of the Vulnerability
-
 When a cookie is scoped to a parent domain instead of a specific host it allows any subdomain of that host to access the cookie, increasing the probability of data leakage. If the cookie contains a session token, it could be accessed by other subdomains. An attacker can leverage this misconfiguration to access data.
 
 ## Business Impact

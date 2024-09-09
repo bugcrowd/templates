@@ -1,7 +1,3 @@
-# Rosetta Flash
-
-## Overview of the Vulnerability
-
 Outdated software is common in applications that use many types of different software stacks. Many outdated software versions have well known and documented vulnerabilities, including those with Common Vulnerabilities and Exposures (CVE) IDs.
 
 Rosetta Flash is a vulnerability that leverages alphanumeric characters to exploit JavaScript Object Notation with Padding (JSONP) callback endpoints. An attacker can use this vulnerability to bypass Same Origin Policy and execute scripts on domains outside of the scope allowing for code execution and sensitive data exfiltration about end users, including credentials.

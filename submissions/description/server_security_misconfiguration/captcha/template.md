@@ -1,7 +1,3 @@
-# CAPTCHA Misconfiguration
-
-## Overview of the Vulnerability
-
 A Computer Automated Public Turing Test test to tell Computers and Humans Apart (CAPTCHA) allows applications to tell whether a user is a human or a robot. A CAPTCHA can be bypassed when the implementation or its workflow is misconfigured, or when software can be used to bypass the challenge.
 
 An attacker can bypass the CAPTCHA form and spam the website with queries for registration, login, as well as spam support teams with faulty requests.

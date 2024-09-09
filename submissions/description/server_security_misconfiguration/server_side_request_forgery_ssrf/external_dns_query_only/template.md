@@ -1,7 +1,3 @@
-# External - DNS Query Only
-
-## Overview of the Vulnerability
-
 Server-side request forgery (SSRF) is a vulnerability that exploits the trust relationship between a server and an application, or other backend systems. An attacker can take advantage of this trust to forge server-side traffic and make HTTP requests to external domains. An external SSRF vulnerability was found in this application which allows an attacker to trigger external DNS-based interactions from the application.
 
 ## Business Impact

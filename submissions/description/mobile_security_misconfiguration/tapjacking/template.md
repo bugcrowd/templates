@@ -1,7 +1,3 @@
-# Tapjacking
-
-## Overview of the Vulnerability
-
 Mobile security misconfigurations can occur at any level of the application stack and can involve unpatched software, unprotected files or pages, or unauthorized access to the application. Tapjacking occurs when user input is captured by an application it was not intended for. This usually occurs through screen overlays that gather input when a user believes they are inputting information into a different screen.
 
 An attacker could abuse an application that does not protect sensitive UI functionality from tapjacking by stealing UI inputs from a user that uses the application on specific Android OS versions. With access to sensitive data through a tapjacking attack, an attacker could perform further attacks on the application, the business, or its users.

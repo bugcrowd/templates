@@ -1,7 +1,3 @@
-# Shared Credentials on Storage
-
-## Overview of the Vulnerability
-
 The device in question stores a set of shared credentials on its storage medium. These credentials are intended for accessing a shared service. However, should the device be compromised or acquired by unauthorized parties, an attacker could use these shared credentials to gain access to services that are normally restricted.
 
 ## Business Impact

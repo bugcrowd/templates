@@ -1,7 +1,3 @@
-# Captcha Bypass via Crowdsourcing
-
-## Overview of the Vulnerability
-
 A Computer Automated Public Turing Test test to tell Computers and Humans Apart (CAPTCHA) allows applications to tell whether a user is a human or a robot. Powerful Optical Artificial Intelligence (OAI) enabled tools require a large amount of data to create models to break implementations of CAPTCHA. An attacker can leverage OAI tools to bypass captcha and make requests to critical functionality without rate limit. Forms that are often firewalled by a CAPTCHA can even be a vector for Denial of Service executing read and write from the database multiple times.
 
 ## Business Impact

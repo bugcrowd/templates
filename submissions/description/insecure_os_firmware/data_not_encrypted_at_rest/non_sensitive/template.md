@@ -1,7 +1,3 @@
-# Data Not Encrypted at Rest (Non-Sensitive)
-
-## Overview of the Vulnerability
-
 The device stores non-sensitive data that is not encrypted at rest. Despite the data not being directly exploitable, its accessibility due to lack of encryption allows attackers with physical access to the device to retrieve this information. This exposure could facilitate reverse engineering efforts or aid in future exploitation attempts, indirectly compromising the system's security.
 
 ## Business Impact

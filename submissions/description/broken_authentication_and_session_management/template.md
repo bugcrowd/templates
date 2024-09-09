@@ -1,7 +1,3 @@
-# Broken Authentication and Session Management
-
-## Overview of the Vulnerability
-
 Broken authentication and session management vulnerabilities exist when a user is able to access resources or perform actions not intended for their user role. Identity and access controls can be bypassed through a variety of ways including but not limited to, calling an internal post authentication page, modifying the given URL parameters, by manipulating the form, or by counterfeiting sessions.
 
 This application has authentication and session management controls which an attacker can bypass to access a user account. The attacker is only limited by the permissions of the user account they access, including Administrator users. This could include viewing or editing sensitive customer data, viewing or editing other user permissions, and taking over other user accounts or elevating privileges.

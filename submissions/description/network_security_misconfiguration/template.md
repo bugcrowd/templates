@@ -1,7 +1,3 @@
-# Network Security Misconfiguration
-
-## Overview of the Vulnerability
-
 Network security misconfigurations can occur in network devices, services, or infrastructure and expose the organization to security risks. This vulnerability was identified due to default settings, inadequate access controls, or improper firewall rules. Due to this, an attacker can perform further attacks on the application, the business, or its users.
   
 ## Business Impact

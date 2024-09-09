@@ -1,7 +1,3 @@
-# Systemic Bias
-
-## Overview of the Vulnerability
-
 Systemic bias occurs when AI models consistently favor certain groups over others due to the way that they process data, or other structural or historical factors. This can be a result of the AI model's design or the training data it has been trained on. Outputs from AI models that have a systemic bias can result in discrimination, reinforcement of stereotypes, or viewpoints that disadvantage certain groups.
 
 ## Business Impact

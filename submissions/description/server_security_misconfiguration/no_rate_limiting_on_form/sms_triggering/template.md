@@ -1,7 +1,3 @@
-# No Rate Limiting on Form which Triggers SMS
-
-## Overview of the Vulnerability
-
 Rate Limiting prevents an application from becoming unresponsive or unavailable due to too many requests exhausting the application's resources. A lack of rate limiting on a SMS triggering endpoint was identified. This allows an attacker to create a large amount of messages to any valid mobile number, which they could use to spam a target with SMS messages.
 
 ## Business Impact

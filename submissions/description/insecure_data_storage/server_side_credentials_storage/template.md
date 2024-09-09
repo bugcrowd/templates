@@ -1,7 +1,3 @@
-# Server-Side Credential Storage
-
-## Overview of the Vulnerability
-
 When sensitive application data is stored insecurely in server-side storage it is susceptible to being identified and used maliciously. An attacker can abuse server-side credential storage by using another vulnerability to gain access to the server of the application and exfiltrating all the credentials. With these plaintext credentials, an attacker can take over user accounts or impersonate users within the application.
 
 ## Business Impact

@@ -1,7 +1,3 @@
-# Use of True Random Number Generator (TRNG) for Non-Security Purpose
-
-## Overview of the Vulnerability
-
 Most True Random Number Generators (TRNG) have a finite limit to their random number generation rate. Therefore, a TRNG should only be used when entropy is required for security purposes. When an application draws from a TRNG for a non-security purpose, it depletes the entropy of the source, increasing the likelihood that an attacker would be able to predict of guess number generated.
 
 ## Business Impact

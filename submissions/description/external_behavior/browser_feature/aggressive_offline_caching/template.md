@@ -1,7 +1,3 @@
-# Aggressive Offline Caching
-
-## Overview of the Vulnerability
-
 Browsers implement features such as service workers to offer offline features for an application. For example, a browser can offer offline features such as caching, notifications, as well as offloading computation for applications, such as Progressive Web Applications (PWA). Occasionally, these offline workers can cause issues like high CPU usage or overly aggressive offline caching, as seen in this instance. Depending on the implementation of the service worker, aggressive offline caching can act as a vector for Denial of Service (DoS) to regular application users by consuming compute to overly write to the offline cache.
 
 ## Business Impact

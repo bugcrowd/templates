@@ -1,7 +1,3 @@
-# Non-Sensitive Data Exposure
-
-## Overview of the Vulnerability
-
 Web servers can list the contents of directories that do not have an index page, which increases the exposure of data that is not intended to be accessed. There is a directory listing enabled for this application that exposes non-sensitive data. An attacker can quickly identify resources of specific paths and gain access to data stored in the directory that could be used to build further attacks on the application.
 
 ## Business Impact

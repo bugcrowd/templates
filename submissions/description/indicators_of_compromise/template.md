@@ -1,7 +1,3 @@
-# Indicators of Compromise
-
-## Overview of the Vulnerability
-
 Indicators of compromise (IoC) comprise of vulnerabilities in the detection, analysis, or response mechanisms used to identify potential security breaches, or compromises within, an organization's network or systems. This vulnerability may stem from inadequate IoC management, ineffective threat intelligence integration, or improper incident response procedures.
 
 ## Business Impact

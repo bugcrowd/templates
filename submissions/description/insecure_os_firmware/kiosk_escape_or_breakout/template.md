@@ -1,7 +1,3 @@
-# Kiosk Escape or Breakout
-
-## Overview of the Vulnerability
-
 A kiosk escape or breakout occurs when an exploit allows users to bypass the software package serving as the frontend for an application on a system, gaining unauthorized access to the underlying operating system. This vulnerability varies in impact depending on the operating system and the level of hardening applied to the system. In cases where the system uses administrator-level access, the consequences can include defacement, installation of malicious software, or breaches of data integrity, potentially affecting stored customer data.
 
 ## Business Impact

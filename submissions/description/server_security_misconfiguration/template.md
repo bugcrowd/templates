@@ -1,7 +1,3 @@
-# Server Security Misconfiguration
-
-## Overview of the Vulnerability
-
 Server security misconfigurations result from errors in the setup and deployment of a web server. These misconfigurations can lead to a broad range of issues which could allow a malicious attacker to manipulate the server and retrieve, change, or delete content.
 
 ## Business Impact

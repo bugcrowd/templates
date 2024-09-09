@@ -1,7 +1,3 @@
-# Lack of Password Confirmation on Delete Account
-
-## Overview of the Vulnerability
-
 User accounts are more susceptible to account takeover when there is no password confirmation on certain actions. For example, change of email address, change of password, management of Multi-Factor Authentication details, and account deletion.
 
 The application lacks password confirmation on the delete account function which could be abused by an attacker who has access to the user’s account (eg. a public computer the user has not logged out of). From here the attacker could delete a user’s account.

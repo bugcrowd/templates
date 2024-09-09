@@ -1,7 +1,3 @@
-# Generic Broken Access Control
-
-## Overview of the Vulnerability
-
 When access controls are broken, users are able to perform functions outside of their intended user functionality within the application. Access controls help enforce users' access and how they interact with applications and APIs through authorization. There can be vertical, horizontal, and conditional access controls which give a user their intended permissions within an application. Broken access control in this application can be leveraged by an attacker to elevate privileges, or manipulate, destroy, or disclose data, depending on the type of access control vulnerability being exploited.
 
 ## Business Impact

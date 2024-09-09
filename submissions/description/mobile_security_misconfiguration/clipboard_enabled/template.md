@@ -1,7 +1,3 @@
-# System Clipboard Enabled
-
-## Overview of the Vulnerability
-
 Mobile security misconfigurations can occur at any level of the application stack and can involve unpatched software, unprotected files or pages, or unauthorized access to the application. When the system clipboard is enabled, sensitive user data, such as passwords, can be unknowingly stored on the mobile device.
 
 An attacker could abuse the system clipboard being enabled to steal sensitive information that a user copied to their clipboard from within the application. With access to this sensitive data they could perform further attacks on the application, the business, or its users.

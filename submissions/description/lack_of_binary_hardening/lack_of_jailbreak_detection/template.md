@@ -1,7 +1,3 @@
-# Lack of Jailbreak Detections
-
-## Overview of the Vulnerability
-
 A lack of jailbreak (iOS) or root access (Android) detections in an application increases its attack surface and leaves it open to code analysis, reverse engineering, or modification of the application. An attacker could abuse the lack of jailbreak (iOS) or root access (Android) detections to access the internal file system of the application, or inject unauthorized code into the application.
 
 ## Business Impact

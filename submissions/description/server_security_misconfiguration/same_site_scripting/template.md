@@ -1,7 +1,3 @@
-# Same-Site Scripting
-
-## Overview of the Vulnerability
-
 Same-Site Scripting is a Domain Name Server (DNS) misconfiguration on localhost entries that can allow an attacker to execute commands on the same site. An attacker can use Same-Site Scripting in tandem with a Cross-Site-Scripting attack to break the Same Origin Policy and extract state data to route requests to their personal machine.
 
 ## Business Impact

@@ -1,7 +1,3 @@
-# OAuth Misconfiguration
-
-## Overview of the Vulnerability
-
 OAuth is an authorization framework used to identify and authenticate users for an application. There are a number of implementation misconfigurations which can lead to an OAuth framework being implemented insecurely. These misconfigurations can lead to a broad range of issues which could allow an attacker to manipulate or retrieve sensitive data and potentially bypass the authentication process.
 
 ## Business Impact

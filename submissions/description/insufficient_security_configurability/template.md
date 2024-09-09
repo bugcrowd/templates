@@ -1,7 +1,3 @@
-# Insufficient Security Configurability
-
-## Overview of the Vulnerability
-
 Insufficient security configurability refers to the lack of options or flexibility in configuring security settings within a system or application. This vulnerability may arise from hardcoded security configurations, limited options for customization, or inadequate documentation. Due to this, an attacker can manipulate data and perform actions that appear to originate from a legitimate user.
 
 ## Business Impact

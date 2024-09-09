@@ -1,7 +1,3 @@
-# Padding Oracle Attack
-
-## Overview of the Vulnerability
-
 A cryptographic weakness was identified which can allow an attacker to use a padding oracle attack to derive the encryption key. This is due to the application revealing information during the decryption process about the validity of the padding data. This can allow an attacker to break the confidentiality of requests sent to and from the endpoint.
 
 ## Business Impact

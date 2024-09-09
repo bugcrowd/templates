@@ -1,7 +1,3 @@
-# Infotainment Denial of Service
-
-## Overview of the Vulnerability
-
 The In-Vehicle Infotainment (IVI) system is a central unit in an automotive vehicle's dashboard that centralizes information and entertainment systems and their controls. Misconfigurations in the IVI system can lead to security weaknesses. An attacker can take advantage of an IVI misconfiguration and inject format strings into the IVI system, causing a Denial of Service (DoS) condition to the system.
 
 ## Business Impact

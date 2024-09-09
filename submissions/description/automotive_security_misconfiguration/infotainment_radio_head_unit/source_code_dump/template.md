@@ -1,7 +1,3 @@
-# Source Code Dump
-
-## Overview of the Vulnerability
-
 The In-Vehicle Infotainment (IVI) system is a central unit in an automotive vehicle's dashboard that centralizes information and entertainment systems and their controls. Misconfigurations in the IVI system can lead to security weaknesses. Source code can be dumped in the target IVI system, allowing an attacker to read, release, and exploit code that should otherwise be hidden from users on the IVI unit. An attacker is able to dump firmware code online which also allows others to view, share, or exploit proprietary code.
 
 ## Business Impact

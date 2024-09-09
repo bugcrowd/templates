@@ -1,7 +1,3 @@
-# Privacy Concerns
-
-## Overview of the Vulnerability
-
 Privacy concerns arise when an application collects user or user device data that is not necessary for the functionality of the application. Unnecessary can range from personally identifiable user information to user device information that is not needed for use of the application. If an attacker were to gain access to this collected information they could perform further attacks on the application, the business, or its users.
   
 ## Business Impact

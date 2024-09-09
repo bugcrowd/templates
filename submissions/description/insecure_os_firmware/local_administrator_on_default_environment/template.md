@@ -1,7 +1,3 @@
-# Local Administrator on Default Environment
-
-## Overview of the Vulnerability
-
 The current configuration of the device uses a local administrator account as the default environment setting. This configuration inherently provides administrator-level access to the running processes and access, posing a significant security risk. If an attacker compromises the application or device, they can gain elevated privileges automatically, allowing for extensive control over the device's functions and data.
 
 ## Business Impact

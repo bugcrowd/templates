@@ -1,7 +1,3 @@
-# Cryptographic Weakness
-
-## Overview of the Vulnerability
-
 Cryptography is used to ensure secure storage and transmission of data. However, there are a number of best practices that must be followed to ensure the cryptography in use remains secure and does not result in the exposure of sensitive data. The application uses broken, weak, or otherwise flawed cryptography which can allow an attacker to decrypt sensitive information, or otherwise compromise the confidentiality, integrity, or authenticity of data.
 
 ## Business Impact

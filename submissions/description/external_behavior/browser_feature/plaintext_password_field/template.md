@@ -1,7 +1,3 @@
-# Plaintext Password Field
-
-## Overview of the Vulnerability
-
 The password field for the login form of the application reveals the password in plaintext. An attacker with local access can shoulder surf or otherwise tailgate a user and watch them login to the application. From here, an attacker could login as a user to impersonate them or make requests on their behalf.
 
 ## Business Impact

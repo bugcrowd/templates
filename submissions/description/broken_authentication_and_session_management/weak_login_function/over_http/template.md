@@ -1,7 +1,3 @@
-# Weak Login Function: Over HTTP
-
-## Overview of the Vulnerability
-
 Weak login functionality arises from improperly configured authentication practices which weakens the security of the authentication process of an application. When this application loads the login page over HTTP all web requests are transmitted in plaintext, allowing any attacker on the same network to observe these requests, and obtain the login credentials.
 
 ## Business Impact

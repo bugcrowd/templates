@@ -1,7 +1,3 @@
-# Lack of X-XSS-Protection Header
-
-## Overview of the Vulnerability
-
 A lack of the HTTP response header for `X-XSS-Protection` can lead to sensitive user data being retrieved by an attacker through Cross-Site Scripting (XSS) attacks. There are multiple HTTP response headers used in communication between the server and client which can be implemented to improve security against well documented vulnerabilities. For example, the `X-XSS-Protection` security header is used in legacy versions of Internet Explorer, Safari, and Chrome to prevent clients from loading reflected XSS attacks.
 
 An advanced attacker can leverage a missing `X-XSS-Protection` header to bypass security controls of an application to execute code within a user's browser.

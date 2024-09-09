@@ -1,7 +1,3 @@
-# Implicit Bias
-
-## Overview of the Vulnerability
-
 Implicit bias occurs when there are biases present within the training data of an AI model that affects its decision-making. These implicit biases are usually introduced into the AI model via the developers who affect the design, implementation, and deployment of the AI system.
 
 ## Business Impact

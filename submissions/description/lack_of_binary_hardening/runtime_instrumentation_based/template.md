@@ -1,7 +1,3 @@
-# Lack of Binary Hardening (Runtime Instrumentation-Based)
-
-## Overview of the Vulnerability
-
 A lack of runtime instrumentation-based binary hardening of an application increases its attack surface and leaves it open to code analysis, reverse engineering, or modification of the application. When an application cannot detect changes in the code base at runtime compared to known integrity checks, the application can react in unpredictable ways. An attacker can take advantage of this lack of checks at runtime and alter the performance of the application, then also perform further attacks on the application, the business, or its users.
 
 ## Business Impact

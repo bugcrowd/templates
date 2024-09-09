@@ -1,7 +1,3 @@
-# Lack of Perfect Forward Secrecy
-
-## Overview of the Vulnerability
-
 It was identified that the application's cryptographic mechanism lacks the use of Perfect Forward Secrecy (PFS). PFS involves the negotiation of an ephemeral key pair for each newly create session between two parties. Without PFS, an attacker would be able to compromise all past and future sessions based on a set of keys that they can decrypt. They can then leverage the keys to gain access to information or privileges within the application that are protected by the same key.
 
 ## Business Impact

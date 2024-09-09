@@ -1,7 +1,3 @@
-# Representation Bias
-
-## Overview of the Vulnerability
-
 Representation bias occurs when the training data of an AI model has an omission, or insufficient representation, of certain groups which the AI model intends to serve. Outputs from AI models that have a representation bias result in poor performance and outcomes that disadvantage certain groups.
 
 ## Business Impact

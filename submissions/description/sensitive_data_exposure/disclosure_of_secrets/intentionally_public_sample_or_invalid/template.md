@@ -1,7 +1,3 @@
-# Disclosure of Secrets for an Invalid or Intentionally Publicly Sample
-
-## Overview of the Vulnerability
-
 Disclosure of critically sensitive data occurs when the data is not properly secured, allowing critically sensitive data, such as secrets, API keys, or other data critical to business operation to be exposed. This application discloses an invalid, or intentionally public sample, of secrets that are used for the application. While seemingly harmless, an attacker can use these examples to build wordlists, which can be used to bruteforce requests to the application until a valid secret is processed successfully.
 
 ## Business Impact

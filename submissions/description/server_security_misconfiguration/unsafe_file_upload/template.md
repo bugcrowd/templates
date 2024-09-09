@@ -1,7 +1,3 @@
-# Unsafe File Upload
-
-## Overview of the Vulnerability
-
 Unsafe file uploads occur when the web server fails to sufficiently validate the file’s size, type, name, contents, or what restrictions are placed on the file once it has been successfully uploaded. The application fails to validate files that are uploaded, allowing an attacker to upload unsafe files to the web server and gain access to folders in a directory that are not intended to be accessed.
 
 ## Business Impact

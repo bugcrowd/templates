@@ -1,7 +1,3 @@
-# Parameter Pollution
-
-## Overview of the Vulnerability
-
 Parameter pollution is an attack which exploits the application logic that parses the same parameter when multiple are included in a request. This application has a HTTP parameter pollution flaw which allows an attacker to process a parameter multiple times. This is achieved via crafting a request with multiple instances of the same parameter in the request. As a result, the attacker may be able to trigger application errors or bypass input validation on forms.
 
 ## Business Impact

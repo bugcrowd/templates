@@ -1,7 +1,3 @@
-# Context Ignorance
-
-## Overview of the Vulnerability
-
 Context ignorance occurs when AI models do not consider the broader context when making decisions, leading to uninformed or unfair decision making. This can be a result of the AI model's design or the training data it has been trained on. Outputs from AI models that have context ignorance can result in discrimination, reinforcement of stereotypes, or viewpoints that disadvantage certain groups.
 
 ## Business Impact

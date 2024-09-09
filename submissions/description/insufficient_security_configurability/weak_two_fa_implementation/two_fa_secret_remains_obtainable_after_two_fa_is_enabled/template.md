@@ -1,7 +1,3 @@
-# 2FA Secret Remains Obtainable After 2FA is Enabled
-
-## Overview of the Vulnerability
-
 Two Factor Authentication (2FA) adds an extra layer of security to user accounts by prompting them to enter a uniquely generated one-time password (OTP) after they have successfully inputted their username and password. The 2FA secret remains obtainable after initial setup in the application. This could allow an attacker with account access or physical access to bypass the 2FA system.
 
 ## Business Impact

@@ -1,7 +1,3 @@
-# Missing Certificate Authority Authorization Record
-
-## Overview of the Vulnerability
-
 Certificate Authority Authorization (CAA) allows an owner or DNS resource holder to specify the types of Certificate Authorities (CA) allowed to issue certificates for the domain. The application is missing a CAA record which can allow an attacker to issue certificates on behalf of the DNS resource owner for their domains.
 
 ## Business Impact

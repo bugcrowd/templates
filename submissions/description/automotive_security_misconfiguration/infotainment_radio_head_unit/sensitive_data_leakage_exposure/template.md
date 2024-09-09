@@ -1,7 +1,3 @@
-# Sensitive Data Leakage Exposure
-
-## Overview of the Vulnerability
-
 The In-Vehicle Infotainment (IVI) system is a the central unit in an automotive vehicle's dashboard that centralizes information and entertainment systems and their controls. Misconfigurations in the IVI system can lead to security weaknesses. The IVI system leaks sensitive data, allowing an attacker to collect this sensitive data via logs and user configurations within the underlying IVI interface.
 
 ## Business Impact

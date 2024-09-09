@@ -1,7 +1,3 @@
-# Default Credentials
-
-## Overview of the Vulnerability
-
 Default credentials are credentials that are set as default by the manufacturer or supplier of hardware and software products. These credentials often have Administrator privileges. An attacker can take advantage of default credentials and login to administrative accounts using wordlists of usernames and passwords found online, which may give them the authority to change the state of the application or users’ accounts.
 
 ## Business Impact

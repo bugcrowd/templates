@@ -1,7 +1,3 @@
-# Hardcoded OAuth Secret
-
-## Overview of the Vulnerability
-
 Sensitive data can be exposed when it is not behind an authorization barrier. When this information is exposed it can place the application at further risk of compromise. This application has hardcoded OAuth secrets which can be used by an attacker to escalate privileges within the application via OAuth workflows.
 
 ## Business Impact

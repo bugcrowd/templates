@@ -1,7 +1,3 @@
-# Password Reset Token Sent Over HTTP
-
-## Overview of the Vulnerability
-
 When the password reset implementation is weak, the strength of the overall authentication process for the application is diminished. Tokens sent over HTTP, predictable reset tokens, and long expiry times create weak conditions for the password reset implementation.
 
 This application transmits the password reset token over an insecure HTTP connection, rather than HTTPS. An attacker could intercept this token and reset a user’s password, locking the user out of their account and achieving full account takeover.

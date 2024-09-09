@@ -1,7 +1,3 @@
-# In-Vehicle Infotainment Misconfiguration
-
-## Overview of the Vulnerability
-
 The In-Vehicle Infotainment (IVI) system, is a central unit in an automotive vehicle's dashboard that centralizes information and entertainment systems and their controls. Misconfigurations in the IVI system can lead to security weaknesses. An attacker can take advantage of IVI misconfiguration and inject a payload into the IVI system, causing the system to not behave as intended.
 
 ## Business Impact

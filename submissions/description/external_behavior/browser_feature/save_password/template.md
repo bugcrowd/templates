@@ -1,7 +1,3 @@
-# Password is Saved in Input Field
-
-## Overview of the Vulnerability
-
 Browsers implement features such as saving input field text to reduce the time it takes for a user to fill in forms. For this application, the password is saved in the input field. An attacker with local access to the application and computer can impersonate a user and make requests on their behalf.
 
 ## Business Impact

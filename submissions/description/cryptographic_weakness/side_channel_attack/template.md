@@ -1,7 +1,3 @@
-# Side-Channel Attack
-
-## Overview of the Vulnerability
-
 Cryptography is used to ensure secure storage and transmission of data. However, there are a number of best practices that must be followed to ensure the cryptography in use remains secure and does not result in the exposure of sensitive data. A cryptographic weakness was identified which can allow an attacker to use a side-channel attack to break the confidentiality and integrity of requests sent to and from the endpoint by deriving the encryption key through various methods.
 
 ## Business Impact

@@ -1,7 +1,3 @@
-# Directory Listing Enabled
-
-## Overview of the Vulnerability
-
 Web servers can list the contents of directories which do not have an index page. This increases the exposure of data which are not intended to be accessed. An attacker can quickly identify resources of a specific path or gain access to sensitive data stored in the directory.
 
 Vulnerability Specifics to the Application:

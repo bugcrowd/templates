@@ -1,7 +1,3 @@
-# Password Policy Bypass
-
-## Overview of the Vulnerability
-
 When there is no password policy set, or the password policy can be bypassed, the overall strength of the authentication process for an application is diminished. A password policy bypass is present within this web application, allowing for weak passwords to be used by any user. This makes it easy for an attacker to use password spraying or brute forcing methods to guess users passwords, with minimal effort required to compromise multiple users’ accounts.
 
 ## Business Impact

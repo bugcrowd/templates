@@ -1,7 +1,3 @@
-# Reflected File Download
-
-## Overview of the Vulnerability
-
 Reflected File Download (RFD) occurs when a user is forced to download a malicious file due to an injection vulnerability in URLs where content between two semi-colons is considered by the browser to be a file name and isn’t properly handled.
 
 An attacker can use RFD within this application to force users to download malicious files on behalf of the domain and execute them to launch commands on their personal computers.

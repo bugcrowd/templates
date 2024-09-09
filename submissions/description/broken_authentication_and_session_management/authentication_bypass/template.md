@@ -1,7 +1,3 @@
-# Authentication Bypass
-
-## Overview of the Vulnerability
-
 Authentication bypass vulnerabilities allow an attacker to gain access to an account without having to go through the application's authentication procedure. 
 
 Authentication bypass often occurs through logic flaws and incomplete implementation of authentication mechanisms. Bypassing the authentication mechanisms of this application allows an attacker to view or edit data or other user's permissions, take over user accounts, access unauthorized endpoints, or expose critical data, depending on the authorization of the account they gain access to.

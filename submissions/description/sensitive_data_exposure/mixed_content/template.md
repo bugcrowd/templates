@@ -1,7 +1,3 @@
-# Sensitive Data Exposure via Mixed Content
-
-## Overview of the Vulnerability
-
 Mixed content is when a page is loaded over a HTTPS connection but the application pulls content using a mix of HTTP and HTTPS, leaving the page susceptible to sniffing and Person-in-The-Middle (PiTM) attacks. This application discloses sensitive data via mixed content, enabling an attacker to collect sensitive metadata to escalate privileges or launch phishing campaigns on targeted users.
 
 ## Business Impact

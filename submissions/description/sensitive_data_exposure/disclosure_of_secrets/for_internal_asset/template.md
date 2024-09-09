@@ -1,7 +1,3 @@
-# Disclosure of Secrets for Internal Asset
-
-## Overview of the Vulnerability
-
 Disclosure of secrets for internal assets occurs when sensitive data for the internal assets is not behind an authorization barrier. When this information is exposed it can place sensitive data, such as secrets, at risk. This can occur due to a variety of scenarios such as not encrypting data, secrets committed to GitHub within public repositories, or exposed internal assets.
 
 Disclosure of secrets for this internal asset could be leveraged by an attacker to access the internal application or the environment where the application is hosted.

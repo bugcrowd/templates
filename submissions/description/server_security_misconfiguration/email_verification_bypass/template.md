@@ -1,7 +1,3 @@
-# Email Verification Bypass
-
-## Overview of the Vulnerability
-
 Email verification bypass is where an attacker is able to gain access to the application or system without confirming the email address used to create the account. As a result,  an attacker is able to sign up to the application using email addresses that they don't own. This can lead to multiple fake accounts being created, or accounts being created on behalf of other users. While not a vulnerability within itself, bypassing email verification can lead to social engineering attacks on legitimate users.
 
 ## Business Impact

@@ -1,7 +1,3 @@
-# Large Language Model (LLM) Security Misconfiguration
-
-## Overview of the Vulnerability
-
 Misconfigurations can occur across Large Language Model (LLM) within the setup, deployment, or usage of the LLM, leading to security weaknesses or vulnerabilities. These misconfigurations can allow an attacker to compromise confidentiality, integrity, or availability of data and services. Misconfigurations may stem from inadequate access controls, insecure default settings, or improper configuration of fine-tuning parameters.
 
 ## Business Impact

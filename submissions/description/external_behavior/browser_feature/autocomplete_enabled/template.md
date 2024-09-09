@@ -1,7 +1,3 @@
-# Autocomplete Enabled
-
-## Overview of the Vulnerability
-
 Browsers implement features such as autocomplete to offer form filling features for end users. Autocomplete is an HTML attribute that saves previously entered text within the input Document Object Model (DOM) fields. An attacker can leverage the cached input for this application locally to login as a user or expose critical pieces of data.
 
 ## Business Impact

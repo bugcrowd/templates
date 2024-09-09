@@ -1,7 +1,3 @@
-# Commonly Keyed System
-
-## Overview of the Vulnerability
-
 The physical access control deployed to secure the device was found to use a lock keyed alike to commonly used keys. This scenario typically arises when locks are mass-manufactured with the same key configuration by vendors, intended for low-risk applications, or when a specific key standard is adopted with an expectation of limited use. When these lock systems are employed in contexts requiring higher security, like the device in question, the security efficacy is substantially reduced. The widespread availability or public knowledge of these keys means unauthorized individuals could easily obtain a key to gain access.
 
 ## Business Impact

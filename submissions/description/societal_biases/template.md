@@ -1,7 +1,3 @@
-# Societal Biases
-
-## Overview of the Vulnerability
-
 Societal biases occurs when AI model reflect or reinforce societal prejudices and inequalities that are present in the data used to train them. This can be a result of historical and cultural influences that shape the data, and can include systemic discrimination and social stereotypes. Outputs from AI models that have a societal bias can perpetuate and amplify existing societal biases, leading to unfair and discriminatory outcomes.
 
 ## Business Impact

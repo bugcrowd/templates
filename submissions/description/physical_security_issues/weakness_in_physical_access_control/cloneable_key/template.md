@@ -1,7 +1,3 @@
-# Cloneable Key
-
-## Overview of the Vulnerability
-
 The physical access control system securing the device relies on a physical key that is susceptible to cloning. This design flaw allows attackers, with brief access to the key, to create an unauthorized copy. Access to the key could be obtained through various means, including insider threats or by employing teleduplication techniques, where a photograph of the key is used to replicate it. Consequently, An attacker can gain unauthorised access by using a cloned key, circumventing intended security measures.
 
 ## Business Impact

@@ -1,7 +1,3 @@
-# Algorithmic bias
-
-## Overview of the Vulnerability
-
 Algorithmic bias occurs in an AI model when the algorithms used to develop the model produce biased outcomes as a result of inherent flaws or limitations in their design. This bias originates from assumptions made during algorithm development, selection of inappropriate models, or the way data is processed and weighted. This results in AI models that make unfair, skewed, or discriminatory decisions.
 
 ## Business Impact

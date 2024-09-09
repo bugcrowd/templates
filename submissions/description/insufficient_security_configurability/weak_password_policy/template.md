@@ -1,7 +1,3 @@
-# Weak Password Policy
-
-## Overview of the Vulnerability
-
 When the password policy for an application is weak, the strength of the overall authentication process for the application is diminished. Not having complexity requirements for passwords, password history checks, or enforcing account lockouts, all weaken the password policy. This application’s weak password policy decreases the time it takes an attacker to successfully guess account passwords through manual or automated processes. This can lead to account take over for accounts with weak passwords set.
 
 ## Business Impact

@@ -1,7 +1,3 @@
-# Insecure Key Generation
-
-## Overview of the Vulnerability
-
 Cryptography is used to ensure secure storage and transmission of data. However, there are a number of best practices that must be followed to ensure the cryptography in use remains secure and does not result in the exposure of sensitive data. It was identified that the endpoint contains an insecure key generation mechanism which can allow an attacker to break the confidentiality of requests sent to and from the endpoint.
 
 ## Business Impact

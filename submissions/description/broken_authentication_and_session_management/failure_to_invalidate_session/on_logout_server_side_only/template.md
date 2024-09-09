@@ -1,7 +1,3 @@
-# Failure to Invalidate Session on Logout (Server-Side)
-
-## Overview of the Vulnerability
-
 Failure to invalidate a session when a user logs out is a vulnerability that increases the attack surface for session hijacking attacks, such as Cross-Site Scripting (XSS), session sniffing, and other client-side attacks. Most users have the expectation that when they logout, no one else can access their account. When sessions are not invalidated on logout, the user’s trust is broken.
 
 This application fails to invalidate a user’s session server-side on logout, leaving the account vulnerable to session hijacking. An attacker may compromise a user’s session then be able to change the password of the account and lock out the legitimate user. Once the attacker has gained access to an account their actions are only limited by the privileges of the user’s account that they have gained access to. This could include viewing or editing sensitive customer data, viewing or editing other user permissions.

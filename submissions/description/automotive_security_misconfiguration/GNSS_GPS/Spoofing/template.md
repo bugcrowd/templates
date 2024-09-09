@@ -1,7 +1,3 @@
-# GNSS/GPS Spoofing
-
-## Overview of the Vulnerability
-
 Global Navigation Satellite System (GNSS) and Global Positioning System (GPS) spoofing involves the broadcast of fake GNSS/GPS signals to fake the position of a vehicle, or otherwise make the positioning unreliable. An attacker is able to send fake GNSS/GPS signals to the receiver and successfully spoof a vehicle’s position.
 
 ## Business Impact

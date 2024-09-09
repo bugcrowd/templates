@@ -1,7 +1,3 @@
-# Initialization Vector (IV) Reuse
-
-## Overview of the Vulnerability
-
 Cryptographic algorithms use an initial block of data (called an initialization vector) alongside the plaintext data that is encrypted. When this IV is reused for multiple encryptions, an attacker can identify the IV from the original data within the encryption.
 
 ## Business Impact

@@ -1,7 +1,3 @@
-# Unsafe Cross-Origin Resource Sharing
-
-## Overview of the Vulnerability
-
 The Cross-Origin Resource Sharing (CORS) Policy is a security control implemented by browsers to extend Same-Origin Policy (SOP) to cross domain requests via an allow list. However, misconfigurations can create unsafe CORS instances where cross-domain attacks can occur. An attacker can leverage unsafe CORS policies in the application to break the SOP and exfiltrate data or execute code on users’ browsers.
 
 ## Business Impact

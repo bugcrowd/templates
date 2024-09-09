@@ -1,7 +1,3 @@
-# SSL Attack BREACH and POODLE
-
-## Overview of the Vulnerability
-
 Browser Reconnaissance & Exfiltration via Adaptive Compression of Hypertext (BREACH) and Padding Oracle On Downgraded Legacy Encryption (POODLE) are vulnerabilities in SSL and TLS that allows a malicious attacker to injection plaintext into a victim's request or force an SSL downgrade to decrypt encrypted data over thousands of requests. This application is vulnerable to a BREACH/POODLE attack as it supports outdated versions of SSL or TLS.
 
 ## Business Impact

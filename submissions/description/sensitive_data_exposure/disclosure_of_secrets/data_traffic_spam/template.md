@@ -1,7 +1,3 @@
-# Disclosure of Secrets in Data Traffic Spam
-
-## Overview of the Vulnerability
-
 Disclosure of secrets occurs when the data is not properly secured, allowing sensitive data, such as secrets, API keys, or other data critical to business operation to be exposed. This application discloses data within data traffic spam which can enable an attacker to use secrets for privilege escalation within the application, or to send API requests on behalf of the user.
 
 ## Business Impact

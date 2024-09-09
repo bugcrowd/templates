@@ -1,7 +1,3 @@
-# Weak Login Function: HTTPS Not Available or HTTP by Default
-
-## Overview of the Vulnerability
-
 Weak login functionality arises from improperly configured authentication practices which weakens the security of the authentication process of an application. When this application loads the login page over HTTP by default or doesn’t have HTTPS available, all web requests are transmitted over HTTP in plaintext. This allows any attacker on the same network to observe these requests, and obtain the login credentials.
 
 ## Business Impact

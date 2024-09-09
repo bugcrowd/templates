@@ -1,7 +1,3 @@
-# Lack of Security Speed Bump Page
-
-## Overview of the Vulnerability
-
 Security speed bumps are prompts used in applications that inform the user that they are being redirected to a source denoted by another user. A lack of security speed bumps can allow an attacker to lure users to another website for phishing and information gathering campaigns by spamming the comment sections or forum posts within the application with malicious links.
 
 ## Business Impact

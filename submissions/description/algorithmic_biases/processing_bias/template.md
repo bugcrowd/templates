@@ -1,7 +1,3 @@
-# Processing Bias
-
-## Overview of the Vulnerability
-
 Processing bias occurs when AI algorithms make biased decisions, or predictions, due to the way that they process data. This can be a result of the algorithm's design or the training data it has been trained on. Outputs from AI models that have a processing bias can result in discrimination, reinforcement of stereotypes, and unintended consequences such as amplification or polarization of viewpoints that disadvantage certain groups.
 
 ## Business Impact

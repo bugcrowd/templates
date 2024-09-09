@@ -1,7 +1,3 @@
-# Cleartext Transmission of Session Token
-
-## Overview of the Vulnerability
-
 Session tokens help a server trust that the requests it is receiving come from a specific authenticated user. When a session token is transmitted in cleartext over an unencrypted channel, it can be intercepted via a Person-in-the-Middle (PitM) attack. This application transmits the session token via a cleartext transmission which can allow an attacker to access the session token via a PitM attack and send requests to the server pretending to be the legitimate user.
 
 ## Business Impact

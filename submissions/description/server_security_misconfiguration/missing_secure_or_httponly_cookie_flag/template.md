@@ -1,7 +1,3 @@
-# Missing Secure or HTTPOnly Cookie Flag
-
-## Overview of the Vulnerability
-
 The `Secure` and `HTTPOnly` flags on session cookies ensures that the cookies are sent to a server in a secure and encrypted manner. A lack of a `Secure` or `HTTPOnly` flag in {{target}} allows an attacker to access cookies via Person-in-The-Middle or Cross-Site Scripting (XSS) attacks where they could steal a user's session or extract information about the session.
 
 ## Business Impact

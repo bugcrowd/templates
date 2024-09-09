@@ -1,7 +1,3 @@
-# Screen Caching Enabled
-
-## Overview of the Vulnerability
-
 Screen caching occurs when an application is sent to the background and a screenshot is taken in order to make it appear that the application is shrinking while moving between applications on the mobile screen. Personal information can be unknowingly captured in this screen cache and stored unencrypted on the phone. An attacker could abuse this screen caching being enabled to steal sensitive information that is captured and stored unencrypted when a user exits the application.
 
 ## Business Impact

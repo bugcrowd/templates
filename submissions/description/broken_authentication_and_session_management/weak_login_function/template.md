@@ -1,7 +1,3 @@
-# Weak Login Function
-
-## Overview of the Vulnerability
-
 Weak login functionality arises from improperly configured authentication practices which weakens the security of the authentication process of an application. This can lead to an attacker gaining access to user data and functionality of the application by taking advantage of the broken authentication and session management mechanisms.
 
 ## Business Impact

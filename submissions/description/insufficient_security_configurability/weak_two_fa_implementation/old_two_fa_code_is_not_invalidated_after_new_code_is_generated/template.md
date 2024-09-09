@@ -1,7 +1,3 @@
-# Old 2FA Code is Not Invalidated After New Code is Generated
-
-## Overview of the Vulnerability
-
 Two Factor Authentication (2FA) adds an extra layer of security to user accounts by prompting them to enter a uniquely generated one-time password (OTP) after they have successfully inputted their username and password. An older 2FA code is not invalidated when a new code is generated in the application. This could allow an attacker to perform a replay attack. In this kind of attack, an attacker can use older unused 2FA codes to bypass the 2FA implementation of the application.
 
 ## Business Impact

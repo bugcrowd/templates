@@ -1,7 +1,3 @@
-# Mobile Security Misconfiguration
-
-## Overview of the Vulnerability
-
 Mobile security misconfigurations can occur at any level of the application stack and can involve unpatched software, unprotected files or pages, or unauthorized access to the application. An attacker can take advantage of security misconfigurations within the mobile application to perform further attacks on the application, the business, or its users.
 
 ## Business Impact

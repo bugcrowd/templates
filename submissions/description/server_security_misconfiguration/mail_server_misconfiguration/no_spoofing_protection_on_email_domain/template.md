@@ -1,7 +1,3 @@
-# No Spoofing Protection on Email Domain
-
-## Overview of the Vulnerability
-
 A Sender Policy Framework (SPF) and DomainKeys Identified Mail (DKIM) are security controls used by email domains to prevent spoofing. A missing or misconfigured SPF or DKIM on this domain enables an attacker to spoof the name of a domain and send emails on its behalf.
 
 ## Business Impact

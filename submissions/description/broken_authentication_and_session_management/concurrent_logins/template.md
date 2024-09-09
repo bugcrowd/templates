@@ -1,7 +1,3 @@
-# Concurrent Logins
-
-## Overview of the Vulnerability
-
 Having multiple concurrent logins can allow an attacker to reuse stolen or acquired session tokens to hijack requests. Old sessions are commonly found in open source intelligence efforts or through sniffed requests via Person-in-The-Middle (PitM) attacks. An attacker can use previously acquired sessions to exploit the privacy of a user of this application by continually accessing their account.
 
 ## Business Impact

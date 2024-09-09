@@ -1,7 +1,3 @@
-# Lack of Binary Hardening
-
-## Overview of the Vulnerability
-
 A lack of binary hardening of an application increases its attack surface and leaves it open to code analysis, reverse engineering, or modification of the application. An attacker with access to the code of an application with a lack of binary hardening can reverse engineer it and perform unauthorized code modification. From here, the attacker can access sensitive data stored, transmitted or processed by the application and perform further attacks on the application, the business, or its users.
 
 ## Business Impact

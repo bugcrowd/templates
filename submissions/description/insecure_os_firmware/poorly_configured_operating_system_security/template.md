@@ -1,7 +1,3 @@
-# Poorly Configured Operating System Security
-
-## Overview of the Vulnerability
-
 The device employs a standard operating system where the configuration fails to adequately secure the device. This poor configuration can expose the device to various security vulnerabilities, making it susceptible to unauthorized access, data breaches, and other malicious activities. An attacker with access to the operating system can gain access to the applications and data on the device.
 
 ## Business Impact

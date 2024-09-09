@@ -1,7 +1,3 @@
-# Account Takeover
-
-## Overview of the Vulnerability
-
 OAuth is an authorization framework used to identify and authenticate users for an application. There are a number of implementation misconfigurations which can lead to an OAuth framework being implemented insecurely that an attacker can leverage to take over multiple user accounts and manipulate or retrieve data.
 
 ## Business Impact

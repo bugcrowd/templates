@@ -1,7 +1,3 @@
-# Internal High-Impact Server-Side Request Forgery
-
-## Overview of the Vulnerability
-
 Server-side request forgery (SSRF) is a vulnerability that exploits the trust relationship between a server and an application, or other backend systems. An attacker can take advantage of this trust to forge server-side traffic and make HTTP requests to internal domains. A SSRF vulnerability was found in this application which allows an attacker to perform a request to an internally networked resource, which is considered high impact.
 
 ## Business Impact

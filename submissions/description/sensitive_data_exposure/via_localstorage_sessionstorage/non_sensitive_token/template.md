@@ -1,7 +1,3 @@
-# Non-Sensitive Token Exposed in Local or Session Storage
-
-## Overview of the Vulnerability
-
 Local storage, also known as offline, web, or session storage, is the underlying storage mechanism which varies from one user agent to the next. This application discloses a non-sensitive token in the local storage which is accessible by JavaScript. As a result, the token can be captured by an attacker using Cross-Site Scripting (XSS) or Cross-Site Request Forgery (CSRF), allowing them to gather relevant user data and leverage this information to build phishing campaigns.
 
 ## Business Impact

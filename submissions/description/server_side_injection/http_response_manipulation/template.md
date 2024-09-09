@@ -1,7 +1,3 @@
-# HTTP Response Manipulation
-
-## Overview of the Vulnerability
-
 HTTP response manipulation is a vulnerability that exploits the way HTTP headers parse certain characters. Appending characters to HTTP headers or otherwise altering the content of a HTTP header, can allow the insertion of payloads into a header which can result in the manipulation of cookies, server information, and status codes.
 
 This application is vulnerable to HTTP response manipulation, which an attacker can abuse to write data into the HTTP response body. From here, an attacker could insert their own session cookies to user session, append HTML to run code within a user's browser, or possibly cause a redirect to a website under their control.

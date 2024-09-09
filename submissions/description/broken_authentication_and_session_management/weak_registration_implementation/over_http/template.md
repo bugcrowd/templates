@@ -1,7 +1,3 @@
-# Weak Registration Implementation Over HTTP
-
-## Overview of the Vulnerability
-
 When the registration implementation for an application is weak, it diminishes the integrity of the overall authentication process. The application sends a registration or confirmation link over an unsecure HTTP connection. An attacker with local network access can intercept and read the content of the HTTP connection, allowing them to abuse the registration process and misuse user accounts.
 
 ## Business Impact

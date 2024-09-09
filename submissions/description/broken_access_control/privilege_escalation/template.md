@@ -1,7 +1,3 @@
-# Privilege Escalation via Broken Access Control
-
-## Overview of the Vulnerability
-
 Access controls can be bypassed through a variety of ways including, calling an internal post authentication page, modifying the given URL parameters, by manipulating the form, or by counterfeiting sessions. The access controls for this application can be bypassed by an attacker who can gain access to a privileged user’s account and functionality. As a result, the attacker has access to more resources or functionality within the application. This could include viewing or editing sensitive customer data, and viewing or editing other user permissions.
 
 ## Business Impact

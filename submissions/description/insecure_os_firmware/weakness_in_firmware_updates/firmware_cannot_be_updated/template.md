@@ -1,7 +1,3 @@
-# Firmware Cannot be Updated
-
-## Overview of the Vulnerability
-
 The hardware lacks the capability for firmware updates, leaving the system exposed to unpatched vulnerabilities and security risks. These limitations prevents effective maintenance and security management, rendering the device obsolete against evolving threats. An attacker can leverage the lack of firmware updates to gain access to sensitive information.
 
 ## Business Impact

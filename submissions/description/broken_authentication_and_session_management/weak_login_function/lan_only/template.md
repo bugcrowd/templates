@@ -1,7 +1,3 @@
-# Weak Login Function: via LAN Only
-
-## Overview of the Vulnerability
-
 Weak login functionality arises from improperly configured authentication practices which weakens the security of the authentication process of an application. This application does not protect the security of users’ credentials as the login is only available via a LAN connection. A malicious attacker can Person-in-the-Middle (PiTM) communication between the user and the application on the LAN to steal administrative credentials and login to the system using admin privileges.
 
 ## Business Impact

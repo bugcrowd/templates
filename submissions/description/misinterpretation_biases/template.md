@@ -1,7 +1,3 @@
-# Misinterpretation Biases
-
-## Overview of the Vulnerability
-
 Misinterpretation biases can occur when AI models incorrectly interpret the context or data, leading the model to make inaccurate decisions or predictions. These misinterpretation biases can stem from inadequate training data, or limitations in the model's design, resulting in outputs that to do not align with the context of the inputs.
 
 ## Business Impact

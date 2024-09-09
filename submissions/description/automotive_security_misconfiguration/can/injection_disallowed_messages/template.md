@@ -1,7 +1,3 @@
-# CAN Injection - Disallowed Messages
-
-## Overview of the Vulnerability
-
 The Controller Area Network (CAN) is a network bus designed to aid communication between an automotive vehicle’s electronic devices and control units. CAN misconfigurations can lead to security weaknesses in the data transfer process between components that can result in injection flaws. The {{application}} allows an attacker to connect to the CAN Bus and send messages to the system that are otherwise not allowed. This can cause disruption to the communication between the vehicle’s electronic devices and control units.
 
 ## Business Impact

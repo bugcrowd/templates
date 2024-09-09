@@ -1,7 +1,3 @@
-# 2FA Secret Cannot be Rotated
-
-## Overview of the Vulnerability
-
 Two Factor Authentication (2FA) adds an extra layer of security to user accounts by prompting them to enter a uniquely generated one-time password (OTP) after they have successfully inputted their username and password. The 2FA secret cannot be rotated in the application which does not follow best practice for 2FA implementation.If an attacker were able to compromise a user's 2FA system, the user would not be able to invalidate their 2FA secret.
 
 ## Business Impact

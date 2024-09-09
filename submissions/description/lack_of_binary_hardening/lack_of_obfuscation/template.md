@@ -1,7 +1,3 @@
-# Lack of Obfuscation
-
-## Overview of the Vulnerability
-
 A lack of obfuscation of the source code of an application increases its attack surface and leaves it open to code analysis, reverse engineering, or modification of the application. An attacker could abuse non-obfuscated source code of the application, read source code without any hindrances and perform  further attacks on the application, the business, or its users.
 
 ## Business Impact

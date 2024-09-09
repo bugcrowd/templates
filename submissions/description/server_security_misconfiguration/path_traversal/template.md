@@ -1,7 +1,3 @@
-# Path Traversal
-
-## Overview of the Vulnerability
-
 Path traversal uses a server misconfiguration to access hidden files and directories that are stored on the served web application. This can include sensitive operating files, code and data that runs the application, or in some cases, user credentials.
 
 An attacker can leverage the path traversal vulnerability in this application to gain access to system files in a folder of a directory that is not intended for public access.

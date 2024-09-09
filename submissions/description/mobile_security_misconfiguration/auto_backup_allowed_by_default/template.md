@@ -1,7 +1,3 @@
-# Auto Backup Allowed by Default
-
-## Overview of the Vulnerability
-
 Mobile security misconfigurations can occur at any level of the application stack and can involve unpatched software, unprotected files or pages, or unauthorized access to the application. When automatic backup is allowed by default, sensitive user data can be unknowingly stored on the mobile device.
 
 An attacker could abuse an application that has auto backup allowed by default to access this sensitive data from the application once they have physical access to the device. This could allow the attacker to bypass any in-app authentication and access sensitive data which they could abuse to perform further attacks on the application, the business, or its users.

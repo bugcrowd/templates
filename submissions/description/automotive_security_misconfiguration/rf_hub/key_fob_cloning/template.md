@@ -1,7 +1,3 @@
-# Radio Frequency Key Fob Cloning
-
-## Overview of the Vulnerability
-
 The Radio Frequency Hub (RFH) is a receiver hub which communicates with other electronic devices and control units through either the Controller Area Network (CAN) bus or a separate serial bus. The RFH allows communications for vehicle accessories such as remote ignition systems, keyless entry, remote immobilization systems, and anti-theft systems, amongst other operations.
 
 Misconfigurations in the RFH can lead to security weaknesses across any of these systems. An attacker can exploit the target system by creating a permanent clone of the key fob, giving permanent access to any vehicle of the same make/model.

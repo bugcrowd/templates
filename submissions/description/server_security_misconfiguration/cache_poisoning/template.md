@@ -1,7 +1,3 @@
-# Cache Poisoning
-
-## Overview of the Vulnerability
-
 A web cache allows for static and fast fetching of content in web applications. Content Delivery Networks (CDNs) are commonly used to serve content used by applications. A malicious attacker can take advantage of caching mechanisms to serve content or deny service to certain applications using X-Based Host headers (X-Forwarded-Host, etc.).
 
 Cache poisoning allows an attacker to serve content for cached pages on CDNs and websites with cache misconfigurations. This opens the application up to attacks like Cross-Site Request Forgery (CSRF), and to leakage of sensitive information.

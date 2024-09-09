@@ -1,7 +1,3 @@
-# Client-Side Injection via Binary Planting (Default Folder Privilege Escalation)
-
-## Overview of the Vulnerability
-
 Client-side injection via binary planting is a vulnerability that results from client-side untrusted data, in the form of a binary file, being interpreted and executed by the system. Within the application an attacker is able to load a planted binary file on a local or remote file system, which is then loaded and executed by the application. As a result, the attacker is able to elevate their privileges in the default folder location.
 
 ## Business Impact

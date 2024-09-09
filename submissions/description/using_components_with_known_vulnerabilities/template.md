@@ -1,7 +1,3 @@
-# Using Components with Known Vulnerabilities
-
-## Overview of the Vulnerability
-
 Outdated software is common in applications that use many types of different software stacks. Many outdated software versions have well known and documented vulnerabilities, including those with Common Vulnerabilities and Exposures (CVE) IDs. An attacker can take advantage of old software versions in this application by using open source vulnerability information and CVEs to exploit the application.
 
 ## Business Impact

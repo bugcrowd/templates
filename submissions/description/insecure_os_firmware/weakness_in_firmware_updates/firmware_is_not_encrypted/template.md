@@ -1,7 +1,3 @@
-# Firmware Not Encrypted
-
-## Overview of the Vulnerability
-
 The firmware used for the hardware is stored or transmitted without encryption. This lack of encryption allows for easier reverse engineering and analysis, enabling unauthorized individuals to more readily identify security vulnerabilities within the device's firmware.
 
 ## Business Impact

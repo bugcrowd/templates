@@ -1,7 +1,3 @@
-# Username Enumeration
-
-## Overview of the Vulnerability
-
 Username enumeration is a vulnerability where an attacker is able to confirm or guess correct usernames through the difference in the server’s response to input. It often occurs on login, registration, and password reset pages. This application has a username enumeration vulnerability which allows an attacker to brute force passwords, stuff credentials, or for further attacks such as social engineering.
 
 ## Business Impact

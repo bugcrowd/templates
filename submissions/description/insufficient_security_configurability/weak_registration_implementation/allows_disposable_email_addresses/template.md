@@ -1,7 +1,3 @@
-# Allows Disposable Email Addresses
-
-## Overview of the Vulnerability
-
 When the registration implementation for an application is weak, it diminishes the integrity of the overall authentication process. The application allows users to submit a disposable or alias email address to register an account. An attacker can abuse this weakness to bulk register fake user profiles and use them to launch spam campaigns.
 
 ## Business Impact

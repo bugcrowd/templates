@@ -1,7 +1,3 @@
-# Injection (Prompt)
-
-## Overview of the Vulnerability
-
 Injection occurs when an attacker provides inputs to a Large Language Model (LLM) which causes a large amount of resources to be consumed. This can result in a Denial of Service (DoS) to users, incur large amounts of computational resource costs, or slow response times of the LLM.
 
 ## Business Impact

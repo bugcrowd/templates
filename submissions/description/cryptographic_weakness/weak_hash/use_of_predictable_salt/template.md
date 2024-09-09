@@ -1,7 +1,3 @@
-# Use of Predictable Salt
-
-## Overview of the Vulnerability
-
 Cryptography is used to ensure secure storage and transmission of data. However, there are a number of best practices that must be followed to ensure the cryptography in use remains secure and does not result in the exposure of sensitive data. A predictable salt in the hashing mechanism was identified which can allow an attacker to use rainbow table attacks.
 
 ## Business Impact

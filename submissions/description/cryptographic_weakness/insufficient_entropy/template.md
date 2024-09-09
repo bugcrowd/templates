@@ -1,7 +1,3 @@
-# Insufficient Entropy
-
-## Overview of the Vulnerability
-
 Cryptography is used to ensure secure storage and transmission of data. When insufficient entropy is used to generate cryptographic keys, it is possible to predict or guess the keys. Insufficient entropy of cryptographic algorithm generation was identified which can allow an attacker to break the confidentiality of requests sent to and from the endpoint.
 
 ## Business Impact

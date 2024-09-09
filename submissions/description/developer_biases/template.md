@@ -1,7 +1,3 @@
-# Developer Biases
-
-## Overview of the Vulnerability
-
 Developer biases occurs when AI model developers' perspectives, assumptions, and decisions influence the behaviour and design of an the model. Biases stem from developer's background and experiences, and subconscious prejudices. Outputs from AI models that have a developer bias can result in skewed or otherwise unfair outcomes.
 
 ## Business Impact

@@ -1,7 +1,3 @@
-# Client-Side Injection
-
-## Overview of the Vulnerability
-
 Client-side injection is a vulnerability that results from untrusted client-side data being interpreted and executed by the system without any checks. Within the application an attacker is able to inject data in the form of Javascript, or a binary file on a local or remote file system, which is then loaded and executed by the application. As a result, the attacker is able to invoke code remotely on the machine.
 
 ## Business Impact

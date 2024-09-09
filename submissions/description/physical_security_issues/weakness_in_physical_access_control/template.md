@@ -1,7 +1,3 @@
-# Weakness in Physical Access Control
-
-## Overview of the Vulnerability
-
 A weakness has been identified in the physical access controls deployed to secure physical access to facilities, premises, or sensitive areas within an organization. This scenario typically arises from insufficient security measures, such as weak locks, ineffective surveillance, or lack of employee awareness. This vulnerability can result in unauthorized individuals could easily obtain a key to gain access.
 
 ## Business Impact

@@ -1,7 +1,3 @@
-# Failure to Remove Sensitive Artifacts from Disk
-
-## Overview of the Vulnerability
-
 During the deployment or configuration phases of the device, sensitive artifacts (which can include: configuration information, secrets, or credentials) are transferred to and stored on the device's storage medium. These artifacts are not adequately removed post-deployment or configuration. As a result, an attacker gaining access to the device could view these sensitive artifacts.
 
 ## Business Impact

@@ -1,7 +1,3 @@
-# No Rate Limiting on Form which Triggers Emails
-
-## Overview of the Vulnerability
-
 Rate Limiting prevents an application from becoming unresponsive or unavailable due to too many requests exhausting the application's resources. A lack of rate limiting on an email triggering endpoint was identified. This allows an attacker to create a large amount of emails to any email address, which they could use to spam a target with emails.
 
 ## Business Impact

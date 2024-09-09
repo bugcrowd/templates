@@ -1,7 +1,3 @@
-# Weak Password Reset Implementation (Token is Not Invalidated After Email Change)
-
-## Overview of the Vulnerability
-
 The password reset implementation needs to involve a unique, temporary high-entropy token that has a short expiry and can only be used once. When these conditions are not met, the password reset implementation is  considered weak. This diminishes the strength of the overall authentication process for the application and can lead to account takeover. The application’s password reset implementation is weak as it allows an email that is no longer associated with the account to perform a password reset.
 
 ## Business Impact

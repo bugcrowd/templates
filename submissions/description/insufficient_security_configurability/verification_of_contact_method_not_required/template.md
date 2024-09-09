@@ -1,7 +1,3 @@
-# Verification of Contact Method Not Required
-
-## Overview of the Vulnerability
-
 The overall security of an application is diminished when accounts are not properly verified upon creation of a new contact method, such as an email address. The lack of verification for the contact method allows an attacker to associate their own email address with a user's account which can lead to phishing and impersonation attacks, or account squatting.
 
 ## Business Impact

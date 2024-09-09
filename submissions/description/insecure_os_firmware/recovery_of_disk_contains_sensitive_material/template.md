@@ -1,7 +1,3 @@
-# Recovery of Disk Contains Sensitive Material
-
-## Overview of the Vulnerability
-
 The device's storage medium fails to adequately delete data when a factory reset is performed due to a flaw in the process. An attacker with access to the storage medium post-reset can recover and exploit the sensitive information.
 
 ## Business Impact

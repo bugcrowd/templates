@@ -1,7 +1,3 @@
-# No Rate Limiting on Form
-
-## Overview of the Vulnerability
-
 Rate limiting is a strategy to limit the frequency of a repeat action within a particular time frame. This ensures that a service doesn’t become unresponsive or unavailable due to too many requests exhausting the application's resources. A lack of rate limiting on this endpoint allows an attacker to send a large number of requests to the server and potentially cause accelerated service usage for the business or exhaust the application resources.
 
 ## Business Impact

@@ -1,7 +1,3 @@
-# Reflected Cross-Site Scripting (Self)
-
-## Overview of the Vulnerability
-
 Reflected Cross-Site Scripting (XSS) is a type of injection attack where malicious JavaScript code is injected into a website. When a user visits the affected web page, the JavaScript code executes and its input is reflected in the user’s browser. Self-reflected XSS can be found on this domain which allows an attacker to create crafted JavaScript payload. Additionally, the attacker needs to socially engineer the user to paste the JavaScript payload into the user’s browser. If successful, the JavaScript will execute temporarily within that user’s browser in the context of the domain.
 
 When an attacker can control code that is executed within a user’s browser, they are able to carry out any actions that the user is able to perform, including accessing any of the user's data and modifying information within the user’s permissions. This can result in modification, deletion, or theft of data, including accessing or deleting files, or stealing session cookies which an attacker could use to hijack a user’s session.

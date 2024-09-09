@@ -1,7 +1,3 @@
-# Internationalized Domain Name Homograph Attack
-
-## Overview of the Vulnerability
-
 Internationalized Domain Name (IDN) homograph attack is a type of typosquatting attack that spoofs the name of a known domain by using homoglyph characters that mimic the actual letter. Through this type of attack, users are often socially engineered to perform an action due to the inherent trust they have in the business and its brand.
 
 A successful IDN Homograph attack can allow an attacker to social engineer users to navigate to a malicious website where the attacker can use the trust of the credible domain name to phish users for their credentials.

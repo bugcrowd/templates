@@ -1,7 +1,3 @@
-# Username Enumeration Using Brute Force
-
-## Overview of the Vulnerability
-
 The ability to bruteforce usernames in a web service can allow an attacker to gain an insight into the user base of a service, helping them identify accounts and test for password reuse, endangering the users accounts for the service. A malicious attacker can leverage user enumeration to generate a potential list of usernames for use in phishing or brute force campaigns.
 
 ## Business Impact

@@ -1,7 +1,3 @@
-# Misconfigured DNS
-
-## Overview of the Vulnerability
-
 Domain Name System (DNS) misconfigurations can result in internal information being leaked publicly. The DNS misconfiguration identified on the endpoints allows an attacker to view the internal network structure of the domain, or transfer the zone file, for example. From here, the attacker can use this information to form other attacks on the network and its users.
 
 ## Business Impact

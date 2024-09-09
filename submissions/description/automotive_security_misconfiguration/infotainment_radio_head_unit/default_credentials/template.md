@@ -1,7 +1,3 @@
-# Infotainment Default Credentials
-
-## Overview of the Vulnerability
-
 The In-Vehicle Infotainment (IVI) system, is a central unit in an automotive vehicle's dashboard that centralizes information and entertainment systems and their controls. Misconfigurations in the IVI system can lead to security weaknesses. Default credentials in the IVI unit can be leveraged by an attacker to gain developer access to the system. From here, the attacker can cause the system to behave not as intended.
 
 ## Business Impact

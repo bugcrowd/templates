@@ -1,7 +1,3 @@
-# Tabnabbing
-
-## Overview of the Vulnerability
-
 Tabnabbing is a type of phishing attack that tricks users into inputting their login and password to a carbon copy of a genuine website. An attacker can use dynamic javascript to change the origin of a website to another website that looks exactly the same as the original, and can phish information from them.
 
 ## Business Impact

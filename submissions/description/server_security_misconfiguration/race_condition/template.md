@@ -1,7 +1,3 @@
-# Race Condition
-
-## Overview of the Vulnerability
-
 A race condition is a queued task executed by an application that is forced to execute multiple functions in parallel. As a result, the application logic can break. An attacker can abuse a race condition in this application to call a function multiple times to break the application’s logic, causing unintended consequences.
 
 ## Business Impact

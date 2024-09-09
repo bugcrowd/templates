@@ -1,7 +1,3 @@
-# Infotainment Code Execution No CAN Bus Pivot
-
-## Overview of the Vulnerability
-
 The In-Vehicle Infotainment (IVI) system, is a central unit in an automotive vehicle's dashboard that centralizes information and entertainment systems and their controls. Misconfigurations in the IVI system can lead to security weaknesses. An attacker can execute code on the IVI unit by taking advantage of a misconfiguration in the system, causing the system to not behave as intended.
 
 ## Business Impact

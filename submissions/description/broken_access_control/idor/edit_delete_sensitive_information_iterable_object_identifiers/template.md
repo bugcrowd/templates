@@ -1,7 +1,3 @@
-# Edit/Delete Sensitive Information/Iterable Object Identifiers
-
-## Overview of the Vulnerability
-
 Insecure Direct Object Reference (IDOR) occurs when there are no access control checks to verify if a request to interact with a resource is valid. An IDOR vulnerability within this application allows an attacker to alter sensitive information by iterating through object identifiers.
 
 ## Business Impact

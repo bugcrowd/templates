@@ -1,7 +1,3 @@
-# Server-Side Injection
-
-## Overview of the Vulnerability
-
 Server-side injection allows attackers to inject malicious code into server-side scripts. As a result, an attacker is able to manipulate the application to include a malicious script which is executed by the server. This can lead to unauthorized access or manipulation of data.
 
 ## Business Impact

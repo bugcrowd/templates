@@ -1,7 +1,3 @@
-# Executable File Download
-
-## Overview of the Vulnerability
-
 Risk levels for an application are raised when executable files are able to be downloaded as it increases the chances of malicious files being downloaded and executing in the system, or on an end user’s device. An executable file can be downloaded within this application, enabling an attacker to observe the contents of the downloaded file through a network sniffing or Person-in-the-Middle (PitM) attack. An attacker could also download a malicious executable instead of the intended file. If the downloaded file contains sensitive information, the attacker could use this to perform further attacks on the application or impersonate a user.
 
 ## Business Impact

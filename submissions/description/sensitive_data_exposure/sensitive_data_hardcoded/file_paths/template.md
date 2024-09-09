@@ -1,7 +1,3 @@
-# Hardcoded File Paths
-
-## Overview of the Vulnerability
-
 Sensitive data can be exposed when it is not behind an authorization barrier. When this information is exposed it can place the application at further risk of compromise. This application has hardcoded file paths which can be used by an attacker to request files from the underlying system via directory traversal and can lead to exposure of data such as file naming conventions, system admin users, and permissions on the system.
 
 ## Business Impact

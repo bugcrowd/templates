@@ -1,7 +1,3 @@
-# Critically Sensitive Data Exposure
-
-## Overview of the Vulnerability
-
 Disclosure of critically sensitive data occurs when the data is not properly secured, allowing critically sensitive data, such as secrets, API keys, or other data critical to business operation to be exposed. This data exposure can be described as critically sensitive as its exposure would likely cause a high priority incident.
 
 ## Business Impact

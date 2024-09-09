@@ -1,7 +1,3 @@
-# Lack of Security Headers
-
-## Overview of the Vulnerability
-
 A lack of HTTP response security headers can lead to sensitive user data being retrieved by an attacker through Cross-Site Scripting (XSS), Machine-in-the-Middle (MitM), click-jacking, and some local network attacks. There are multiple HTTP response headers used in communication between the server and client which can be implemented to improve security against well documented vulnerabilities.
 
 An advanced attacker can leverage a missing security headers to bypass security controls of an application to execute code within a user's browser or capture data in transit.

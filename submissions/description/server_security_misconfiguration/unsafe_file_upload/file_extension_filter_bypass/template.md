@@ -1,7 +1,3 @@
-# Unsafe File Upload Using File Extension Filter Bypass
-
-## Overview of the Vulnerability
-
 Unsafe file uploads occur when the web server fails to sufficiently validate the file’s size, type, name, contents, or what restrictions are placed on the file once it has been successfully uploaded. The application fails to validate the extension type of files that are uploaded, allowing an attacker to upload unsafe files to the web server which can be sent to and executed by users.
 
 ## Business Impact

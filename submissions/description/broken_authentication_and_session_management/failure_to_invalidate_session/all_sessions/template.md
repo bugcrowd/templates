@@ -1,7 +1,3 @@
-# Failure to Invalidate Sessions on All Sessions
-
-## Overview of the Vulnerability
-
 Sessions commonly fail to invalidate active sessions. An attacker can use previously acquired sessions to exploit the privacy of a targeted user by continually accessing their account and gathering information about an application’s endpoints an unauthenticated user will not usually have access to.
 
 An attacker may compromise a user’s session through a variety of ways including, calling an internal post authentication page, modifying the given URL parameters, phishing a user, by manipulating a form, or by counterfeiting sessions. Once they have gained account access, an attacker may be able to change the password of the account and lock out the legitimate user. The attacker’s actions are limited by the privileges of the user’s account that they gain access to. This could include viewing or editing sensitive customer data, viewing or editing other user permissions.

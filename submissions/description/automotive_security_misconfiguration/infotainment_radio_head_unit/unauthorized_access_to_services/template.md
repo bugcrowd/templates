@@ -1,7 +1,3 @@
-# Unauthorized Access To Services
-
-## Overview of the Vulnerability
-
 The In-Vehicle Infotainment (IVI) system is a central unit in an automotive vehicle's dashboard that centralizes information and entertainment systems and their controls. Misconfigurations in the IVI system can lead to security weaknesses. Unauthorized access to services in the IVI system can originate from wireless protocols, in-vehicle applications, and physical inputs that communicate with the vehicle’s IVI unit. An attacker can leverage the unauthorized service(s) to escalate privileges on the IVI unit, and compromise internal and external communications.
 
 ## Business Impact

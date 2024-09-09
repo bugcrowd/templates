@@ -1,7 +1,3 @@
-# Application-Level Denial of Service: Critical Impact or Easy Difficulty
-
-## Overview of the Vulnerability
-
 Application-level Denial of Service (DoS) attacks are designed to deny service to users of an application by flooding it with many HTTP requests. This makes it impossible for the server to respond to legitimate requests in any practical time frame.
 
 There is an application-level DoS vulnerability within this application that has critical impact or is easily performed. An attacker can use this vulnerability to exhaust resources, making the application unavailable for its designed purpose to legitimate users.

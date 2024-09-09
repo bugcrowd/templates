@@ -1,7 +1,3 @@
-# Unsafe File Upload With No Antivirus
-
-## Overview of the Vulnerability
-
 Unsafe file uploads occur when the web server fails to sufficiently validate the file’s size, type, name, contents, or what restrictions are placed on the file once it has been successfully uploaded. The application fails to check if files contain viruses or viral signatures. Therefore, an attacker can host malicious files on the server and serve them to victims under the same domain.
 
 ## Business Impact

@@ -1,7 +1,3 @@
-# Anti-Lock Braking Systems (ABS) - Unintended Acceleration Brake
-
-## Overview of the Vulnerability
-
 Automotive security misconfigurations can occur within the software, firmware, or network settings of vehicles, leading to security vulnerabilities. These misconfigurations can stem from default settings, inadequate security measures, or improper configurations during the manufacturing or maintenance processes. An attacker can exploit this misconfiguration and gain unauthorised access to data, or manipulate the vehicle system's integrity.
 
 ## Business Impact

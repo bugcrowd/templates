@@ -1,7 +1,3 @@
-# Bypass of Physical Access Control
-
-## Overview of the Vulnerability
-
 The physical access control mechanisms implemented to secure the device are vulnerable to a bypass attack. This flaw allows unauthorized attacker to circumvent the designed physical security measures implemented, gaining access to the device's internal hardware and components that are intended to be restricted.
 
 ## Business Impact

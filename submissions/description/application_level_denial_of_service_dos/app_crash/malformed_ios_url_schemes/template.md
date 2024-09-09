@@ -1,7 +1,3 @@
-# Application-Level Denial of Service Causes Application to Crash via Malformed iOS URL Schemes
-
-## Overview of the Vulnerability
-
 Application-level denial of service (DoS) attacks are designed to deny service to users of an application by flooding it with many HTTP requests. This makes it impossible for the server to respond to legitimate requests in any practical time frame.
 
 There is a local application-level DoS vulnerability within this iOS application that causes it to crash. An attacker can use this vulnerability to provide empty, malformed, or irregular data via a URL scheme, crashing the application and making it unavailable for its designed purpose to legitimate users.

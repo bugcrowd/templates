@@ -1,7 +1,3 @@
-# Lack of Password Confirmation on Change of Password
-
-## Overview of the Vulnerability
-
 User accounts are more susceptible to account takeover when there is no password confirmation on certain actions. For example, change of email address, change of password, management of Multi-Factor Authentication details, and account deletion.
 
 The application lacks password confirmation on the change password function which could be abused by an attacker who has access to the user’s account (eg. a public computer the user has not logged out of). From here the attacker could change the account password to one they control. This gives the attacker control over functionality of a user’s account.

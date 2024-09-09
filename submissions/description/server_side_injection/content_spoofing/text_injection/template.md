@@ -1,7 +1,3 @@
-# Text Injection
-
-## Overview of the Vulnerability
-
 Content spoofing is a common attack where plaintext or HTML content is injected into a web page that can be rendered in a client. Due to this injection vulnerability in the application, users are often socially engineered to perform an action due to the inherent trust they have in the business and its brand.
 
 Text injection in this application allows an attacker to insert any message into a web page that can trick users to navigate to another website, call a certain number, or start an email chain to a malicious address.

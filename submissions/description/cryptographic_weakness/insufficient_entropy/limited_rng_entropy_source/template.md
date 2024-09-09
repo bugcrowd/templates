@@ -1,7 +1,3 @@
-# Limited Random Number Generator (RNG) Entropy Source
-
-## Overview of the Vulnerability
-
 Cryptography is used to ensure secure storage and transmission of data. When insufficient entropy is used to generate cryptographic keys, it is possible to predict or guess the keys. Insufficient entropy of a Random Number Generator (RNG) was identified which can create predictable random numbers. This can allow an attacker to guess the session ID or cryptographic key and gain access to restricted data or functionality.
 
 ## Business Impact

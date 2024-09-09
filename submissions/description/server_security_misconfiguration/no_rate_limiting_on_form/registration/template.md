@@ -1,7 +1,3 @@
-# No Rate Limiting on Registration Form
-
-## Overview of the Vulnerability
-
 Rate Limiting prevents an application from becoming unresponsive or unavailable due to too many requests exhausting the application's resources. A lack of rate limiting on a registration form allows an attacker to send a number of requests to the server which registers an account on the service for each request, and will generate a new user. This has the risk of generating a large set of spam accounts with the service, which the attacker can use to spam other users and disrupt the platform.
 
 ## Business Impact

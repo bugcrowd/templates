@@ -1,7 +1,3 @@
-# Sensitive Token Exposed in URL in Background
-
-## Overview of the Vulnerability
-
 Sensitive data can be exposed when it is not behind an authorization barrier. When this information is exposed it can place the application at further risk of compromise. The application discloses a sensitive token in the URL in background requests which are not seen in the main user interface. If captured by an attacker, these sensitive tokens can be used to escalate privileges or authorize API calls within the application.
 
 ## Business Impact

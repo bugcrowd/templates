@@ -1,7 +1,3 @@
-# Over-Permissioned Credentials on Storage
-
-## Overview of the Vulnerability
-
 The device contains a set of credentials stored on its storage medium that are over-permissioned for their intended use. While these credentials are designed to access a specific shared service, their excessive permissions allow for broader unauthorized access. If the device is compromised or falls into the hands of unauthorized user, these over-permissioned credentials could be used to access not only the intended service but also additional services and data that should be segregated.
 
 ## Business Impact

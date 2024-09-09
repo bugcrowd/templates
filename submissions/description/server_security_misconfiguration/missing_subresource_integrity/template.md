@@ -1,7 +1,3 @@
-# Missing Subresource Integrity (SRI)
-
-## Overview of the Vulnerability
-
 Subresource Integrity (SRI) is a security feature that helps ensure the integrity and authenticity of externally loaded resources that are included in a web application, such as scripts, stylesheets, or images. While not a vulnerability within itself, missing SRI in a web application can allow an attacker to modify or replace external resources that can lead to the execution of malicious code. An attacker could achieve this by compromising the server hosting the resource, intercepting network traffic, or by leveraging weaknesses in the supply chain.
 
 ## Business Impact

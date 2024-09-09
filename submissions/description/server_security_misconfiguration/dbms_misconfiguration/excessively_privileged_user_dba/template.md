@@ -1,7 +1,3 @@
-# Excessively Privileged User In Database
-
-## Overview of the Vulnerability
-
 Database Management System (DBMS) misconfiguration can arise from software or hardware misconfigurations, vulnerabilities, or human error. DBMS misconfigurations can result in an attacker performing Denial of Service (DoS) attacks, injection attacks, buffer overflows, malware, and attacks performed on backup databases.
 
 The database contains a user with excessive privileges. If their account were to be compromised, an attacker could gain access to the database and get read and write access to its contents.

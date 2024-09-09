@@ -1,7 +1,3 @@
-# Clickjacking on Non-Sensitive Action
-
-## Overview of the Vulnerability
-
 Clickjacking is a method of tricking a user into clicking on a link that performs an action, which is disguised as a legitimate link to something else. Usually, this is carried out by embedding a link into a transparent `<iframe>` HTML element which sits on top of a legitimate button on the webpage. This instance of clickjacking can allow an attacker to manipulate a user into performing unwanted actions when they believe they are clicking on a link for a non-sensitive action within the application.
 
 ## Business Impact

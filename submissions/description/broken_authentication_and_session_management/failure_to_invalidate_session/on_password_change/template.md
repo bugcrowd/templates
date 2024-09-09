@@ -1,7 +1,3 @@
-# Failure to Invalidate Session on Password Change
-
-Failure to invalidate a session after a password change is a vulnerability which allows an attacker to maintain access on a service. Most users have the expectation that when they reset their password, no one else can access their account. When sessions are not invalidated upon a password reset, the user's trust is broken. Applications that fail to invalidate sessions when the password is changed are more susceptible to account takeover by an attacker who has gained a foothold in a legitimate user's account.
-
 An attacker may compromise a user's session through a variety of ways including, calling an internal post authentication page, modifying the given URL parameters, phishing a user, by manipulating a form, or by counterfeiting sessions. Once they have gained account access, an attacker may be able to change the password of the account and lock out the legitimate user. The attacker's actions are limited by the privileges of the user's account that they gain access to. This could include viewing or editing sensitive customer data, viewing or editing other user permissions.
 
 ## Business Impact

@@ -1,7 +1,3 @@
-# Sensitive Token Exposed in URL On Password Reset
-
-## Overview of the Vulnerability
-
 Sensitive data can be exposed when it is not behind an authorization barrier. When this information is exposed it can place the application at further risk of compromise. The application discloses a sensitive token in the URL upon the password reset function which, if captured by an attacker, can be used to reset a legitimate user’s account password to one they control, successfully taking over the user’s account.
 
 ## Business Impact

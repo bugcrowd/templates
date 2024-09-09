@@ -1,7 +1,3 @@
-# Right to Left Override
-
-## Overview of the Vulnerability
-
 A Right to Left Override (RLO) character is a unicode character, denoted as `U+202E`, in systems that can understand unicode. Whenever an RLO character is rendered, all unicode text afterwards will be reversed. An RLO attack in the application allows a malicious attacker to spoof content in a way where it can potentially socially engineer users into disclosing data such as usernames, passwords or other sources of sensitive information.
 
 A successful exploit of an RLO character can trick users to downloading or clicking on files they otherwise would not. These files can include malware or an executable that requires user interaction to successfully infect systems.

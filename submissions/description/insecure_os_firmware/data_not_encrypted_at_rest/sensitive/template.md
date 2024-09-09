@@ -1,7 +1,3 @@
-# Data Not Encrypted at Rest (Sensitive)
-
-## Overview of the Vulnerability
-
 The device stores sensitive data that is not encrypted at rest, compromising the confidentiality and integrity of the data. This oversight allows an attacker with physical access to the device to easily access and potentially compromise the sensitive data contained within, exposing personal information, secrets, or credentials.
 
 ## Business Impact

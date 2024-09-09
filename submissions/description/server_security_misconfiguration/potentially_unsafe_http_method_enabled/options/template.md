@@ -1,7 +1,3 @@
-# Potentially Unsafe OPTIONS HTTP Method Enabled
-
-## Overview of the Vulnerability
-
 HTTP request methods are used to indicate the desired action to be performed in communications between a client and a server. For example, an endpoint will return a list of all methods allowed when sent a request using the OPTIONS method.
 
 The OPTIONS HTTP method can be sent to this application and could be used by an attacker to gather information, or interact with an endpoint in a way that is unintended, gathering information about the system for further attacks.

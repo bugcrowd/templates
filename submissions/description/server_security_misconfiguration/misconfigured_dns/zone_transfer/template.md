@@ -1,7 +1,3 @@
-# Zone Transfer
-
-## Overview of the Vulnerability
-
 A DNS Zone Transfer exports the contents of the zone file from one DNS to another. A Zone Transfer in {{target}} allows an attacker to uncover hidden attack surfaces such as IP addresses, subdomains, and DNS records.
 
 ## Business Impact

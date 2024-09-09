@@ -1,7 +1,3 @@
-# Sensitive Application Data Stored Unencrypted on Internal Storage
-
-## Overview of the Vulnerability
-
 When sensitive application data is stored insecurely on internal storage it is susceptible to being identified and used maliciously. An attacker could abuse this unencrypted data storage to steal sensitive information that a user inputted. With this sensitive information, a malicious attacker could perform further attacks on the application or impersonate the user.
 
 ## Business Impact

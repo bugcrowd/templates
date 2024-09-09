@@ -1,7 +1,3 @@
-# Weak Registration Implementation
-
-## Overview of the Vulnerability
-
 When the registration implementation for an application is weak, it diminishes the integrity of the overall authentication process. An application's registration process can be weakened by a connection over HTTP, or by allowing users to submit a disposable or alias email address to register an account, for example.The weak registration implementation for this application could allow an attacker to abuse the registration process and bulk register fake user profiles to launch spam campaigns.
 
 ## Business Impact

@@ -1,7 +1,3 @@
-# Lack of X-Content-Type-Options Header
-
-## Overview of the Vulnerability
-
 A lack of the HTTP response header for `X-Content-Type-Options` can lead to sensitive user data being retrieved by an attacker and increases the attack surface for Cross-Site Scripting (XSS) attacks. There are multiple HTTP response headers used in communication between the server and client which can be implemented to improve security against well documented vulnerabilities. For example, the `X-Content-Type-Options` security header is used to ignore the MIME types of content returned from a server.
 
 An advanced attacker can leverage a missing `X-Content-Type-Options` header to leverage MIME type sniffing which can break client-side parsers and can lead to Cross-Site Scripting (XSS) attacks.

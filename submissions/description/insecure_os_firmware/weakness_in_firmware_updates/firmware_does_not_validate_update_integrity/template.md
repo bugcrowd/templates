@@ -1,7 +1,3 @@
-# Firmware Update Integrity Not Validated
-
-## Overview of the Vulnerability
-
 The hardware fails to validate the authenticity and integrity of the update file. Without proper validation, the system is susceptible to accepting and installing corrupted or malicious updates, compromising the device's security and functionality.
 
 ## Business Impact

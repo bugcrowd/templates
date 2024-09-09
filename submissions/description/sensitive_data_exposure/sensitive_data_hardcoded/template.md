@@ -1,7 +1,3 @@
-# Hardcoded Sensitive Data
-
-## Overview of the Vulnerability
-
 Sensitive data can be exposed when it is not behind an authorization barrier. When this information is exposed it can place the application at further risk of compromise. This application has sensitive data that is hardcoded, such as API keys, credentials, or Personally Identifiable Information (PII). This hardcoded sensitive data can be used by an attacker to gain access to the application and escalate their privileges, which can lead to user account compromise and data exfiltration.
 
 ## Business Impact

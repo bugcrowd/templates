@@ -1,7 +1,3 @@
-# Database Management System Misconfiguration
-
-## Overview of the Vulnerability
-
 Database Management System (DBMS) misconfiguration can arise from software or hardware misconfigurations, vulnerabilities, or human error. DBMS misconfigurations can result in an attacker performing Denial of Service (DoS) attacks, injection attacks, buffer overflows, malware, and attacks performed on backup databases. These attacks can result in an attacker gaining access to the database and potentially read or write access to its contents.
 
 ## Business Impact
