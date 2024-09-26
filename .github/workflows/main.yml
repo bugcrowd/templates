@@ -12,5 +12,7 @@ jobs:
 
     - name: Lint Markdown files
       uses: avto-dev/markdown-lint@v1
+      env: 
+        MARKDOWN_CONFIG_FILE: ".markdownlint.json"
       with:
         args: '**/*.md'
