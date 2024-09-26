@@ -10,7 +10,7 @@ RCE could lead to data theft through the attacker's ability to manipulate data t
 
 Example:
 
-1. Using a Machine with access to cURL, run the command `cURL {{url}}/cmd?=ping%20192.168.1.1;cat%20/etc/hostname`
+1. Using a Machine with access to `curl`, run the command `curl {{url}}/cmd?=ping%20192.168.1.1;cat%20/etc/hostname`
 1. In the terminal, you will see the output of the ping command, then the hostname of the server hosting this website.
 
 #### Proof of Concept
