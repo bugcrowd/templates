@@ -149,20 +149,20 @@ Incorrect:
 
 Incorrect:
 
-> Throughout the course of the engagement, a critical severity SQL injection was discovered in the web application (www.example.com) which could be used by an attacker to exfiltrate personally identifiable information from the backend database.
+> Throughout the course of the engagement, a critical severity SQL injection was discovered in the web application (<www.example.com>) which could be used by an attacker to exfiltrate personally identifiable information from the backend database.
 
 Correct:
 
-> An SQL injection was discovered in www.example.com allowing a malicious attacker to exfiltrate personally identifiable information.
+> An SQL injection was discovered in <www.example.com> allowing a malicious attacker to exfiltrate personally identifiable information.
 
 ### Split Up Long Sentences
 
 Incorrect:
 
-> An SQL injection was discovered in www.example.com allowing a malicious attacker to exfiltrate personally identifiable information including email addresses which would be considered a GDPR violation and poses a considerable business risk.
+> An SQL injection was discovered in <www.example.com> allowing a malicious attacker to exfiltrate personally identifiable information including email addresses which would be considered a GDPR violation and poses a considerable business risk.
 
 Correct:
-> An SQL injection was discovered in www.example.com allowing a malicious attacker to exfiltrate personally identifiable information. The retrievable data includes passwords, email addresses and full names. This poses a GDPR violation and considerable business risk.
+> An SQL injection was discovered in <www.example.com> allowing a malicious attacker to exfiltrate personally identifiable information. The retrievable data includes passwords, email addresses and full names. This poses a GDPR violation and considerable business risk.
 
 ## Acronyms
 
@@ -184,7 +184,7 @@ Incorrect: pen test, PenTest, Pen Test
 
 ## A vs. An
 
-"An" should be used when the next word starts with a consonant _sound_. Otherwise, "A" should be used.
+"An" should be used when the next word starts with a consonant *sound*. Otherwise, "A" should be used.
 
 Correct:
 

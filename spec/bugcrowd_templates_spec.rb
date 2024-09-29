@@ -70,7 +70,7 @@ describe BugcrowdTemplates do
         let!(:file_name) { 'template' }
 
         it 'returns the bugcrowd template value as string' do
-          is_expected.to include('# Outdated Software Version')
+          is_expected.to include('Outdated Software Version')
         end
 
         context 'when file_name with multiple options' do
@@ -78,7 +78,7 @@ describe BugcrowdTemplates do
             let!(:file_name) { 'template' }
 
             it 'returns the bugcrowd template value as string' do
-              is_expected.to include('# Outdated Software Version')
+              is_expected.to include('Outdated Software Version')
             end
           end
 
@@ -113,7 +113,7 @@ describe BugcrowdTemplates do
             let!(:file_name) { 'template' }
 
             it 'returns the bugcrowd template value as string' do
-              is_expected.to include('# Outdated Software Version')
+              is_expected.to include('Outdated Software Version')
             end
           end
 
@@ -159,7 +159,7 @@ describe BugcrowdTemplates do
           let!(:file_name) { 'template' }
 
           it 'returns the template defined in the subcategory folder' do
-            is_expected.to include('# Clickjacking')
+            is_expected.to include('Clickjacking')
           end
         end
 
@@ -170,7 +170,7 @@ describe BugcrowdTemplates do
           let!(:file_name) { 'template' }
 
           it 'returns the template defined in the subcategory folder' do
-            is_expected.to include('# Clickjacking')
+            is_expected.to include('Clickjacking')
           end
         end
 
@@ -181,7 +181,7 @@ describe BugcrowdTemplates do
           let!(:file_name) { 'template' }
 
           it 'returns the template defined in the subcategory folder' do
-            is_expected.to include('# Outdated Software Version')
+            is_expected.to include('Outdated Software Version')
           end
         end
 

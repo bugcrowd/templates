@@ -6,5 +6,5 @@
   "line_length": false,
   "fenced-code-language": false,
   "no-emphasis-as-heading": false,
-  "blanks-around-headings": false
+  "first-line-heading": false
 }
