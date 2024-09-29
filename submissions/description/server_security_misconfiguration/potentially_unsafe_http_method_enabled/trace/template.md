@@ -2,11 +2,11 @@ HTTP request methods are used to indicate the desired action to be performed in 
 
 The TRACE HTTP method can be sent to this application and could be used by an attacker to gather information, or interact with an endpoint in a way that is unintended. It is possible for the TRACE method to be used in a cross-site tracing attack, a technique where a malicious attacker can bypass the `HttpOnly` tag, capture a session cookie, and gain control of a user's session.
 
-#### Business Impact
+**Business Impact**
 
 HTTP methods enabled can lead to reputational damage for the business through the impact to customers’ trust in the security of the application.
 
-#### Steps to Reproduce
+**Steps to Reproduce**
 
 1. Enable a HTTP intercept proxy, such as Burp Suite or OWASP ZAP
 1. Use a browser to login and navigate to: {{URL}}
@@ -17,7 +17,7 @@ HTTP methods enabled can lead to reputational damage for the business through th
 1. Observe the change of the HTTP method to the TRACE method
 1. Forward the new request to the application
 
-#### Proof of Concept (PoC)
+**Proof of Concept (PoC)**
 
 The screenshot below demonstrates the HTTP method enabled:
 

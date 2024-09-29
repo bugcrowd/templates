@@ -2,11 +2,11 @@ A Right to Left Override (RLO) character is a unicode character, denoted as `U+2
 
 A successful exploit of an RLO character can trick users to downloading or clicking on files they otherwise would not. These files can include malware or an executable that requires user interaction to successfully infect systems.
 
-#### Business Impact
+**Business Impact**
 
 This vulnerability can lead to reputational damage and indirect financial loss to the company through the impact to customers’ trust.
 
-#### Steps to Reproduce
+**Steps to Reproduce**
 
 1. Enable a HTTP interception proxy, such as Burp Suite or OWASP ZAP
 1. Use a browser to navigate to: {{URL}}
@@ -18,7 +18,7 @@ This vulnerability can lead to reputational damage and indirect financial loss t
 {{request}}
 ```
 
-#### Proof of Concept (PoC)
+**Proof of Concept (PoC)**
 
 The screenshot(s) below demonstrates the RLO:
 

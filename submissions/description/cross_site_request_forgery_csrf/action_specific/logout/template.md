@@ -2,11 +2,11 @@ Cross-Site Request Forgery (CSRF) occurs when requests to the application are su
 
 CSRF is possible within this application, allowing an attacker to log-out a valid user. Additionally, the attacker needs to socially engineer the user to click on a link, or paste the malicious code into the user’s browser. If successful, the code will execute within that user’s browser in the context of this domain, logging the user out of their session. An attacker can deny service to users using this CSRF vector to prevent access to the application and constantly logging users out.
 
-#### Business Impact
+**Business Impact**
 
 CSRF could lead to reputational damage for the business through the impact to customers’ trust due to not being able to reliably access the application. This could also cause indirect financial impacts to the business.
 
-#### Steps to Reproduce
+**Steps to Reproduce**
 
 1. Enable a HTTP interception proxy, such as Burp Suite or OWASP ZAP
 1. Modify the request with the following CSRF POC code:
@@ -23,7 +23,7 @@ and forward the request to the endpoint:
 
 1. Observe the user was logged out, proving that the CSRF POC code was successful
 
-#### Proof of Concept (PoC)
+**Proof of Concept (PoC)**
 
 Please view the proof of concept CSRF HTML code below:
 

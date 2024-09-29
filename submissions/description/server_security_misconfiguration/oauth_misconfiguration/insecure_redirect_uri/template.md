@@ -2,11 +2,11 @@ OAuth is an authorization framework used to identify and authenticate users for 
 
 The application fails to validate the `redirect_uri` parameter used within the OAuth workflow. This redirect URI is where the user is redirected to after being authorized. When the `redirect_uri` parameter is not validated, an attacker is able to change this URI to a domain they own. As a consequence, when the OAuth workflow is triggered, the legitimate user’s browser sends the authorization token to the attacker-controlled domain, allowing the attacker to take over the user’s account.
 
-#### Business Impact
+**Business Impact**
 
 Account takeover can lead to financial and loss through an attacker's access to multiple user accounts and the data within. This attack can also lead to reputational damage for the business through the impact to customers’ trust in the security of the application.
 
-#### Steps to Reproduce
+**Steps to Reproduce**
 
 1. Enable a HTTP intercept proxy, such as Burp Suite or OWASP ZAP
 1. Use a browser to navigate to: {{URL}}
@@ -17,7 +17,7 @@ Account takeover can lead to financial and loss through an attacker's access to 
 
 1. Observe that the authorization token is sent to server altered in the previous step
 
-#### Proof of Concept (PoC)
+**Proof of Concept (PoC)**
 
 The screenshot below demonstrates a successful account takeover:
 

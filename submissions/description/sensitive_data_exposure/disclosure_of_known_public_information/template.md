@@ -2,16 +2,16 @@ Sensitive data can be exposed when it is not behind an authorization barrier. Wh
 
 Known public information is disclosed by this application which can be used by an attacker to build a profile of the business, the application, and its users for further attacks.
 
-#### Business Impact
+**Business Impact**
 
 Disclosure of known public information can result in reputational damage for the business through an attacker’s ability to impact customers' trust through further attack methods, such as social engineering.
 
-#### Steps to Reproduce
+**Steps to Reproduce**
 
 1. Use a browser to navigate to: {{url}}
 1. Observe that publicly known information is being disclosed
 
-#### Proof of Concept (PoC)
+**Proof of Concept (PoC)**
 
 The screenshots below displays the publicly known information disclosed:
 

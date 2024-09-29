@@ -2,11 +2,11 @@ HTTP request methods are used to indicate the desired action to be performed in 
 
 The OPTIONS HTTP method can be sent to this application and could be used by an attacker to gather information, or interact with an endpoint in a way that is unintended, gathering information about the system for further attacks.
 
-#### Business Impact
+**Business Impact**
 
 HTTP methods enabled can lead to reputational damage for the business through the impact to customers’ trust in the security of the application.
 
-#### Steps to Reproduce
+**Steps to Reproduce**
 
 1. Enable a HTTP intercept proxy, such as Burp Suite or OWASP ZAP
 1. Use a browser to login and navigate to: {{URL}}
@@ -17,7 +17,7 @@ HTTP methods enabled can lead to reputational damage for the business through th
 1. Observe the change of the HTTP method to the OPTIONS method
 1. Forward the new request to the application
 
-#### Proof of Concept (PoC)
+**Proof of Concept (PoC)**
 
 The screenshot below demonstrates the HTTP method enabled:
 

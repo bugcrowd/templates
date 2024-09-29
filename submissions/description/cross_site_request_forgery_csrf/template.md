@@ -4,11 +4,11 @@ CSRF is possible for this application, allowing an attacker to submit requests t
 
 When an attacker can control code that is executed within a user’s browser, they are able to carry out any actions that the user is able to perform, including accessing any of the user's data and modifying information within the user’s permissions. This can result in modification, deletion, or theft of data, including accessing or deleting files, or stealing session cookies which an attacker could use to hijack a user’s session. The attacker’s actions are limited by the privileges of the user, as well as the application’s capabilities and the data stored within it.
 
-#### Business Impact
+**Business Impact**
 
 CSRF could lead to data theft through the attacker’s ability to manipulate data through their access to the application, and their ability to interact with other users, including performing other malicious attacks, which would appear to originate from a legitimate user. These malicious actions could also result in reputational damage for the business through the impact to customers’ trust.
 
-#### Steps to Reproduce
+**Steps to Reproduce**
 
 1. Enable a HTTP interception proxy, such as Burp Suite or OWASP ZAP
 1. Use a browser to sign into the application at: {{URL}}
@@ -28,7 +28,7 @@ CSRF could lead to data theft through the attacker’s ability to manipulate dat
 
 1. Navigate to the following URL and observe the action taken by the CSRF POC code was successful: {{URL}}
 
-#### Proof of Concept (PoC)
+**Proof of Concept (PoC)**
 
 Please view the proof of concept CSRF HTML code below:
 

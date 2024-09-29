@@ -2,11 +2,11 @@ Disclosure of secrets for internal assets occurs when sensitive data for the int
 
 Disclosure of secrets for this internal asset could be leveraged by an attacker to access the internal application or the environment where the application is hosted.
 
-#### Business Impact
+**Business Impact**
 
 Disclosure of secrets for internal assets can lead to indirect financial loss due to an attacker accessing, deleting, or modifying data from within the application. This could happen through an insider threat, existing data breaches, or a malicious internal attacker escalating their privileges. Reputational damage for the business can also occur via the impact to customers’ trust that these events create. The severity of the impact to the business is dependent on the sensitivity of the data being stored in, and transmitted by the application.
 
-#### Steps to Reproduce
+**Steps to Reproduce**
 
 1. Setup a HTTP interception proxy, such as Burp Suite or OWASP ZAP
 1. Use a browser to navigate to: {{url}}/data/
@@ -15,7 +15,7 @@ Disclosure of secrets for internal assets can lead to indirect financial loss du
 
 {{screenshot}}
 
-#### Proof of Concept (PoC)
+**Proof of Concept (PoC)**
 
 The screenshots below show the full exploit:
 

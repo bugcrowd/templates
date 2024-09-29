@@ -4,11 +4,11 @@ When an attacker can control code that is executed within a user’s browser, th
 
 to create a crafted JavaScript payload. When a user navigates to the page,  the arbitrary JavaScript executes within that user’s browser in the context of this domain.
 
-#### Business Impact
+**Business Impact**
 
 Stored XSS could lead to data theft through the attacker’s ability to manipulate data through their access to the application, and their ability to interact with other users, including performing other malicious attacks, which would appear to originate from a legitimate user. These malicious actions could also result in reputational damage for the business through the impact to customers’ trust.
 
-#### Steps to Reproduce
+**Steps to Reproduce**
 
 1. Enable a HTTP interception proxy, such as Burp Suite or OWASP ZAP
 1. Navigate to {{URL}}
@@ -22,7 +22,7 @@ Stored XSS could lead to data theft through the attacker’s ability to manipula
 1. Observe the JavaScript payload being executed, capturing the cookies of User A
 1. Logout of User A’s account
 
-#### Proof of Concept (PoC)
+**Proof of Concept (PoC)**
 
 Below is a screenshot demonstrating the injected JavaScript executing at the vulnerable endpoint, {{URL}}:
 

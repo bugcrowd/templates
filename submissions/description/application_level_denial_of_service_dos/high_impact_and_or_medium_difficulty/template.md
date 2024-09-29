@@ -2,11 +2,11 @@ Application-level Denial of Service (DoS) attacks are designed to deny service t
 
 There is an application-level DoS vulnerability within this application that has high impact or medium difficulty to be performed. An attacker can use this vulnerability to exhaust resources, making the application unavailable for its designed purpose to legitimate users, but not take down the application for all users.
 
-#### Business Impact
+**Business Impact**
 
 Application-level DoS can result in indirect financial loss for the business through the attacker’s ability to DoS the application. These malicious actions could also result in reputational damage for the business through the impact to customers’ trust.
 
-#### Steps to Reproduce
+**Steps to Reproduce**
 
 1. Navigate to the following URL: {{url}}
 1. Use the following payload:
@@ -19,7 +19,7 @@ Application-level DoS can result in indirect financial loss for the business thr
 
 1. Observe that the payload causes a Denial of Service that has high impact or medium difficulty to be performed
 
-#### Proof of Concept (PoC)
+**Proof of Concept (PoC)**
 
 The screenshot below demonstrates proof of the vulnerability:
 

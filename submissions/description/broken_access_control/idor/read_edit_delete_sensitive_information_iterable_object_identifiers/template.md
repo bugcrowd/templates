@@ -1,10 +1,10 @@
 Insecure Direct Object Reference (IDOR) occurs when there are no access control checks to verify if a request to interact with a resource is valid. An IDOR vulnerability within this application allows an attacker to read Personally Identifiable Information (PII)  by iterating through object identifiers.
 
-#### Business Impact
+**Business Impact**
 
 IDOR can lead to reputational damage for the business through the impact to customers’ trust. The severity of the impact to the business is dependent on the sensitivity of the data being stored in, and transmitted by the application.
 
-#### Steps to Reproduce
+**Steps to Reproduce**
 
 1. Use a browser to navigate to: {{URL}}
 1. Login to User Account A
@@ -16,7 +16,7 @@ IDOR can lead to reputational damage for the business through the impact to cust
 
 {{screenshot}}
 
-#### Proof of Concept (PoC)
+**Proof of Concept (PoC)**
 
 Below is a screenshot demonstrating the exposed object executing:
 

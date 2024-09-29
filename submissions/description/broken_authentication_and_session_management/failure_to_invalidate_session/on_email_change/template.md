@@ -2,11 +2,11 @@ Sessions commonly fail to invalidate active sessions. An attacker can use previo
 
 An attacker may compromise a user’s session through a variety of ways including, calling an internal post authentication page, modifying the given URL parameters, phishing a user, by manipulating a form, or by counterfeiting sessions. Once they have gained account access, an attacker may be able to change the password of the account and lock out the legitimate user. The attacker’s actions are limited by the privileges of the user’s account that they gain access to. This could include viewing or editing sensitive customer data, viewing or editing other user permissions.
 
-#### Business Impact
+**Business Impact**
 
 This vulnerability can lead to reputational damage and indirect financial loss to the company as customers may view the application as insecure.
 
-#### Steps to Reproduce
+**Steps to Reproduce**
 
 1. Enable a HTTP interception proxy, such as Burp Suite or OWASP ZAP
 1. Use a browser to navigate to: {{URL}}
@@ -17,7 +17,7 @@ This vulnerability can lead to reputational damage and indirect financial loss t
 1. Replay the request using the HTTP interception proxy
 1. Observe that the application responds to the request
 
-#### Proof of Concept (PoC)
+**Proof of Concept (PoC)**
 
 The screenshot below shows the the application failing to invalidate the session:
 

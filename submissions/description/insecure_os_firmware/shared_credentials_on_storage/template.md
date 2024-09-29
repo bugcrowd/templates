@@ -1,10 +1,10 @@
 The device in question stores a set of shared credentials on its storage medium. These credentials are intended for accessing a shared service. However, should the device be compromised or acquired by unauthorized parties, an attacker could use these shared credentials to gain access to services that are normally restricted.
 
-#### Business Impact
+**Business Impact**
 
 The presence of shared credentials stored on the device poses a significant security risk. Unauthorized access to shared services can lead to data breaches, unauthorized transactions, or the manipulation of sensitive information. Such incidents can severely impact the organization's operational security, result in financial losses, and damage the organization's reputation, especially if customer data or critical business operations are compromised.
 
-#### Steps to Reproduce
+**Steps to Reproduce**
 
 1. Gain physical access to the device and remove the cover, as seen in the images below:
 
@@ -21,7 +21,7 @@ or
 4. Using the HTTP request below, send the request with the token:
 {{HTTP request}}
 
-#### Proof of Concept (PoC)
+**Proof of Concept (PoC)**
 
 The following screenshot(s) demonstrate(s) this vulnerability:
 

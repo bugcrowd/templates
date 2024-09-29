@@ -2,11 +2,11 @@ SQL injection (SQLi) is a vulnerability in which an application accepts input in
 
 An attacker could exploit this lack of input sanitization to exfiltrate database data and files, tamper with the data, or perform resource exhaustion. Depending on the database and how it is configured, an attacker could potentially remotely execute code on the server running the database.
 
-#### Business Impact
+**Business Impact**
 
 Data exfiltration through a SQLi attack could lead to reputational damage or regulatory fines for the business due to an attacker’s unauthorized access to data. This could also result in reputational damage for the business through the impact to customers’ trust. The severity of the impact to the business is dependent on the sensitivity of the data being stored in, and transmitted by the application.
 
-#### Steps to Reproduce
+**Steps to Reproduce**
 
 1. Using a browser, login to in-scope asset at: {{URL}}
 1. Browse to account page
@@ -18,7 +18,7 @@ Data exfiltration through a SQLi attack could lead to reputational damage or reg
 {{payload}}
 ```
 
-#### Proof of Concept (PoC)
+**Proof of Concept (PoC)**
 
 The screenshot below demonstrates the SQLi being executed:
 

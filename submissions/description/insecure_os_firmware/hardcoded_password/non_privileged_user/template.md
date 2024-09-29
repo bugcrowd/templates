@@ -2,16 +2,16 @@ When Operating System (OS) firmware is insecure, it broadens the application’s
 
 A hard-coded password for a non-privileged user was identified in the source code of the application. An attacker could abuse the hard-coded password for a non-privileged user to gain access to aspects of the application they normally would not have access to. With this increased access, a malicious attacker could perform other attacks on the application, elevate their privileges, or gather sensitive data from within the application.
 
-#### Business Impact
+**Business Impact**
 
 This vulnerability can lead to direct financial loss to the company due to data theft, application manipulation and corruption, or Denial of Service to customers and users of the application. It can also lead to reputational damage as customers may view the application as insecure.
 
-#### Steps to Reproduce
+**Steps to Reproduce**
 
 1. Navigate to the source code files of the application
 1. Observe that a password is hard-coded into the source code and does not require external validation
 
-#### Proof of Concept (PoC)
+**Proof of Concept (PoC)**
 
 The screenshot below shows the hard-coded password within the application source files:
 
