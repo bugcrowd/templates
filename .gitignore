@@ -3,3 +3,6 @@
 Gemfile.lock
 submissions/description/broken_access_control/privilege_escalation/.gitkeep
 submissions/description/sensitive_data_exposure/password_reset_token/.gitkeep
+submissions/description/server_security_misconfiguration/misconfigured_dns/basic_subdomain_takeover/.gitkeep
+submissions/description/server_security_misconfiguration/misconfigured_dns/high_impact_subdomain_takeover/.gitkeep
+submissions/description/server_security_misconfiguration/misconfigured_dns/subdomain_takeover/.gitkeep
