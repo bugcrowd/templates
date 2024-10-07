@@ -13,6 +13,10 @@ The affected software versions and related vulnerabilities have been listed belo
 >- [CVE-2024-6485](https://nvd.nist.gov/vuln/detail/CVE-2024-6485): XSS in bootstrap button component
 >- [CVE-2024-6484](https://nvd.nist.gov/vuln/detail/CVE-2024-6485): XSS in carousel component
 
+**Business Impact**
+
+Outdated Software Version can lead to reputational damage for the business due to a loss in confidence and trust by users.
+
 **Proof Of Concept (PoC)**
 
 Navigate to the following JavaScript library files and view the version numbers disclosed at the top of the files:
