@@ -1,6 +1,6 @@
 The configured `Content Security Policy` (CSP) was insecure.
 
-CSP is a mechanism designed to add an additional layer of protection against injection attacks such as Cross-Site Scripting (XSS) and clickjacking. CSP achieves this by specifying the limitations on which resources may be loaded and from where.
+A CSP is a mechanism designed to add an additional layer of protection against injection attacks such as Cross-Site Scripting (XSS) and clickjacking. The CSP achieves this by specifying the limitations on which resources may be loaded and from where.
 
 A CSP can inherit weakness if configured by attributes that reduce the security benefits of having a CSP. The in-scope application's CSP was found to be insecure due to the usage of the following explicitly unsafe source expressions:
 
