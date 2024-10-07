@@ -15,7 +15,7 @@ The affected software versions and related vulnerabilities have been listed belo
 
 **Business Impact**
 
-Outdated JavaScript libraties can lead to reputational damage for the business due to a loss in confidence and trust by users.
+Outdated JavaScript libraries can lead to reputational damage for the business due to a loss in confidence and trust by users.
 
 **Proof Of Concept (PoC)**
 
