@@ -1,14 +1,10 @@
-# Database Management System Misconfiguration
-
-## Overview of the Vulnerability
-
 Database Management System (DBMS) misconfiguration can arise from software or hardware misconfigurations, vulnerabilities, or human error. DBMS misconfigurations can result in an attacker performing Denial of Service (DoS) attacks, injection attacks, buffer overflows, malware, and attacks performed on backup databases. These attacks can result in an attacker gaining access to the database and potentially read or write access to its contents.
 
-## Business Impact
+**Business Impact**
 
 DBMS misconfigurations can lead to reputational damage for the business due to a loss in confidence and trust by users. It can also lead to indirect financial loss due to intellectual property theft, industry regulated fines, and breach investigation activities and customer notification as a result of an attacker gaining and exploiting access to the DBMS. The severity of the business impact depends on the privilege level of access gained by an attacker.
 
-## Steps to Reproduce
+**Steps to Reproduce**
 
 1. Enable a HTTP interception proxy, such as Burp Suite or OWASP ZAP
 1. Use a browser to the vulnerable functionality: {{value}}
@@ -22,7 +18,7 @@ DBMS misconfigurations can lead to reputational damage for the business due to a
 
 1. Observe that the database has the following misconfiguration: {{value}}.
 
-## Proof of Concept (PoC)
+**Proof of Concept (PoC)**
 
 The screenshot(s) below demonstrates the misconfiguration:
 

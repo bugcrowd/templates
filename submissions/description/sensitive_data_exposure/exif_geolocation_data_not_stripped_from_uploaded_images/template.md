@@ -1,20 +1,16 @@
-# EXIF Geolocation Data on Uploaded Images
-
-## Overview of the Vulnerability
-
 Exchangeable Image File Format (EXIF) data is a standard used to specify the format of metadata in photographs. Most EXIF data contains the make, model and type of camera used, the lens settings, as well as the geolocation data. This application does not remove the EXIF data when a user uploads photographs, which could be used by an attacker to find and collect the geolocation data of users.
 
-## Business Impact
+**Business Impact**
 
 When an application fails to remove the EXIF data from uploaded images, it breaks the user’s trust in the application and can result in reputational damage to the business.
 
-## Steps to Reproduce
+**Steps to Reproduce**
 
 1. Use a browser to navigate to: {{url}}
 1. Download the user uploaded image
 1. Extract the EXIF geolocation data
 
-## Proof of Concept (PoC)
+**Proof of Concept (PoC)**
 
 The following screenshot shows the EXIF Geolocation Data:
 

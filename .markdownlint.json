@@ -6,6 +6,5 @@
   "line_length": false,
   "fenced-code-language": false,
   "no-emphasis-as-heading": false,
-  "MD041": false,
-  "blanks-around-headings": false
+  "first-line-heading": false
 }
