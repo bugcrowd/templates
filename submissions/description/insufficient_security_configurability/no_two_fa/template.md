@@ -7,6 +7,7 @@ The application did not allow users to configure Two Factor Authentication (2FA)
 This vulnerability can lead to reputational damage and indirect financial loss to the company as customers may view the application as insecure.
 
 **Steps to Reproduce**
+
 1. Navigate to the following URL: {{URL}}
 1. Identify the vulnerability by performing {{action}}
 1. Observe the misconfiguration
