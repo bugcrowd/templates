@@ -2,7 +2,7 @@ Excessive agency or permission manipulation occurs when an attacker is able to m
 
 **Business Impact**
 
-This vulnerability can lead to reputational and financial damage if an attacker compromises the LLM decision making or accesses unauthorized data. These cirvumstances not only harm the company but also weaken users' trust. The extent of business impact depends on the sensitivity of the data transmitted by the application.
+This vulnerability can lead to reputational and financial damage if an attacker compromises the LLM decision making or accesses unauthorized data. These circumstances not only harm the company but also weaken users' trust. The extent of business impact depends on the sensitivity of the data transmitted by the application.
 
 **Steps to Reproduce**
 
