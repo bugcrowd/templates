@@ -8,10 +8,10 @@ Improper validation in blockchain bridges can lead to significant financial loss
 
 1. Navigate to the following URL: {{URL}}
 1. Analyze the bridge's transaction validation and verification logic.  
-2. Submit a cross-chain transaction with forged or incomplete data.  
-3. Observe if the bridge accepts and processes the invalid transaction.  
-4. Attempt to manipulate or double-spend assets through the bridge.  
-5. Confirm that the bridge fails to detect or reject the invalid transaction.
+1. Submit a cross-chain transaction with forged or incomplete data.  
+1. Observe if the bridge accepts and processes the invalid transaction.  
+1. Attempt to manipulate or double-spend assets through the bridge.  
+1. Confirm that the bridge fails to detect or reject the invalid transaction.
 
 **Proof of Concept**
 

@@ -10,8 +10,7 @@ Function-level accounting errors can lead to significant financial discrepancies
 1. Review the DeFi protocol's smart contract code for financial functions
 1. Identify an edge case or flaw in the logic {{Describe the specific underflow, overflow, or rounding issue identified}}
 1. Manipulate the inputs to the vulnerable function to trigger the flaw  
-1. Observe that the protocol fails to update balances properly which results in an incorrect payout
-> {{screenshot}}
+1. Observe that the protocol fails to update balances properly which results in an incorrect payout {{screenshot}}
 
 **Proof of Concept**
 

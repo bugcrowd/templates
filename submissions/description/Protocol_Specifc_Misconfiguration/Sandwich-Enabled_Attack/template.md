@@ -10,7 +10,7 @@ Sandwich attacks degrade user trust, as legitimate users bear higher transaction
 1. Identify a transaction or function where price changes affect the outcome.
 1. Submit a transaction before the target transaction to influence the price.
 1. Submit a transaction after the target to capture the profit from the price change.
-5. Observe the increased cost or asset price distortion resulting from the sandwiching technique.
+1. Observe the increased cost or asset price distortion resulting from the sandwiching technique.
 
 **Proof of Concept**
 

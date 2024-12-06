@@ -4,7 +4,8 @@ Decentralized Application (dApp) misconfiguration refers to issues in the design
 
 Misconfigured dApps can lead to data breaches, financial losses, and reputational harm. These vulnerabilities may also affect compliance with security standards and regulations.
 
-**Steps to Reproduce**  
+**Steps to Reproduce**
+
 1. Navigate to the following URL: {{URL}}
 1. Analyze the dApp's code and configuration for potential security gaps
 1. Test inputs and interactions to identify improper handling or validation  

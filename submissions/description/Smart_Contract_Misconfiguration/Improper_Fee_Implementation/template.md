@@ -9,9 +9,9 @@ Improper fee configurations can result in financial losses, reduced user satisfa
 1. Navigate to the following URL: {{URL}}
 1. Review the contract’s fee logic and parameters
 1. Execute multiple transactions with varied amounts and compare fee deductions
-3. Observe that fees deviate from expected values, or are inconsistently applied
-4. Bypass or change the fee mechanism by adjusting input data
-5. Observe that there is abnormal fee behavior compared to the fee policy
+1. Observe that fees deviate from expected values, or are inconsistently applied
+1. Bypass or change the fee mechanism by adjusting input data
+1. Observe that there is abnormal fee behavior compared to the fee policy
 
 **Proof of Concept**
 

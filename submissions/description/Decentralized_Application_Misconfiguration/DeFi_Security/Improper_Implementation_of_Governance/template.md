@@ -9,10 +9,8 @@ This vulnerability can destabilize the protocol, leading to reputational damage,
 1. Navigate to the following URL: {{URL}}
 1. Identify the governance mechanism within the DeFi protocol {{Describe the specific governance protocol}}
 1. Acquire a large amount of governance tokens {{Describe the method identified and provide steps to reproduce this}}
-1. Propose a governance change or vote on an existing proposal
-> {{screenshot}}
-1. Use the acquired tokens to influence the vote
-> {{screenshot}}
+1. Propose a governance change or vote on an existing proposal {{screenshot}}
+1. Use the acquired tokens to influence the vote {{screenshot}}
 
 **Proof of Concept**
 

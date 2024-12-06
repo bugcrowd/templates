@@ -8,10 +8,10 @@ Improperly applied modifiers can expose critical functions to unauthorized users
 
 1. Navigate to the following URL: {{URL}}
 1. Review function modifiers applied across sensitive contract functions
-2. Access restricted functions with an unauthorized account
-3. Bypassing the modifier and observe the following unintended access or manipulation:
+1. Access restricted functions with an unauthorized account
+1. Bypassing the modifier and observe the following unintended access or manipulation:
 {{screenshot}}
-4. Observe that restricted contract states or balances are affected
+1. Observe that restricted contract states or balances are affected
 
 **Proof of Concept**
 

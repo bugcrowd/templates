@@ -9,7 +9,7 @@ Mismatched bit lengths can lead to operational failures, security vulnerabilitie
 1. Navigate to the following URL: {{URL}}
 1. Identify a cryptographic operation or protocol process that rely on specific bit lengths 
 1. Submit data with mismatched bit lengths to test the system's handling of the input  
-3. Observe if the system processes or errors on invalid inputs  
+1. Observe if the system processes or errors on invalid inputs  
 
 **Proof of Concept**
 

@@ -8,9 +8,9 @@ Protocol misconfigurations can destabilize the network, cause financial losses, 
 
 1. Navigate to the following URL: {{URL}}
 1. Analyze the protocol design and configuration for missing checks or weaknesses  {{explanation of where + screenshot}}
-2. Interact with the protocol using malformed inputs or transactions 
-3. Test the behavior of consensus and state transitions under stress conditions  
-4. Exploit identified weaknesses to gain unauthorized control or disrupt operations
+1. Interact with the protocol using malformed inputs or transactions 
+1. Test the behavior of consensus and state transitions under stress conditions  
+1. Exploit identified weaknesses to gain unauthorized control or disrupt operations
 
 **Proof of Concept**
 

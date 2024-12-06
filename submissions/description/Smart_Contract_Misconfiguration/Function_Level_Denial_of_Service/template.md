@@ -8,10 +8,10 @@ Function-level DoS vulnerabilities can lead to operational disruptions and affec
 
 1. Navigate to the following URL: {{URL}}
 1. Identify a function that has looping or costly operations
-2. Use the following script that calls the function with large datasets or under high load:
+1. Use the following script that calls the function with large datasets or under high load:
 {{script}}
-3. Observe that the function fails due to gas limits, or causes significant delays
-4. Confirm that other users cannot access the function while the attack is ongoing
+1. Observe that the function fails due to gas limits, or causes significant delays
+1. Confirm that other users cannot access the function while the attack is ongoing
 
 **Proof of Concept**
 

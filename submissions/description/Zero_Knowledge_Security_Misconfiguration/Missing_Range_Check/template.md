@@ -8,8 +8,8 @@ Missing range checks can result in operational failures, financial losses, and p
 
 1. Navigate to the following URL: {{URL}}
 1. Inspect the input validation logic for arithmetic and cryptographic operations 
-2. Submit values that exceed the expected range 
-3. Observe that the system processes these inputs without detecting errors  
+1. Submit values that exceed the expected range 
+1. Observe that the system processes these inputs without detecting errors  
 
 **Proof of Concept**
 

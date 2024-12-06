@@ -1,4 +1,5 @@
 # Recommendation(s)
+
 Implementing the following defensive measures in the decentralized application can prevent and limit the impact of the vulnerability:
 
 - Ensure that there are checks on price and liquidity changes to prevent sudden manipulation caused by flash loans.

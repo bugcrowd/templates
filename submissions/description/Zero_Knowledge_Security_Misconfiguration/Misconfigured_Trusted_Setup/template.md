@@ -14,7 +14,7 @@ A misconfigured trusted setup undermines the cryptographic integrity of the syst
 1. Identify the point of vulnerability:
 {{e.g.insufficient randomness, or insecure key generation}}  
 1. Tamper with the setup process or manipulate input parameters  
-4. Observe that the misconfiguration allows for unauthorized actions, or data exposure
+1. Observe that the misconfiguration allows for unauthorized actions, or data exposure
 
 **Proof of Concept**
 

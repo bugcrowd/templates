@@ -8,11 +8,9 @@ Manipulation of price oracles can destabilize the platform by causing false valu
 
 1. Navigate to the following URL: {{URL}}
 1. Identify a DeFi platform relying on a price oracle for asset valuation: {{define specific platform}}
-1. Determine that the price oracle uses a centralized or single-source price feed
-> {{screenshot}}
+1. Determine that the price oracle uses a centralized or single-source price feed {{screenshot}}
 1. Manipulate the liquidity on the platform or provide false data to the oracle
-1. Observe price distortions and execute trades based on the manipulated prices to profit
-> {{screenshot}}
+1. Observe price distortions and execute trades based on the manipulated prices to profit {{screenshot}}
 1. Liquidate positions or perform arbitrage before the oracle updates or corrects the prices
 
 **Proof of Concept**

@@ -8,9 +8,9 @@ Irreversible function calls can lead to permanent loss of funds, reputational da
 
 1. Navigate to the following URL: {{URL}}
 1. Locate irreversible functions within the smart contract code
-2. Call these functions under normal user permissions:
+1. Call these functions under normal user permissions:
 {{screenshot}}
-3. Observe that the function’s actions cannot be reverted or are final
+1. Observe that the function’s actions cannot be reverted or are final
 
 **Proof of Concept**
 

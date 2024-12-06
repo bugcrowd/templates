@@ -10,7 +10,7 @@ A DoS attack can impact availability, causing loss of trust and a potential decl
 1. Identify the network nodes used by the protocol
 1. Use {{ tool}} to send a high volume of requests to a specific node
 1. Observe the node’s response to see if it slows or becomes unresponsive
-4. Observe that the node lacks rate-limiting mechanisms
+1. Observe that the node lacks rate-limiting mechanisms
 
 **Proof of Concept**
 
