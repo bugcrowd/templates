@@ -9,7 +9,7 @@ This vulnerability can lead to data theft through the attacker’s ability to ma
 1. Use a browser to navigate to: {{URL}}
 1. Right click on the page, select Inspect, then select Storage, then Local (or Session) Storage
 1. Observe the exposed sensitive token: {{screenshot}}
-1. In a new browser window, perform {{action}} to show that the token in `localStorage`/`sessionStorage` can be used to generate a user session: {{screenshot}}
+1. In a new private browser window, perform {{action}} to show that the token in `localStorage`/`sessionStorage` can be used to access a user's session or data: {{replace these brackets with a screenshot}}
 
 **Proof of Concept (PoC)**
 
