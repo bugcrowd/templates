@@ -1,4 +1,4 @@
-Insecure Direct Object Reference (IDOR) occurs when there are no access control checks to verify if a request to interact with a resource is valid. An IDOR vulnerability within this application allows an attacker to read Personally Identifiable Information (PII)  by iterating through object identifiers.
+Insecure Direct Object Reference (IDOR) occurs when there are no access control checks to verify if a request to interact with a resource is valid. An IDOR vulnerability within this application allows an attacker to modify sensitive information by iterating through object identifiers.
 
 **Business Impact**
 
@@ -22,7 +22,7 @@ Below is a screenshot demonstrating the exposed object executing:
 
 {{screenshot}}
 
-A malicious attacker could leverage this IDOR vulnerability to read PII by using the following payload:  
+A malicious attacker could leverage this IDOR vulnerability to modify data by using the following payload:  
   
 ``` bash
 {{payload}}
