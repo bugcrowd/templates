@@ -9,7 +9,7 @@ from pathlib import Path
 slugs = set() 
 
 currentvrturl = "https://raw.githubusercontent.com/bugcrowd/vulnerability-rating-taxonomy/master/vulnerability-rating-taxonomy.json"
-basedir = "templates"
+basedir = "submissions/description"
 
 vrtdata = requests.get(currentvrturl)
 
