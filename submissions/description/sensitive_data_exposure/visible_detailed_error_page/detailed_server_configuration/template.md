@@ -4,12 +4,13 @@ The detailed server configuration leaked by this application shows which version
 
 **Business Impact**
 
-This vulnerability can impact customers’ trust in the application which can result in reputational damage for the business and indirect financial losses.
+This vulnerability could enable attacker exploitation that will disrupt product or service availability, leading to direct financial loss.
+It can impact customers’ trust in the application which can result in reputational damage for the business and indirect financial losses.
 
 **Steps to Reproduce**
 
 1. Use a browser to navigate to: {{URL}}
-1. Observe detailed error message showing detailed server configuration
+2. Observe detailed error message showing detailed server configuration
 
 **Proof of Concept (PoC)**
 
