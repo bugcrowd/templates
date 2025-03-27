@@ -2,12 +2,13 @@ Visible detailed error pages are a result of improper error handling which intro
 
 **Business Impact**
 
+This vulnerability could enable attacker exploitation that will disrupt product or service availability, leading to direct financial loss.
 This vulnerability can impact customers’ trust in the application which can result in reputational damage for the business and indirect financial losses.
 
 **Steps to Reproduce**
 
 1. Use a browser to navigate to: {{URL}}
-1. Observe detailed error message
+2. Observe detailed error message
 
 **Proof of Concept (PoC)**
 

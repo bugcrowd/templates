@@ -4,12 +4,13 @@ The descriptive stack trace leaked by this application shows versions of softwar
 
 **Business Impact**
 
+This vulnerability could enable attacker exploitation that will disrupt product or service availability, leading to direct financial loss.
 This vulnerability can impact customers’ trust in the application which can result in reputational damage for the business and indirect financial losses.
 
 **Steps to Reproduce**
 
 1. Use a browser to navigate to: {{URL}}
-1. Observe detailed error message showing a descriptive stack trace
+2. Observe detailed error message showing a descriptive stack trace
 
 **Proof of Concept (PoC)**
 
