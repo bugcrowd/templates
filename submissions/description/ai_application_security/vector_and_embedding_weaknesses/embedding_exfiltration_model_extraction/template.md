@@ -12,7 +12,8 @@ Loss of intellectual property and competitive advantage if sensitive model infor
 ```python
   {script}
 ```
-3. Analyze the extracted embeddings for patterns and observer information about the model's knowledge
+
+1. Analyze the extracted embeddings for patterns and observer information about the model's knowledge
 
 **Proof of Concept (PoC)**
 

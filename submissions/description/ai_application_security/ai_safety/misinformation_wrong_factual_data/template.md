@@ -1,9 +1,11 @@
 AI models can generates or presents inaccurate, false, or misleading information as fact. Misinformation or wrong factual data can happen due to errors in the model's training data, hallucinations (fabrication of information), or a failure to cross-reference with reliable sources.
 
 **Business Impact**
+
 Users may receive and act upon incorrect information, leading to flawed decision-making, reputational damage for the service provider, and potential legal liabilities. There is also a loss of trust in the AI's reliability and accuracy.
 
 **Steps to Reproduce**
+
 1. Submit the following prompts that require factual information
 
 ```prompt
