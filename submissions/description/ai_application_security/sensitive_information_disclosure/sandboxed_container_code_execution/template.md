@@ -9,9 +9,10 @@ This can lead to data breaches, data manipulation, service disruption, and furth
 1. Identify a vulnerability in the sandboxed environment or its configuration
 1. Execute the following exploit designed to break out of the sandbox:
 
-```python
+``` python
   {malicious script}
 ```
+
 1. Verify and observe that arbitrary code can be executed on the host system outside the sandbox
 
 **Proof of Concept (PoC)**

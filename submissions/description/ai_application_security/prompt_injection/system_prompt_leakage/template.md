@@ -13,7 +13,7 @@ This vulnerability can lead to reputational and financial damage of the company 
 ```
 
 1. Look through the model's responses for information that discloses its internal instructions or constraints
-3. Observe that the information shows the model's operating parameters
+1. Observe that the information shows the model's operating parameters
 
 **Proof of Concept (PoC)**
 

@@ -9,9 +9,10 @@ This vulnerability can lead to reputational and financial damage of the company 
 1. Log in to the AI system with credentials for Tenant A
 1. Send the following request targeting the PII data or resources:
 
-```HTTP
+``` HTTP
   {HTTP request}
 ```
+
 1. Observe that PII is disclosed
 
 **Proof of Concept (PoC)**

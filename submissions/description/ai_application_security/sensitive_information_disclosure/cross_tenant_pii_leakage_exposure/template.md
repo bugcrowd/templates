@@ -12,6 +12,7 @@ This vulnerability can lead to reputational and financial damage of the company 
 ```HTTP
   {HTTP request}
 ```
+
 1. Observe that PII from the Tenant B is disclosed
 
 **Proof of Concept (PoC)**
