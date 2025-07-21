@@ -9,7 +9,7 @@ XSS could lead to data theft through the attacker’s ability to manipulate data
 **Steps to Reproduce**
 
 1. Enable a HTTP interception proxy, such as Burp Suite or OWASP ZAP
-1. Use a browser to navigate to the following URL and login: {{URL}}
+1. Use a browser to navigate to the following URL and log in: {{URL}}
 1. Update the local storage on your browser to contain the cookie: {{parameter}}
 1. Forward the following request to the endpoint:
 
@@ -21,6 +21,6 @@ XSS could lead to data theft through the attacker’s ability to manipulate data
 
 **Proof of Concept (PoC)**
 
-Below is a screenshot demonstrating the injected JavaScript executing:
-
-{{screenshot}}
+The screenshot(s) below demonstrate(s) the vulnerability:
+>
+> {{screenshot}}

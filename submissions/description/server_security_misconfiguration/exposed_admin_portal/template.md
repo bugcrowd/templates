@@ -1,6 +1,6 @@
-Administrative portals for an application allow Admins to login and modify how the application runs and the content it serves. This can include adding, removing, updating, or creating new content, account provisioning, data manipulation, and other configuration changes.
+Administrative portals for an application allow Admins to log in and modify how the application runs and the content it serves. This can include adding, removing, updating, or creating new content, account provisioning, data manipulation, and other configuration changes.
 
-An attacker who is able to identify an exposed admin portal can then brute force credentials. If they successfully login, they can access the administrative interface and carry out activities with Admin privileges.
+An attacker who is able to identify an exposed admin portal can then brute force credentials. If they successfully log in, they can access the administrative interface and carry out activities with Admin privileges.
 
 **Business Impact**
 
@@ -17,6 +17,6 @@ Exposed admin portals can lead to indirect financial loss due to the attacker’
 
 **Proof of Concept (PoC)**
 
-The screenshot(s) below demonstrates the exposed admin portal:
-
-{{screenshot}}
+The screenshot(s) below demonstrate(s) the vulnerability:
+>
+> {{screenshot}}

@@ -6,11 +6,11 @@ This vulnerability can lead to reputational damage and indirect financial loss t
 
 **Steps to Reproduce**
 
-1. Login to the application at: {{url}}
+1. Log in to the application at: {{url}}
 2. Perform {{action}} and observe that the security configuration is weak
 
 **Proof of Concept (PoC)**
 
-The screenshot(s) below demonstrates the vulnerability:
-
-{{screenshot}}
+The screenshot(s) below demonstrate(s) the vulnerability:
+>
+> {{screenshot}}

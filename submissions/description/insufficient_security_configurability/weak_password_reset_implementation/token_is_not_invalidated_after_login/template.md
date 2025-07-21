@@ -1,6 +1,6 @@
 The password reset implementation needs to involve a unique, temporary high-entropy token that has a short expiry and can only be used once. When these conditions are not met, the password reset implementation is  considered weak. This diminishes the strength of the overall authentication process for the application and can lead to account takeover.
 
-The application does not invalidate the password reset token after the user successfully resets their password and login to the application. If an attacker were to gain access to the system used to store the reset token, they could use this unused token to reset the user's password and gain access to the account.
+The application does not invalidate the password reset token after the user successfully resets their password and logs in to the application. If an attacker were to gain access to the system used to store the reset token, they could use this unused token to reset the user's password and gain access to the account.
 
 **Business Impact**
 
@@ -10,13 +10,13 @@ If an attacker successfully takes over an account by capturing a password reset 
 
 **Steps to Reproduce**
 
-1. Use a browser to login and navigate to: {{URL}}
+1. Use a browser to log in and navigate to: {{URL}}
 1. Initiate a password reset
-1. Login to the application with the new password
+1. Log in to the application with the new password
 1. Observe that the password reset token that was received in the earlier step is still valid
 
 **Proof of Concept (PoC)**
 
-The following screenshot shows that the password reset token is not invalidated after login below:
-
-{{screenshot}}
+The screenshot(s) below demonstrate(s) the vulnerability:
+>
+> {{screenshot}}

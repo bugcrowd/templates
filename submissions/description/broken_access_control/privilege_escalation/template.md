@@ -8,7 +8,7 @@ The impact of this vulnerability can vary in severity depending on the degree of
 
 1. Enable a HTTP interception proxy, such as Burp Suite or OWASP ZAP
 1. Use a browser to navigate to: {{URL}}
-1. Login to User Account A
+1. Log in to User Account A
 1. Using the HTTP interception proxy, forward the following request to the endpoint:
 
 ```HTTP

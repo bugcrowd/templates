@@ -8,7 +8,7 @@ Broken access controls can lead to financial loss through an attacker accessing,
 
 1. Enable a HTTP interception proxy, such as Burp Suite or OWASP ZAP
 1. Use a browser to navigate to: {{URL}}
-1. Login to an account that should not be able to perform {{action}}
+1. Log in to an account that should not be able to perform {{action}}
 1. Forward the following request to the endpoint:
 
 ```HTTP
@@ -19,6 +19,6 @@ Broken access controls can lead to financial loss through an attacker accessing,
 
 **Proof of Concept (PoC)**
 
-The screenshot below demonstrates the broken access control:
-
-{{screenshot}}
+The screenshot(s) below demonstrate(s) the vulnerability:
+>
+> {{screenshot}}

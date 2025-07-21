@@ -1,6 +1,6 @@
-A Computer Automated Public Turing Test test to tell Computers and Humans Apart (CAPTCHA) allows applications to tell whether a user is a human or a robot. A CAPTCHA can be bypassed when the implementation or its workflow is improperly configured, or when software can be used to bypass the challenge.
+A Computer Automated Public Turing Test to tell Computers and Humans Apart (CAPTCHA) allows applications to tell whether a user is a human or a robot. A CAPTCHA can be bypassed when the implementation or its workflow is improperly configured, or when software can be used to bypass the challenge.
 
-An attacker can bypass the CAPTCHA form and spam the website with queries for registration, login, as well as spam support teams with faulty requests.
+An attacker can bypass the CAPTCHA form and spam the website with queries for registration, log in, as well as spam support teams with faulty requests.
 
 **Business Impact**
 
@@ -13,6 +13,6 @@ CAPTCHA bypass can lead to reputational damage for the business due to a loss in
 
 **Proof of Concept (PoC)**
 
-The screenshot(s) below demonstrates the CAPTCHA bypass:
-
-{{screenshot}}
+The screenshot(s) below demonstrate(s) the vulnerability:
+>
+> {{screenshot}}

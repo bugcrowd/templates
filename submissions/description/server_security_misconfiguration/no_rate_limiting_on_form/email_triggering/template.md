@@ -17,8 +17,8 @@ Additionally, for systems that use Software-as-a-Service (SaaS) email providers,
 1. Perform another, manual email triggering form submission in the browser without the interception proxy enabled
 1. Observe that the form is submitted and an email is triggered successfully. This shows that there is no silent lockout implemented
 
-#### Proof of Concept
+**Proof of Concept (PoC)**
 
-The following screenshots demonstrate a lack of rate limiting on the email triggering form, followed by a successful form submission after 400 requests:
-
-{{screenshot}}
+The screenshot(s) below demonstrate(s) the vulnerability:
+>
+> {{screenshot}}

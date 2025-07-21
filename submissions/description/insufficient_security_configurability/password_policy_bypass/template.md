@@ -7,7 +7,7 @@ Having a password policy bypass present within the application can result in rep
 **Steps to Reproduce**
 
 1. Use a browser to navigate to: {{URL}}
-1. Attempt to login
+1. Attempt to log in
 1. Observe that modifying the following parameter allows a user to bypass the password policy of the application:
 
 ​​{{parameter}}

@@ -10,15 +10,15 @@ This vulnerability can lead to reputational damage and indirect financial loss t
 
 1. Enable a HTTP interception proxy, such as Burp Suite or OWASP ZAP
 1. Use a browser to navigate to: {{URL}}
-1. Sign into a user’s account
+1. Log in to a user’s account
 1. Capture any authenticated request
 1. Change the email address associated with the account
-1. Logout of the application
+1. Log out of the application
 1. Replay the request using the HTTP interception proxy
 1. Observe that the application responds to the request
 
 **Proof of Concept (PoC)**
 
-The screenshot below shows the the application failing to invalidate the session:
-
-{{screenshot}}
+The screenshot(s) below demonstrate(s) the vulnerability:
+>
+> {{screenshot}}

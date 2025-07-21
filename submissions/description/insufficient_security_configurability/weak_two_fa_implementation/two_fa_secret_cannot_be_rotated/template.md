@@ -6,12 +6,12 @@ This vulnerability can lead to reputational damage and indirect financial loss t
 
 **Steps to Reproduce**
 
-1. Login to the application at: {{url}}
+1. Log in to the application at: {{url}}
 1. Setup two factor authentication
 1. After the 2FA secret is created, observe that there is no way in which the secret can be rotated
 
 **Proof of Concept (PoC)**
 
-The screenshot(s) below demonstrates that the 2FA code can’t be rotated:
-
-{{screenshot}}
+The screenshot(s) below demonstrate(s) the vulnerability:
+>
+> {{screenshot}}

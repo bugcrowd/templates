@@ -6,13 +6,13 @@ This vulnerability can lead to reputational damage and indirect financial loss t
 
 **Steps to Reproduce**
 
-1. Login to the application and input data so that it is stored by the application
+1. Log in to the application and input data so that it is stored by the application
 1. Navigate to where the application stores the gathered information
 1. Navigate to the following URL: {{URL}}
 1. Observe the application data that is stored unencrypted
 
 **Proof of Concept (PoC)**
 
-The screenshots below demonstrate the insecure data storage:
-
-{{screenshot}}
+The screenshot(s) below demonstrate(s) the vulnerability:
+>
+> {{screenshot}}
