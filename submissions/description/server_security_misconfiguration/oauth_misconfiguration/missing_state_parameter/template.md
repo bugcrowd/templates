@@ -9,7 +9,7 @@ Account takeover can lead to financial and loss through an attacker's access to 
 **Steps to Reproduce**
 
 1. Enable a HTTP intercept proxy, such as Burp Suite or OWASP ZAP
-1. Use a browser to login and navigate to: {{URL}}
+1. Use a browser to log in and navigate to: {{URL}}
 1. Capture the response with the HTTP intercept proxy turned on
 1. Observe the insecure `state` parameter
 1. Change `state` to the following value:
@@ -26,6 +26,6 @@ Account takeover can lead to financial and loss through an attacker's access to 
 
 **Proof of Concept (PoC)**
 
-The screenshot below demonstrates a successful account takeover:
-
-{{screenshot}}
+The screenshot(s) below demonstrate(s) the vulnerability:
+>
+> {{screenshot}}

@@ -8,7 +8,7 @@ If an attacker successfully takes over an account by capturing a password reset 
 
 **Steps to Reproduce**
 
-1. Use a browser to login and navigate to: {{URL}}
+1. Use a browser to log in and navigate to: {{URL}}
 1. Initiate a password reset
 1. Navigate to the following URL and modify the account email address
 1. Observe that the password reset token that was received in the earlier step is still valid

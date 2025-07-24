@@ -10,7 +10,7 @@ If an attacker successfully takes over an account by capturing a password reset 
 
 **Steps to Reproduce**
 
-1. Use a browser to login and navigate to: {{URL}}
+1. Use a browser to log in and navigate to: {{URL}}
 1. Initiate a password reset (request_1)
 1. Initiate a password reset (request_2)
 1. Open the received request_1 and observe that the password reset token is still valid

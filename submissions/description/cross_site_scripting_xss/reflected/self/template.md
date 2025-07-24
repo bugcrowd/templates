@@ -9,7 +9,7 @@ Self-reflected XSS could lead to data theft through the attacker’s ability to 
 **Steps to Reproduce**
 
 1. Use a browser to navigate to: {{URL}}
-1. Login as a user
+1. Log in as a user
 1. Insert the following JavaScript payload:
 
 ```JavaScript

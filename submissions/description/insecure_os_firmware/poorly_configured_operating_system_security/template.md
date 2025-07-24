@@ -6,7 +6,7 @@ The inadequate security configuration of the operating system can lead to signif
 
 **Steps to Reproduce**
 
-1. Power on the device and login, then open the settings menu.
+1. Power on the device and log in, then open the settings menu.
 2. You'll see issues which deviate from hardening recommendations, including unnecessary services running, default passwords unchanged, or insufficient access controls.
 
 **Proof of Concept (PoC)**

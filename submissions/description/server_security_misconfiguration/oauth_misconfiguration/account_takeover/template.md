@@ -13,6 +13,6 @@ Account takeover can lead to financial and loss through an attacker's access to 
 
 **Proof of Concept (PoC)**
 
-The screenshot below demonstrates the OAuth misconfiguration:
-
-{{screenshot}}
+The screenshot(s) below demonstrate(s) the vulnerability:
+>
+> {{screenshot}}

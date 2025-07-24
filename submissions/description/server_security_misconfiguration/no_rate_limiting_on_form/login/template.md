@@ -12,11 +12,11 @@ No rate limiting on a login form can result in reputational damage to the organi
 1. Submit the login form while using the HTTP intercept proxy to intercept the request
 1. Using the HTTP intercept proxy, re-issue the captured request 400 times in rapid succession
 1. Observe within the HTTP intercept proxy that all 400 of these requests generate successful login attempts, showing that there is no rate-limiting on the form
-1. Login with valid account credentials
+1. Log in with valid account credentials
 1. Observe that a valid login is successful which shows that there is no silent lockout implemented
 
-#### Proof of Concept
+**Proof of Concept**
 
-The following screenshots demonstrate a lack of rate limiting on the login form followed by a successful login:
-
-{{screenshot}}
+The screenshot(s) below demonstrate(s) the vulnerability:
+>
+> {{screenshot}}

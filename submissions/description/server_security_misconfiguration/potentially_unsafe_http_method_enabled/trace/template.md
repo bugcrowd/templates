@@ -9,7 +9,7 @@ HTTP methods enabled can lead to reputational damage for the business through th
 **Steps to Reproduce**
 
 1. Enable a HTTP intercept proxy, such as Burp Suite or OWASP ZAP
-1. Use a browser to login and navigate to: {{URL}}
+1. Use a browser to log in and navigate to: {{URL}}
 1. Within the HTTP intercept proxy insert the following request:
 
 {{screenshot}}
@@ -19,6 +19,6 @@ HTTP methods enabled can lead to reputational damage for the business through th
 
 **Proof of Concept (PoC)**
 
-The screenshot below demonstrates the HTTP method enabled:
-
-{{screenshot}}
+The screenshot(s) below demonstrate(s) the vulnerability:
+>
+> {{screenshot}}

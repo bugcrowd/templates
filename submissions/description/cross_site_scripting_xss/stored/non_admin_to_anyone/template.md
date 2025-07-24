@@ -18,12 +18,12 @@ Stored XSS could lead to data theft through the attacker’s ability to manipula
 {{request}}
 ```
 
-1. Log into a privileged account (User A) and navigate to {{url}} which contains the payload
+1. Log in to a privileged account (User A) and navigate to {{url}} which contains the payload
 1. Observe the JavaScript payload being executed, capturing the cookies of User A
-1. Logout of User A’s account
+1. Log out of User A’s account
 
 **Proof of Concept (PoC)**
 
-Below is a screenshot demonstrating the injected JavaScript executing at the vulnerable endpoint, {{URL}}:
-
-{{screenshot}}
+The screenshot(s) below demonstrate(s) the vulnerability:
+>
+> {{screenshot}}

@@ -6,12 +6,12 @@ This vulnerability can lead to reputational damage and indirect financial loss t
 
 **Steps to Reproduce**
 
-1. Login to the application at: {{url}}
+1. Log in to the application at: {{url}}
 1. Navigate to the 2FA registration page at: {{url}}
 1. Register for 2FA, and observe that the implementation provides no failsafe login methods, such as offline backup codes
 
 **Proof of Concept (PoC)**
 
-The screenshot(s) below demonstrates the missing 2FA failsafe:
-
-{{screenshot}}
+The screenshot(s) below demonstrate(s) the vulnerability:
+>
+> {{screenshot}}

@@ -7,7 +7,7 @@ External DNS-only SSRF can result in the application and internal network being 
 **Steps to Reproduce**
 
 1. Enable a HTTP interception proxy, such as Burp Suite or OWASP ZAP
-1. Use a browser to login and navigate to: {{URL}}
+1. Use a browser to log in and navigate to: {{URL}}
 1. Forward the following payload to the endpoint:
 
 ```HTTP
@@ -18,6 +18,6 @@ External DNS-only SSRF can result in the application and internal network being 
 
 **Proof of Concept (PoC)**
 
-The following screenshot(s) demonstrate(s) this vulnerability:
-
-{{screenshot}}
+The screenshot(s) below demonstrate(s) the vulnerability:
+>
+> {{screenshot}}

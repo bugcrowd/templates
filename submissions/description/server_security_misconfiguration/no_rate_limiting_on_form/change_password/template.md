@@ -15,8 +15,8 @@ No rate limiting on a password change form can result in reputational damage to 
 1. Perform another, manual password change form submission in the browser without the interception proxy enabled
 1. Observe that the form is submitted successfully which shows that there is no silent lockout implemented
 
-#### Proof of Concept
+**Proof of Concept (PoC)**
 
-The following screenshots demonstrate a lack of rate limiting on the password change form, followed by a successful form submission:
-
-{{screenshot}}
+The screenshot(s) below demonstrate(s) the vulnerability:
+>
+> {{screenshot}}

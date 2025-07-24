@@ -14,8 +14,8 @@ No rate limiting on a form can result in reputational damage to the organization
 1. Perform another, manual form submission in the browser
 1. Observe that the form is submitted successfully which shows that there is no silent lockout implemented
 
-#### Proof of Concept
+**Proof of Concept**
 
-The following screenshots demonstrate a lack of rate limiting on the login form followed by a successful form submission:
-
-{{screenshot}}
+The screenshot(s) below demonstrate(s) the vulnerability:
+>
+> {{screenshot}}

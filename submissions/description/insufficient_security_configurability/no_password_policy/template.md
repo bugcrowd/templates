@@ -7,11 +7,11 @@ Having no password policy can result in reputational damage for the business thr
 **Steps to Reproduce**
 
 1. Use a browser to navigate to: {{URL}}
-1. Attempt to login
+1. Attempt to log in
 1. Observe that the application allows the use of weak passwords, such as `a`
 
 **Proof of Concept (PoC)**
 
-The following screenshot shows that there is no password policy:
-
-{{screenshot}}
+The screenshot(s) below demonstrate(s) the vulnerability:
+>
+> {{screenshot}}

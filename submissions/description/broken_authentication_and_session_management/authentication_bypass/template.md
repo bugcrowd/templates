@@ -8,14 +8,12 @@ Authentication bypass can lead to data loss or theft through an attacker's acces
 
 **Steps to Reproduce**
 
-1. Navigate to: {{URL}} and login as a regular user
+1. Navigate to: {{URL}} and log in as a regular user
 1. In the URL, change the `/user` to `/user/administrator`
 1. Observe that the application now allows the user to view other user's profile details. These actions are usually restricted to an authenticated user
 
 **Proof of Concept (PoC)**
 
-The following image(s) show the full exploit:
-
-{{screenshot}}
-
-An attacker can bypass authentication or break session management to access the application's data.
+The screenshot(s) below demonstrate(s) the vulnerability:
+>
+> {{screenshot}}

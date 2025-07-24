@@ -9,13 +9,13 @@ Weak password reset implementation could lead to data theft from the attacker’
 **Steps to Reproduce**
 
 1. Enable a HTTP interception proxy, such as Burp Suite or OWASP ZAP
-1. Use a browser to login to a valid account and navigate to: {{URL}}
+1. Use a browser to log in to a valid account and navigate to: {{URL}}
 1. Click on the reset link
 1. Capture the request using the HTTP interception proxy
 1. Observe that the password reset token is being sent over HTTP
 
 **Proof of Concept (PoC)**
 
-The screenshot below displays the password reset token being sent over HTTP:
-
-{{screenshot}}
+The screenshot(s) below demonstrate(s) the vulnerability:
+>
+> {{screenshot}}

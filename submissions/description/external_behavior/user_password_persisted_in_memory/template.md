@@ -1,4 +1,4 @@
-The user’s password is kept in memory after the application has ceased utilizing it. An attacker can abuse this to read the user password in memory and login as the user, impersonate them, or make requests on their behalf.
+The user’s password is kept in memory after the application has ceased utilizing it. An attacker can abuse this to read the user password in memory and log in as the user, impersonate them, or make requests on their behalf.
 
 **Business Impact**
 
@@ -14,6 +14,6 @@ This vulnerability can lead to reputational damage for the business due to a los
 
 **Proof of Concept (PoC)**
 
-You can observe the plaintext password that remained in memory after utilization below:
-
-{{screenshot}}
+The screenshot(s) below demonstrate(s) the vulnerability:
+>
+> {{screenshot}}

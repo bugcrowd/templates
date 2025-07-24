@@ -6,14 +6,14 @@ This vulnerability can lead to reputational damage and indirect financial loss t
 
 **Steps to Reproduce**
 
-1. Login to the application at: {{url}}
-1. When the 2FA step of the login is reached, request a code
+1. Log in to the application at: {{url}}
+1. When the 2FA step of the log in flow is reached, request a code
 1. When the first code is received, request a new code and verify that the second code is also received
 1. Input the first, older code into the 2FA input
 1. Observe that the application allows the use of the first code after the second was generated, meaning it was not invalidated
 
 **Proof of Concept (PoC)**
 
-The screenshot(s) below demonstrates the old 2FA code not being invalidated:
-
-{{screenshot}}
+The screenshot(s) below demonstrate(s) the vulnerability:
+>
+> {{screenshot}}

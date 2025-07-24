@@ -1,4 +1,4 @@
-The password field for the login form of the application reveals the password in plaintext. An attacker with local access can shoulder surf or otherwise tailgate a user and watch them login to the application. From here, an attacker could login as a user to impersonate them or make requests on their behalf.
+The password field for the login form of the application reveals the password in plaintext. An attacker with local access can shoulder surf or otherwise tailgate a user and watch them log in to the application. From here, an attacker could log in as a user to impersonate them or make requests on their behalf.
 
 **Business Impact**
 
@@ -14,6 +14,6 @@ This vulnerability can lead to reputational damage and indirect financial loss t
 
 **Proof of Concept (PoC)**
 
-The screenshots below demonstrate the password field rendering in plaintext:
-
-{{screenshot}}
+The screenshot(s) below demonstrate(s) the vulnerability:
+>
+> {{screenshot}}

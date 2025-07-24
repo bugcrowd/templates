@@ -7,7 +7,7 @@ IDOR can lead to reputational damage for the business through the impact to cust
 **Steps to Reproduce**
 
 1. Use a browser to navigate to: {{URL}}
-1. Login to User Account A
+1. Log in to User Account A
 1. In the URL bar, modify the parameter to a different value:
 
 {{eg.<https://example.com/parameter(UserAccountB)>}}

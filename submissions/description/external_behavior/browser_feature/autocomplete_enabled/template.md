@@ -1,4 +1,4 @@
-Browsers implement features such as autocomplete to offer form filling features for end users. Autocomplete is an HTML attribute that saves previously entered text within the input Document Object Model (DOM) fields. An attacker can leverage the cached input for this application locally to login as a user or expose critical pieces of data.
+Browsers implement features such as autocomplete to offer form filling features for end users. Autocomplete is an HTML attribute that saves previously entered text within the input Document Object Model (DOM) fields. An attacker can leverage the cached input for this application locally to log in as a user or expose critical pieces of data.
 
 **Business Impact**
 
@@ -13,6 +13,6 @@ This vulnerability can lead to reputational damage and indirect financial loss t
 
 **Proof of Concept (PoC)**
 
-The screenshots below demonstrate the autocomplete enabled:
-
-{{screenshot}}
+The screenshot(s) below demonstrate(s) the vulnerability:
+>
+> {{screenshot}}

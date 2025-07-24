@@ -8,7 +8,7 @@ Default credentials in the IVI system can result in reputational damage and indi
 
 1. Port scan the IVI unit by leveraging {{application}} and {{hardware}}
 1. Bruteforce default credentials on exposed service(s)
-1. Login to service(s) and run {{action}}
+1. Log in to service(s) and run {{action}}
 1. Observe that {{action}} occurs as a result
 
 **Proof of Concept (PoC)**

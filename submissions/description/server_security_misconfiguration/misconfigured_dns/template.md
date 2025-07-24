@@ -6,12 +6,12 @@ This vulnerability can lead to reputational damage and indirect financial loss t
 
 **Steps to Reproduce**
 
-1. Login to the application at: {{url}}
+1. Log in to the application at: {{url}}
 1. Use {{software}} to gather information about the DNS
 
 
 **Proof of Concept (PoC)**
 
-The screenshot(s) below demonstrates the misconfigured DNS:
-
-{{screenshot}}
+The screenshot(s) below demonstrate(s) the vulnerability:
+>
+> {{screenshot}}

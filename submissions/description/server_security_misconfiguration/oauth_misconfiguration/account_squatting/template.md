@@ -10,11 +10,11 @@ Depending on the type of misconfiguration found in the OAuth implementation, exp
 
 1. Enable a HTTP intercept proxy, such as Burp Suite or OWASP ZAP
 1. Use a browser to navigate to: {{URL}}
-1. With the HTTP intercept proxy turned on, login to the application and capture the response in the the HTTP intercept proxy
+1. With the HTTP intercept proxy turned on, log in to the application and capture the response in the the HTTP intercept proxy
 1. Observe the OAuth misconfiguration
 
 **Proof of Concept (PoC)**
 
-The screenshot below demonstrates the OAuth misconfiguration:
-
-{{screenshot}}
+The screenshot(s) below demonstrate(s) the vulnerability:
+>
+> {{screenshot}}

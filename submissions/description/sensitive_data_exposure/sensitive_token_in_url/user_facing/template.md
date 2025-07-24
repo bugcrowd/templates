@@ -6,11 +6,11 @@ This vulnerability can lead to data theft through the attacker’s ability to ma
 
 **Steps to Reproduce**
 
-1. Login as a user and navigate to: {{URL}}
+1. Log in as a user and navigate to: {{URL}}
 1. Observe the exposed token in the URL
 
 **Proof of Concept (PoC)**
 
-The following screenshot shows the sensitive token in the URL:
-
-{{screenshot}}
+The screenshot(s) below demonstrate(s) the vulnerability:
+>
+> {{screenshot}}

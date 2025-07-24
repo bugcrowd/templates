@@ -15,8 +15,8 @@ No rate limiting on a registration form can result in reputational damage to the
 1. Perform another, manual account registration form submission in the browser without the interception proxy enabled
 1. Observe that the form is submitted successfully. This shows that there is no silent lockout implemented
 
-#### Proof of Concept
+**Proof of Concept (PoC)**
 
-The following screenshots demonstrate a lack of rate limiting on the registration form, followed by a successful form submission:
-
-{{screenshot}}
+The screenshot(s) below demonstrate(s) the vulnerability:
+>
+> {{screenshot}}

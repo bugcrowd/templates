@@ -17,6 +17,6 @@ Outdated Software Version can lead to reputational damage for the business due t
 
 **Proof of Concept (PoC)**
 
-The screenshot(s) below demonstrates the outdated software with known vulnerabilities:
-
-{{screenshot}}
+The screenshot(s) below demonstrate(s) the vulnerability:
+>
+> {{screenshot}}

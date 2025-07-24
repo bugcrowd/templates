@@ -7,12 +7,12 @@ This vulnerability can lead to reputational damage and indirect financial loss t
 **Steps to Reproduce**
 
 1. Use a browser to navigate to: {{URL}}
-1. Login to the application
-1. Using an incognito tab or another browser, login using the same credentials
+1. Log in to the application
+1. Using an incognito tab or another browser, log in using the same credentials
 1. Observe that both sessions remain valid
 
 **Proof of Concept (PoC)**
 
-The screenshots below show the concurrent logins:
-
-{{screenshot}}
+The screenshot(s) below demonstrate(s) the vulnerability:
+>
+> {{screenshot}}

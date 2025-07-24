@@ -11,7 +11,7 @@ CSRF could lead to data theft through the attacker’s ability to manipulate dat
 **Steps to Reproduce**
 
 1. Enable a HTTP interception proxy, such as Burp Suite or OWASP ZAP
-1. Use a browser to login to the application at: {{URL}}
+1. Use a browser to log in to the application at: {{URL}}
 1. Navigate to the following URL and submit the form: {{URL}}
 1. Use the HTTP interception proxy to intercept the request triggered by the form
 1. Modify the request with the following CSRF POC code:

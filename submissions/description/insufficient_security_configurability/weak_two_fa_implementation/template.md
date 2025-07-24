@@ -6,12 +6,12 @@ This vulnerability can lead to reputational damage and indirect financial loss t
 
 **Steps to Reproduce**
 
-1. Login to the application at: {{url}}
-1. When the two factor authentication step of the login is reached, request a code
+1. Log in to the application at: {{url}}
+1. When the two factor authentication step of the login flow is reached, request a code
 1. Perform {{action}} and observe that the 2FA implementation is weak
 
 **Proof of Concept (PoC)**
 
-The screenshot(s) below demonstrates the weak implementation of 2FA:
-
-{{screenshot}}
+The screenshot(s) below demonstrate(s) the vulnerability:
+>
+> {{screenshot}}
