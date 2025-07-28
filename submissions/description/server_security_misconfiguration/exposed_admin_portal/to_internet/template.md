@@ -9,6 +9,7 @@ Exposed admin portals can lead to indirect financial loss due to the attacker’
 **Steps to Reproduce**
 
 1. Use a browser to navigate to the admin portal via the URL: {{URL}}
+
 1. The following are the functionalities of the admin portal:
 
 {{value}}
