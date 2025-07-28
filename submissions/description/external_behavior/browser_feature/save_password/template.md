@@ -8,11 +8,11 @@ This vulnerability can lead to reputational damage and indirect financial loss t
 
 1. Use a browser to navigate to: {{URL}}
 1. Enter username and password within the login form and submit
-1. Logout of application and navigate back to the login page
+1. Log out of application and navigate back to the login page
 1. Observe that the username and password is saved
 
 **Proof of Concept (PoC)**
 
-The screenshots below demonstrate the password saved in the input field:
-
-{{screenshot}}
+The screenshot(s) below demonstrate(s) the vulnerability:
+>
+> {{screenshot}}

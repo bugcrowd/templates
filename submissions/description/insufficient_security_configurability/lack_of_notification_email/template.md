@@ -6,7 +6,7 @@ A lack of a notification email upon important account changes as a single vulner
 
 **Steps to Reproduce**
 
-1. Use a browser to login to a valid account and navigate to: {{URL}}
+1. Use a browser to log in to a valid account and navigate to: {{URL}}
 1. Modify an account variable, such as the password or username
 1. Observe that no notification email is sent to the associated account email address to notify the owner of the change
 

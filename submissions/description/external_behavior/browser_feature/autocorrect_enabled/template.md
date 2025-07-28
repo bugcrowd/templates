@@ -1,4 +1,4 @@
-Browsers implement features such as autocorrect to offer predictive spelling and grammar features for end users. The applications implementation of autocorrect for sensitive fields can enable an attacker with local access to login as a user, or leverage critical pieces of information to impersonate the user or make requests on their behalf.
+Browsers implement features such as autocorrect to offer predictive spelling and grammar features for end users. The applications implementation of autocorrect for sensitive fields can enable an attacker with local access to log in as a user, or leverage critical pieces of information to impersonate the user or make requests on their behalf.
 
 **Business Impact**
 
@@ -14,6 +14,6 @@ This vulnerability can lead to reputational damage and indirect financial loss t
 
 **Proof of Concept (PoC)**
 
-The screenshots below demonstrate the autocorrect enabled on a sensitive field:
-
-{{screenshot}}
+The screenshot(s) below demonstrate(s) the vulnerability:
+>
+> {{screenshot}}

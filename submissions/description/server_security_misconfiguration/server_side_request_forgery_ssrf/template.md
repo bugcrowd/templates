@@ -9,7 +9,7 @@ SSRF can lead to data theft and through an attacker accessing, deleting, or modi
 **Steps to Reproduce**
 
 1. Enable a HTTP interception proxy, such as Burp Suite or OWASP ZAP
-1. Use a browser to login and navigate to: {{URL}}
+1. Use a browser to log in and navigate to: {{URL}}
 1. Forward the following payload to the endpoint:
 
 ```HTTP
@@ -20,6 +20,6 @@ SSRF can lead to data theft and through an attacker accessing, deleting, or modi
 
 **Proof of Concept (PoC)**
 
-The following screenshot(s) demonstrate(s) this vulnerability:
-
-{{screenshot}}
+The screenshot(s) below demonstrate(s) the vulnerability:
+>
+> {{screenshot}}

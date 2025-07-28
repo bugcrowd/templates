@@ -7,13 +7,13 @@ Token Leakage via `Referer` header can lead to indirect financial loss through a
 **Steps to Reproduce**
 
 1. Enable a HTTP interception proxy, such as Burp Suite or OWASP ZAP
-1. Use a browser to login and navigate to: {{URL}}
+1. Use a browser to log in and navigate to: {{URL}}
 1. Click on the link to the third-party website
 1. Capture the request using the HTTP interception proxy
-1. Observe the token in `Referer` header and that theconnection is over HTTP
+1. Observe the token in `Referer` header and that the connection is over HTTP
 
 **Proof of Concept (PoC)**
 
-The following screenshot shows the token exposed within the `Referer` HTTP request header over a HTTP connection:
-
-{{screenshot}}
+The screenshot(s) below demonstrate(s) the vulnerability:
+>
+> {{screenshot}}

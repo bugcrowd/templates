@@ -8,15 +8,15 @@ This vulnerability could lead to data theft through the attacker’s ability to 
 
 1. Enable a HTTP interception proxy, such as Burp Suite or OWASP ZAP
 1. Use a browser to navigate to: {{URL}}
-1. Sign into a user’s account
+1. Log in to a user’s account
 1. Perform {{action}} to see the session token in the URL or form field:
 
 {{screenshot}}
 
-1. Perform {{action}} to send the request in an incognito browser and login using the same user credentials
+1. Perform {{action}} to send the request in an incognito browser and log in using the same user credentials
 
 **Proof of Concept (PoC)**
 
-The screenshot(s) below shows the full exploit:
-
-{{screenshot}}
+The screenshot(s) below demonstrate(s) the vulnerability:
+>
+> {{screenshot}}

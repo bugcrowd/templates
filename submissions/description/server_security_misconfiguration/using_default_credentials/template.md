@@ -1,4 +1,4 @@
-Default credentials are credentials that are set as default by the manufacturer or supplier of hardware and software products. These credentials often have Administrator privileges. An attacker can take advantage of default credentials and login to administrative accounts using wordlists of usernames and passwords found online, which may give them the authority to change the state of the application or users’ accounts.
+Default credentials are credentials that are set as default by the manufacturer or supplier of hardware and software products. These credentials often have Administrator privileges. An attacker can take advantage of default credentials and log in to administrative accounts using wordlists of usernames and passwords found online, which may give them the authority to change the state of the application or users’ accounts.
 
 **Business Impact**
 
@@ -12,6 +12,6 @@ Default credentials can result in reputational damage and indirect financial los
 
 **Proof of Concept (PoC)**
 
-The screenshot(s) below demonstrates the default credentials:
-
-{{screenshot}}
+The screenshot(s) below demonstrate(s) the vulnerability:
+>
+> {{screenshot}}
