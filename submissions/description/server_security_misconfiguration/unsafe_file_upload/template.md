@@ -10,13 +10,13 @@ Unsafe file upload can lead to reputational damage for the business due to a los
 1. With the HTTP intercept proxy turned on, use a browser to navigate to: {{URL}}
 1. Intercept the request in the HTTP intercept proxy:
 
-```HTTP
+```http
 {{Request}}
 ```
 
 1. Change the following parameter to append a different value to the extension, as seen below:
 
-```HTTP
+```http
 {{Request}}
 ```
 

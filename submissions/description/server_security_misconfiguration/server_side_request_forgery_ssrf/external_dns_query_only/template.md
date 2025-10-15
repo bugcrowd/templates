@@ -10,7 +10,7 @@ External DNS-only SSRF can result in the application and internal network being 
 1. Use a browser to log in and navigate to: {{URL}}
 1. Forward the following payload to the endpoint:
 
-```HTTP
+```http
 {{request}}
 ```
 

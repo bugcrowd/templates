@@ -17,7 +17,7 @@ Failure to invalidate a session on logout may also lead to data theft through th
 1. Log out of the user account in the browser
 1. In the HTTP interception proxy, resend the following request to the endpoint {{URL}}:
 
-```HTTP
+```http
 {{request}}
 ```
 

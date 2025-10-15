@@ -13,7 +13,7 @@ This vulnerability can lead to reputational damage and indirect financial loss t
 1. Perform {{action}} and capture the request in the HTTP interception proxy
 1. Insert {{payload}} in {{parameter}} and forward or replay the following request to the endpoint:
 
-```HTTP
+```http
 {{request}}
 ```
 

@@ -13,7 +13,7 @@ This could also result in reputational damage for the business through the impac
 1. Observe and copy the critical sensitive data that is exposed
 1. Using the HTTP interception proxy, forward the following request:
 
-```HTTP
+```http
 {{request}}
 ```
 

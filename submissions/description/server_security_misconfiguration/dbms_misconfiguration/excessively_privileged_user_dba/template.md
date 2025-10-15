@@ -14,7 +14,7 @@ DBMS misconfigurations can lead to reputational damage for the business due to a
 1. Navigate to the vulnerable functionality {{value}}
 1. Forward the following request to the endpoint:
 
-```HTTP
+```http
 {{request}}
 ```
 

@@ -12,7 +12,7 @@ This vulnerability can lead to reputational damage and indirect financial loss t
 1. Intercept the request in a Web Proxy
 1. Adjust and forward the following request to the endpoint:
 
-```HTTP
+```http
 {{request}}
 ```
 

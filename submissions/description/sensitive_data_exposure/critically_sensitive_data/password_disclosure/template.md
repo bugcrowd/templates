@@ -11,7 +11,7 @@ Disclosure of secrets can lead to indirect financial loss through an attacker ac
 1. Observe and copy the password value that is exposed
 1. Using the HTTP interception proxy, forward the following request:
 
-```HTTP
+```http
 {{request}}
 ```
 

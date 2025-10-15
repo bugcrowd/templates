@@ -12,7 +12,7 @@ XSS could lead to data theft through the attacker’s ability to manipulate data
 1. Use a browser to navigate to: {{URL}}
 1. Append the following JavaScript payload to the end of the Referrer header and forward the following request:
 
-```HTTP
+```http
 {{request}}
 ```
 

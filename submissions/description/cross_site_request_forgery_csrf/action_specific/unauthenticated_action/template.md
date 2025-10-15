@@ -17,7 +17,7 @@ CSRF could lead to reputational damage for the business through the impact to cu
 
  and forward the request to the endpoint:
 
-```HTTP
+```http
 {{request}}
 ```
 

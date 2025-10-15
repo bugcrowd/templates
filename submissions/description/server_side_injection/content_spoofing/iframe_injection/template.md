@@ -13,7 +13,7 @@ This vulnerability could lead to data theft and indirect financial loss through 
 1. Perform {{action}} and capture the request in the HTTP interception proxy
 1. Insert {{payload}} in {{parameter}} and forward or replay the following request to the endpoint:
 
-```HTTP
+```http
 {{request}}
 ```
 

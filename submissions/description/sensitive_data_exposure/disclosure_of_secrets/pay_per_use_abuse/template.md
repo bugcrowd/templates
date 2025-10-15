@@ -14,7 +14,7 @@ Disclosure of secrets can lead to direct financial loss through an attacker maki
 
 1 Send the following request to the endpoint:
 
-```HTTP
+```http
 {{request}}
 ```
 

@@ -13,7 +13,7 @@ This vulnerability can lead to reputational damage and indirect financial loss t
 1. Intercept the request in the HTTP interception Proxy and change HTTP header: {{value}} to {{value}}
 1. Forward the following request to the endpoint:
 
-```HTTP
+```http
 {{request}}
 ```
 

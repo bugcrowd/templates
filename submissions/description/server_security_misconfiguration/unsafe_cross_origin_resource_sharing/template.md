@@ -10,17 +10,17 @@ Unsafe CORS can lead to reputational damage for the business due to a loss in co
 1. With the HTTP intercept proxy turned on, use a browser to navigate to: {{URL}}
 1. In the HTTP intercept proxy, observe the following header:
 
-```HTTP
+```http
 {{Header}}
 ```
 
 1. The following request and response pair demonstrates the unsafe CORS:
 
-```HTTP
+```http
 {{Request}}
 ```
 
-```HTTP
+```http
 {{Response}}
 ```
 
