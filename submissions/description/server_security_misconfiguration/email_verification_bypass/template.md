@@ -11,7 +11,7 @@ The impact of this vulnerability can lead to an attacker creating multiple fake 
 1. Register User Account A
 1. Using the HTTP interception proxy, intercept the following request:
 
-```HTTP
+```http
 {{request}}
 ```
 

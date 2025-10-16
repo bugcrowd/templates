@@ -17,7 +17,7 @@ CSRF could lead to data theft through the attacker’s ability to manipulate dat
 
  and forward the request to the endpoint:
 
-```HTTP
+```http
 {{request}}
 ```
 

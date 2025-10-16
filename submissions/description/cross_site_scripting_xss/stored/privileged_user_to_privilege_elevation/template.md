@@ -12,7 +12,7 @@ Stored XSS could lead to data theft through the attacker’s ability to manipula
 1. Log into the application at with the privileged user account (User B)
 1. Forward the following request to the endpoint:
 
-```HTTP
+```http
 {{request}}
 ```
 

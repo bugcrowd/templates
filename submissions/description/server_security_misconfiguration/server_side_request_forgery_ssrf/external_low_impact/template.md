@@ -10,7 +10,7 @@ External SSRF can lead to data theft and through an attacker accessing, deleting
 1. Use a browser to log in and navigate to: {{URL}}
 1. Forward the following payload to the endpoint:
 
-```HTTP
+```http
 {{request}}
 ```
 

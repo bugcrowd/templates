@@ -10,7 +10,7 @@ This vulnerability can lead to data theft through the attacker’s ability to ac
 1. Use a browser to navigate to: {{URL}}
 1. Using the HTTP interception proxy, forward the following request:
 
-```HTTP
+```http
 {{request}}
 ```
 

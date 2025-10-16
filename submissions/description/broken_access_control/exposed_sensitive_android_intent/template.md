@@ -12,7 +12,7 @@ This vulnerability can lead to reputational damage and indirect financial loss t
 1. Log in to an account that should not be able to perform {{action}}
 1. Forward the following request to the endpoint:
 
-```HTTP
+```http
 {{request}}
 ```
 

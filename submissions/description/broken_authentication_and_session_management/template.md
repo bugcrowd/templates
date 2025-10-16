@@ -12,7 +12,7 @@ Broken authentication and session management could lead to data theft through th
 1. Use a browser to navigate to: {{URL}}
 1. Forward the following request to the endpoint:
 
-```HTTP
+```http
 {{request}}
 ```
 

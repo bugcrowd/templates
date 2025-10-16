@@ -11,7 +11,7 @@ Outdated Software Version can lead to reputational damage for the business due t
 1. Intercept a response with the HTTP interception proxy
 1. Observe the outdated software version:
 
-```HTTP
+```http
 {{response}}
 ```
 

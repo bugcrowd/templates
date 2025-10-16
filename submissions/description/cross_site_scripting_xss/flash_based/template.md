@@ -13,7 +13,7 @@ Flash-based XSS could lead to data theft through the attacker’s ability to man
 1. Upload the following flash file: {{.SWF}}
 1. Forward the following request to the endpoint:
 
-```HTTP
+```http
 {{request}}
 ```
 

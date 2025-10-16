@@ -10,7 +10,7 @@ XSS could result in reputational damage for the business through the impact to c
 1. Use an Internet Explorer browser to navigate to: {{URL}}
 1. Forward the following request to the endpoint:
 
-```HTTP
+```http
 {{request}}
 ```
 

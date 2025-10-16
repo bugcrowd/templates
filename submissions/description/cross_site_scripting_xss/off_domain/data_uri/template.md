@@ -13,7 +13,7 @@ XSS could lead to data theft through the attacker’s ability to manipulate data
 1. Observe that a data URI is being used to request data
 1. Forward the following request to the endpoint:
 
-```HTTP
+```http
 {{request}}
 ```
 

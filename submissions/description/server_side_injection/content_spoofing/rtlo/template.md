@@ -14,7 +14,7 @@ This vulnerability can lead to reputational damage and indirect financial loss t
 1. Append/add an RLO unicode character to: {{parameter}}
 1. Forward or replay the following request to the endpoint:
 
-```HTTP
+```http
 {{request}}
 ```
 

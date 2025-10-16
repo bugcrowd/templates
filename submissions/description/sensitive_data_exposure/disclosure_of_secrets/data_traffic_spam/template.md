@@ -10,7 +10,7 @@ Disclosure of secrets can lead to indirect financial loss through an attacker ac
 1. Use a browser to navigate to: {{URL}}
 1 Generate data traffic by forwarding the following request multiple times to the endpoint:
 
-```HTTP
+```http
 {{request}}
 ```
 

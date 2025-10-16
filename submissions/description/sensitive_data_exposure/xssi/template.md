@@ -10,7 +10,7 @@ XSSI could lead to data theft and exfiltration through the attacker’s ability 
 1. Use a browser to navigate to: {{URL}}
 1. Forward the following request to the endpoint:
 
-```HTTP
+```http
 {{request}}
 ```
 

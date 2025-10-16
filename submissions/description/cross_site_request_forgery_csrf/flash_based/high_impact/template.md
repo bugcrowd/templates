@@ -17,7 +17,7 @@ High impact CSRF could lead to data modification or theft leading to indirect fi
 
  and forward the request to the endpoint:
 
-```HTTP
+```http
 {{request}}
 ```
 

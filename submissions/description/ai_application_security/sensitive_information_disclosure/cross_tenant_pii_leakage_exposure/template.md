@@ -9,7 +9,7 @@ This vulnerability can lead to reputational and financial damage of the company 
 1. Log in to the AI system with credentials for Tenant A
 1. Send the following request targeting the data or resources belonging to Tenant B:
 
-```HTTP
+```http
   {HTTP request}
 ```
 

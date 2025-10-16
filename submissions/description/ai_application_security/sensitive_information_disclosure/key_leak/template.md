@@ -15,7 +15,7 @@ Unauthorized access to critical systems and data, potential compromise of sensit
 
 1. Send the following request which demonstrates the leaked keys are valid:
 
-```HTTP
+```http
   {HTTP request}
 ```
 

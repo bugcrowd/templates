@@ -11,7 +11,7 @@ The impact of this vulnerability can vary in severity depending on the degree of
 1. Log in to User Account A
 1. Using the HTTP interception proxy, forward the following request to the endpoint:
 
-```HTTP
+```http
 {{request}}
 ```
 

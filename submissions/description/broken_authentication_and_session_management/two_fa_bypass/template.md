@@ -14,7 +14,7 @@ Bypassing 2FA mechanisms could lead to data theft through the attacker’s abili
 1. Intercept the 2FA request using the HTTP interception proxy
 1. Modify the body of the request (as below) and forward it to the endpoint:
 
-```HTTP
+```http
 {{request}}
 ```
 
