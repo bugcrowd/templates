@@ -2,8 +2,8 @@ Visible detailed error pages are a result of improper error handling which intro
 
 **Business Impact**
 
-This vulnerability could enable attacker exploitation that will disrupt product or service availability, leading to direct financial loss.
-It can impact customers’ trust in the application which can result in reputational damage for the business and indirect financial losses.
+This vulnerability could enable attacker exploitation that will disrupt product or service availability, 
+leading to financial loss and impact customers’ trust in the application.
 
 **Steps to Reproduce**
 
