@@ -14,6 +14,7 @@ Outdated JavaScript libraries can lead to reputational damage for the business d
 1. The affected software versions and related vulnerabilities have been listed below:
 >
 > **[Bootstrap v3.4.1](https://getbootstrap.com/)**
+>
 > - Bootstrap before 4.0.0 is end-of-life and no longer maintained
 > - [CVE-2024-6485](https://nvd.nist.gov/vuln/detail/CVE-2024-6485): XSS in bootstrap button component
 > - [CVE-2024-6484](https://nvd.nist.gov/vuln/detail/CVE-2024-6485): XSS in carousel component
