@@ -9,8 +9,6 @@ An insecure `Content-Security-Policy` header can lead to reputational damage and
 1. Use a browser to navigate to: {{URL}}
 1. Inspect the HTTP response headers and locate the `Content-Security-Policy` header
 1. Review the policy and note the usage of the following explicitly unsafe source expressions:
->
-> {{replace following with relevant insecure directives}}
 
 - unsafe-inline: allows the execution of untrusted inline page scripts and event handlers
 - unsafe-eval: allows the execution of code injected into DOM APIs such as eval()
