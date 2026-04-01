@@ -1,8 +1,4 @@
-Active Directory (AD) user accounts were discovered with plaintext or easily decipherable passwords (or password fragments/hints) stored within their "Description" attribute.
-
-Storing passwords or sensitive information in the Description fields of user accounts may be practiced for administrative convenience, however, these account descriptions are retrievable by any authenticated domain user without any special privileges. 
-
-As a result, an attacker with access to any valid domain user could retrieve the sensitive data stored in account descriptions and leverage any resulting credentials to compromise the affected accounts. 
+Active Directory (AD) configuration weaknesses are insecure settings in the domain environment that increase the attack surface for credential theft, privilege escalation, and domain compromise. Common weaknesses include weak password policies, excessive privileged group membership, and shared local administrator passwords, amongst others. These confoguration weaknesses reduce the effort needed for an attacker to compromise the domain.
 
 **Business Risk**
 
@@ -10,7 +6,9 @@ This vulnerability may lead to an attacker compromising the affected user accoun
 
 **Steps to Reproduce**
 
-<Provide numbered steps to reproduce this issue in the context of the in-scope domain>
+1. Authenticate to the domain as a low privileged user from {{attacker_host}}
+1. Enumerate the specific configuration weaknesses in the domain
+1. Compare and the observed configuration against the security baseline at {{baseline_reference}}
 
 **Proof of Concept (PoC)**
 
