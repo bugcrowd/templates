@@ -184,7 +184,7 @@ Incorrect: pen test, PenTest, Pen Test
 
 ## A vs. An
 
-"An" should be used when the next word starts with a consonant *sound*. Otherwise, "A" should be used.
+"An" should be used when the next word starts with a vowel *sound*. Otherwise, "A" should be used.
 
 Correct:
 
